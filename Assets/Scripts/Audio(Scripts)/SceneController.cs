@@ -14,20 +14,6 @@ public class SceneController : MonoBehaviour
         AudioManager.Instance.ReceiveExternal(externalSounds);
     }
 
-    private void OnValidate()
-    {
-        if (externalSounds.Length > 0)
-        {
-            for (int i = 0; i < externalSounds.Length; i++)
-            {
-                if (externalSounds[i].clip != null)
-                {
-                    externalSounds[i].name = externalSounds[i].clip.name;
-                }
-            }
-        }
-    }
-
 }
 
 public enum scenes

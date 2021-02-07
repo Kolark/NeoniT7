@@ -57,7 +57,7 @@ public class AudioManager : MonoBehaviour
     {
         for (int i = 0; i < sounds.Length; i++)
         {
-            soundDictionary.Add(sounds[i].name, sounds[i]);
+            soundDictionary.Add(sounds[i].clip.name, sounds[i]);
         }
     }
 
@@ -65,8 +65,8 @@ public class AudioManager : MonoBehaviour
     {
         for (int i = 0; i < sounds.Length; i++)
         {
-            Destroy(soundDictionary[sounds[i].name].source);
-            soundDictionary.Remove(sounds[i].name);
+            Destroy(soundDictionary[sounds[i].clip.name].source);
+            soundDictionary.Remove(sounds[i].clip.name);
             
         }
     }
@@ -123,24 +123,9 @@ public class AudioManager : MonoBehaviour
         AddToDictionary(sounds);
         Debug.Log("Received sounds: " + soundDictionary.Count);
     }
-
-    private void OnValidate()
-    {
-        if (staticSounds.Length > 0)
-        {
-            for (int i = 0; i < staticSounds.Length; i++)
-            {
-                if (staticSounds[i].clip != null)
-                {
-                    staticSounds[i].name = staticSounds[i].clip.name;
-                }
-            }
-        }
-    }
-
 }
 /// <summary>
-/// 
+/// List of all the possible mixer channels
 /// </summary>
 public enum MixerChannel
 {
