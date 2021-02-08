@@ -11,20 +11,21 @@ public class InputController : MonoBehaviour
 {
     private static InputController instance;
     public static InputController Instance { get => instance; }
-    /// <summary>
-    /// Evento Salto
-    /// </summary>
-    public Action Jump;
-    /// <summary>
-    /// Evento Ataque
-    /// </summary>
-    public Action Attack;
 
+    public Action Jump;
+    public Action Attack;
+    public Action SpecialAbility;
+    public Action DefensiveAbility;
+    public Action Throw;
+    public Action Pause;
+    public Action<Vector2> OnMoveEvent;
     private Vector2 move;
     /// <summary>
     /// Vector 2 de joystick|WASD
     /// </summary>
-    public Vector2 Move { get => move;}
+    public Vector2 Move { get => move; }
+
+    PlayerInput playerInput;
 
     private void Awake()
     {
@@ -38,6 +39,7 @@ public class InputController : MonoBehaviour
     public void OnMove(InputValue value)
     {
         move = value.Get<Vector2>();
+        OnMoveEvent?.Invoke(move);
     }
 
     public void OnJump()
@@ -48,5 +50,22 @@ public class InputController : MonoBehaviour
     public void OnAttack()
     {
         Attack?.Invoke();
+    }
+
+    public void OnSpecialAbility()
+    {
+        SpecialAbility?.Invoke();
+    }
+    public void OnDefensiveAbility()
+    {
+        DefensiveAbility?.Invoke();
+    }
+    public void OnThrowWeapon()
+    {
+        Throw?.Invoke();
+    }
+    public void OnPause()
+    {
+        Pause?.Invoke();
     }
 }
