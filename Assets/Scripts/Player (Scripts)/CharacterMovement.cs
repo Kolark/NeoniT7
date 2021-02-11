@@ -33,11 +33,6 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField] private float gravity = 0.25f;
     [SerializeField] private float terminalVelocity = 5f;
     [SerializeField] private float jumpForce = 8f;
-
-    [SerializeField] private float extremitiesOffset = 0.05f;
-    [SerializeField] private float innerVerticalOffset = 0.25f;
-    [SerializeField] private float distanceGrounded = 0.15f;
-    [SerializeField] private float slopeThreshold = 0.55f;
     #endregion
     private void Awake()
     {
@@ -63,10 +58,12 @@ public class CharacterMovement : MonoBehaviour
         anim?.SetFloat("Speed", inputVector.magnitude);
         grounded = Grounded();
         print(grounded);
-        anim?.SetBool("Grounded", grounded);
+        anim?.SetBool("IsGrounded", grounded);
         //TO-DO: Check gravity if needed.        
         //inputVector.y = verticalVelocity;
+        verticalVelocity = rb.velocity.y;
         anim?.SetFloat("VerticalVelocity", verticalVelocity);
+        Debug.Log("V:" + verticalVelocity);
 
         velocity = rb.velocity;
         velocity += inputVector * acceleration * Time.deltaTime;
@@ -81,7 +78,6 @@ public class CharacterMovement : MonoBehaviour
         if (isCrouching) {
             anim.SetBool("IsCrouching", isCrouching);
         } else {            
-            Debug.Log("Not crouching");
             anim.SetBool("IsCrouching", isCrouching);
         }
     }
