@@ -57,14 +57,11 @@ public class CharacterMovement : MonoBehaviour
 
         anim?.SetFloat("Speed", inputVector.magnitude);
         grounded = Grounded();
-        print(grounded);
         anim?.SetBool("IsGrounded", grounded);
         //TO-DO: Check gravity if needed.        
         //inputVector.y = verticalVelocity;
         verticalVelocity = rb.velocity.y;
         anim?.SetFloat("VerticalVelocity", verticalVelocity);
-        Debug.Log("V:" + verticalVelocity);
-
         velocity = rb.velocity;
         velocity += inputVector * acceleration * Time.deltaTime;
         velocity.x = Mathf.Clamp(velocity.x, -maxSpeed, maxSpeed);
