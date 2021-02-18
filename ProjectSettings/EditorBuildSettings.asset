@@ -20,4 +20,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TestFelipe.unity
     guid: 02724ff53403d8f4ab5f24d480c9a09a
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: 03ec7dc7f4b0c904d90ac82c54496ecb,
+      type: 2}
+    com.unity.localization.settings: {fileID: 11400000, guid: d91b2afa3b3c6a846a4604bce679efe6,
+      type: 2}
