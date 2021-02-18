@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using System;
 public class BasicCharacter : MonoBehaviour
 {
     private static BasicCharacter instance;
@@ -13,12 +13,14 @@ public class BasicCharacter : MonoBehaviour
     [SerializeField] Transform pos;
 
     public bool canReceiveInput;
-    public bool inputReceived;
+    //public bool inputReceived;
+
+    public Action onAttack;
 
     private void Awake()
     {
         canReceiveInput = true;
-        inputReceived = false;
+        //inputReceived = false;
 
         if (instance != null)
         {
@@ -40,19 +42,13 @@ public class BasicCharacter : MonoBehaviour
 
     public void Attack()
     {
-        Debug.Log("Attack");
         if (canReceiveInput)
         {
-            inputReceived = true;
             canReceiveInput = false;
-
             Collider2D Hit = Physics2D.OverlapPoint(pos.position, hurtBoxEnemy);
             IEnemyHurtBox enemy = Hit?.GetComponent<IEnemyHurtBox>();
             enemy?.OnReceiveDamage();
-        }
-        else
-        {
-            return;
+            onAttack?.Invoke();
         }
     }
 
@@ -60,11 +56,5 @@ public class BasicCharacter : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(pos.position, 0.25f);
-    }
-
-    public void AnimatorInputManager()
-    {
-        if (!canReceiveInput) canReceiveInput = true;
-        else canReceiveInput = false;
     }
 }
