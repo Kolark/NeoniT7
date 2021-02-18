@@ -64,6 +64,8 @@ public class EnemyAI : MonoBehaviour
         Vector2 force = direction * speed * Time.deltaTime;
 
         //Jump
+        //TO-DO: Check for holes in front of the enemy and make him jump
+        //TO-DO: Check in front of enemy to see if against a wall (make jump more precise)
         if (jumpEnabled && isGrounded) {
             if (direction.y > jumpNodeHeightRequirement) rb.AddForce(Vector2.up * speed * jumpModifier); 
         }
