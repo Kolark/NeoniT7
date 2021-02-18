@@ -129,7 +129,7 @@ public class AudioManager : MonoBehaviour
 /// </summary>
 public enum MixerChannel
 {
-    GamePlay,
-    GUI,
-    Music,
+    UI,
+    Gameplay,
+    Effects,
 }

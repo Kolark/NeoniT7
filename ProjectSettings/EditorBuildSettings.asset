@@ -6,6 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: d1c3109bdb54ad54c8a2b2838528e640
+    path: Assets/Scenes/BuildScenes/MainScreen.unity
+    guid: 105df388d9494174aa1a1aae3cc8ef15
+  - enabled: 1
+    path: Assets/Scenes/BuildScenes/ChooseSaveScreen.unity
+    guid: 2477201f47603cf4a92881102e41f135
+  - enabled: 1
+    path: Assets/Scenes/BuildScenes/ChooseCharacter.unity
+    guid: 5bc7eb263f4815d43a9571eec2210d0d
+  - enabled: 1
+    path: Assets/Scenes/BuildScenes/ChooseDifficulty.unity
+    guid: 4419ba113654524438e47c07b8ba5155
+  - enabled: 1
+    path: Assets/Scenes/TestFelipe.unity
+    guid: 02724ff53403d8f4ab5f24d480c9a09a
   m_configObjects: {}

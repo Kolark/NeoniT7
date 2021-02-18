@@ -15,8 +15,3 @@ public class SceneController : MonoBehaviour
     }
 
 }
-
-public enum scenes
-{
-    MainScreen
-}
