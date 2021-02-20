@@ -7,11 +7,28 @@ using UnityEngine;
 /// </summary>
 public class SceneController : MonoBehaviour
 {
+    /// <summary>
+    /// Sounds exclusive to the currentScene    
+    /// </summary>
     public Sound[] externalSounds;
-
+    /// <summary>
+    /// SceneType, this means if its a ui Screen or a Gameplay one.
+    /// </summary>
+    public SceneType levelType;
+    [SerializeField] string ScreenAudio;
     public void Start()
     {
-        AudioManager.Instance.ReceiveExternal(externalSounds);
+        GameManager.Instance.ChangeCurrentSceneType(levelType);
+        if(externalSounds.Length > 0)
+        {
+            AudioManager.Instance.ReceiveExternal(externalSounds);
+            AudioManager.Instance.Play(ScreenAudio);
+        }
     }
 
+}
+public enum SceneType
+{
+    Screen,
+    Level
 }
