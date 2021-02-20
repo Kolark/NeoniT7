@@ -30,7 +30,6 @@ public class UIWidget : MonoBehaviour
     }
     public void OnPointerDown()
     {
-        Debug.Log("PointerDown" + gameObject.name);
         AudioManager.Instance.Play("Nota-001");
         GameManager.Instance.ChangeScene(sceneToGo);
     }
@@ -44,11 +43,6 @@ public class UIWidget : MonoBehaviour
     {
         rectTransform.DOAnchorPos(initPos, duration).SetEase(easeType);
         rectTransform.DOScale(initScale, duration).SetEase(easeType);
-    }
-
-    public void OnCancel()
-    {
-        GameManager.Instance.SceneBack();
     }
 
     private void OnValidate()

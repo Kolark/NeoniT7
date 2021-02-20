@@ -47,6 +47,12 @@ public class PrefabTools : EditorWindow
             case "GameManager":
                 @gameobject = FindObjectOfType<GameManager>();
                 break;
+            case "SceneController":
+                @gameobject = FindObjectOfType<SceneController>();
+                break;
+            case "InputController":
+                @gameobject = FindObjectOfType<InputController>();
+                break;
             default:
                 @gameobject = null;
                 break;
@@ -74,14 +80,24 @@ public class PrefabTools : EditorWindow
         button.clickable.clicked += () => 
         {
             CreatePrefab(button.text);
+            var boxes = rootVisualElement.Query<Box>(className: "managerState");
+            boxes.ForEach(CheckStates);
         };
     }
 
     private void CreatePrefab(string obj)
     {
-        Object prefab = AssetDatabase.LoadAssetAtPath($"Assets/Prefabs(Audio)/$h{obj}.prefab", typeof(GameObject));
-
-        Instantiate(prefab, Vector3.zero,Quaternion.identity);
+        Object prefab = AssetDatabase.LoadAssetAtPath($"Assets/Prefabs/$h{obj}.prefab", typeof(GameObject));
+        
+        //GameObject toInstatiate = Instantiate(prefab, Vector3.zero, Quaternion.identity) as GameObject;
+        GameObject toInstatiate = PrefabUtility.InstantiatePrefab(prefab) as GameObject;
+        switch (obj)
+        {
+            case "SceneController":
+                PrefabUtility.UnpackPrefabInstance(toInstatiate, PrefabUnpackMode.Completely, InteractionMode.UserAction);
+                break;
+        }
+        
     }
 
 
@@ -89,4 +105,11 @@ public class PrefabTools : EditorWindow
     {
         Debug.Log(todebug);
     }
+}
+
+public enum PrefabTypes
+{
+    AudioManager,
+    GameManager,
+    SceneController
 }

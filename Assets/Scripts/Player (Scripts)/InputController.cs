@@ -11,14 +11,16 @@ public class InputController : MonoBehaviour
 {
     private static InputController instance;
     public static InputController Instance { get => instance; }
-
+    public ControllerType CurrentControlScheme { get => (ControllerType)Enum.Parse(typeof(ControllerType), playerInput.currentControlScheme); }
     public Action Jump;
     public Action Attack;
     public Action SpecialAbility;
     public Action DefensiveAbility;
     public Action Throw;
     public Action Pause;
+    public Action Escape;
     public Action<Vector2> OnMoveEvent;
+    public Action<ControllerType> OnControlChanged;
     private Vector2 move;
     /// <summary>
     /// Vector 2 de joystick|WASD
@@ -29,11 +31,19 @@ public class InputController : MonoBehaviour
 
     private void Awake()
     {
-        if (instance != null)
+        #region singleton
+        if (instance == null)
         {
-            Destroy(this);
+            instance = this;
         }
-        instance = this;
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
+        #endregion
+        DontDestroyOnLoad(gameObject);
+        playerInput = GetComponent<PlayerInput>();
     }
 
     public void OnMove(InputValue value)
@@ -68,4 +78,19 @@ public class InputController : MonoBehaviour
     {
         Pause?.Invoke();
     }
+    public void OnEscape()
+    {
+        Escape?.Invoke();
+    }
+    public void OnControlsChanged()
+    {
+        ControllerType type = CurrentControlScheme;
+        OnControlChanged?.Invoke(type);
+    }
+    
+}
+public enum ControllerType
+{
+    Keyboard,
+    XboxController
 }

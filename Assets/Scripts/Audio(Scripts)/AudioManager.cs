@@ -121,7 +121,6 @@ public class AudioManager : MonoBehaviour
         externalSounds = sounds;
         SetSounds(sounds);
         AddToDictionary(sounds);
-        Debug.Log("Received sounds: " + soundDictionary.Count);
     }
 }
 /// <summary>
