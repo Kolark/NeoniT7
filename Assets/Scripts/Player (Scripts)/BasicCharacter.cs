@@ -29,11 +29,15 @@ public class BasicCharacter : MonoBehaviour
         instance = this;
 
         character = GetComponent<CharacterMovement>();
+        
+
+    }
+    private void Start()
+    {
         inputController = InputController.Instance;
         inputController.Jump += character.Jump;
         inputController.Attack += Attack;
     }
-
     private void FixedUpdate()
     {
         character.Move();
