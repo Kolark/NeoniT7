@@ -90,7 +90,7 @@ public class CameraController : MonoBehaviour
         for (int i = 0; i < positions.Length; i++)
         {
             BoxCollider2D boxCollider2D;
-            positions[i].position = new Vector3(i * info.spacing*scale, 0, 0);
+            positions[i].position = new Vector3(i * info.spacing*scale,positions[i].position.y, 0);
             boxCollider2D = positions[i].GetComponent<BoxCollider2D>();
             boxCollider2D.size = new Vector2(info.width * scale, info.height* scale);
             Vector3 pos = boxCollider2D.transform.position;
