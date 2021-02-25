@@ -18,8 +18,8 @@ EditorBuildSettings:
     path: Assets/Scenes/BuildScenes/ChooseDifficulty.unity
     guid: 4419ba113654524438e47c07b8ba5155
   - enabled: 1
-    path: Assets/Scenes/TestFelipe.unity
-    guid: 02724ff53403d8f4ab5f24d480c9a09a
+    path: Assets/Scenes/LevelsScenes/Nivel_1.unity
+    guid: ceb0d544b4eb8a94cb6be5ad5f8e1df5
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 03ec7dc7f4b0c904d90ac82c54496ecb,
       type: 2}
