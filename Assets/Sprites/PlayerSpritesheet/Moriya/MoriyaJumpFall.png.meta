@@ -1,0 +1,590 @@
+fileFormatVersion: 2
+guid: 03dc615c4e5f3ab458cdf4b9e5dc0d76
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3242348963192797835
+    second: MoriyaJumpFall_0
+  - first:
+      213: -2796660906490320596
+    second: MoriyaJumpFall_1
+  - first:
+      213: -9082766935704239706
+    second: MoriyaJumpFall_2
+  - first:
+      213: -6983570153641918155
+    second: MoriyaJumpFall_3
+  - first:
+      213: 8164212546219840421
+    second: MoriyaJumpFall_4
+  - first:
+      213: -4233230834907184953
+    second: MoriyaJumpFall_5
+  - first:
+      213: -2543513392550515292
+    second: MoriyaJumpFall_6
+  - first:
+      213: 3903214407412004893
+    second: MoriyaJumpFall_7
+  - first:
+      213: -2881665116193539041
+    second: MoriyaJumpFall_8
+  - first:
+      213: -910027640605226805
+    second: MoriyaJumpFall_9
+  - first:
+      213: -8552667616486769779
+    second: MoriyaJumpFall_10
+  - first:
+      213: 6337626831349808106
+    second: MoriyaJumpFall_11
+  - first:
+      213: -1479676162456405477
+    second: MoriyaJumpFall_12
+  - first:
+      213: -3503716519644252956
+    second: MoriyaJumpFall_13
+  - first:
+      213: 485650087431995176
+    second: MoriyaJumpFall_14
+  - first:
+      213: -1812623993929887797
+    second: MoriyaJumpFall_15
+  - first:
+      213: -3547984605247476152
+    second: MoriyaJumpFall_16
+  - first:
+      213: -6357269556968584693
+    second: MoriyaJumpFall_17
+  - first:
+      213: 143995366852866209
+    second: MoriyaJumpFall_18
+  - first:
+      213: -2051004788288382949
+    second: MoriyaJumpFall_19
+  - first:
+      213: 5087170468697667819
+    second: MoriyaJumpFall_20
+  - first:
+      213: 6454958671047170720
+    second: MoriyaJumpFall_21
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MoriyaJumpFall_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 720
+        width: 114
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8a76fc04332ffc20800000000000000
+      internalID: 3242348963192797835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoriyaJumpFall_1
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 720
+        width: 112
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c292c6f09b34039d0800000000000000
+      internalID: -2796660906490320596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoriyaJumpFall_2
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 720
+        width: 81
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a18fa3389783f180800000000000000
+      internalID: -9082766935704239706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoriyaJumpFall_3
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 732
+        width: 79
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 531472022ff551f90800000000000000
+      internalID: -6983570153641918155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoriyaJumpFall_4
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 743
+        width: 79
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a398301e0c1d4170800000000000000
+      internalID: 8164212546219840421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoriyaJumpFall_5
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 519
+        width: 78
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c08029fbfa8045c0800000000000000
+      internalID: -4233230834907184953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoriyaJumpFall_6
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 542
+        width: 61
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ade39bab00a3bcd0800000000000000
+      internalID: -2543513392550515292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoriyaJumpFall_7
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 552
+        width: 57
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d18bafbc2d00b2630800000000000000
+      internalID: 3903214407412004893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoriyaJumpFall_8
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 571
+        width: 54
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1c36a338d44208d0800000000000000
+      internalID: -2881665116193539041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoriyaJumpFall_9
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 579
+        width: 54
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc840f1beaeee53f0800000000000000
+      internalID: -910027640605226805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoriyaJumpFall_10
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 329
+        width: 74
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8bb155ed12de4980800000000000000
+      internalID: -8552667616486769779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoriyaJumpFall_11
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 323
+        width: 92
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aebf6916606c3f750800000000000000
+      internalID: 6337626831349808106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoriyaJumpFall_12
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 318
+        width: 112
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1a3c22be52277be0800000000000000
+      internalID: -1479676162456405477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoriyaJumpFall_13
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 313
+        width: 112
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e4bfec836c406fc0800000000000000
+      internalID: -3503716519644252956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoriyaJumpFall_14
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 292
+        width: 61
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82f75827e206db600800000000000000
+      internalID: 485650087431995176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoriyaJumpFall_15
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 22
+        width: 89
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcf857ac41448d6e0800000000000000
+      internalID: -1812623993929887797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoriyaJumpFall_16
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 12
+        width: 95
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84e6bafacc603cec0800000000000000
+      internalID: -3547984605247476152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoriyaJumpFall_17
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 2
+        width: 89
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0a8b7b250176c7a0800000000000000
+      internalID: -6357269556968584693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoriyaJumpFall_18
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 0
+        width: 88
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a03192f5039ff100800000000000000
+      internalID: 143995366852866209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoriyaJumpFall_19
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 0
+        width: 97
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b181271030e5983e0800000000000000
+      internalID: -2051004788288382949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 1f7bea601a72a8648857d717116741aa
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
