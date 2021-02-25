@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UXML xmlns="UnityEngine.UIElements">
+  <Box class="PrefabButtons">
+    <Box class="manager">
+      <Button text="AudioManager" class="createPrefab"/>
+      <Box class="managerState" name="AudioManager"></Box>
+    </Box>
+    <Box class="manager">
+      <Button text="GameManager" class="createPrefab"/>
+      <Box class="managerState" name="GameManager"></Box>
+    </Box>
+    <Box class="manager">
+      <Button text="SceneController" class="createPrefab"/>
+      <Box class="managerState" name="SceneController"></Box>
+    </Box>
+    <Box class="manager">
+      <Button text="InputController" class="createPrefab"/>
+      <Box class="managerState" name="InputController"></Box>
+    </Box>
+  </Box>
+  <Button text="Refresh" class="RefreshButton"/>
+</UXML>

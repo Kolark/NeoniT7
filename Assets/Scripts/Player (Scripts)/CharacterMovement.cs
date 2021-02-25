@@ -26,11 +26,8 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField] private float groundCheckRadius = 0.2f;
     [SerializeField] private LayerMask groundlayer;
     [SerializeField] private Transform groundCheck;
-    [SerializeField] private float speedX = 5f;
-    [SerializeField] private float speedY = 5f;
     [SerializeField] private float acceleration = 5f;
     [SerializeField] private float maxSpeed = 5f;
-    [SerializeField] private float gravity = 0.25f;
     [SerializeField] private float terminalVelocity = 5f;
     [SerializeField] private float jumpForce = 8f;
     #endregion
