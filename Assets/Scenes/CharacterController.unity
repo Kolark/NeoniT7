@@ -527,11 +527,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   groundCheck: {fileID: 1887996652}
-  speedX: 10
-  speedY: 5
   acceleration: 16
   maxSpeed: 20
-  gravity: 0.25
   terminalVelocity: 5
   jumpForce: 16
 --- !u!4 &1259776386
@@ -542,7 +539,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1259776381}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 6.37, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1080229959}
