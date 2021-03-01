@@ -8,18 +8,32 @@ public class GameManager : MonoBehaviour
     private static GameManager instance;
     public static GameManager Instance => instance;
 
-    private ScenesBuild currentScene;
-    public ScenesBuild CurrentScene { get => currentScene;}
+    private GameScene currentScene;
+    public GameScene CurrentScene { get => currentScene;}
 
     private SceneType currentSceneType;
     private ControllerType controllerType {get=> InputController.Instance.CurrentControlScheme;}
 
+    private int saveSlot;
+    public int Saveslot { 
+        get => saveSlot; set
+        {
+            if(value >=0 && value < SaveSystem.SavesNumber)
+            {
+                saveSlot = value;
+            }
+            else
+            {
+                saveSlot = SaveSystem.SavesNumber-1;
+            }
+        }
+    }
     private void Awake()
     {
         if (instance == null)
         {
             instance = this;
-            currentScene = ScenesBuild.MainScreen;
+            currentScene = GameScene.MainScreen;
         }
         else
         {
@@ -31,7 +45,7 @@ public class GameManager : MonoBehaviour
     /// Receives a SceneBuild type of Parameter and loads that current scene
     /// </summary>
     /// <param name="scene"></param>
-    public void ChangeScene(ScenesBuild scene)
+    public void ChangeScene(GameScene scene)
     {
         SceneManager.LoadScene((int)scene);
         currentScene = scene;
@@ -47,7 +61,7 @@ public class GameManager : MonoBehaviour
         if (currentScene > 0)
         {
             currentSceneIndex--;
-            ChangeScene((ScenesBuild)currentSceneIndex);
+            ChangeScene((GameScene)currentSceneIndex);
             
         }
         Debug.Log("Back");
@@ -87,7 +101,7 @@ public class GameManager : MonoBehaviour
     }
 }
 
-public enum ScenesBuild
+public enum GameScene
 {
     MainScreen,
     SaveScreen,
