@@ -18,18 +18,21 @@ public class CharacterMovement : MonoBehaviour
     private bool grounded;
     private bool facingRight = true;
     private bool isCrouching;
+    public bool canJump = true;
     private float verticalVelocity;
     private Rigidbody2D rb;
+    
     Vector2 velocity;
     #endregion
     #region SerializedVariables
     [SerializeField] private float groundCheckRadius = 0.2f;
     [SerializeField] private LayerMask groundlayer;
     [SerializeField] private Transform groundCheck;
-    [SerializeField] private float acceleration = 5f;
+    //[SerializeField] private float acceleration = 5f;
     [SerializeField] private float maxSpeed = 5f;
     [SerializeField] private float terminalVelocity = 5f;
     [SerializeField] private float jumpForce = 8f;
+    [SerializeField] private float fallMultiplier = 10f;
     #endregion
     private void Awake()
     {
@@ -40,6 +43,8 @@ public class CharacterMovement : MonoBehaviour
 
     public void Move()
     {
+        BetterJump();
+
         Vector2 inputVector = GetInput();
         #region Flip
         if (inputVector.x > 0 && !facingRight)
@@ -52,17 +57,24 @@ public class CharacterMovement : MonoBehaviour
         }
         #endregion 
 
-        anim?.SetFloat("Speed", inputVector.magnitude);
+        anim?.SetFloat("Speed", Mathf.Abs(inputVector.x));
         grounded = Grounded();
         anim?.SetBool("IsGrounded", grounded);
         //TO-DO: Check gravity if needed.        
         //inputVector.y = verticalVelocity;
         verticalVelocity = rb.velocity.y;
         anim?.SetFloat("VerticalVelocity", verticalVelocity);
-        velocity = rb.velocity;
-        velocity += inputVector * acceleration * Time.deltaTime;
-        velocity.x = Mathf.Clamp(velocity.x, -maxSpeed, maxSpeed);
-        rb.velocity = velocity;
+
+        if (!isCrouching)
+        {
+            Vector2 direcction = new Vector2(inputVector.x, 0);
+            transform.Translate(direcction * Time.deltaTime * maxSpeed);
+        }
+
+        //velocity = rb.velocity;
+        //velocity = inputVector * Time.deltaTime * maxSpeed;
+        //velocity.x = Mathf.Clamp(velocity.x, -maxSpeed, maxSpeed);
+        //rb.velocity = velocity;
     }
 
     public void Crouch()
@@ -78,13 +90,22 @@ public class CharacterMovement : MonoBehaviour
 
     public void Jump()
     {
-        if (grounded)
+        if (grounded && canJump)
         {
             rb.velocity = new Vector2(rb.velocity.x, 0f);
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             anim?.SetTrigger("Jump");
         }
     }
+
+    public void BetterJump()
+    {
+        if (rb.velocity.y < 0)
+        {
+            rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
+        }
+    }
+
     private Vector2 GetInput()
     {
         return InputController.Instance.Move.normalized;

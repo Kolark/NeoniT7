@@ -5,12 +5,15 @@ using UnityEngine;
 public class TransitionBehaviour : StateMachineBehaviour
 {
     [SerializeField] string animation;
+    [SerializeField] string gamerName;
     Animator transitionAnimator;
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        Debug.Log("Enter" + gamerName);
         transitionAnimator = animator;
         BasicCharacter.Instance.canReceiveInput = true;
         BasicCharacter.Instance.onAttack += OnAttack;
+        BasicCharacter.Instance.isAttacking = false;
     }
     public void OnAttack()
     {
@@ -18,7 +21,10 @@ public class TransitionBehaviour : StateMachineBehaviour
     }
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        Debug.Log("Exit" + gamerName);
         BasicCharacter.Instance.onAttack -= OnAttack;
         BasicCharacter.Instance.canReceiveInput = false;
+        BasicCharacter.Instance.isAttacking = false;
+        BasicCharacter.Instance.Character.canJump = true;
     }
 }

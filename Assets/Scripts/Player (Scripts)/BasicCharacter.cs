@@ -6,6 +6,7 @@ public class BasicCharacter : MonoBehaviour
 {
     private static BasicCharacter instance;
     public static BasicCharacter Instance { get => instance; }
+    public CharacterMovement Character { get => character; }
 
     CharacterMovement character;
     InputController inputController;
@@ -13,6 +14,7 @@ public class BasicCharacter : MonoBehaviour
     [SerializeField] Transform pos;
 
     public bool canReceiveInput;
+    public bool isAttacking = false;
     //public bool inputReceived;
 
     public Action onAttack;
@@ -40,14 +42,20 @@ public class BasicCharacter : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        character.Move();
         character.Crouch();
+
+        if (!isAttacking)
+        {
+            character.Move();
+        }
     }
 
     public void Attack()
     {
         if (canReceiveInput)
         {
+            isAttacking = true;
+            character.canJump = false;
             canReceiveInput = false;
             Collider2D Hit = Physics2D.OverlapPoint(pos.position, hurtBoxEnemy);
             IEnemyHurtBox enemy = Hit?.GetComponent<IEnemyHurtBox>();
@@ -55,6 +63,8 @@ public class BasicCharacter : MonoBehaviour
             onAttack?.Invoke();
         }
     }
+
+
 
     private void OnDrawGizmos()
     {
