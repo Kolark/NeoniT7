@@ -18,7 +18,7 @@ public class CharacterMovement : MonoBehaviour
     private bool grounded;
     private bool facingRight = true;
     private bool isCrouching;
-    public bool canJump = true;
+    private bool canJump = true;
     private float verticalVelocity;
     private Rigidbody2D rb;
     
@@ -33,6 +33,9 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField] private float terminalVelocity = 5f;
     [SerializeField] private float jumpForce = 8f;
     [SerializeField] private float fallMultiplier = 10f;
+
+    public bool IsCrouching { get => isCrouching;}
+    public bool CanJump { get => canJump; set => canJump = value; }
     #endregion
     private void Awake()
     {
@@ -90,7 +93,7 @@ public class CharacterMovement : MonoBehaviour
 
     public void Jump()
     {
-        if (grounded && canJump)
+        if (grounded && canJump && !isCrouching)
         {
             rb.velocity = new Vector2(rb.velocity.x, 0f);
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);

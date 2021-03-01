@@ -42,9 +42,10 @@ public class BasicCharacter : MonoBehaviour
     }
     private void FixedUpdate()
     {
+        Debug.Log("canjump: " + character.CanJump);
         character.Crouch();
 
-        if (!isAttacking)
+        if (!isAttacking && !character.IsCrouching)
         {
             character.Move();
         }
@@ -55,8 +56,8 @@ public class BasicCharacter : MonoBehaviour
         if (canReceiveInput)
         {
             isAttacking = true;
-            character.canJump = false;
             canReceiveInput = false;
+            character.CanJump = false;
             Collider2D Hit = Physics2D.OverlapPoint(pos.position, hurtBoxEnemy);
             IEnemyHurtBox enemy = Hit?.GetComponent<IEnemyHurtBox>();
             enemy?.OnReceiveDamage();

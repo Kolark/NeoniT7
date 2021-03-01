@@ -63,13 +63,13 @@ AnimatorStateMachine:
     m_Position: {x: 270, y: 100, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -7048400692895215438}
-    m_Position: {x: 930, y: -150, z: 0}
+    m_Position: {x: 910, y: -180, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1716640942125743688}
-    m_Position: {x: 460, y: -420, z: 0}
+    m_Position: {x: -40, y: -160, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 3517644098460075333}
-    m_Position: {x: 930, y: -420, z: 0}
+    m_Position: {x: 440, y: -290, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 8672947838790186806}
     m_Position: {x: 930, y: 90, z: 0}
@@ -93,13 +93,13 @@ AnimatorStateMachine:
     m_Position: {x: 940, y: 260, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 8849144137644040244}
-    m_Position: {x: 930, y: -550, z: 0}
+    m_Position: {x: 180, y: -380, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
-  m_AnyStatePosition: {x: 50, y: -30, z: 0}
+  m_AnyStatePosition: {x: -300, y: 10, z: 0}
   m_EntryPosition: {x: 50, y: 100, z: 0}
   m_ExitPosition: {x: 1200, y: -10, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
@@ -358,31 +358,6 @@ AnimatorStateTransition:
   m_TransitionDuration: 0
   m_TransitionOffset: 0
   m_ExitTime: 0.625
-  m_HasExitTime: 0
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
---- !u!1101 &-4881338488457693361
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: IsGrounded
-    m_EventTreshold: 0
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 5841070143504010459}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0
-  m_TransitionOffset: 0
-  m_ExitTime: 0.5
   m_HasExitTime: 0
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
@@ -762,7 +737,6 @@ AnimatorState:
   m_Transitions:
   - {fileID: -8464915099571128119}
   - {fileID: 926052874256799702}
-  - {fileID: -4881338488457693361}
   m_StateMachineBehaviours:
   - {fileID: 7055716611893861185}
   m_Position: {x: 50, y: 50, z: 0}
@@ -1105,6 +1079,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animation: AttackThree
   gamerName: TransTwo
+--- !u!1101 &5534358784439989927
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions: []
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 3517644098460075333}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_ExitTime: 1
+  m_HasExitTime: 1
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!1102 &5841070143504010459
 AnimatorState:
   serializedVersion: 5
@@ -1215,28 +1211,6 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
---- !u!1101 &7569463564957212536
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions: []
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 5841070143504010459}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0
-  m_TransitionOffset: 0
-  m_ExitTime: 1
-  m_HasExitTime: 1
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
 --- !u!1102 &8672947838790186806
 AnimatorState:
   serializedVersion: 5
@@ -1299,7 +1273,7 @@ AnimatorState:
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
-  - {fileID: 7569463564957212536}
+  - {fileID: 5534358784439989927}
   m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
