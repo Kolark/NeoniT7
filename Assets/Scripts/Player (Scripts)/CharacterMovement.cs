@@ -18,7 +18,7 @@ public class CharacterMovement : MonoBehaviour
     private bool grounded;
     private bool facingRight = true;
     private bool isCrouching;
-    private bool canJump = true;
+    [SerializeField]private bool canJump = true;
     private float verticalVelocity;
     private Rigidbody2D rb;
     
@@ -49,35 +49,22 @@ public class CharacterMovement : MonoBehaviour
         BetterJump();
 
         Vector2 inputVector = GetInput();
-        #region Flip
-        if (inputVector.x > 0 && !facingRight)
-        {
-            Flip();
-        }
-        else if (inputVector.x < 0 && facingRight)
-        {
-            Flip();
-        }
-        #endregion 
 
-        anim?.SetFloat("Speed", Mathf.Abs(inputVector.x));
-        grounded = Grounded();
-        anim?.SetBool("IsGrounded", grounded);
-        //TO-DO: Check gravity if needed.        
-        //inputVector.y = verticalVelocity;
         verticalVelocity = rb.velocity.y;
-        anim?.SetFloat("VerticalVelocity", verticalVelocity);
-
         if (!isCrouching)
         {
             Vector2 direcction = new Vector2(inputVector.x, 0);
             transform.Translate(direcction * Time.deltaTime * maxSpeed);
         }
+    }
 
-        //velocity = rb.velocity;
-        //velocity = inputVector * Time.deltaTime * maxSpeed;
-        //velocity.x = Mathf.Clamp(velocity.x, -maxSpeed, maxSpeed);
-        //rb.velocity = velocity;
+    public void UpdateAnimatorValues()
+    {
+        Vector2 inputVector = GetInput();
+        anim?.SetFloat("Speed", Mathf.Abs(inputVector.x));
+        grounded = Grounded();
+        anim?.SetBool("IsGrounded", grounded);
+        anim?.SetFloat("VerticalVelocity", verticalVelocity);
     }
 
     public void Crouch()
@@ -117,12 +104,23 @@ public class CharacterMovement : MonoBehaviour
     {
         return Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundlayer);
     }
-    private void Flip()
+    public void Flip()
     {
-        facingRight = !facingRight;
-        Vector3 theScale = transform.localScale;
-        theScale.x *= -1;
-        transform.localScale = theScale;
+        Vector2 inputVector = GetInput();
+        if (inputVector.x > 0 && !facingRight)
+        {
+            facingRight = !facingRight;
+            Vector3 theScale = transform.localScale;
+            theScale.x *= -1;
+            transform.localScale = theScale;
+        }
+        else if (inputVector.x < 0 && facingRight)
+        {
+            facingRight = !facingRight;
+            Vector3 theScale = transform.localScale;
+            theScale.x *= -1;
+            transform.localScale = theScale;
+        }
     }
 
     private void OnDrawGizmos()

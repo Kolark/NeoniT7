@@ -14,7 +14,8 @@ public class BasicCharacter : MonoBehaviour
     [SerializeField] Transform pos;
 
     public bool canReceiveInput;
-    public bool isAttacking = false;
+    public bool canMove = true;
+    public bool canFlip = true;
     //public bool inputReceived;
 
     public Action onAttack;
@@ -40,12 +41,19 @@ public class BasicCharacter : MonoBehaviour
         inputController.Jump += character.Jump;
         inputController.Attack += Attack;
     }
+    private void Update()
+    {
+        character.UpdateAnimatorValues();   
+    }
     private void FixedUpdate()
     {
         Debug.Log("canjump: " + character.CanJump);
         character.Crouch();
-
-        if (!isAttacking && !character.IsCrouching)
+        if (canFlip)
+        {
+            character.Flip();
+        }
+        if (canMove && !character.IsCrouching)
         {
             character.Move();
         }
@@ -55,7 +63,7 @@ public class BasicCharacter : MonoBehaviour
     {
         if (canReceiveInput)
         {
-            isAttacking = true;
+            //isAttacking = true;
             canReceiveInput = false;
             character.CanJump = false;
             Collider2D Hit = Physics2D.OverlapPoint(pos.position, hurtBoxEnemy);
