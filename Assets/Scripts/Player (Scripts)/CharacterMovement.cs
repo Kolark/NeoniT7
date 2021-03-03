@@ -36,6 +36,9 @@ public class CharacterMovement : MonoBehaviour
 
     public bool IsCrouching { get => isCrouching;}
     public bool CanJump { get => canJump; set => canJump = value; }
+    public Animator Anim { get => anim;}
+
+    private bool isJumping;
     #endregion
     private void Awake()
     {
@@ -82,6 +85,7 @@ public class CharacterMovement : MonoBehaviour
     {
         if (grounded && canJump && !isCrouching)
         {
+            //isJumping = true;
             rb.velocity = new Vector2(rb.velocity.x, 0f);
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             anim?.SetTrigger("Jump");

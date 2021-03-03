@@ -27,5 +27,6 @@ public class EndAttackBehaviour : StateMachineBehaviour
         {
             BasicCharacter.Instance.canFlip = true;
         }
+
     }
 }
