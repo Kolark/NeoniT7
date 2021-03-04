@@ -2155,11 +2155,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   groundCheck: {fileID: 1952533406}
-  speedX: 10
-  speedY: 5
   acceleration: 16
   maxSpeed: 20
-  gravity: 0.25
   terminalVelocity: 5
   jumpForce: 8
 --- !u!4 &1320680267
@@ -2257,6 +2254,7 @@ MonoBehaviour:
   jumpEnabled: 1
   directionLookEnabled: 1
   attackEnabled: 1
+  attackRate: 1
 --- !u!50 &1426144697
 Rigidbody2D:
   serializedVersion: 4
@@ -2591,6 +2589,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1946948241}
   - component: {fileID: 1946948240}
+  - component: {fileID: 1946948242}
+  - component: {fileID: 1946948243}
   m_Layer: 0
   m_Name: EnemySprite
   m_TagString: Untagged
@@ -2663,6 +2663,38 @@ Transform:
   m_Father: {fileID: 1426144699}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1946948242
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1946948239}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6965640ae16c25546a7b8cef9faf1450, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1946948243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1946948239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5098a93c2c10ee94f92324ee1de950b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 1946948242}
 --- !u!1 &1952533405
 GameObject:
   m_ObjectHideFlags: 0

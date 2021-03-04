@@ -28,6 +28,7 @@ public class EnemyAI : MonoBehaviour
     public bool jumpEnabled = true;
     public bool directionLookEnabled = true;
     public bool attackEnabled = true;
+    [SerializeField] float attackRate = 2f;
 
     private Path path;
     private int currentWaypoint = 0;
@@ -37,11 +38,14 @@ public class EnemyAI : MonoBehaviour
     Seeker seeker; 
     Rigidbody2D rb;
     Vector2 velocity;
+    Animator animator;
     float t;
+    float nextAttackTime;
 
     public EnemyState State { get => state; set => state = value; }
 
     void Start() {
+        animator = GetComponentInChildren<Animator>();
         enemy = GetComponent<EnemyController>();
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
@@ -62,6 +66,7 @@ public class EnemyAI : MonoBehaviour
     public virtual void PathfindingLogic() {
         switch (state) {
             case EnemyState.Idle:
+                animator.SetBool("isRunning", false);
                 if (TargetInDistance() && followEnabled) {
                     InvokeRepeating("UpdatePath", 0f, pathUpdateSeconds);
                     state = EnemyState.Chase;
@@ -73,6 +78,8 @@ public class EnemyAI : MonoBehaviour
                 if (currentWaypoint >= path.vectorPath.Count) {
                     return;
                 }
+                animator.SetBool("isRunning", true);
+
                 //See if colliding with anything
                 Vector3 startOffset = transform.position - new Vector3(0f, GetComponent<Collider2D>().bounds.extents.y + jumpCheckOffset);
                 isGrounded = Physics2D.Raycast(startOffset, Vector3.down, 0.05f);
@@ -108,7 +115,8 @@ public class EnemyAI : MonoBehaviour
                 if (distance < nextWaypointDistance) currentWaypoint++;
 
                 //Check attack availability
-                float distanceToTarget = Vector2.Distance(transform.position, target.position);
+                float distanceToTarget = 0;
+                if (target!= null) distanceToTarget = Vector2.Distance(transform.position, target.position);
                 if (distanceToTarget < enemy.AttackDistance) {
                     rb.velocity = Vector2.zero;
                     state = EnemyState.Attack;
@@ -132,8 +140,16 @@ public class EnemyAI : MonoBehaviour
 
                 //animator.SetBool("IsWalking", true); // Some sort of walking animation.(WIP)
                 break;
-            case EnemyState.Attack:
-                enemy.Attack();
+            case EnemyState.Attack:                                   
+                if (Time.time >= nextAttackTime) {
+                    animator.SetBool("isAttacking", true);
+                    animator.SetBool("isRunning", false);
+                    //animator.SetBool("isAttacking", true); 
+                    enemy.Attack();
+                    nextAttackTime = Time.time + 1f / attackRate;
+                }
+                if (target == null) state = EnemyState.Idle;
+                else state = EnemyState.Chase;
                 //TO-DO: Attack logic goes here.
                 break;
             case EnemyState.Dead:
