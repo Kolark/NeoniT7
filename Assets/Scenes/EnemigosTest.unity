@@ -2254,7 +2254,7 @@ MonoBehaviour:
   jumpEnabled: 1
   directionLookEnabled: 1
   attackEnabled: 1
-  attackRate: 2
+  attackRate: 1
 --- !u!50 &1426144697
 Rigidbody2D:
   serializedVersion: 4
@@ -2590,6 +2590,7 @@ GameObject:
   - component: {fileID: 1946948241}
   - component: {fileID: 1946948240}
   - component: {fileID: 1946948242}
+  - component: {fileID: 1946948243}
   m_Layer: 0
   m_Name: EnemySprite
   m_TagString: Untagged
@@ -2681,6 +2682,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1946948243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1946948239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5098a93c2c10ee94f92324ee1de950b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 1946948242}
 --- !u!1 &1952533405
 GameObject:
   m_ObjectHideFlags: 0
