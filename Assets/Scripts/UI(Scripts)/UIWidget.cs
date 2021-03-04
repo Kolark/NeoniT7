@@ -15,9 +15,8 @@ public class UIWidget : MonoBehaviour
     [SerializeField] Vector2 finalScale;
     [SerializeField] Ease easeType;
     [SerializeField] float duration;
-    
-    [SerializeField] ScenesBuild sceneToGo;
-    private void Awake()
+    [SerializeField] GameScene sceneToGo;
+    protected virtual void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
         @event = GetComponent<EventTrigger2>();
@@ -28,24 +27,24 @@ public class UIWidget : MonoBehaviour
         @event.triggers[2].callback.AddListener((eventData)=> { OnSelect(); });
         @event.triggers[3].callback.AddListener((eventData) => { OnDeselect(); });
     }
-    public void OnPointerDown()
+    protected virtual void OnPointerDown()
     {
         AudioManager.Instance.Play("Nota-001");
         GameManager.Instance.ChangeScene(sceneToGo);
     }
-    public void OnSelect()
+    protected virtual void OnSelect()
     {
         rectTransform.DOAnchorPos(initPos + finalPos, duration).SetEase(easeType);
         rectTransform.DOScale(initScale + finalScale, duration).SetEase(easeType);
         AudioManager.Instance.Play("Test");
     }
-    public void OnDeselect()
+    protected virtual void OnDeselect()
     {
         rectTransform.DOAnchorPos(initPos, duration).SetEase(easeType);
         rectTransform.DOScale(initScale, duration).SetEase(easeType);
     }
 
-    private void OnValidate()
+    protected virtual void OnValidate()
     {
         @event = GetComponent<EventTrigger2>();
         if(@event.triggers.Count != 4)
