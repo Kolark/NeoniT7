@@ -16,7 +16,8 @@ MonoBehaviour:
     m_Code: es
   m_SharedData: {fileID: 11400000, guid: 67a4ed85b768d6b4e8a82d0082e8d07b, type: 2}
   m_Metadata:
-    m_Items: []
+    m_Items:
+    - id: 0
   m_TableData:
   - m_Id: 750724358144
     m_Localized: Salir
@@ -26,5 +27,19 @@ MonoBehaviour:
     m_Localized: Jugar
     m_Metadata:
       m_Items: []
+  - m_Id: 3883097215508480
+    m_Localized: 'Jugado por ultima vez: {lastSaved}'
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 3883287129399296
+    m_Localized: 'Nivel Actual: {lastlevelplayed}'
+    m_Metadata:
+      m_Items:
+      - id: 0
   references:
     version: 1
+    00000000:
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00a0e83dd4cb0d0000a02806a8cb0d00
