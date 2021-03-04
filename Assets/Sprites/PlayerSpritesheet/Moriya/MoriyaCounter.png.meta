@@ -1,0 +1,536 @@
+fileFormatVersion: 2
+guid: 48782c5a51aa4424d8d2dee8257ed394
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1938572999025688982
+    second: MoriyaCounter_0
+  - first:
+      213: 3108915143397510336
+    second: MoriyaCounter_1
+  - first:
+      213: -1500524912083126864
+    second: MoriyaCounter_2
+  - first:
+      213: -7601476965317776813
+    second: MoriyaCounter_3
+  - first:
+      213: -1943837260343379215
+    second: MoriyaCounter_4
+  - first:
+      213: -7351356146273949149
+    second: MoriyaCounter_5
+  - first:
+      213: -6685099061389919513
+    second: MoriyaCounter_6
+  - first:
+      213: -5926804948894595528
+    second: MoriyaCounter_7
+  - first:
+      213: 1182483905468610845
+    second: MoriyaCounter_8
+  - first:
+      213: 268234727066530482
+    second: MoriyaCounter_9
+  - first:
+      213: -4911071497893345753
+    second: MoriyaCounter_10
+  - first:
+      213: -7204480613560936334
+    second: MoriyaCounter_11
+  - first:
+      213: 388113026201233469
+    second: MoriyaCounter_12
+  - first:
+      213: 3848885322740859656
+    second: MoriyaCounter_13
+  - first:
+      213: -8359125954451014200
+    second: MoriyaCounter_14
+  - first:
+      213: -4131630827539473270
+    second: MoriyaCounter_15
+  - first:
+      213: -4531576064350153654
+    second: MoriyaCounter_16
+  - first:
+      213: -2653295631041915535
+    second: MoriyaCounter_17
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MoriyaCounter_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1050
+        width: 300
+        height: 210
+      alignment: 9
+      pivot: {x: 0.24, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6ef8edd02ec815e0800000000000000
+      internalID: -1938572999025688982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoriyaCounter_1
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1050
+        width: 300
+        height: 210
+      alignment: 9
+      pivot: {x: 0.24, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cc8a07e9d5152b20800000000000000
+      internalID: 3108915143397510336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoriyaCounter_2
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1050
+        width: 300
+        height: 210
+      alignment: 9
+      pivot: {x: 0.24, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b539a6ea801d2be0800000000000000
+      internalID: -1500524912083126864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoriyaCounter_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 840
+        width: 300
+        height: 210
+      alignment: 9
+      pivot: {x: 0.24, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35a6be179f0228690800000000000000
+      internalID: -7601476965317776813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoriyaCounter_4
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 840
+        width: 300
+        height: 210
+      alignment: 9
+      pivot: {x: 0.24, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fa70148f4a1605e0800000000000000
+      internalID: -1943837260343379215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoriyaCounter_5
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 840
+        width: 300
+        height: 210
+      alignment: 9
+      pivot: {x: 0.24, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32ae4fbb88cbaf990800000000000000
+      internalID: -7351356146273949149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoriyaCounter_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 630
+        width: 300
+        height: 210
+      alignment: 9
+      pivot: {x: 0.24, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ea7e85a2d1c933a0800000000000000
+      internalID: -6685099061389919513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoriyaCounter_7
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 630
+        width: 300
+        height: 210
+      alignment: 9
+      pivot: {x: 0.24, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8364c10fc42cfbda0800000000000000
+      internalID: -5926804948894595528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoriyaCounter_8
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 630
+        width: 300
+        height: 210
+      alignment: 9
+      pivot: {x: 0.24, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d19b212d8d6096010800000000000000
+      internalID: 1182483905468610845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoriyaCounter_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 420
+        width: 300
+        height: 210
+      alignment: 9
+      pivot: {x: 0.24, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b279372016f8b300800000000000000
+      internalID: 268234727066530482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoriyaCounter_10
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 420
+        width: 300
+        height: 210
+      alignment: 9
+      pivot: {x: 0.24, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 726858d1e7e58dbb0800000000000000
+      internalID: -4911071497893345753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoriyaCounter_11
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 420
+        width: 300
+        height: 210
+      alignment: 9
+      pivot: {x: 0.24, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 278138d8d0b840c90800000000000000
+      internalID: -7204480613560936334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoriyaCounter_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 210
+        width: 300
+        height: 210
+      alignment: 9
+      pivot: {x: 0.24, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d382d63bdbad26500800000000000000
+      internalID: 388113026201233469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoriyaCounter_13
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 210
+        width: 300
+        height: 210
+      alignment: 9
+      pivot: {x: 0.24, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8030f2b0fccf96530800000000000000
+      internalID: 3848885322740859656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoriyaCounter_14
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 210
+        width: 300
+        height: 210
+      alignment: 9
+      pivot: {x: 0.24, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cdf234ab3b6efb80800000000000000
+      internalID: -8359125954451014200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoriyaCounter_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 300
+        height: 210
+      alignment: 9
+      pivot: {x: 0.24, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8cd47517af79a6c0800000000000000
+      internalID: -4131630827539473270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoriyaCounter_16
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 300
+        height: 210
+      alignment: 9
+      pivot: {x: 0.24, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a441fbb249b9c11c0800000000000000
+      internalID: -4531576064350153654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoriyaCounter_17
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 300
+        height: 210
+      alignment: 9
+      pivot: {x: 0.24, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17596ab6ea99d2bd0800000000000000
+      internalID: -2653295631041915535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 2be21a1e05edc0d4183373ce7e8ccdf5
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
