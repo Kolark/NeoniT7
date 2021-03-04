@@ -14,5 +14,13 @@ public class DummyEnemy : MonoBehaviour, IEnemyHurtBox
         Debug.Log("enemy attacked");
         rend.DOColor(Color.red, 0.15f).OnComplete(()=> { rend.DOColor(Color.white, 0.15f);});
     }
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            FindObjectOfType<PlayerDamageHandler>().OnReceiveDamage();
+        }
+    }
 }
-;

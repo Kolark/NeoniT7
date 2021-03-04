@@ -23,6 +23,14 @@ MonoBehaviour:
     m_Key: Play
     m_Metadata:
       m_Items: []
+  - m_Id: 3883097215508480
+    m_Key: LastPlayed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3883287129399296
+    m_Key: CurrentLevel
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
