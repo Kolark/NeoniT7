@@ -14,6 +14,7 @@ public class CharacterMovement : MonoBehaviour
     #region PrivateVariables
     private Animator anim;
     private CharacterController controller;
+    private SoundModule soundModule;
     private Vector3 slopeNormal;
     private bool grounded;
     private bool facingRight = true;
@@ -37,11 +38,13 @@ public class CharacterMovement : MonoBehaviour
     public bool IsCrouching { get => isCrouching;}
     public bool CanJump { get => canJump; set => canJump = value; }
     public Animator Anim { get => anim;}
+    public bool Grounded { get => grounded;}
 
     private bool isJumping;
     #endregion
     private void Awake()
     {
+        soundModule = GetComponent<SoundModule>();
         rb = GetComponent<Rigidbody2D>();
         controller = GetComponent<CharacterController>();
         anim = transform.GetChild(0).GetComponent<Animator>();
@@ -65,7 +68,7 @@ public class CharacterMovement : MonoBehaviour
     {
         Vector2 inputVector = GetInput();
         anim?.SetFloat("Speed", Mathf.Abs(inputVector.x));
-        grounded = Grounded();
+        grounded = GetGrounded();
         anim?.SetBool("IsGrounded", grounded);
         anim?.SetFloat("VerticalVelocity", verticalVelocity);
     }
@@ -89,6 +92,7 @@ public class CharacterMovement : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, 0f);
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             anim?.SetTrigger("Jump");
+            soundModule.Play((int)CharacterSounds.Jump);
         }
     }
 
@@ -104,7 +108,7 @@ public class CharacterMovement : MonoBehaviour
     {
         return InputController.Instance.Move.normalized;
     }
-    public bool Grounded()
+    public bool GetGrounded()
     {
         return Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundlayer);
     }

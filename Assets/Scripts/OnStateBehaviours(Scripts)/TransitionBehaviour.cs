@@ -14,7 +14,7 @@ public class TransitionBehaviour : StateMachineBehaviour
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         transitionAnimator = animator;
-        Debug.Log(gamerName + "Enter");
+        //Debug.Log(gamerName + "Enter");
         BasicCharacter.Instance.canReceiveInput = true;
         BasicCharacter.Instance.currentAttack = AttackType;
         BasicCharacter.Instance.onAttack += OnAttack;
@@ -28,7 +28,7 @@ public class TransitionBehaviour : StateMachineBehaviour
     {
         BasicCharacter.Instance.onAttack -= OnAttack;
         BasicCharacter.Instance.canReceiveInput = false;
-        Debug.Log(gamerName + "Exit");
+        //Debug.Log(gamerName + "Exit");
 
     }
 }

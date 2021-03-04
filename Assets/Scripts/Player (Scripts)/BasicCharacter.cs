@@ -4,6 +4,8 @@ using UnityEngine;
 using System;
 public class BasicCharacter : MonoBehaviour
 {
+    ///TO-DO AGREGAR ANIMACION DE DAÑO
+
     #region singleton
     private static BasicCharacter instance;
     public static BasicCharacter Instance { get => instance; }
@@ -11,6 +13,7 @@ public class BasicCharacter : MonoBehaviour
     #region components
     protected CharacterMovement character;
     protected InputController inputController;
+    protected SoundModule soundModule;
     public CharacterMovement Character { get => character; }
     #endregion
     #region AttackInfos
@@ -47,8 +50,10 @@ public class BasicCharacter : MonoBehaviour
         if (instance != null)
         {
             Destroy(this.gameObject);
+            return;
         }
         instance = this;
+        soundModule = GetComponent<SoundModule>();
         character = GetComponent<CharacterMovement>();
     }
     protected virtual void Start()
@@ -114,18 +119,21 @@ public class BasicCharacter : MonoBehaviour
     public virtual void AttackOne()
     {
         Collider2D Hit = Physics2D.OverlapCircle(firstAttack.pos.position, firstAttack.radius, firstAttack.layer);
+        soundModule.Play((int)CharacterSounds.combo1);
         IEnemyHurtBox enemy = Hit?.GetComponent<IEnemyHurtBox>();
         enemy?.OnReceiveDamage();
     }
     public virtual void AttackTwo()
     {
         Collider2D Hit = Physics2D.OverlapCircle(secondAttack.pos.position, secondAttack.radius, secondAttack.layer);
+        soundModule.Play((int)CharacterSounds.combo2);
         IEnemyHurtBox enemy = Hit?.GetComponent<IEnemyHurtBox>();
         enemy?.OnReceiveDamage();
     }
     public virtual void AttackThree()
     {
         Collider2D[] Hit = Physics2D.OverlapCircleAll(thirdAttack.pos.position, thirdAttack.radius, thirdAttack.layer);
+        soundModule.Play((int)CharacterSounds.combo3);
         for (int i = 0; i < Hit.Length; i++)
         {
             IEnemyHurtBox enemy = Hit[i]?.GetComponent<IEnemyHurtBox>();
@@ -159,23 +167,32 @@ public class BasicCharacter : MonoBehaviour
     public virtual void Ultimate()
     {
         if (!isAlive) return;
-        character.Anim.SetTrigger("Special");
+        if (character.Grounded)
+        {
+            character.Anim.SetTrigger("Special");
+        }
+        
     }
     
     public virtual void Throwable()
     {
         if (!isAlive) return;
-        character.Anim.SetTrigger("Throw");
+        if (character.Grounded)
+        {
+            character.Anim.SetTrigger("Throw");
+        }
     }
     public virtual void Damage()
     {
         if (canReceiveDamage)
         {
             maxLife--;
+            soundModule.Play((int)CharacterSounds.getHit);
             bool isDead = maxLife <= 0;
             if (isDead)
             {
                 isAlive = false;
+                character.CanJump = false;
                 character.Anim.SetTrigger("Death");
             }
         }
@@ -222,7 +239,11 @@ public class BasicCharacter : MonoBehaviour
         }
         
     }
-    
+ 
+}
+public enum CharacterSounds
+{
+    combo1, combo2, combo3, getHit,Jump
 }
 public enum attackTypes
 {

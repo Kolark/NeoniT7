@@ -4,6 +4,7 @@ using UnityEngine;
 using DG.Tweening;
 public class SamuraiCharacter : BasicCharacter
 {
+    
     ///TO-DO sincronizar el ataque del ultimate con la animacion
 
     bool isParry = false;
@@ -27,6 +28,9 @@ public class SamuraiCharacter : BasicCharacter
     public override void Throwable()
     {
         base.Throwable();
+        GameObject gameObject = Instantiate(projectil,firstAttack.pos.position,Quaternion.identity);
+        Proyectil proyectil = gameObject.GetComponent<Proyectil>();
+        proyectil.push(Vector2.right * transform.localScale.x);
     }
     public override void Ultimate()
     {
@@ -68,4 +72,5 @@ public class SamuraiCharacter : BasicCharacter
             enemy?.OnReceiveDamage();
         }
     }
+    
 }
