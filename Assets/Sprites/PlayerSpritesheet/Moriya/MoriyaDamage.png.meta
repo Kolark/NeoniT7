@@ -1,0 +1,512 @@
+fileFormatVersion: 2
+guid: 50a50bf5b3fb9674d8b59f40d00b796a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8254316352447086164
+    second: MoriyaDamage_0
+  - first:
+      213: 5040524915022928434
+    second: MoriyaDamage_1
+  - first:
+      213: 1567866158939232813
+    second: MoriyaDamage_2
+  - first:
+      213: 4631994092746513816
+    second: MoriyaDamage_3
+  - first:
+      213: 7169483568886473134
+    second: MoriyaDamage_4
+  - first:
+      213: -5592280420976317878
+    second: MoriyaDamage_5
+  - first:
+      213: -9145604245585287486
+    second: MoriyaDamage_6
+  - first:
+      213: 5397358247498402569
+    second: MoriyaDamage_7
+  - first:
+      213: 8973454184429278043
+    second: MoriyaDamage_8
+  - first:
+      213: -5246614492033543364
+    second: MoriyaDamage_9
+  - first:
+      213: 7986212698647726525
+    second: MoriyaDamage_10
+  - first:
+      213: -1703100464602461033
+    second: MoriyaDamage_11
+  - first:
+      213: -2699179546359805090
+    second: MoriyaDamage_12
+  - first:
+      213: -3033387990480064144
+    second: MoriyaDamage_13
+  - first:
+      213: 6972818968805488741
+    second: MoriyaDamage_14
+  - first:
+      213: -71144214496292018
+    second: MoriyaDamage_15
+  - first:
+      213: -3493379345394347663
+    second: MoriyaDamage_16
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MoriyaDamage_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 540
+        width: 208
+        height: 135
+      alignment: 9
+      pivot: {x: 0.3, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45e7e434df83d8270800000000000000
+      internalID: 8254316352447086164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoriyaDamage_1
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 540
+        width: 208
+        height: 135
+      alignment: 9
+      pivot: {x: 0.3, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23a927154ba83f540800000000000000
+      internalID: 5040524915022928434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoriyaDamage_2
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 540
+        width: 208
+        height: 135
+      alignment: 9
+      pivot: {x: 0.3, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2adde2f6fd22c510800000000000000
+      internalID: 1567866158939232813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoriyaDamage_3
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 540
+        width: 208
+        height: 135
+      alignment: 9
+      pivot: {x: 0.3, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89d1dd30616284040800000000000000
+      internalID: 4631994092746513816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoriyaDamage_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 405
+        width: 208
+        height: 135
+      alignment: 9
+      pivot: {x: 0.3, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea16a72025f1f7360800000000000000
+      internalID: 7169483568886473134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoriyaDamage_5
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 405
+        width: 208
+        height: 135
+      alignment: 9
+      pivot: {x: 0.3, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4aa557169a3462b0800000000000000
+      internalID: -5592280420976317878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoriyaDamage_6
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 405
+        width: 208
+        height: 135
+      alignment: 9
+      pivot: {x: 0.3, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c6a595e469441180800000000000000
+      internalID: -9145604245585287486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoriyaDamage_7
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 405
+        width: 208
+        height: 135
+      alignment: 9
+      pivot: {x: 0.3, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90bcaabcab447ea40800000000000000
+      internalID: 5397358247498402569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoriyaDamage_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 270
+        width: 208
+        height: 135
+      alignment: 9
+      pivot: {x: 0.3, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b53562f890d188c70800000000000000
+      internalID: 8973454184429278043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoriyaDamage_9
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 270
+        width: 208
+        height: 135
+      alignment: 9
+      pivot: {x: 0.3, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c339ce0dae74037b0800000000000000
+      internalID: -5246614492033543364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoriyaDamage_10
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 270
+        width: 208
+        height: 135
+      alignment: 9
+      pivot: {x: 0.3, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db98c9bf22ab4de60800000000000000
+      internalID: 7986212698647726525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoriyaDamage_11
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 270
+        width: 208
+        height: 135
+      alignment: 9
+      pivot: {x: 0.3, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79c419e962f5d58e0800000000000000
+      internalID: -1703100464602461033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoriyaDamage_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 135
+        width: 208
+        height: 135
+      alignment: 9
+      pivot: {x: 0.3, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5b4932e0869a8ad0800000000000000
+      internalID: -2699179546359805090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoriyaDamage_13
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 135
+        width: 208
+        height: 135
+      alignment: 9
+      pivot: {x: 0.3, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 071ff79b1bd37e5d0800000000000000
+      internalID: -3033387990480064144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoriyaDamage_14
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 135
+        width: 208
+        height: 135
+      alignment: 9
+      pivot: {x: 0.3, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 568b1c698ed64c060800000000000000
+      internalID: 6972818968805488741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoriyaDamage_15
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 135
+        width: 208
+        height: 135
+      alignment: 9
+      pivot: {x: 0.3, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e43df1fb6be330ff0800000000000000
+      internalID: -71144214496292018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoriyaDamage_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 208
+        height: 135
+      alignment: 9
+      pivot: {x: 0.3, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 171551c7ef5058fc0800000000000000
+      internalID: -3493379345394347663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
