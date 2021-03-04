@@ -16,23 +16,23 @@ public class EnemyController : MonoBehaviour
     [SerializeField] LayerMask playerMask;
     [SerializeField] LayerMask playerHurtBox;
     //WIP: Need to add different attack colliders. 
-
+    [SerializeField] AttackInfo attackInfo;
     #region Private Variables
-    EnemyAI ai; 
+    private EnemyAI ai; 
     Animator animator;
     bool isDead;
     bool isAttacking;
 
     public float AttackDistance { get => attackDistance; }
+    public EnemyAI Ai { get => ai;}
     #endregion
-
-    void Start() {
+    private void Awake()
+    {
         ai = GetComponent<EnemyAI>();
         ai.State = startingState;
         animator = GetComponentInChildren<Animator>();
         currentHealth = maxHealth;
     }
-
     void FixedUpdate()
     {
         ai.PathfindingLogic();
@@ -44,8 +44,15 @@ public class EnemyController : MonoBehaviour
 
     public void Attack() 
     {
-        Collider2D Hit = Physics2D.OverlapCircle(transform.position, 10f, playerHurtBox);
-        IEnemyHurtBox player = Hit?.GetComponent<IEnemyHurtBox>();
-        player?.OnReceiveDamage();        
+        Collider2D Hit = Physics2D.OverlapCircle(attackInfo.pos.position, attackInfo.radius, attackInfo.layer);
+        PlayerDamageHandler player = Hit?.GetComponent<PlayerDamageHandler>();
+        player?.OnReceiveDamage();
+        //IEnemyHurtBox player = Hit?.GetComponent<IEnemyHurtBox>();
+        //player?.OnReceiveDamage();        
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(attackInfo.pos.position, attackInfo.radius);
     }
 }

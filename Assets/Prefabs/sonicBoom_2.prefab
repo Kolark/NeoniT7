@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 984176440728392960}
   - component: {fileID: 4665868280846643152}
   - component: {fileID: 5097041138665491115}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: sonicBoom_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
