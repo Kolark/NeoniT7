@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using DG.Tweening;
 public class BasicCharacter : MonoBehaviour
 {
     ///TO-DO AGREGAR ANIMACION DE DAÑO
@@ -32,6 +33,9 @@ public class BasicCharacter : MonoBehaviour
     public bool canMove = true;
     public bool canFlip = true;
     public bool canReceiveDamage = true;
+    protected bool canUseSpecial = true;
+    protected bool canUseDefense = true;
+    protected bool canUseThrowable = true;
     protected bool isAlive = true;
     [Space]
     #endregion
@@ -68,6 +72,7 @@ public class BasicCharacter : MonoBehaviour
     protected virtual void Update()
     {
         if (!isAlive) return;
+        
         character.UpdateAnimatorValues();
     }
     protected virtual void FixedUpdate()
@@ -82,6 +87,7 @@ public class BasicCharacter : MonoBehaviour
         {
             character.Move();
         }
+
     }
     #region Attacks
     public virtual void Attack()
@@ -122,6 +128,7 @@ public class BasicCharacter : MonoBehaviour
         soundModule.Play((int)CharacterSounds.combo1);
         IEnemyHurtBox enemy = Hit?.GetComponent<IEnemyHurtBox>();
         enemy?.OnReceiveDamage();
+        GetComponent<Rigidbody2D>().AddForce(Vector2.right * transform.localScale.x *5, ForceMode2D.Impulse);
     }
     public virtual void AttackTwo()
     {
@@ -129,6 +136,7 @@ public class BasicCharacter : MonoBehaviour
         soundModule.Play((int)CharacterSounds.combo2);
         IEnemyHurtBox enemy = Hit?.GetComponent<IEnemyHurtBox>();
         enemy?.OnReceiveDamage();
+        GetComponent<Rigidbody2D>().AddForce(Vector2.right * transform.localScale.x * 10, ForceMode2D.Impulse);
     }
     public virtual void AttackThree()
     {
@@ -139,7 +147,7 @@ public class BasicCharacter : MonoBehaviour
             IEnemyHurtBox enemy = Hit[i]?.GetComponent<IEnemyHurtBox>();
             enemy?.OnReceiveDamage();
         }
-
+        GetComponent<Rigidbody2D>().AddForce(Vector2.right * transform.localScale.x * 15, ForceMode2D.Impulse);
     }
     public virtual void AirAttack()
     {
@@ -158,7 +166,10 @@ public class BasicCharacter : MonoBehaviour
     public virtual void Defense()
     {
         if (!isAlive) return;
+        if (!canUseDefense) return;
         character.Anim.SetTrigger("Parry");
+        canUseDefense = false;
+        DOVirtual.DelayedCall(cdDefense, () => { canUseDefense = true;}, true);
         //SetTrigger(Defense)
         //SAmurai-Se vuelve invulnerable al siguiente ataque - Y Cuando recibe daño hace un ataque. - No se cancela
         //NINJA- Se vuelve invulnerable durante toda la animación. Cambia de layer para que pueda atravesarlos y no hacer daño.- DASH- No se cancela
@@ -167,20 +178,26 @@ public class BasicCharacter : MonoBehaviour
     public virtual void Ultimate()
     {
         if (!isAlive) return;
-        if (character.Grounded)
-        {
-            character.Anim.SetTrigger("Special");
-        }
+        if (!canUseSpecial) return;
+        if (!character.Grounded) return;
         
+        character.Anim.SetTrigger("Special");
+        canUseSpecial = false;
+        DOVirtual.DelayedCall(cdUltimate, () => { canUseSpecial = true; },true);
     }
     
     public virtual void Throwable()
     {
         if (!isAlive) return;
-        if (character.Grounded)
-        {
+        if (!canUseThrowable) return;
+        if (!character.Grounded) return;
+        
+            Debug.Log("THROW");
             character.Anim.SetTrigger("Throw");
-        }
+            canUseThrowable = false;
+            DOVirtual.DelayedCall(cdThrow, () => { canUseThrowable = true; }, true);
+
+        
     }
     public virtual void Damage()
     {
@@ -192,6 +209,7 @@ public class BasicCharacter : MonoBehaviour
             if (isDead)
             {
                 isAlive = false;
+                canReceiveDamage = false;
                 character.CanJump = false;
                 character.Anim.SetTrigger("Death");
             }

@@ -170,7 +170,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 243b2a33cb540614f9a1a680c6f07cd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  grounded: 0
   canJump: 1
+  MaxYVelocity: 0
   groundCheckRadius: 0.2
   groundlayer:
     serializedVersion: 2

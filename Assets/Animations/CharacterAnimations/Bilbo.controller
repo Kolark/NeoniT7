@@ -111,10 +111,10 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 5841070143504010459}
-    m_Position: {x: 300, y: 100, z: 0}
+    m_Position: {x: 360, y: 100, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -7048400692895215438}
-    m_Position: {x: 690, y: 110, z: 0}
+    m_Position: {x: 750, y: 100, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1716640942125743688}
     m_Position: {x: 610, y: 1410, z: 0}
@@ -171,7 +171,7 @@ AnimatorStateMachine:
     m_Position: {x: 680, y: -150, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -4257943115763193129}
-    m_Position: {x: -310, y: -140, z: 0}
+    m_Position: {x: 910, y: 410, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -8666632287526558710}
     m_Position: {x: -275, y: -75, z: 0}
@@ -193,7 +193,7 @@ AnimatorStateMachine:
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
-  m_AnyStatePosition: {x: -290, y: -270, z: 0}
+  m_AnyStatePosition: {x: 930, y: 280, z: 0}
   m_EntryPosition: {x: 0, y: 100, z: 0}
   m_ExitPosition: {x: 1200, y: -10, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
@@ -475,7 +475,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 4
     m_ConditionEvent: VerticalVelocity
-    m_EventTreshold: 0
+    m_EventTreshold: -0.1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -6128703900688454759}
   m_Solo: 0
@@ -588,7 +588,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: BilboAttackTwo
-  m_Speed: 1
+  m_Speed: 2
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 8113449058366231371}
@@ -872,7 +872,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: BilboAttackOne
-  m_Speed: 1
+  m_Speed: 2
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 7389777264108687153}
@@ -1012,6 +1012,31 @@ AnimatorStateTransition:
   m_TransitionDuration: 0.25
   m_TransitionOffset: 0
   m_ExitTime: 0.5
+  m_HasExitTime: 1
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!1101 &-3867397450491497990
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: IsGrounded
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 5841070143504010459}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_ExitTime: 0.57142854
   m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
@@ -1646,7 +1671,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: BilboAttackThree
-  m_Speed: 1
+  m_Speed: 2
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 813455064204810302}
@@ -1672,7 +1697,10 @@ AnimatorStateTransition:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: 
-  m_Conditions: []
+  m_Conditions:
+  - m_ConditionMode: 3
+    m_ConditionEvent: Speed
+    m_EventTreshold: -0.1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -6128703900688454759}
   m_Solo: 0
@@ -1771,6 +1799,7 @@ AnimatorState:
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 779875540556175283}
+  - {fileID: -3867397450491497990}
   m_StateMachineBehaviours:
   - {fileID: 2419970542627484019}
   m_Position: {x: 50, y: 50, z: 0}
@@ -1861,10 +1890,10 @@ AnimatorStateMachine:
     m_Position: {x: 600, y: 760, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -5920441889897366581}
-    m_Position: {x: 200, y: 640, z: 0}
+    m_Position: {x: 190, y: 640, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1114279717609000158}
-    m_Position: {x: 400, y: 640, z: 0}
+    m_Position: {x: 450, y: 640, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
