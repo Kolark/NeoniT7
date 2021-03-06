@@ -10,18 +10,6 @@ public class TrampA : MonoBehaviour
     [SerializeField] float releseTime;
     [SerializeField] SpriteRenderer col;
     Color previousCol;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
