@@ -14,20 +14,21 @@ public class GameManager : MonoBehaviour
     private SceneType currentSceneType;
     private ControllerType controllerType {get=> InputController.Instance.CurrentControlScheme;}
 
+    private SaveInfo current;
+    bool hasSaveInfo = false;
+
+
     private int saveSlot;
     public int Saveslot { 
-        get => saveSlot; set
+        get => saveSlot;
+        set
         {
-            if(value >=0 && value < SaveSystem.SavesNumber)
-            {
-                saveSlot = value;
-            }
-            else
-            {
-                saveSlot = SaveSystem.SavesNumber-1;
-            }
+            saveSlot = Mathf.Clamp(value, 0, SaveSystem.SavesNumber - 1);
         }
     }
+
+    public SaveInfo Current { get => current;}
+
     private void Awake()
     {
         if (instance == null)
@@ -49,6 +50,13 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene((int)scene);
         currentScene = scene;
+    }
+    public void ChangeScene(SaveInfo saveInfo)
+    {
+
+        SceneManager.LoadScene((int)saveInfo.currentScene);
+        current = saveInfo;
+        currentScene = current.currentScene;
     }
     /// <summary>
     /// Easy implementation of changing to the previous Scene
