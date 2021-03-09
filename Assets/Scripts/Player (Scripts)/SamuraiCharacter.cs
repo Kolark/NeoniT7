@@ -12,7 +12,10 @@ public class SamuraiCharacter : BasicCharacter
     [SerializeField] AttackInfo specialAttack;
     public override void Defense()
     {
+        if (!isAlive) return;
+        if (!canUseDefense) return;
         base.Defense();
+        
     }
 
     public override void StartParry()
@@ -27,6 +30,9 @@ public class SamuraiCharacter : BasicCharacter
     }
     public override void Throwable()
     {
+        if (!isAlive) return;
+        if (!canUseThrowable) return;
+        if (!character.Grounded) return;
         base.Throwable();
         GameObject gameObject = Instantiate(projectil,firstAttack.pos.position,Quaternion.identity);
         Proyectil proyectil = gameObject.GetComponent<Proyectil>();
@@ -34,6 +40,9 @@ public class SamuraiCharacter : BasicCharacter
     }
     public override void Ultimate()
     {
+        if (!isAlive) return;
+        if (!canUseSpecial) return;
+        if (!character.Grounded) return;
         base.Ultimate();
         Collider2D[] Hit = Physics2D.OverlapCircleAll(specialAttack.pos.position, specialAttack.radius, specialAttack.layer);
         for (int i = 0; i < Hit.Length; i++)
@@ -44,13 +53,16 @@ public class SamuraiCharacter : BasicCharacter
     }
     public override void Damage()
     {
+        Debug.Log("Attack step 5");
         if (canReceiveDamage)
         {
             maxLife--;
+            Debug.Log("Attack step 6");
             bool isDead = maxLife <= 0;
             if (isDead)
             {
                 isAlive = false;
+                canReceiveDamage = false;
                 character.Anim.SetTrigger("Death");
             }
         }

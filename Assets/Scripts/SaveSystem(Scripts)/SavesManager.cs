@@ -5,7 +5,7 @@ using UnityEngine;
 public class SavesManager : MonoBehaviour
 {
     private static SavesManager instance;
-    public static SavesManager Instance => instance;
+    public static SavesManager Instance { get { return instance;} }
 
     List<SaveWidget> saveWidgets = new List<SaveWidget>();
     List<SaveInfo> saveInfos;
@@ -22,30 +22,43 @@ public class SavesManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-        
+        SaveSystem.Init();
         saveInfos = SaveSystem.LoadAll(); //Finds all SaveInfos
 
         for (int i = 0; i < transform.childCount; i++)
         {
             SaveWidget tosave = transform.GetChild(i).GetComponent<SaveWidget>();
+            saveWidgets.Add(tosave);
             saveWidgets[i].widgetIndex = i;
 
-            saveWidgets.Add(tosave);
         }//Finds all saveWidgets
+
+        
         for (int i = 0; i < saveInfos.Count; i++)
         {
-            saveWidgets[saveInfos[i].slot].saveInfo = saveInfos[i];
+            Debug.Log("c : " + saveInfos.Count);
+            saveWidgets[saveInfos[i].slot].SetSaveInfo(saveInfos[i]);
         }
+        
     }
     private void Start()
     {
         InputController.Instance.Attack += OnDelete;
+        for (int i = 0; i < saveWidgets.Count; i++)
+        {
+            saveWidgets[i].SetWidget();
+        }
     }
-
+    //Should Delete the current StateInfo if found
     private void OnDelete()
     {
-
+        if (saveWidgets[currentSelected].HasSaveInfo)
+        {
+            saveWidgets[currentSelected].ClearSaveInfo();
+            saveWidgets[currentSelected].SetWidget();
+        }
     }
+    
     public void setIndex(int i)
     {
         currentSelected = i;
