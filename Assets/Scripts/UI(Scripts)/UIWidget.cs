@@ -15,7 +15,7 @@ public class UIWidget : MonoBehaviour
     [SerializeField] Vector2 finalScale;
     [SerializeField] Ease easeType;
     [SerializeField] float duration;
-    [SerializeField] GameScene sceneToGo;
+    [SerializeField] protected GameScene sceneToGo;
     protected virtual void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
