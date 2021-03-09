@@ -42,6 +42,7 @@ public class CharacterMovement : MonoBehaviour
     public bool CanJump { get => canJump; set => canJump = value; }
     public Animator Anim { get => anim;}
     public bool Grounded { get => grounded;}
+    public Rigidbody2D Rb { get => rb;}
 
     private bool isJumping;
     #endregion

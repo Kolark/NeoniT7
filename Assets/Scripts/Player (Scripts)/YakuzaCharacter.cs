@@ -1,31 +1,38 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using DG.Tweening;
-public class SamuraiCharacter : BasicCharacter
-{
-    
-    ///TO-DO sincronizar el ataque del ultimate con la animacion
 
-    bool isParry = false;
+public class YakuzaCharacter : BasicCharacter
+{
+    bool canTankDamage = false;
     [SerializeField] GameObject projectil;
     [SerializeField] AttackInfo specialAttack;
+    [SerializeField] AttackInfo explosiveinfo;
     public override void Defense()
     {
         if (!isAlive) return;
         if (!canUseDefense) return;
         base.Defense();
-        
+        Collider2D[] Hit = Physics2D.OverlapCircleAll(specialAttack.pos.position, specialAttack.radius, specialAttack.layer);
+        for (int i = 0; i < Hit.Length; i++)
+        {
+
+            //Aca va
+            Rigidbody2D rb2d = Hit[i].GetComponent<Rigidbody2D>();
+            rb2d.AddForce((rb2d.transform.position - transform.position).normalized * 4, ForceMode2D.Impulse);
+            //IEnemyHurtBox enemy = Hit[i]?.GetComponent<IEnemyHurtBox>();
+            //enemy?.OnReceiveDamage();
+        }
     }
 
     public override void StartParry()
     {
         canReceiveDamage = false;
-        isParry = true;
+        canTankDamage = true;
     }
     public override void EndParry()
     {
-        isParry = false;
+        canTankDamage = false;
         canReceiveDamage = true;
     }
     public override void Throwable()
@@ -34,7 +41,7 @@ public class SamuraiCharacter : BasicCharacter
         if (!canUseThrowable) return;
         if (!character.Grounded) return;
         base.Throwable();
-        GameObject gameObject = Instantiate(projectil,firstAttack.pos.position,Quaternion.identity);
+        GameObject gameObject = Instantiate(projectil, firstAttack.pos.position, Quaternion.identity);
         Proyectil proyectil = gameObject.GetComponent<Proyectil>();
         proyectil.push(Vector2.right * transform.localScale.x);
     }
@@ -44,12 +51,7 @@ public class SamuraiCharacter : BasicCharacter
         if (!canUseSpecial) return;
         if (!character.Grounded) return;
         base.Ultimate();
-        Collider2D[] Hit = Physics2D.OverlapCircleAll(specialAttack.pos.position, specialAttack.radius, specialAttack.layer);
-        for (int i = 0; i < Hit.Length; i++)
-        {
-            IEnemyHurtBox enemy = Hit[i]?.GetComponent<IEnemyHurtBox>();
-            enemy?.OnReceiveDamage();
-        }
+///Aca va la ultimate
     }
     public override void Damage()
     {
@@ -66,23 +68,13 @@ public class SamuraiCharacter : BasicCharacter
                 character.Anim.SetTrigger("Death");
             }
         }
-        else if(isParry)
+        else if (canTankDamage)
         {
             //
-            Counter();
-            isParry = false;
+            canTankDamage = false;
+            //Shield Break
             canReceiveDamage = true;
         }
     }
-    public override void Counter()
-    {
-        character.Anim.SetTrigger("Counter");
-        Collider2D[] Hit = Physics2D.OverlapCircleAll(counter.pos.position, counter.radius, counter.layer);
-        for (int i = 0; i < Hit.Length; i++)
-        {
-            IEnemyHurtBox enemy = Hit[i]?.GetComponent<IEnemyHurtBox>();
-            enemy?.OnReceiveDamage();
-        }
-    }
-    
+
 }

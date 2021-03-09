@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EndAttackBehaviour : StateMachineBehaviour
+public class ConstraintsBehaviour : StateMachineBehaviour
 {
     [SerializeField] bool canChangeMove;
     [SerializeField] bool canChangeFlip;
+    [SerializeField] bool canChangeJump;
     public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         if (canChangeMove)
@@ -15,6 +16,10 @@ public class EndAttackBehaviour : StateMachineBehaviour
         if (canChangeFlip)
         {
             BasicCharacter.Instance.canFlip = false;
+        }
+        if (canChangeJump)
+        {
+            BasicCharacter.Instance.Character.CanJump = false;
         }
     }
     public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
@@ -27,6 +32,9 @@ public class EndAttackBehaviour : StateMachineBehaviour
         {
             BasicCharacter.Instance.canFlip = true;
         }
-
+        if (canChangeJump)
+        {
+            BasicCharacter.Instance.Character.CanJump = true;
+        }
     }
 }

@@ -1108,6 +1108,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canChangeMove: 1
   canChangeFlip: 0
+  canChangeJump: 1
 --- !u!1102 &-3153274245449673191
 AnimatorState:
   serializedVersion: 5
@@ -1234,6 +1235,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canChangeMove: 1
   canChangeFlip: 0
+  canChangeJump: 0
 --- !u!1101 &-1995030510909144455
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -1663,6 +1665,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canChangeMove: 1
   canChangeFlip: 1
+  canChangeJump: 0
 --- !u!1102 &448472955611122408
 AnimatorState:
   serializedVersion: 5
@@ -2146,6 +2149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canChangeMove: 0
   canChangeFlip: 1
+  canChangeJump: 0
 --- !u!1102 &2466965572225088526
 AnimatorState:
   serializedVersion: 5
@@ -3248,6 +3252,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canChangeMove: 1
   canChangeFlip: 0
+  canChangeJump: 0
 --- !u!1101 &8891817950823254754
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
