@@ -45,8 +45,21 @@ public class EnemyController : MonoBehaviour
     public void Attack() 
     {
         Collider2D Hit = Physics2D.OverlapCircle(attackInfo.pos.position, attackInfo.radius, attackInfo.layer);
-        PlayerDamageHandler player = Hit?.GetComponent<PlayerDamageHandler>();
-        player?.OnReceiveDamage();
+        Debug.Log("Attack step 1");
+        if (Hit != null)
+        {
+            Debug.Log("Attack step 2");
+
+            PlayerDamageHandler player = Hit.GetComponent<PlayerDamageHandler>();
+            if (player != null)
+            {
+                player.OnReceiveDamage();
+                Debug.Log("Attack step 3");
+            }
+        }
+        
+        
+        
         //IEnemyHurtBox player = Hit?.GetComponent<IEnemyHurtBox>();
         //player?.OnReceiveDamage();        
     }

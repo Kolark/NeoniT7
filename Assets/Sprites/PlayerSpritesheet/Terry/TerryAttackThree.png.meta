@@ -1,0 +1,368 @@
+fileFormatVersion: 2
+guid: a13d0435b3596ba4baf415dcbe1d732b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2269740191270740063
+    second: TerryAttackThree_0
+  - first:
+      213: 4134319647957958256
+    second: TerryAttackThree_1
+  - first:
+      213: 5263293972249973930
+    second: TerryAttackThree_2
+  - first:
+      213: -4900704743264744740
+    second: TerryAttackThree_3
+  - first:
+      213: -7018396286661648032
+    second: TerryAttackThree_4
+  - first:
+      213: 2389368852474732203
+    second: TerryAttackThree_5
+  - first:
+      213: -9128046453544050389
+    second: TerryAttackThree_6
+  - first:
+      213: 5027225497638140270
+    second: TerryAttackThree_7
+  - first:
+      213: -5654991213666221326
+    second: TerryAttackThree_8
+  - first:
+      213: -2715647616800424403
+    second: TerryAttackThree_9
+  - first:
+      213: 1654414809732243519
+    second: TerryAttackThree_10
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TerryAttackThree_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 222
+        width: 127
+        height: 111
+      alignment: 9
+      pivot: {x: 0.32, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f50ae19adacbf7f10800000000000000
+      internalID: 2269740191270740063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryAttackThree_1
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 222
+        width: 127
+        height: 111
+      alignment: 9
+      pivot: {x: 0.32, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07eb374b0dd006930800000000000000
+      internalID: 4134319647957958256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryAttackThree_2
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 222
+        width: 127
+        height: 111
+      alignment: 9
+      pivot: {x: 0.32, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa41a6c4bf9fa0940800000000000000
+      internalID: 5263293972249973930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryAttackThree_3
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 222
+        width: 127
+        height: 111
+      alignment: 9
+      pivot: {x: 0.32, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cda02a440033dfbb0800000000000000
+      internalID: -4900704743264744740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryAttackThree_4
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 222
+        width: 127
+        height: 111
+      alignment: 9
+      pivot: {x: 0.32, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 061ac9823c5a99e90800000000000000
+      internalID: -7018396286661648032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryAttackThree_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 111
+        width: 127
+        height: 111
+      alignment: 9
+      pivot: {x: 0.32, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bae9329df4eb82120800000000000000
+      internalID: 2389368852474732203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryAttackThree_6
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 111
+        width: 127
+        height: 111
+      alignment: 9
+      pivot: {x: 0.32, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b212e3bec1aa25180800000000000000
+      internalID: -9128046453544050389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryAttackThree_7
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 111
+        width: 127
+        height: 111
+      alignment: 9
+      pivot: {x: 0.32, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e69f18864fa44c540800000000000000
+      internalID: 5027225497638140270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryAttackThree_8
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 111
+        width: 127
+        height: 111
+      alignment: 9
+      pivot: {x: 0.32, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f2487dd37f6581b0800000000000000
+      internalID: -5654991213666221326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryAttackThree_9
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 111
+        width: 127
+        height: 111
+      alignment: 9
+      pivot: {x: 0.32, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2e797171e4105ad0800000000000000
+      internalID: -2715647616800424403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryAttackThree_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 127
+        height: 111
+      alignment: 9
+      pivot: {x: 0.32, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f306c350189a5f610800000000000000
+      internalID: 1654414809732243519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 6a627b671775d7a499e3a0203a6a5597
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
