@@ -1,0 +1,1040 @@
+fileFormatVersion: 2
+guid: f8f25ba4f91002e449c0c88d59d9e8de
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3988750224166309824
+    second: TerryUltimate_0
+  - first:
+      213: -7319814981757559377
+    second: TerryUltimate_1
+  - first:
+      213: 9065974498458670020
+    second: TerryUltimate_2
+  - first:
+      213: -6193720274658726336
+    second: TerryUltimate_3
+  - first:
+      213: -2877443692729811195
+    second: TerryUltimate_4
+  - first:
+      213: -9102574522649551421
+    second: TerryUltimate_5
+  - first:
+      213: 9028623063829438370
+    second: TerryUltimate_6
+  - first:
+      213: -4791331417027668583
+    second: TerryUltimate_7
+  - first:
+      213: 6143764023241536925
+    second: TerryUltimate_8
+  - first:
+      213: 5020946032828436895
+    second: TerryUltimate_9
+  - first:
+      213: -2916760117655168017
+    second: TerryUltimate_10
+  - first:
+      213: 7403644390032507946
+    second: TerryUltimate_11
+  - first:
+      213: -1090053183293295745
+    second: TerryUltimate_12
+  - first:
+      213: 8148065747944642003
+    second: TerryUltimate_13
+  - first:
+      213: -1642375099200744290
+    second: TerryUltimate_14
+  - first:
+      213: -3908580057990252765
+    second: TerryUltimate_15
+  - first:
+      213: 6342822208311026731
+    second: TerryUltimate_16
+  - first:
+      213: 9104682494085912301
+    second: TerryUltimate_17
+  - first:
+      213: 5994330142348577448
+    second: TerryUltimate_18
+  - first:
+      213: 6780274468065682340
+    second: TerryUltimate_19
+  - first:
+      213: -6047801581609862819
+    second: TerryUltimate_20
+  - first:
+      213: 7530703799460221809
+    second: TerryUltimate_21
+  - first:
+      213: 3230670023449045722
+    second: TerryUltimate_22
+  - first:
+      213: 4595119584092728587
+    second: TerryUltimate_23
+  - first:
+      213: 6861236178208390030
+    second: TerryUltimate_24
+  - first:
+      213: 8582960173865149954
+    second: TerryUltimate_25
+  - first:
+      213: -8532053228503321330
+    second: TerryUltimate_26
+  - first:
+      213: -3613950611249287496
+    second: TerryUltimate_27
+  - first:
+      213: 7181961283768813069
+    second: TerryUltimate_28
+  - first:
+      213: 3265875638152046353
+    second: TerryUltimate_29
+  - first:
+      213: -8020822812121476511
+    second: TerryUltimate_30
+  - first:
+      213: -678892723365205734
+    second: TerryUltimate_31
+  - first:
+      213: 4736900057387670402
+    second: TerryUltimate_32
+  - first:
+      213: -3193559357130816600
+    second: TerryUltimate_33
+  - first:
+      213: -4440525246750948562
+    second: TerryUltimate_34
+  - first:
+      213: 2303060066599912564
+    second: TerryUltimate_35
+  - first:
+      213: -196039161360087691
+    second: TerryUltimate_36
+  - first:
+      213: 6460317431691714568
+    second: TerryUltimate_37
+  - first:
+      213: -1304119004589175177
+    second: TerryUltimate_38
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TerryUltimate_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 961
+        width: 81
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cf41311233ea5730800000000000000
+      internalID: 3988750224166309824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryUltimate_1
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 960
+        width: 80
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fad12ce5e0bca6a90800000000000000
+      internalID: -7319814981757559377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryUltimate_2
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 962
+        width: 69
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c31163d5cfc0dd70800000000000000
+      internalID: 9065974498458670020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryUltimate_3
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 962
+        width: 62
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04ee4d6d93c7b0aa0800000000000000
+      internalID: -6193720274658726336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryUltimate_4
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 966
+        width: 64
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50fb6a1f4344118d0800000000000000
+      internalID: -2877443692729811195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryUltimate_5
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 974
+        width: 79
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cdd3fbf2b82da180800000000000000
+      internalID: -9102574522649551421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryUltimate_6
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 983
+        width: 66
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2afd37247dc1c4d70800000000000000
+      internalID: 9028623063829438370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryUltimate_7
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 991
+        width: 78
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99595e63675c18db0800000000000000
+      internalID: -4791331417027668583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryUltimate_8
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 767
+        width: 75
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d95f22df3d8034550800000000000000
+      internalID: 6143764023241536925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryUltimate_9
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 782
+        width: 79
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f91552390dbfda540800000000000000
+      internalID: 5020946032828436895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryUltimate_10
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 795
+        width: 66
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feb132c60269587d0800000000000000
+      internalID: -2916760117655168017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryUltimate_11
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 812
+        width: 78
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a248337b8570fb660800000000000000
+      internalID: 7403644390032507946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryUltimate_12
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 821
+        width: 75
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f73f487b76a5fd0f0800000000000000
+      internalID: -1090053183293295745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryUltimate_13
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 825
+        width: 79
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d594c0a0aeb31170800000000000000
+      internalID: 8148065747944642003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryUltimate_14
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 832
+        width: 66
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9451388c8c1539e0800000000000000
+      internalID: -1642375099200744290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryUltimate_15
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 836
+        width: 78
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 327b053552fe1c9c0800000000000000
+      internalID: -3908580057990252765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryUltimate_16
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 601
+        width: 75
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2466d7513b360850800000000000000
+      internalID: 6342822208311026731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryUltimate_17
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 602
+        width: 79
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de655bc5d745a5e70800000000000000
+      internalID: 9104682494085912301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryUltimate_18
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 590
+        width: 62
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aa8a115183203350800000000000000
+      internalID: 5994330142348577448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryUltimate_19
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 606
+        width: 69
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a3a4bc84bf581e50800000000000000
+      internalID: 6780274468065682340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryUltimate_20
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 595
+        width: 55
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5939101184e11ca0800000000000000
+      internalID: -6047801581609862819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryUltimate_21
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 591
+        width: 57
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 173d28bc43f628860800000000000000
+      internalID: 7530703799460221809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryUltimate_22
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 564
+        width: 56
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adaee2ef445a5dc20800000000000000
+      internalID: 3230670023449045722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryUltimate_23
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 543
+        width: 57
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0da94e6ae425cf30800000000000000
+      internalID: 4595119584092728587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryUltimate_24
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 272
+        width: 59
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8b7b22a3f1083f50800000000000000
+      internalID: 6861236178208390030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryUltimate_25
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 247
+        width: 59
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 206ae8cbdcccc1770800000000000000
+      internalID: 8582960173865149954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryUltimate_26
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 241
+        width: 81
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e05b55e1bce089980800000000000000
+      internalID: -8532053228503321330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryUltimate_27
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 241
+        width: 81
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8be2eac011ba8ddc0800000000000000
+      internalID: -3613950611249287496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryUltimate_28
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 241
+        width: 81
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0606a56cb37ba360800000000000000
+      internalID: 7181961283768813069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryUltimate_29
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 241
+        width: 82
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 117a7ace698b25d20800000000000000
+      internalID: 3265875638152046353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryUltimate_30
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 241
+        width: 82
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1625625062050b090800000000000000
+      internalID: -8020822812121476511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryUltimate_31
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 241
+        width: 82
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a19283f3aa61496f0800000000000000
+      internalID: -678892723365205734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryUltimate_32
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1
+        width: 81
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28b9e194189dcb140800000000000000
+      internalID: 4736900057387670402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryUltimate_33
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 1
+        width: 81
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a3c7155fa23ea3d0800000000000000
+      internalID: -3193559357130816600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryUltimate_34
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 1
+        width: 81
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e238143a0d51062c0800000000000000
+      internalID: -4440525246750948562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryUltimate_35
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 1
+        width: 81
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 474431eadec16ff10800000000000000
+      internalID: 2303060066599912564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryUltimate_36
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 1
+        width: 81
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5750111eb67874df0800000000000000
+      internalID: -196039161360087691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryUltimate_37
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 1
+        width: 81
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 800af34d978a7a950800000000000000
+      internalID: 6460317431691714568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryUltimate_38
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 1
+        width: 81
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77e40a2cca6d6ede0800000000000000
+      internalID: -1304119004589175177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: cc0fbf576ef39c9489387a45ee1a3a4b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using DG.Tweening;
 /// <summary>
 /// This script is responsable for the basic character movement
 /// It has a referece to the character animator controller and 5 rays that
@@ -16,13 +16,16 @@ public class CharacterMovement : MonoBehaviour
     private CharacterController controller;
     private SoundModule soundModule;
     private Vector3 slopeNormal;
-    private bool grounded;
+    [SerializeField]private bool grounded;
     private bool facingRight = true;
     private bool isCrouching;
     [SerializeField]private bool canJump = true;
     private float verticalVelocity;
     private Rigidbody2D rb;
-    
+    [SerializeField] float MaxYVelocity;
+
+
+
     Vector2 velocity;
     #endregion
     #region SerializedVariables
@@ -39,6 +42,7 @@ public class CharacterMovement : MonoBehaviour
     public bool CanJump { get => canJump; set => canJump = value; }
     public Animator Anim { get => anim;}
     public bool Grounded { get => grounded;}
+    public Rigidbody2D Rb { get => rb;}
 
     private bool isJumping;
     #endregion
@@ -49,7 +53,7 @@ public class CharacterMovement : MonoBehaviour
         controller = GetComponent<CharacterController>();
         anim = transform.GetChild(0).GetComponent<Animator>();
     }
-
+ 
     public void Move()
     {
         BetterJump();
@@ -77,11 +81,7 @@ public class CharacterMovement : MonoBehaviour
     {
         Vector2 inputVector = GetInput();
         isCrouching = inputVector.y < 0f;
-        if (isCrouching) {
-            anim.SetBool("IsCrouching", isCrouching);
-        } else {            
-            anim.SetBool("IsCrouching", isCrouching);
-        }
+        anim.SetBool("IsCrouching", isCrouching);
     }
 
     public void Jump()
@@ -93,12 +93,21 @@ public class CharacterMovement : MonoBehaviour
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             anim?.SetTrigger("Jump");
             soundModule.Play((int)CharacterSounds.Jump);
+            DOVirtual.DelayedCall(0.69f, () => {
+                if(rb.velocity.y > 0)
+                {
+                    Vector2 vel = rb.velocity;
+                    vel.y = 0;
+                    rb.velocity = vel;
+                }
+
+            }, true);
         }
     }
 
     public void BetterJump()
     {
-        if (rb.velocity.y < 0)
+        if (rb.velocity.y < 0 && !grounded)
         {
             rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
         }
@@ -110,7 +119,10 @@ public class CharacterMovement : MonoBehaviour
     }
     public bool GetGrounded()
     {
-        return Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundlayer);
+        //Collider2D hit = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundlayer);
+        Collider2D hit = Physics2D.OverlapBox(groundCheck.position, Vector2.right * groundCheckRadius + Vector2.up * 0.35f,0, groundlayer);
+        return hit != null;
+        
     }
     public void Flip()
     {
@@ -133,8 +145,10 @@ public class CharacterMovement : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
+        //Gizmos.color = Color.red;
+        //Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
+        Gizmos.color = Color.cyan;
+        Gizmos.DrawWireCube(groundCheck.position, Vector2.right * groundCheckRadius + Vector2.up * 0.35f);
     }
 
 }

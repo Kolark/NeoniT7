@@ -58,11 +58,11 @@ public class EnemyAI : MonoBehaviour
         target = BasicCharacter.Instance.transform;
     }
 
-    void FixedUpdate() {
-        PathfindingLogic();
-        Debug.Log("In distance: " + TargetInDistance());
-        Debug.Log("Enemy AI State: " + state);
-    }
+    //void FixedUpdate() {
+    //    PathfindingLogic();
+    //    //Debug.Log("In distance: " + TargetInDistance());
+    //    //Debug.Log("Enemy AI State: " + state);
+    //}
     
 
     public virtual void PathfindingLogic() {
@@ -115,7 +115,7 @@ public class EnemyAI : MonoBehaviour
 
         //See if colliding with anything
         isGrounded = checkGround();
-        Debug.Log("Grounded: " + isGrounded);
+        //Debug.Log("Grounded: " + isGrounded);
 
         //Direction Calculation
         Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized;
@@ -145,7 +145,7 @@ public class EnemyAI : MonoBehaviour
                 else if (direction.y > jumpNodeHeightRequirement)//JUMPS WALL
                 {
                     rb.AddForce(Vector2.up * jumpForce* 2, ForceMode2D.Impulse);
-                    Debug.Log("Jumpin WALL");
+                    //Debug.Log("Jumpin WALL");
                 }
             }
         }

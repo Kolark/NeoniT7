@@ -8,7 +8,7 @@ public class IdleBehaviour : TransitionBehaviour
     {
         base.OnStateEnter(animator, stateInfo, layerIndex);
         BasicCharacter.Instance.Character.CanJump = true;
-        Debug.Log("Idle");
+        //Debug.Log("Idle");
     }
     public override void OnAttack()
     {
