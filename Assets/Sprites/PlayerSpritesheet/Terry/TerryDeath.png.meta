@@ -1,0 +1,680 @@
+fileFormatVersion: 2
+guid: 0022f942236a97947b645fb3707beff4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -933853925399988250
+    second: TerryDeath_0
+  - first:
+      213: -4688266207449287061
+    second: TerryDeath_1
+  - first:
+      213: 5745097993273430256
+    second: TerryDeath_2
+  - first:
+      213: -6835435410706197466
+    second: TerryDeath_3
+  - first:
+      213: -7937990176337833840
+    second: TerryDeath_4
+  - first:
+      213: 1827520657784739735
+    second: TerryDeath_5
+  - first:
+      213: 2052800080875818568
+    second: TerryDeath_6
+  - first:
+      213: -6684953802693056338
+    second: TerryDeath_7
+  - first:
+      213: -3929878942387355027
+    second: TerryDeath_8
+  - first:
+      213: 8865003892830614142
+    second: TerryDeath_9
+  - first:
+      213: 5385208723847015530
+    second: TerryDeath_10
+  - first:
+      213: -1474886452007422592
+    second: TerryDeath_11
+  - first:
+      213: -5883218561565788102
+    second: TerryDeath_12
+  - first:
+      213: -1891024353386073093
+    second: TerryDeath_13
+  - first:
+      213: -1838455738181269253
+    second: TerryDeath_14
+  - first:
+      213: 4271690621864778431
+    second: TerryDeath_15
+  - first:
+      213: 1776902670524521824
+    second: TerryDeath_16
+  - first:
+      213: 2707622248458870295
+    second: TerryDeath_17
+  - first:
+      213: 2476400270849216207
+    second: TerryDeath_18
+  - first:
+      213: -2162072061131190454
+    second: TerryDeath_19
+  - first:
+      213: 4615411901310334563
+    second: TerryDeath_20
+  - first:
+      213: -1140739773676980232
+    second: TerryDeath_21
+  - first:
+      213: -3539287741121329408
+    second: TerryDeath_22
+  - first:
+      213: 7866218921407574148
+    second: TerryDeath_23
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TerryDeath_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 435
+        width: 129
+        height: 145
+      alignment: 9
+      pivot: {x: 0.42, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e7fd687dc84a03f0800000000000000
+      internalID: -933853925399988250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDeath_1
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 435
+        width: 129
+        height: 145
+      alignment: 9
+      pivot: {x: 0.42, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b66748c49beefeeb0800000000000000
+      internalID: -4688266207449287061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDeath_2
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 435
+        width: 129
+        height: 145
+      alignment: 9
+      pivot: {x: 0.42, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f05fd0af20babf40800000000000000
+      internalID: 5745097993273430256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDeath_3
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 435
+        width: 129
+        height: 145
+      alignment: 9
+      pivot: {x: 0.42, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6241bbba5b7a321a0800000000000000
+      internalID: -6835435410706197466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDeath_4
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 435
+        width: 129
+        height: 145
+      alignment: 9
+      pivot: {x: 0.42, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 090d7dcedf796d190800000000000000
+      internalID: -7937990176337833840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDeath_5
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 435
+        width: 129
+        height: 145
+      alignment: 9
+      pivot: {x: 0.42, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79792fa0b58ac5910800000000000000
+      internalID: 1827520657784739735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDeath_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 290
+        width: 129
+        height: 145
+      alignment: 9
+      pivot: {x: 0.42, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84e0f7f1cc20d7c10800000000000000
+      internalID: 2052800080875818568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDeath_7
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 290
+        width: 129
+        height: 145
+      alignment: 9
+      pivot: {x: 0.42, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea865925fe54a33a0800000000000000
+      internalID: -6684953802693056338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDeath_8
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 290
+        width: 129
+        height: 145
+      alignment: 9
+      pivot: {x: 0.42, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d62c6bc5ce34679c0800000000000000
+      internalID: -3929878942387355027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDeath_9
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 290
+        width: 129
+        height: 145
+      alignment: 9
+      pivot: {x: 0.42, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e72bf9c5212d60b70800000000000000
+      internalID: 8865003892830614142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDeath_10
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 290
+        width: 129
+        height: 145
+      alignment: 9
+      pivot: {x: 0.42, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6c6c326dca1cba40800000000000000
+      internalID: 5385208723847015530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDeath_11
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 290
+        width: 129
+        height: 145
+      alignment: 9
+      pivot: {x: 0.42, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 085bf001696288be0800000000000000
+      internalID: -1474886452007422592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDeath_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 145
+        width: 129
+        height: 145
+      alignment: 9
+      pivot: {x: 0.42, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a38f2ed83eb9a5ea0800000000000000
+      internalID: -5883218561565788102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDeath_13
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 145
+        width: 129
+        height: 145
+      alignment: 9
+      pivot: {x: 0.42, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf37fc2ae5bb1c5e0800000000000000
+      internalID: -1891024353386073093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDeath_14
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 145
+        width: 129
+        height: 145
+      alignment: 9
+      pivot: {x: 0.42, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf84d662f3e7c76e0800000000000000
+      internalID: -1838455738181269253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDeath_15
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 145
+        width: 129
+        height: 145
+      alignment: 9
+      pivot: {x: 0.42, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fba1e9afcf7184b30800000000000000
+      internalID: 4271690621864778431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDeath_16
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 145
+        width: 129
+        height: 145
+      alignment: 9
+      pivot: {x: 0.42, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06d9e0d7093d8a810800000000000000
+      internalID: 1776902670524521824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDeath_17
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 145
+        width: 129
+        height: 145
+      alignment: 9
+      pivot: {x: 0.42, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71ed551e618639520800000000000000
+      internalID: 2707622248458870295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDeath_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 129
+        height: 145
+      alignment: 9
+      pivot: {x: 0.42, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fce06a10de0fd5220800000000000000
+      internalID: 2476400270849216207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDeath_19
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 0
+        width: 129
+        height: 145
+      alignment: 9
+      pivot: {x: 0.42, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4f8a716ae6cef1e0800000000000000
+      internalID: -2162072061131190454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDeath_20
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 0
+        width: 129
+        height: 145
+      alignment: 9
+      pivot: {x: 0.42, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36676b5bbac3d0040800000000000000
+      internalID: 4615411901310334563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDeath_21
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 0
+        width: 129
+        height: 145
+      alignment: 9
+      pivot: {x: 0.42, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f7f2d048374b20f0800000000000000
+      internalID: -1140739773676980232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDeath_22
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 0
+        width: 129
+        height: 145
+      alignment: 9
+      pivot: {x: 0.42, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00781982d8ce1eec0800000000000000
+      internalID: -3539287741121329408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDeath_23
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 0
+        width: 129
+        height: 145
+      alignment: 9
+      pivot: {x: 0.42, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48074f79e6c6a2d60800000000000000
+      internalID: 7866218921407574148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 0b27086eec4dfdf4bad12706f234580c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

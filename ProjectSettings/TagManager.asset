@@ -19,8 +19,8 @@ TagManager:
   - Enemy
   - chamber
   - projectiles
-  - 
-  - 
+  - Player
+  - InvulnerablePlayer
   - 
   - 
   - 
