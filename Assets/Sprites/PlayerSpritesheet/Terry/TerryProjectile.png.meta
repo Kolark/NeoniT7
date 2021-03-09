@@ -1,0 +1,1259 @@
+fileFormatVersion: 2
+guid: fca3220af132d52488197128832b893a
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TerryProjectile_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 924
+        width: 155
+        height: 154
+      alignment: 9
+      pivot: {x: 0.3, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d34b7070156690420800000000000000
+      internalID: 2596719158352131133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_1
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 924
+        width: 155
+        height: 154
+      alignment: 9
+      pivot: {x: 0.3, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3c02e5a787f85440800000000000000
+      internalID: 4924958354505337918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_2
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 924
+        width: 155
+        height: 154
+      alignment: 9
+      pivot: {x: 0.3, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 492dfa75ac2022fd0800000000000000
+      internalID: -2368327385965669740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_3
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 924
+        width: 155
+        height: 154
+      alignment: 9
+      pivot: {x: 0.3, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fb602715eba359a0800000000000000
+      internalID: -6245459257808884746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_4
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 924
+        width: 155
+        height: 154
+      alignment: 9
+      pivot: {x: 0.3, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 749dc23b2a3383fe0800000000000000
+      internalID: -1209159726065198777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 770
+        width: 155
+        height: 154
+      alignment: 9
+      pivot: {x: 0.3, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaf6bbebe9a1cc7a0800000000000000
+      internalID: -6355675705019502678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_6
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 770
+        width: 155
+        height: 154
+      alignment: 9
+      pivot: {x: 0.3, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afc53d26bd11f6080800000000000000
+      internalID: -9192108680486363910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_7
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 770
+        width: 155
+        height: 154
+      alignment: 9
+      pivot: {x: 0.3, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a49130652f14bb90800000000000000
+      internalID: -7227117256634690396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_8
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 770
+        width: 155
+        height: 154
+      alignment: 9
+      pivot: {x: 0.3, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b311d9241b475330800000000000000
+      internalID: 3699508168881148849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_9
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 770
+        width: 172
+        height: 154
+      alignment: 9
+      pivot: {x: 0.28, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a5cef7055e1900f0800000000000000
+      internalID: -1150354879261260379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 616
+        width: 117
+        height: 154
+      alignment: 9
+      pivot: {x: 0.4, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31885b797f637a660800000000000000
+      internalID: 7396941350009407507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_12
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 616
+        width: 155
+        height: 154
+      alignment: 9
+      pivot: {x: 0.346, y: 0.28}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5995e889d62f74ba0800000000000000
+      internalID: -6104644217352595051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_13
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 616
+        width: 114
+        height: 154
+      alignment: 9
+      pivot: {x: 0.405, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 614cc6bd7cc45d550800000000000000
+      internalID: 6184934084526785558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_14
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 616
+        width: 155
+        height: 154
+      alignment: 9
+      pivot: {x: 0.49, y: 0.28}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 499ae2eb49bb0b950800000000000000
+      internalID: 6462871712796944788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_15
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 616
+        width: 115
+        height: 154
+      alignment: 9
+      pivot: {x: 0.405, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30f859a29d4e4bb80800000000000000
+      internalID: -8379821385256169725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_16
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 616
+        width: 155
+        height: 154
+      alignment: 9
+      pivot: {x: 0.55, y: 0.28}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4be7d1e1f08d6eee0800000000000000
+      internalID: -1232059888597893452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_17
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 616
+        width: 115
+        height: 154
+      alignment: 9
+      pivot: {x: 0.405, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba8abdf4c074abdc0800000000000000
+      internalID: -3622504832061167445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_18
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 616
+        width: 155
+        height: 154
+      alignment: 9
+      pivot: {x: 0.65, y: 0.28}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc49893718af492a0800000000000000
+      internalID: -6731480109114944307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_19
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 616
+        width: 146
+        height: 154
+      alignment: 9
+      pivot: {x: 0.33, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e01e12187def47c0800000000000000
+      internalID: -4084785237045931804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_20
+      rect:
+        serializedVersion: 2
+        x: 1395
+        y: 616
+        width: 155
+        height: 154
+      alignment: 9
+      pivot: {x: 0.47, y: 0.28}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ae6fbcd1b04f2ba0800000000000000
+      internalID: -6111595036661551453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 462
+        width: 155
+        height: 154
+      alignment: 9
+      pivot: {x: 0.3, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f573bd04bb6a9c160800000000000000
+      internalID: 7046346415175055199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_22
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 462
+        width: 155
+        height: 154
+      alignment: 9
+      pivot: {x: 0.3, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d826c9ddc0326420800000000000000
+      internalID: 2621711593763121367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_23
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 462
+        width: 155
+        height: 154
+      alignment: 9
+      pivot: {x: 0.3, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d81b0f4c11eb56c50800000000000000
+      internalID: 6657936607664976269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_24
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 462
+        width: 155
+        height: 154
+      alignment: 9
+      pivot: {x: 0.3, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e9520d41f4baf8a0800000000000000
+      internalID: -6270500582687876633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_25
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 462
+        width: 155
+        height: 154
+      alignment: 9
+      pivot: {x: 0.3, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c2140d9ce751dd40800000000000000
+      internalID: 5607359684811166403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_26
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 462
+        width: 155
+        height: 154
+      alignment: 9
+      pivot: {x: 0.3, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a99a0b9eea4cf800800000000000000
+      internalID: 647474835098343842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_27
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 462
+        width: 155
+        height: 154
+      alignment: 9
+      pivot: {x: 0.3, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5413d2e68e2ccadb0800000000000000
+      internalID: -4779230801010282171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_28
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 462
+        width: 155
+        height: 154
+      alignment: 9
+      pivot: {x: 0.3, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f250c2f1c9663ad0800000000000000
+      internalID: -2722872642976591114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_29
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 462
+        width: 155
+        height: 154
+      alignment: 9
+      pivot: {x: 0.3, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2260b56eb0965b2b0800000000000000
+      internalID: -5569429864343468510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_30
+      rect:
+        serializedVersion: 2
+        x: 1395
+        y: 462
+        width: 155
+        height: 154
+      alignment: 9
+      pivot: {x: 0.3, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 224026e8418eee2e0800000000000000
+      internalID: -2094481601694923742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_31
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 308
+        width: 155
+        height: 154
+      alignment: 9
+      pivot: {x: 0.3, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3416e14ad53428a40800000000000000
+      internalID: 5368927775243526467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_32
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 308
+        width: 155
+        height: 154
+      alignment: 9
+      pivot: {x: 0.3, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ef56dad90c8c28b0800000000000000
+      internalID: -5175607897801465881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_33
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 308
+        width: 155
+        height: 154
+      alignment: 9
+      pivot: {x: 0.3, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7fce7f531d585700800000000000000
+      internalID: 529275294003941244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_34
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 308
+        width: 155
+        height: 154
+      alignment: 9
+      pivot: {x: 0.3, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 915dd7130a1aa9010800000000000000
+      internalID: 1196446360417457433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_35
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 308
+        width: 155
+        height: 154
+      alignment: 9
+      pivot: {x: 0.3, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0563feb06ac73e9d0800000000000000
+      internalID: -2746214295159228848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_36
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 308
+        width: 155
+        height: 154
+      alignment: 9
+      pivot: {x: 0.3, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61775eac9c67056b0800000000000000
+      internalID: -5309613351605274858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_37
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 308
+        width: 155
+        height: 154
+      alignment: 9
+      pivot: {x: 0.3, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 474cbd557e12b2080800000000000000
+      internalID: -9211231335394589580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_38
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 308
+        width: 155
+        height: 154
+      alignment: 9
+      pivot: {x: 0.3, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd85c77d716198510800000000000000
+      internalID: 1551795838261156063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_39
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 308
+        width: 155
+        height: 154
+      alignment: 9
+      pivot: {x: 0.3, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f9af72b66fd66180800000000000000
+      internalID: -9122358363017991696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_40
+      rect:
+        serializedVersion: 2
+        x: 1395
+        y: 308
+        width: 155
+        height: 154
+      alignment: 9
+      pivot: {x: 0.3, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c367216c9b9e72ed0800000000000000
+      internalID: -2438723689096513988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_41
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 154
+        width: 155
+        height: 154
+      alignment: 9
+      pivot: {x: 0.3, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e6aa09be9b6da330800000000000000
+      internalID: 3723750796358756070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_42
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 154
+        width: 155
+        height: 154
+      alignment: 9
+      pivot: {x: 0.3, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2b887472e323f5d0800000000000000
+      internalID: -3030038668766573778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_43
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 154
+        width: 155
+        height: 154
+      alignment: 9
+      pivot: {x: 0.3, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09c03eb8aa9f915c0800000000000000
+      internalID: -4244086662933312368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_44
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 154
+        width: 155
+        height: 154
+      alignment: 9
+      pivot: {x: 0.3, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fd0b2f81186f8a20800000000000000
+      internalID: 3066784295888293360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_45
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 154
+        width: 155
+        height: 154
+      alignment: 9
+      pivot: {x: 0.3, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbb75a0ee92e43b50800000000000000
+      internalID: 6572126928242047935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_46
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 154
+        width: 155
+        height: 154
+      alignment: 9
+      pivot: {x: 0.3, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b8d6a40eced5c880800000000000000
+      internalID: -8591215737716680528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_47
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 154
+        width: 155
+        height: 154
+      alignment: 9
+      pivot: {x: 0.3, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 475222e5f9f175f40800000000000000
+      internalID: 5717073021309691252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_48
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 154
+        width: 155
+        height: 154
+      alignment: 9
+      pivot: {x: 0.3, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d736ad56d7c33d130800000000000000
+      internalID: 3590279837221806973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_49
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 154
+        width: 155
+        height: 154
+      alignment: 9
+      pivot: {x: 0.3, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e83d2f1938644530800000000000000
+      internalID: 3838307376971987175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_50
+      rect:
+        serializedVersion: 2
+        x: 1395
+        y: 154
+        width: 155
+        height: 154
+      alignment: 9
+      pivot: {x: 0.3, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a9eabe2058292080800000000000000
+      internalID: -9211787237963142748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_51
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 155
+        height: 154
+      alignment: 9
+      pivot: {x: 0.3, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 011225c240092dd40800000000000000
+      internalID: 5607702833627537680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_52
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 0
+        width: 155
+        height: 154
+      alignment: 9
+      pivot: {x: 0.3, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a58da5cb744ad61a0800000000000000
+      internalID: -6814610033131988902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_53
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 0
+        width: 155
+        height: 154
+      alignment: 9
+      pivot: {x: 0.3, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0bb883f02bb9ada0800000000000000
+      internalID: -5933005283884745970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_54
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 0
+        width: 155
+        height: 154
+      alignment: 9
+      pivot: {x: 0.3, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3e076c7b02b35080800000000000000
+      internalID: -9199813851386278339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryProjectile_55
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 0
+        width: 155
+        height: 154
+      alignment: 9
+      pivot: {x: 0.3, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eafbac3f81977fd50800000000000000
+      internalID: 6771013712851156910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 7a4005bef3922df419ad2994eb8d3414
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

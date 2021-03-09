@@ -1,0 +1,872 @@
+fileFormatVersion: 2
+guid: 70f6504b9190720489909deb21bbd4e8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1104039549532487361
+    second: TerryDefensive_0
+  - first:
+      213: 8928255294276694737
+    second: TerryDefensive_1
+  - first:
+      213: -4100770426854520850
+    second: TerryDefensive_2
+  - first:
+      213: -2145935877351913986
+    second: TerryDefensive_3
+  - first:
+      213: -1230202271978448549
+    second: TerryDefensive_4
+  - first:
+      213: 6792601717735777247
+    second: TerryDefensive_5
+  - first:
+      213: -3040312867122228426
+    second: TerryDefensive_6
+  - first:
+      213: -4380558820247237258
+    second: TerryDefensive_7
+  - first:
+      213: -303808099057605087
+    second: TerryDefensive_8
+  - first:
+      213: -8851545524941062967
+    second: TerryDefensive_9
+  - first:
+      213: -8103695376504206112
+    second: TerryDefensive_10
+  - first:
+      213: 8275579987745900617
+    second: TerryDefensive_11
+  - first:
+      213: 8762105344803725183
+    second: TerryDefensive_12
+  - first:
+      213: -6984382711241412082
+    second: TerryDefensive_13
+  - first:
+      213: 4184220462993674622
+    second: TerryDefensive_14
+  - first:
+      213: 9069076008732893293
+    second: TerryDefensive_15
+  - first:
+      213: -66748842785341372
+    second: TerryDefensive_16
+  - first:
+      213: 1526221258868507198
+    second: TerryDefensive_17
+  - first:
+      213: 6024801072210061003
+    second: TerryDefensive_18
+  - first:
+      213: 4015896577855589791
+    second: TerryDefensive_19
+  - first:
+      213: 8904294938037791154
+    second: TerryDefensive_20
+  - first:
+      213: 2329818399648301057
+    second: TerryDefensive_21
+  - first:
+      213: 2727001183811339591
+    second: TerryDefensive_22
+  - first:
+      213: 5460901893958850033
+    second: TerryDefensive_23
+  - first:
+      213: 7572915559789694605
+    second: TerryDefensive_24
+  - first:
+      213: 8094301468033034747
+    second: TerryDefensive_25
+  - first:
+      213: 4901369683729552085
+    second: TerryDefensive_26
+  - first:
+      213: -3371946521739893983
+    second: TerryDefensive_27
+  - first:
+      213: 1523705192056411119
+    second: TerryDefensive_28
+  - first:
+      213: 3927433084441199919
+    second: TerryDefensive_29
+  - first:
+      213: 4708509803392702181
+    second: TerryDefensive_30
+  - first:
+      213: 4055733584939639310
+    second: TerryDefensive_31
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TerryDefensive_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1068
+        width: 357
+        height: 178
+      alignment: 9
+      pivot: {x: 0.22, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cebddfee16525f00800000000000000
+      internalID: 1104039549532487361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDefensive_1
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 1068
+        width: 357
+        height: 178
+      alignment: 9
+      pivot: {x: 0.22, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d2fc5fd2e887eb70800000000000000
+      internalID: 8928255294276694737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDefensive_2
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 1068
+        width: 357
+        height: 178
+      alignment: 9
+      pivot: {x: 0.22, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee7c8e906032717c0800000000000000
+      internalID: -4100770426854520850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDefensive_3
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 1068
+        width: 357
+        height: 178
+      alignment: 9
+      pivot: {x: 0.22, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef54caf60ba1832e0800000000000000
+      internalID: -2145935877351913986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDefensive_4
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 1068
+        width: 357
+        height: 178
+      alignment: 9
+      pivot: {x: 0.22, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5998d03d817deee0800000000000000
+      internalID: -1230202271978448549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDefensive_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 890
+        width: 357
+        height: 178
+      alignment: 9
+      pivot: {x: 0.22, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd36956064b244e50800000000000000
+      internalID: 6792601717735777247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDefensive_6
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 890
+        width: 357
+        height: 178
+      alignment: 9
+      pivot: {x: 0.22, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 633512d3e83aec5d0800000000000000
+      internalID: -3040312867122228426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDefensive_7
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 890
+        width: 357
+        height: 178
+      alignment: 9
+      pivot: {x: 0.22, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67d857156f02533c0800000000000000
+      internalID: -4380558820247237258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDefensive_8
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 890
+        width: 357
+        height: 178
+      alignment: 9
+      pivot: {x: 0.29, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 126e8cfb428a8cbf0800000000000000
+      internalID: -303808099057605087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDefensive_9
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 890
+        width: 357
+        height: 178
+      alignment: 9
+      pivot: {x: 0.335, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cc70b81e3ef82580800000000000000
+      internalID: -8851545524941062967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDefensive_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 712
+        width: 357
+        height: 178
+      alignment: 9
+      pivot: {x: 0.395, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eccd738df3e98f80800000000000000
+      internalID: -8103695376504206112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDefensive_11
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 712
+        width: 357
+        height: 178
+      alignment: 9
+      pivot: {x: 0.455, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9480de72724c8d270800000000000000
+      internalID: 8275579987745900617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDefensive_12
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 712
+        width: 357
+        height: 178
+      alignment: 9
+      pivot: {x: 0.5275, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7fd3913360499970800000000000000
+      internalID: 8762105344803725183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDefensive_13
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 712
+        width: 357
+        height: 178
+      alignment: 9
+      pivot: {x: 0.6, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e027311ddec721f90800000000000000
+      internalID: -6984382711241412082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDefensive_14
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 712
+        width: 357
+        height: 178
+      alignment: 9
+      pivot: {x: 0.686, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7198a69756511a30800000000000000
+      internalID: 4184220462993674622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDefensive_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 534
+        width: 357
+        height: 178
+      alignment: 9
+      pivot: {x: 0.686, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d60aa857494dbdd70800000000000000
+      internalID: 9069076008732893293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDefensive_16
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 534
+        width: 357
+        height: 178
+      alignment: 9
+      pivot: {x: 0.686, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4408c98f74cd21ff0800000000000000
+      internalID: -66748842785341372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDefensive_17
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 534
+        width: 357
+        height: 178
+      alignment: 9
+      pivot: {x: 0.686, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e32c18f062a3e2510800000000000000
+      internalID: 1526221258868507198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDefensive_18
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 534
+        width: 357
+        height: 178
+      alignment: 9
+      pivot: {x: 0.686, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc6297787a46c9350800000000000000
+      internalID: 6024801072210061003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDefensive_19
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 534
+        width: 357
+        height: 178
+      alignment: 9
+      pivot: {x: 0.686, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9d0ac119a45bb730800000000000000
+      internalID: 4015896577855589791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDefensive_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 356
+        width: 357
+        height: 178
+      alignment: 9
+      pivot: {x: 0.686, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b92d05b119629b70800000000000000
+      internalID: 8904294938037791154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDefensive_21
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 356
+        width: 357
+        height: 178
+      alignment: 9
+      pivot: {x: 0.686, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 100c4369d7d255020800000000000000
+      internalID: 2329818399648301057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDefensive_22
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 356
+        width: 357
+        height: 178
+      alignment: 9
+      pivot: {x: 0.686, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 745052fd02148d520800000000000000
+      internalID: 2727001183811339591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDefensive_23
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 356
+        width: 357
+        height: 178
+      alignment: 9
+      pivot: {x: 0.686, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f5dca6e65509cb40800000000000000
+      internalID: 5460901893958850033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDefensive_24
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 356
+        width: 357
+        height: 178
+      alignment: 9
+      pivot: {x: 0.686, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8e0b4f1496681960800000000000000
+      internalID: 7572915559789694605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDefensive_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 178
+        width: 357
+        height: 178
+      alignment: 9
+      pivot: {x: 0.686, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf9280bbc4cb45070800000000000000
+      internalID: 8094301468033034747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDefensive_26
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 178
+        width: 357
+        height: 178
+      alignment: 9
+      pivot: {x: 0.686, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d2919f32c9250440800000000000000
+      internalID: 4901369683729552085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDefensive_27
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 178
+        width: 357
+        height: 178
+      alignment: 9
+      pivot: {x: 0.686, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 123641af0807431d0800000000000000
+      internalID: -3371946521739893983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDefensive_28
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 178
+        width: 357
+        height: 178
+      alignment: 9
+      pivot: {x: 0.686, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe3d0fa9cc9452510800000000000000
+      internalID: 1523705192056411119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDefensive_29
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 178
+        width: 357
+        height: 178
+      alignment: 9
+      pivot: {x: 0.686, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f250c35f49b018630800000000000000
+      internalID: 3927433084441199919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDefensive_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 357
+        height: 178
+      alignment: 9
+      pivot: {x: 0.686, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e69aac28bcf75140800000000000000
+      internalID: 4708509803392702181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TerryDefensive_31
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 0
+        width: 357
+        height: 178
+      alignment: 9
+      pivot: {x: 0.686, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e02e2f1153cd84830800000000000000
+      internalID: 4055733584939639310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 4e606e7c83d37d048b9eb88df3d26c8f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
