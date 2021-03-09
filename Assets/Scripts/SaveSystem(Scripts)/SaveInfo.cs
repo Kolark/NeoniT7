@@ -6,7 +6,7 @@ public struct SaveInfo
     public int chamber;
     public int slot;
     public DateTime lastSaved;
-    public SaveInfo(GameScene scene, int chamber, int slot, DateTime date)
+    public SaveInfo(GameScene scene,int chamber,int slot,DateTime date)
     {
         this.currentScene = scene;
         this.chamber = chamber;

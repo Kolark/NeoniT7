@@ -37,10 +37,6 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - id: 0
-  - m_Id: 6146800094846976
-    m_Localized: "Vac\xEDo"
-    m_Metadata:
-      m_Items: []
   references:
     version: 1
     00000000:

@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
-using UnityEditor;
 public class CameraController : MonoBehaviour
 {
     private static CameraController instance;
@@ -15,10 +14,7 @@ public class CameraController : MonoBehaviour
     CameraTarget[] targets;
 
     [SerializeField] float scale = 1f;
-    [SerializeField] List<InitCameraControllerInfo> infos;
-
-
-
+    [SerializeField]InitCameraControllerInfo info;
     private void Awake()
     {
         #region singleton
@@ -69,88 +65,40 @@ public class CameraController : MonoBehaviour
     Color[] gizmosColors = { Color.red, Color.blue, Color.green, Color.cyan, Color.yellow, Color.magenta };
     private void OnDrawGizmos()
     {
-        for (int i = 0; i < infos.Count; i++)
-        {
-            Transform pos = transform.GetChild(0).GetChild(i);
-            if (pos != null)
-            {
-                Gizmos.color = gizmosColors[i % gizmosColors.Length] - new Color(0, 0, 0, 0.5f);
-                Gizmos.DrawCube(pos.position, new Vector3(infos[i].width*scale, infos[i].height*scale, 0));
-                Handles.color = Color.white;
-                Handles.Label(pos.position, "Section: " + i);
-            }
-
-        }
-
-    }
-
-
-    private void OnValidate()
-    {
-        int length = transform.GetChild(0).childCount;
-        #region RemoveAddSections
-        if (length != infos.Count)
-        {
-            int diff = infos.Count - length;
-            if (diff > 0)//Add Cameras
-            {
-                Object prefab = AssetDatabase.LoadAssetAtPath($"Assets/Prefabs/CameraSection.prefab", typeof(GameObject));
-                for (int i = 0; i < diff; i++)
-                {
-                    GameObject toInstatiate = PrefabUtility.InstantiatePrefab(prefab, transform.GetChild(0)) as GameObject;
-                }
-            }
-            else//Remove Cameras
-            {
-                for (int i = 0; i < Mathf.Abs(diff); i++)
-                {
-                    #if UNITY_EDITOR
-                    UnityEditor.EditorApplication.delayCall += () =>
-                    {
-                        try
-                        {
-                            DestroyImmediate(transform.GetChild(0).GetChild(transform.GetChild(0).childCount - 1).gameObject);
-                        }
-                        catch (System.Exception)
-                        {
-
-                            throw;
-                        }
-                        
-                    };
-                    #endif
-                    //DestroyImmediate();
-                }
-            }
-        }
-        #endregion
-        length = transform.GetChild(0).childCount;
-        positions = new Transform[length];
-        CameraTarget[] cameraTargets = new CameraTarget[length];
-        
+        positions = new Transform[transform.GetChild(0).childCount];
         for (int i = 0; i < positions.Length; i++)
         {
             positions[i] = transform.GetChild(0).GetChild(i);
-            cameraTargets[i] = positions[i].GetComponent<CameraTarget>();
         }
-        float Xpos = positions[0].position.x;
-        for (int i = 1; i < positions.Length; i++)
+        
+        for (int i = 0; i < positions.Length; i++)
         {
-            Xpos += (infos[i].width *scale)/ 2 + (infos[i - 1].width*scale)/ 2;
-            positions[i].position = new Vector3(Xpos, positions[i].position.y, -10);
+            Gizmos.color = gizmosColors[i % gizmosColors.Length]- new Color(0,0,0,0.5f);
+            Gizmos.DrawCube(positions[i].position, new Vector3(info.width*scale, info.height*scale, 0));
         }
-        for (int i = 0; i < infos.Count; i++)
-        {
-            cameraTargets[i].AdjustTarget(infos[i],scale);
-        }
-        CinemachineVirtualCamera firstCamera = transform.GetChild(0).GetChild(0).GetComponent<CinemachineVirtualCamera>();
-        firstCamera.Priority = 11;
-
-
-
-
     }
-    
+    private void OnValidate()
+    {
+        
+        positions = new Transform[transform.GetChild(0).childCount];
+        cameras = new CinemachineVirtualCamera[transform.GetChild(0).childCount];
+        for (int i = 0; i < positions.Length; i++)
+        {
+            positions[i] = transform.GetChild(0).GetChild(i);
+            cameras[i] = positions[i].GetComponent<CinemachineVirtualCamera>();
+        }
+        for (int i = 0; i < positions.Length; i++)
+        {
+            BoxCollider2D boxCollider2D;
+            positions[i].position = new Vector3(i * info.spacing*scale,positions[i].position.y, 0);
+            boxCollider2D = positions[i].GetComponent<BoxCollider2D>();
+            boxCollider2D.size = new Vector2(info.width * scale, info.height* scale);
+            Vector3 pos = boxCollider2D.transform.position;
+            pos.z = -info.cameraDistance * scale;
+            boxCollider2D.transform.position = pos;
+        }
+        cameras[0].Priority = 11;
+    }
     private void OnDestroy()
     {
         if(instance != this)
@@ -163,8 +111,8 @@ public class CameraController : MonoBehaviour
 [System.Serializable]
 public struct InitCameraControllerInfo
 {
-    //public float cameraDistance;
-    //public float spacing;
+    public float cameraDistance;
+    public float spacing;
     public float width;
     public float height;
 

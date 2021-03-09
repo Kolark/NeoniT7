@@ -31,10 +31,6 @@ MonoBehaviour:
     m_Key: CurrentLevel
     m_Metadata:
       m_Items: []
-  - m_Id: 6146800094846976
-    m_Key: Empty Slot
-    m_Metadata:
-      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
