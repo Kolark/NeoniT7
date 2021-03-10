@@ -1,0 +1,368 @@
+fileFormatVersion: 2
+guid: 2a9d3a085d5f2d04e8261891a5ab1279
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7188787645165339891
+    second: AsumoLaResponsabilidad_0
+  - first:
+      213: 5903520927222169270
+    second: AsumoLaResponsabilidad_1
+  - first:
+      213: -2730840233504533096
+    second: AsumoLaResponsabilidad_2
+  - first:
+      213: -1035856848225551297
+    second: AsumoLaResponsabilidad_3
+  - first:
+      213: -2820055942690970379
+    second: AsumoLaResponsabilidad_4
+  - first:
+      213: -9053366255760741051
+    second: AsumoLaResponsabilidad_5
+  - first:
+      213: 7090588630944585887
+    second: AsumoLaResponsabilidad_6
+  - first:
+      213: -1063978077555596663
+    second: AsumoLaResponsabilidad_7
+  - first:
+      213: -9002275667020748037
+    second: AsumoLaResponsabilidad_8
+  - first:
+      213: -8122753977291188782
+    second: AsumoLaResponsabilidad_9
+  - first:
+      213: 9206806742875644809
+    second: AsumoLaResponsabilidad_10
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AsumoLaResponsabilidad_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 394
+        width: 351
+        height: 197
+      alignment: 9
+      pivot: {x: 0.408, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0bf33c79bb4c3c90800000000000000
+      internalID: -7188787645165339891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsumoLaResponsabilidad_1
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 394
+        width: 351
+        height: 197
+      alignment: 9
+      pivot: {x: 0.408, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6be792f41058de150800000000000000
+      internalID: 5903520927222169270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsumoLaResponsabilidad_2
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 394
+        width: 351
+        height: 197
+      alignment: 9
+      pivot: {x: 0.408, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8951e97b64b1a1ad0800000000000000
+      internalID: -2730840233504533096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsumoLaResponsabilidad_3
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 394
+        width: 351
+        height: 197
+      alignment: 9
+      pivot: {x: 0.408, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3c3c5b4fa5ef91f0800000000000000
+      internalID: -1035856848225551297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsumoLaResponsabilidad_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 197
+        width: 351
+        height: 197
+      alignment: 9
+      pivot: {x: 0.408, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f4ec29bf062dd8d0800000000000000
+      internalID: -2820055942690970379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsumoLaResponsabilidad_5
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 197
+        width: 351
+        height: 197
+      alignment: 9
+      pivot: {x: 0.408, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54d6fdf6b5bfb5280800000000000000
+      internalID: -9053366255760741051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsumoLaResponsabilidad_6
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 197
+        width: 351
+        height: 197
+      alignment: 9
+      pivot: {x: 0.408, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9810e3dac4d66260800000000000000
+      internalID: 7090588630944585887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsumoLaResponsabilidad_7
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 197
+        width: 351
+        height: 197
+      alignment: 9
+      pivot: {x: 0.408, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 982ee7e539dfb31f0800000000000000
+      internalID: -1063978077555596663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsumoLaResponsabilidad_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 351
+        height: 197
+      alignment: 9
+      pivot: {x: 0.408, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfae5191afd711380800000000000000
+      internalID: -9002275667020748037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsumoLaResponsabilidad_9
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 0
+        width: 351
+        height: 197
+      alignment: 9
+      pivot: {x: 0.408, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d5daa93b4e264f80800000000000000
+      internalID: -8122753977291188782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsumoLaResponsabilidad_10
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 0
+        width: 351
+        height: 197
+      alignment: 9
+      pivot: {x: 0.408, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98326c0f3f525cf70800000000000000
+      internalID: 9206806742875644809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5c0ec1df613b37a43b6c725775673eb6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,7 +1,94 @@
 fileFormatVersion: 2
 guid: 86964da8284e6f34591e0e0da78873fa
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -5210093797034098098
+    second: RugalIdle_0
+  - first:
+      213: 7883154031726355484
+    second: RugalIdle_1
+  - first:
+      213: -3240308501753131306
+    second: RugalIdle_2
+  - first:
+      213: -2063793043425484718
+    second: RugalIdle_3
+  - first:
+      213: 5936357448237924033
+    second: RugalIdle_4
+  - first:
+      213: 5841309106641526737
+    second: RugalIdle_5
+  - first:
+      213: 7119379234676771952
+    second: RugalIdle_6
+  - first:
+      213: 2563872025602594413
+    second: RugalIdle_7
+  - first:
+      213: -2732538116539849768
+    second: RugalIdle_8
+  - first:
+      213: -8909979494649798748
+    second: RugalIdle_9
+  - first:
+      213: 2759280291195433886
+    second: RugalIdle_10
+  - first:
+      213: -1829582055164717751
+    second: RugalIdle_11
+  - first:
+      213: 4294490717509782530
+    second: RugalIdle_12
+  - first:
+      213: -7037799959734145720
+    second: RugalIdle_13
+  - first:
+      213: -6924029016272167863
+    second: RugalIdle_14
+  - first:
+      213: -8953740943587542849
+    second: RugalIdle_15
+  - first:
+      213: 1907386417289982174
+    second: RugalIdle_16
+  - first:
+      213: 2426865664622102768
+    second: RugalIdle_17
+  - first:
+      213: -4552391594867152093
+    second: RugalIdle_18
+  - first:
+      213: -8319450122549237149
+    second: RugalIdle_19
+  - first:
+      213: -2368875736841911040
+    second: RugalIdle_20
+  - first:
+      213: 3692599912647352894
+    second: RugalIdle_21
+  - first:
+      213: -1702864130621087296
+    second: RugalIdle_22
+  - first:
+      213: 2367389295897720715
+    second: RugalIdle_23
+  - first:
+      213: 2611751765929635362
+    second: RugalIdle_24
+  - first:
+      213: -2306772500188294174
+    second: RugalIdle_25
+  - first:
+      213: -6958312208670860823
+    second: RugalIdle_26
+  - first:
+      213: -5417421575587993803
+    second: RugalIdle_27
+  - first:
+      213: 4920907516735704017
+    second: RugalIdle_28
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -85,11 +172,620 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: RugalIdle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 262
+        width: 73
+        height: 131
+      alignment: 9
+      pivot: {x: 0.425, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e42015dbb4702b7b0800000000000000
+      internalID: -5210093797034098098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalIdle_1
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 262
+        width: 73
+        height: 131
+      alignment: 9
+      pivot: {x: 0.425, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c14ecba33d6966d60800000000000000
+      internalID: 7883154031726355484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalIdle_2
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 262
+        width: 73
+        height: 131
+      alignment: 9
+      pivot: {x: 0.425, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6de8356e59c1803d0800000000000000
+      internalID: -3240308501753131306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalIdle_3
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 262
+        width: 73
+        height: 131
+      alignment: 9
+      pivot: {x: 0.425, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 250a3b4592feb53e0800000000000000
+      internalID: -2063793043425484718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalIdle_4
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 262
+        width: 73
+        height: 131
+      alignment: 9
+      pivot: {x: 0.425, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ce37f1a5ad226250800000000000000
+      internalID: 5936357448237924033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalIdle_5
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 262
+        width: 73
+        height: 131
+      alignment: 9
+      pivot: {x: 0.425, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1df5f941faf701150800000000000000
+      internalID: 5841309106641526737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalIdle_6
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 262
+        width: 73
+        height: 131
+      alignment: 9
+      pivot: {x: 0.425, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07c8330a1bd1dc260800000000000000
+      internalID: 7119379234676771952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalIdle_7
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 262
+        width: 73
+        height: 131
+      alignment: 9
+      pivot: {x: 0.425, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d669a97f504b49320800000000000000
+      internalID: 2563872025602594413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalIdle_8
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 262
+        width: 73
+        height: 131
+      alignment: 9
+      pivot: {x: 0.425, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d36d648f03141ad0800000000000000
+      internalID: -2732538116539849768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalIdle_9
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 262
+        width: 73
+        height: 131
+      alignment: 9
+      pivot: {x: 0.425, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4af52615bd4695480800000000000000
+      internalID: -8909979494649798748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalIdle_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 131
+        width: 73
+        height: 131
+      alignment: 9
+      pivot: {x: 0.425, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e93b0783eceea4620800000000000000
+      internalID: 2759280291195433886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalIdle_11
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 131
+        width: 73
+        height: 131
+      alignment: 9
+      pivot: {x: 0.425, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9455a7a70d40c96e0800000000000000
+      internalID: -1829582055164717751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalIdle_12
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 131
+        width: 73
+        height: 131
+      alignment: 9
+      pivot: {x: 0.425, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20c026ced88199b30800000000000000
+      internalID: 4294490717509782530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalIdle_13
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 131
+        width: 73
+        height: 131
+      alignment: 9
+      pivot: {x: 0.425, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84da9c77936b45e90800000000000000
+      internalID: -7037799959734145720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalIdle_14
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 131
+        width: 73
+        height: 131
+      alignment: 9
+      pivot: {x: 0.425, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94c99967b48e8ef90800000000000000
+      internalID: -6924029016272167863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalIdle_15
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 131
+        width: 73
+        height: 131
+      alignment: 9
+      pivot: {x: 0.425, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb8f79efc0cedb380800000000000000
+      internalID: -8953740943587542849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalIdle_16
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 131
+        width: 73
+        height: 131
+      alignment: 9
+      pivot: {x: 0.425, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed079fb37d5687a10800000000000000
+      internalID: 1907386417289982174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalIdle_17
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 131
+        width: 73
+        height: 131
+      alignment: 9
+      pivot: {x: 0.425, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f88461c675fda120800000000000000
+      internalID: 2426865664622102768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalIdle_18
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 131
+        width: 73
+        height: 131
+      alignment: 9
+      pivot: {x: 0.425, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32b287dc6f7a2d0c0800000000000000
+      internalID: -4552391594867152093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalIdle_19
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 131
+        width: 73
+        height: 131
+      alignment: 9
+      pivot: {x: 0.425, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36a6fde11306b8c80800000000000000
+      internalID: -8319450122549237149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalIdle_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 73
+        height: 131
+      alignment: 9
+      pivot: {x: 0.425, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0050f747110102fd0800000000000000
+      internalID: -2368875736841911040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalIdle_21
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 0
+        width: 73
+        height: 131
+      alignment: 9
+      pivot: {x: 0.425, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e32ebfa6e00ce3330800000000000000
+      internalID: 3692599912647352894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalIdle_22
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 0
+        width: 73
+        height: 131
+      alignment: 9
+      pivot: {x: 0.425, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c1639968163e58e0800000000000000
+      internalID: -1702864130621087296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalIdle_23
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 0
+        width: 73
+        height: 131
+      alignment: 9
+      pivot: {x: 0.425, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b87bb0b8508aad020800000000000000
+      internalID: 2367389295897720715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalIdle_24
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 0
+        width: 73
+        height: 131
+      alignment: 9
+      pivot: {x: 0.425, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22e2cb9b46ece3420800000000000000
+      internalID: 2611751765929635362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalIdle_25
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 0
+        width: 73
+        height: 131
+      alignment: 9
+      pivot: {x: 0.425, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e313a402a2bcffd0800000000000000
+      internalID: -2306772500188294174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalIdle_26
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 0
+        width: 73
+        height: 131
+      alignment: 9
+      pivot: {x: 0.425, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e9d8e5b9eb1f6f90800000000000000
+      internalID: -6958312208670860823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalIdle_27
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 0
+        width: 73
+        height: 131
+      alignment: 9
+      pivot: {x: 0.425, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5376a8c97c371d4b0800000000000000
+      internalID: -5417421575587993803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalIdle_28
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 0
+        width: 73
+        height: 131
+      alignment: 9
+      pivot: {x: 0.425, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dbc49b70539a4440800000000000000
+      internalID: 4920907516735704017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 6c0a759f717ef6d48854c42243ccd97d
     internalID: 0
     vertices: []
     indices: 

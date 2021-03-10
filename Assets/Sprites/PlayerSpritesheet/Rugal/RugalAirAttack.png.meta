@@ -1,7 +1,226 @@
 fileFormatVersion: 2
 guid: 6fbac37b1bbf6724f943819813caded7
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 3218768457059264969
+    second: RugalAirAttack_0
+  - first:
+      213: 2437297416493725824
+    second: RugalAirAttack_1
+  - first:
+      213: 6316772084587229823
+    second: RugalAirAttack_2
+  - first:
+      213: -7906729726514045705
+    second: RugalAirAttack_3
+  - first:
+      213: -6866611458967495961
+    second: RugalAirAttack_4
+  - first:
+      213: -2901318574079853976
+    second: RugalAirAttack_5
+  - first:
+      213: -3773781291602832414
+    second: RugalAirAttack_6
+  - first:
+      213: 3458710984389349209
+    second: RugalAirAttack_7
+  - first:
+      213: -2901819568924601779
+    second: RugalAirAttack_8
+  - first:
+      213: -3536285008369659937
+    second: RugalAirAttack_9
+  - first:
+      213: 428281704813826098
+    second: RugalAirAttack_10
+  - first:
+      213: 6674815920264588143
+    second: RugalAirAttack_11
+  - first:
+      213: -8767935855081887285
+    second: RugalAirAttack_12
+  - first:
+      213: 8150914146092475524
+    second: RugalAirAttack_13
+  - first:
+      213: 9063399834630626401
+    second: RugalAirAttack_14
+  - first:
+      213: -4104955333443808637
+    second: RugalAirAttack_15
+  - first:
+      213: -9049620974262129629
+    second: RugalAirAttack_16
+  - first:
+      213: 3295541987137872875
+    second: RugalAirAttack_17
+  - first:
+      213: 703655654156458871
+    second: RugalAirAttack_18
+  - first:
+      213: 7922046684670299365
+    second: RugalAirAttack_19
+  - first:
+      213: -6323507749043821557
+    second: RugalAirAttack_20
+  - first:
+      213: -3163389729049062462
+    second: RugalAirAttack_21
+  - first:
+      213: -7426964782939351558
+    second: RugalAirAttack_22
+  - first:
+      213: 2303631893297713652
+    second: RugalAirAttack_23
+  - first:
+      213: 5109906565719198927
+    second: RugalAirAttack_24
+  - first:
+      213: -8282457436278056179
+    second: RugalAirAttack_25
+  - first:
+      213: 7402790492869112400
+    second: RugalAirAttack_26
+  - first:
+      213: -7967034215582376629
+    second: RugalAirAttack_27
+  - first:
+      213: 4823290078139109043
+    second: RugalAirAttack_28
+  - first:
+      213: -2233601697601197364
+    second: RugalAirAttack_29
+  - first:
+      213: 3921290585492524834
+    second: RugalAirAttack_30
+  - first:
+      213: 3270710697937493440
+    second: RugalAirAttack_31
+  - first:
+      213: 8563412243791754262
+    second: RugalAirAttack_32
+  - first:
+      213: 7823508748127857266
+    second: RugalAirAttack_33
+  - first:
+      213: 3703138781808816814
+    second: RugalAirAttack_34
+  - first:
+      213: 7655873497557573062
+    second: RugalAirAttack_35
+  - first:
+      213: 2343902724777085061
+    second: RugalAirAttack_36
+  - first:
+      213: -8178208861968283852
+    second: RugalAirAttack_37
+  - first:
+      213: 596753584645334647
+    second: RugalAirAttack_38
+  - first:
+      213: -3390042232519921753
+    second: RugalAirAttack_39
+  - first:
+      213: 4550848217100000827
+    second: RugalAirAttack_40
+  - first:
+      213: -217339335893340573
+    second: RugalAirAttack_41
+  - first:
+      213: -8538989792849295131
+    second: RugalAirAttack_42
+  - first:
+      213: -8566606128019465424
+    second: RugalAirAttack_43
+  - first:
+      213: 3010072280991248291
+    second: RugalAirAttack_44
+  - first:
+      213: 5895632455020623799
+    second: RugalAirAttack_45
+  - first:
+      213: 3295238358787200230
+    second: RugalAirAttack_46
+  - first:
+      213: -1137628727644649734
+    second: RugalAirAttack_47
+  - first:
+      213: -6309751489929256717
+    second: RugalAirAttack_48
+  - first:
+      213: -6414941573525562459
+    second: RugalAirAttack_49
+  - first:
+      213: -2259679500955350846
+    second: RugalAirAttack_50
+  - first:
+      213: 578830526746319220
+    second: RugalAirAttack_51
+  - first:
+      213: -7872256213246830353
+    second: RugalAirAttack_52
+  - first:
+      213: 6428018057520281581
+    second: RugalAirAttack_53
+  - first:
+      213: 546285384689750315
+    second: RugalAirAttack_54
+  - first:
+      213: 8081737251589910793
+    second: RugalAirAttack_55
+  - first:
+      213: 3857659654165902577
+    second: RugalAirAttack_56
+  - first:
+      213: 2283955586200580395
+    second: RugalAirAttack_57
+  - first:
+      213: -3723094360219012680
+    second: RugalAirAttack_58
+  - first:
+      213: 3786262726174962207
+    second: RugalAirAttack_59
+  - first:
+      213: -8581308422213372446
+    second: RugalAirAttack_60
+  - first:
+      213: 9003740499309332304
+    second: RugalAirAttack_61
+  - first:
+      213: 7459694987777628697
+    second: RugalAirAttack_62
+  - first:
+      213: -764999961427892188
+    second: RugalAirAttack_63
+  - first:
+      213: 6978702441816880413
+    second: RugalAirAttack_64
+  - first:
+      213: 3971925574896062712
+    second: RugalAirAttack_65
+  - first:
+      213: -2912899780625851674
+    second: RugalAirAttack_66
+  - first:
+      213: -5433960567800898902
+    second: RugalAirAttack_67
+  - first:
+      213: 8915749315533992691
+    second: RugalAirAttack_68
+  - first:
+      213: 9215989083030051176
+    second: RugalAirAttack_69
+  - first:
+      213: -810114915986581366
+    second: RugalAirAttack_70
+  - first:
+      213: 986198128906017550
+    second: RugalAirAttack_71
+  - first:
+      213: -4129478288519488649
+    second: RugalAirAttack_72
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -85,11 +304,1544 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: RugalAirAttack_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1673
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c9ef31abdc5bac20800000000000000
+      internalID: 3218768457059264969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_1
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1673
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0.03}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 088f512461503d120800000000000000
+      internalID: 2437297416493725824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_2
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1673
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f72fce44ebea9a750800000000000000
+      internalID: 6316772084587229823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_3
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1673
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0.235}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fcdb149437a54290800000000000000
+      internalID: -7906729726514045705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_4
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1673
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0.305}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ea9d994245e4b0a0800000000000000
+      internalID: -6866611458967495961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_5
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1673
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86a3ab3f0227cb7d0800000000000000
+      internalID: -2901318574079853976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_6
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1673
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0.375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e39ffdd8e5d0abc0800000000000000
+      internalID: -3773781291602832414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_7
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 1673
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0.37}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95fc445b05fcfff20800000000000000
+      internalID: 3458710984389349209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_8
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1673
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0.385}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d42d8fff97aaab7d0800000000000000
+      internalID: -2901819568924601779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_9
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 1673
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdf469b55879ceec0800000000000000
+      internalID: -3536285008369659937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1434
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2301a3ff0ff81f500800000000000000
+      internalID: 428281704813826098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_11
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1434
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6b2e7cf6b5b1ac50800000000000000
+      internalID: 6674815920264588143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_12
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1434
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0.305}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc9ee685bc8025680800000000000000
+      internalID: -8767935855081887285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_13
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1434
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0.265}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4846c800b3ddd1170800000000000000
+      internalID: 8150914146092475524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_14
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1434
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16c1e70312aa7cd70800000000000000
+      internalID: 9063399834630626401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_15
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1434
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0.195}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3829c3b8fd44807c0800000000000000
+      internalID: -4104955333443808637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_16
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1434
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0.13}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32c6e2dbba9496280800000000000000
+      internalID: -9049620974262129629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_17
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 1434
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be3ecbd0afd1cbd20800000000000000
+      internalID: 3295541987137872875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_18
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1434
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77bd03ed613e3c900800000000000000
+      internalID: 703655654156458871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_19
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 1434
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ec85d5ac73c0fd60800000000000000
+      internalID: 7922046684670299365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1195
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0420d3a4336e38a0800000000000000
+      internalID: -6323507749043821557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_21
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1195
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c359e14dc16914d0800000000000000
+      internalID: -3163389729049062462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_22
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1195
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af5509131ee1ee890800000000000000
+      internalID: -7426964782939351558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_23
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1195
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0.035}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f15545700528ff10800000000000000
+      internalID: 2303631893297713652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_24
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1195
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcc0125b2f80ae640800000000000000
+      internalID: 5109906565719198927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_25
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1195
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0.235}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0b9a5318dcce0d80800000000000000
+      internalID: -8282457436278056179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_26
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1195
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0.305}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0523a1a4bbefbb660800000000000000
+      internalID: 7402790492869112400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_27
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 1195
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4d54d297986f6190800000000000000
+      internalID: -7967034215582376629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_28
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1195
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0.38}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bec52c65c4cfe240800000000000000
+      internalID: 4823290078139109043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_29
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 1195
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0.38}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cca65c41717a001e0800000000000000
+      internalID: -2233601697601197364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 956
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22f8d59f2093b6630800000000000000
+      internalID: 3921290585492524834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_31
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 956
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0.475}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cd52a10d06e36d20800000000000000
+      internalID: 3270710697937493440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_32
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 956
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0.49}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6143078901a57d670800000000000000
+      internalID: 8563412243791754262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_33
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 956
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0.475}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27a625571cfa29c60800000000000000
+      internalID: 7823508748127857266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_34
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 956
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0.395}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea2ffab1a11346330800000000000000
+      internalID: 3703138781808816814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_35
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 956
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0.345}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cd1f3b22602f3a60800000000000000
+      internalID: 7655873497557573062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_36
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 956
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0.315}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58888621c17378020800000000000000
+      internalID: 2343902724777085061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_37
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 956
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 437cd6bbe5a218e80800000000000000
+      internalID: -8178208861968283852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_38
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 956
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 776e9373938184800800000000000000
+      internalID: 596753584645334647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_39
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 956
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0.13}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7afe31dfc8624f0d0800000000000000
+      internalID: -3390042232519921753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 717
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3e17fe875cd72f30800000000000000
+      internalID: 4550848217100000827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_41
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 717
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36eab58860bdbfcf0800000000000000
+      internalID: -217339335893340573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_42
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 717
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e80880660a6f7980800000000000000
+      internalID: -8538989792849295131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_43
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 717
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03b17b84d1d4d1980800000000000000
+      internalID: -8566606128019465424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_44
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 717
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3afabb0aacce5c920800000000000000
+      internalID: 3010072280991248291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_45
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 717
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b7b4cf3b7e71d150800000000000000
+      internalID: 5895632455020623799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_46
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 717
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0.035}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e490c114d90bbd20800000000000000
+      internalID: 3295238358787200230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_47
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 717
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af6067a13b45630f0800000000000000
+      internalID: -1137628727644649734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_48
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 717
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0.235}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f066cd43724f68a0800000000000000
+      internalID: -6309751489929256717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_49
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 717
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0.305}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ab9f1f60ac89f6a0800000000000000
+      internalID: -6414941573525562459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 478
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c80357577104a0e0800000000000000
+      internalID: -2259679500955350846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_51
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 478
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0.38}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 479dddb1c4b680800800000000000000
+      internalID: 578830526746319220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_52
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 478
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0.375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe89f8cdea020c290800000000000000
+      internalID: -7872256213246830353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_53
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 478
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0.42}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de7fa40cd58e43950800000000000000
+      internalID: 6428018057520281581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_54
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 478
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0.52}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b219b6cb9abc49700800000000000000
+      internalID: 546285384689750315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_55
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 478
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0.53}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 901fe012639182070800000000000000
+      internalID: 8081737251589910793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_56
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 478
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0.47}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f43ae64409298530800000000000000
+      internalID: 3857659654165902577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_57
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 478
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b213146318d32bf10800000000000000
+      internalID: 2283955586200580395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_58
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 478
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b1b2e9b769e45cc0800000000000000
+      internalID: -3723094360219012680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_59
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 478
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f12f5f393e18b8430800000000000000
+      internalID: 3786262726174962207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 239
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0.28}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e577e9a47119e880800000000000000
+      internalID: -8581308422213372446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_61
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 239
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 057812fb746b3fc70800000000000000
+      internalID: 9003740499309332304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_62
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 239
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0.135}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91a5f377119268760800000000000000
+      internalID: 7459694987777628697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_63
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 239
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42827e5969c2265f0800000000000000
+      internalID: -764999961427892188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_64
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 239
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1575a565e459d060800000000000000
+      internalID: 6978702441816880413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_65
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 239
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f018f5244d1f1730800000000000000
+      internalID: 3971925574896062712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_66
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 239
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ea9b7d251d4397d0800000000000000
+      internalID: -2912899780625851674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_67
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 239
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaa5fb867a1b694b0800000000000000
+      internalID: -5433960567800898902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_68
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 239
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f2f5dac3ca1bbb70800000000000000
+      internalID: 8915749315533992691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_69
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 239
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86952eb1e35c5ef70800000000000000
+      internalID: 9215989083030051176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a88df5da6c4e1c4f0800000000000000
+      internalID: -810114915986581366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_71
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0b199f19fdafad00800000000000000
+      internalID: 986198128906017550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalAirAttack_72
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 150
+        height: 239
+      alignment: 9
+      pivot: {x: 0.485, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77b9b11206521b6c0800000000000000
+      internalID: -4129478288519488649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 876ebb4b2a6abfb4abc77a0b74200f69
     internalID: 0
     vertices: []
     indices: 

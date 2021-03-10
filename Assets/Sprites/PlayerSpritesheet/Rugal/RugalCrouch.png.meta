@@ -1,7 +1,61 @@
 fileFormatVersion: 2
 guid: c2096d764cdb61441a83f29f978c4092
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -8671523281378668044
+    second: RugalCrouch_0
+  - first:
+      213: 4379110717135230096
+    second: RugalCrouch_1
+  - first:
+      213: 2656600748549430556
+    second: RugalCrouch_2
+  - first:
+      213: -6160143640122832568
+    second: RugalCrouch_3
+  - first:
+      213: 8419629901333288890
+    second: RugalCrouch_4
+  - first:
+      213: -4718791475625679434
+    second: RugalCrouch_5
+  - first:
+      213: -3538782420676930184
+    second: RugalCrouch_6
+  - first:
+      213: -3756245084353339166
+    second: RugalCrouch_7
+  - first:
+      213: -5197688721529274084
+    second: RugalCrouch_8
+  - first:
+      213: 375499504523145437
+    second: RugalCrouch_9
+  - first:
+      213: -7074970477895703149
+    second: RugalCrouch_10
+  - first:
+      213: -1277706425032950308
+    second: RugalCrouch_11
+  - first:
+      213: -6870156954820111121
+    second: RugalCrouch_12
+  - first:
+      213: -34445525909607713
+    second: RugalCrouch_13
+  - first:
+      213: -7446042149675649239
+    second: RugalCrouch_14
+  - first:
+      213: -4703093178275531508
+    second: RugalCrouch_15
+  - first:
+      213: 8704858835829586907
+    second: RugalCrouch_16
+  - first:
+      213: 2418256539750127610
+    second: RugalCrouch_17
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -85,11 +139,389 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: RugalCrouch_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 262
+        width: 78
+        height: 131
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f115efe48f88a780800000000000000
+      internalID: -8671523281378668044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouch_1
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 262
+        width: 78
+        height: 131
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09493f6eef9b5cc30800000000000000
+      internalID: 4379110717135230096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouch_2
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 262
+        width: 78
+        height: 131
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1d53573e442ed420800000000000000
+      internalID: 2656600748549430556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouch_3
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 262
+        width: 78
+        height: 131
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 849c8154ff5c28aa0800000000000000
+      internalID: -6160143640122832568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouch_4
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 262
+        width: 78
+        height: 131
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab75a3149c888d470800000000000000
+      internalID: 8419629901333288890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouch_5
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 262
+        width: 78
+        height: 131
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b5a036772c738eb0800000000000000
+      internalID: -4718791475625679434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouch_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 131
+        width: 78
+        height: 131
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 875972e3328b3eec0800000000000000
+      internalID: -3538782420676930184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouch_7
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 131
+        width: 78
+        height: 131
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e0efc94ff22fdbc0800000000000000
+      internalID: -3756245084353339166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouch_8
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 131
+        width: 78
+        height: 131
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c11813475a91ed7b0800000000000000
+      internalID: -5197688721529274084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouch_9
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 131
+        width: 78
+        height: 131
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd0ff645fca063500800000000000000
+      internalID: 375499504523145437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouch_10
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 131
+        width: 78
+        height: 131
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 395a6acc5d7a0dd90800000000000000
+      internalID: -7074970477895703149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouch_11
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 131
+        width: 78
+        height: 131
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdd3da8a6cca44ee0800000000000000
+      internalID: -1277706425032950308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouch_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 78
+        height: 131
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe494c436ac48a0a0800000000000000
+      internalID: -6870156954820111121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouch_13
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 0
+        width: 78
+        height: 131
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fda6e080aff958ff0800000000000000
+      internalID: -34445525909607713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouch_14
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 0
+        width: 78
+        height: 131
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9273ffd9d185aa890800000000000000
+      internalID: -7446042149675649239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouch_15
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 0
+        width: 78
+        height: 131
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c05f2532ca14bbeb0800000000000000
+      internalID: -4703093178275531508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouch_16
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 0
+        width: 78
+        height: 131
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdbfa89adfeddc870800000000000000
+      internalID: 8704858835829586907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouch_17
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 0
+        width: 78
+        height: 131
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af7529ba28f5f8120800000000000000
+      internalID: 2418256539750127610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5d0980f51507ea544903dee61a2eaec4
     internalID: 0
     vertices: []
     indices: 
