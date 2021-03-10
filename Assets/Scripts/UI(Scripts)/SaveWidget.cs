@@ -4,7 +4,7 @@ using UnityEngine;
 using System;
 using UnityEngine.Localization.Components;
 using UnityEngine.Localization;
-
+using UnityEngine.UI;
 public class SaveWidget : UIWidget
 {
 
@@ -23,17 +23,30 @@ public class SaveWidget : UIWidget
 
     private RectTransform emptyUI;
     private RectTransform saveInfoUI;
-
+    private LocalizeStringEvent[] localizedStrings;
+    [SerializeField] Sprite[] Icons;
+    [SerializeField] Image image;
     protected override void Awake()
     {
         base.Awake();
         emptyUI = transform.GetChild(0).GetComponent<RectTransform>();
         saveInfoUI= transform.GetChild(1).GetComponent<RectTransform>();
+        localizedStrings = GetComponents<LocalizeStringEvent>();
+        
     }
     public string lastSaved { get {return saveInfo.lastSaved.ToShortDateString(); } }
     public string lastlevelplayed { get { return saveInfo.currentScene.ToString(); } }
+    public string lastRoomplayed { get { return saveInfo.chamber.ToString(); } }
+    public string difficultyPlayed { get { return saveInfo.difficulty.ToString(); } }
 
-    
+    private void Start()
+    {
+        image.sprite = Icons[(int)saveInfo.character];
+        for (int i = 0; i < localizedStrings.Length; i++)
+        {
+            localizedStrings[i].RefreshString();
+        }
+    }
     protected override void OnSelect()
     {
         base.OnSelect();

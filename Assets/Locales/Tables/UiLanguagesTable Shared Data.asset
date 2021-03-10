@@ -35,6 +35,14 @@ MonoBehaviour:
     m_Key: Empty Slot
     m_Metadata:
       m_Items: []
+  - m_Id: 7535786843480064
+    m_Key: Room
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7539420394201088
+    m_Key: Difficulty
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

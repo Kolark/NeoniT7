@@ -41,9 +41,19 @@ MonoBehaviour:
     m_Localized: "Vac\xEDo"
     m_Metadata:
       m_Items: []
+  - m_Id: 7535786843480064
+    m_Localized: 'Sala: {lastRoomplayed}'
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 7539420394201088
+    m_Localized: 'Dificultad: {difficultyPlayed}'
+    m_Metadata:
+      m_Items:
+      - id: 0
   references:
     version: 1
     00000000:
       type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_Entries: 00a0e83dd4cb0d0000a02806a8cb0d00
+        m_Entries: 00a0e83dd4cb0d0000a02806a8cb0d0000a0e819c2c51a0000a0681a10c91a00
