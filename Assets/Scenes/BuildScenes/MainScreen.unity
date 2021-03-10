@@ -584,7 +584,7 @@ MonoBehaviour:
   finalScale: {x: 0.25, y: 0.25}
   easeType: 0
   duration: 0
-  sceneToGo: 4
+  sceneToGo: 1
 --- !u!114 &530773149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2192,4 +2192,5 @@ MonoBehaviour:
     loop: 1
     source: {fileID: 0}
   levelType: 0
+  nextLevel: 0
   ScreenAudio: Menu_Principal

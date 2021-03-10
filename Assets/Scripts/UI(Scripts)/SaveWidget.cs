@@ -30,10 +30,10 @@ public class SaveWidget : UIWidget
         emptyUI = transform.GetChild(0).GetComponent<RectTransform>();
         saveInfoUI= transform.GetChild(1).GetComponent<RectTransform>();
     }
-    public string lastSaved { get {return "date"; } }
-    public string lastlevelplayed { get { return "scene"; } }
+    public string lastSaved { get {return saveInfo.lastSaved.ToShortDateString(); } }
+    public string lastlevelplayed { get { return saveInfo.currentScene.ToString(); } }
 
-
+    
     protected override void OnSelect()
     {
         base.OnSelect();
@@ -60,7 +60,8 @@ public class SaveWidget : UIWidget
         }
         else
         {
-            GameManager.Instance.ChangeScene(new SaveInfo(GameScene.testfelipe,0,widgetIndex,DateTime.Now));
+            GameManager.Instance.Current = new SaveInfo(GameScene.Level1, 1, widgetIndex, DateTime.Now, CharacterType.Samurai, Difficulty.Normal);
+            GameManager.Instance.ChangeScene(sceneToGo);
         }
     }
 

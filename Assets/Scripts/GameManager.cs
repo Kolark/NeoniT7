@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     private SaveInfo current;
     bool hasSaveInfo = false;
 
+    
 
     private int saveSlot;
     public int Saveslot { 
@@ -27,7 +28,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public SaveInfo Current { get => current;}
+    public SaveInfo Current { get => current; set => current = value; }
 
     private void Awake()
     {
@@ -51,13 +52,26 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene((int)scene);
         currentScene = scene;
     }
-    public void ChangeScene(SaveInfo saveInfo)
+    public void ChangeScene(SaveInfo saveInfo,bool canSave = false)
     {
-
+        if (canSave)
+        {
+            Save(saveInfo);
+        }
         SceneManager.LoadScene((int)saveInfo.currentScene);
         current = saveInfo;
         currentScene = current.currentScene;
     }
+    public void Save()
+    {
+        SaveSystem.Save(current);
+    }
+    public void Save(SaveInfo saveInfo)
+    {
+        SaveSystem.Save(saveInfo);
+    }
+
+
     /// <summary>
     /// Easy implementation of changing to the previous Scene
     /// TO-DO could be better with a tree like structure
@@ -107,13 +121,46 @@ public class GameManager : MonoBehaviour
     {
 
     }
+    
+    public void SetChamber(int currentChamber)
+    {
+        current.chamber = currentChamber;
+    }
+    public void SetLevel(GameScene currentLevel)
+    {
+        current.currentScene = currentLevel;
+    }
+    public void SetCharacter(CharacterType character)
+    {
+        current.character = character;
+    }
+    public void SetDifficulty(Difficulty difficulty)
+    {
+        current.difficulty = difficulty;
+    }
+
 }
 
+public enum Difficulty
+{
+    Normal,
+    Hardcore
+}
+
+public enum CharacterType
+{
+    Samurai,
+    Ninja,
+    Yakuza
+}
 public enum GameScene
 {
     MainScreen,
     SaveScreen,
     CharacterScreen,
     DifficultyScreen,
-    testfelipe
+    Level1,
+    Level2,
+    Level3,
+    Level4
 }

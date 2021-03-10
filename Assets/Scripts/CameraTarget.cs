@@ -13,6 +13,17 @@ public class CameraTarget : MonoBehaviour
         col2d = GetComponent<Collider2D>();
         virtualCamera = GetComponent<CinemachineVirtualCamera>();
     }
+    private void Start()
+    {
+        if(chamberIndex == 1)
+        {
+            virtualCamera.Priority = 11;
+        }
+        else
+        {
+            virtualCamera.Priority = 10;
+        }
+    }
     public void setIndex(int i)
     {
         chamberIndex = i;
@@ -31,6 +42,7 @@ public class CameraTarget : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             bool updatedChamber = CameraController.Instance.updateChamber(chamberIndex);
+            
             col2d.isTrigger = !updatedChamber;
 
         }
