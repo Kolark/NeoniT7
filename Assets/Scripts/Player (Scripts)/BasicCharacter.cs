@@ -129,7 +129,7 @@ public class BasicCharacter : MonoBehaviour
         soundModule.Play((int)CharacterSounds.combo1);
         IEnemyHurtBox enemy = Hit?.GetComponent<IEnemyHurtBox>();
         enemy?.OnReceiveDamage();
-        GetComponent<Rigidbody2D>().AddForce(Vector2.right * transform.localScale.x *5, ForceMode2D.Impulse);
+        //GetComponent<Rigidbody2D>().AddForce(Vector2.right * transform.localScale.x *5, ForceMode2D.Impulse);
     }
     public virtual void AttackTwo()
     {
@@ -137,7 +137,7 @@ public class BasicCharacter : MonoBehaviour
         soundModule.Play((int)CharacterSounds.combo2);
         IEnemyHurtBox enemy = Hit?.GetComponent<IEnemyHurtBox>();
         enemy?.OnReceiveDamage();
-        GetComponent<Rigidbody2D>().AddForce(Vector2.right * transform.localScale.x * 10, ForceMode2D.Impulse);
+        //GetComponent<Rigidbody2D>().AddForce(Vector2.right * transform.localScale.x * 10, ForceMode2D.Impulse);
     }
     public virtual void AttackThree()
     {
@@ -148,7 +148,7 @@ public class BasicCharacter : MonoBehaviour
             IEnemyHurtBox enemy = Hit[i]?.GetComponent<IEnemyHurtBox>();
             enemy?.OnReceiveDamage();
         }
-        GetComponent<Rigidbody2D>().AddForce(Vector2.right * transform.localScale.x * 15, ForceMode2D.Impulse);
+        //GetComponent<Rigidbody2D>().AddForce(Vector2.right * transform.localScale.x * 15, ForceMode2D.Impulse);
     }
     public virtual void AirAttack()
     {
