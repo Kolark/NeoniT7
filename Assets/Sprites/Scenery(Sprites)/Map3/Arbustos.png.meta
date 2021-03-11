@@ -1,31 +1,31 @@
 fileFormatVersion: 2
-guid: 412b5d743641cb84982afba2644125ae
+guid: cd94ce4f1b849e04db2133a9a6cdf716
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1633483801838575100
-    second: FondoAnimado1ParallaxBack_0
+      213: 2334830838727421421
+    second: Arbustos_0
   - first:
-      213: -8461258481510977132
-    second: FondoAnimado1ParallaxBack_1
+      213: -5700360853123348829
+    second: Arbustos_1
   - first:
-      213: 6440792342796138165
-    second: FondoAnimado1ParallaxBack_2
+      213: 5352682095262541921
+    second: Arbustos_2
   - first:
-      213: 4993781063880671788
-    second: FondoAnimado1ParallaxBack_3
+      213: 4785477362872531132
+    second: Arbustos_3
   - first:
-      213: 2457396816698766348
-    second: FondoAnimado1ParallaxBack_4
+      213: -37005313502587327
+    second: Arbustos_4
   - first:
-      213: 7379700624355466087
-    second: FondoAnimado1ParallaxBack_5
+      213: 3175414457202810220
+    second: Arbustos_5
   - first:
-      213: -9006784286415950266
-    second: FondoAnimado1ParallaxBack_6
+      213: 6534919837608817731
+    second: Arbustos_6
   - first:
-      213: -1668381961136221074
-    second: FondoAnimado1ParallaxBack_7
+      213: -3786121973253276489
+    second: Arbustos_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -66,7 +66,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 64
@@ -85,7 +85,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 4096
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -97,7 +97,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 4096
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -109,7 +109,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
-    maxTextureSize: 4096
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FondoAnimado1ParallaxBack_0
+      name: Arbustos_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 352
-        height: 192
+        width: 640
+        height: 360
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 402ae050323b459e0800000000000000
-      internalID: -1633483801838575100
+      spriteID: deda9f0074cf66020800000000000000
+      internalID: 2334830838727421421
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FondoAnimado1ParallaxBack_1
+      name: Arbustos_1
       rect:
         serializedVersion: 2
-        x: 352
+        x: 640
         y: 0
-        width: 352
-        height: 192
+        width: 640
+        height: 360
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 491f6c0ad32939a80800000000000000
-      internalID: -8461258481510977132
+      spriteID: 3a64a02810044e0b0800000000000000
+      internalID: -5700360853123348829
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FondoAnimado1ParallaxBack_2
+      name: Arbustos_2
       rect:
         serializedVersion: 2
-        x: 704
+        x: 1280
         y: 0
-        width: 352
-        height: 192
+        width: 640
+        height: 360
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b67b60d28a426950800000000000000
-      internalID: 6440792342796138165
+      spriteID: 168a7b3810c884a40800000000000000
+      internalID: 5352682095262541921
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FondoAnimado1ParallaxBack_3
+      name: Arbustos_3
       rect:
         serializedVersion: 2
-        x: 1056
+        x: 1920
         y: 0
-        width: 352
-        height: 192
+        width: 640
+        height: 360
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c220eae5b697d4540800000000000000
-      internalID: 4993781063880671788
+      spriteID: cb8b0b69e4e696240800000000000000
+      internalID: 4785477362872531132
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FondoAnimado1ParallaxBack_4
+      name: Arbustos_4
       rect:
         serializedVersion: 2
-        x: 1408
+        x: 2560
         y: 0
-        width: 352
-        height: 192
+        width: 640
+        height: 360
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c04718b826d6a1220800000000000000
-      internalID: 2457396816698766348
+      spriteID: 14650e90dd78c7ff0800000000000000
+      internalID: -37005313502587327
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FondoAnimado1ParallaxBack_5
+      name: Arbustos_5
       rect:
         serializedVersion: 2
-        x: 1760
+        x: 3200
         y: 0
-        width: 352
-        height: 192
+        width: 640
+        height: 360
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,20 +242,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76b9f675e96f96660800000000000000
-      internalID: 7379700624355466087
+      spriteID: c6d9630ff96511c20800000000000000
+      internalID: 3175414457202810220
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FondoAnimado1ParallaxBack_6
+      name: Arbustos_6
       rect:
         serializedVersion: 2
-        x: 2112
+        x: 3840
         y: 0
-        width: 352
-        height: 192
+        width: 640
+        height: 360
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,20 +263,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64e6b975969710380800000000000000
-      internalID: -9006784286415950266
+      spriteID: 344b35408f2b0ba50800000000000000
+      internalID: 6534919837608817731
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FondoAnimado1ParallaxBack_7
+      name: Arbustos_7
       rect:
         serializedVersion: 2
-        x: 2464
+        x: 4480
         y: 0
-        width: 352
-        height: 192
+        width: 640
+        height: 360
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -284,8 +284,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e645ec02277b8d8e0800000000000000
-      internalID: -1668381961136221074
+      spriteID: 7bcffe3002ef47bc0800000000000000
+      internalID: -3786121973253276489
       vertices: []
       indices: 
       edges: []
@@ -293,7 +293,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5f070a4d02419f047a4ebc29e6d95a07
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
