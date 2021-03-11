@@ -43,7 +43,10 @@ public class CameraController : MonoBehaviour
             targets[i].setIndex(i + 1);
         }
     }
-   
+    private void Start()
+    {
+        chambersUnlocked = GameManager.Instance.Current.chamber;
+    }
     public bool updateChamber(int exitChamber)
     {
         bool chamberStatus = exitChamber == chambersUnlocked;

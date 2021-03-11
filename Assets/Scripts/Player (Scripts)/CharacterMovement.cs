@@ -142,7 +142,7 @@ public class CharacterMovement : MonoBehaviour
             transform.localScale = theScale;
         }
     }
-
+    
     private void OnDrawGizmos()
     {
         //Gizmos.color = Color.red;

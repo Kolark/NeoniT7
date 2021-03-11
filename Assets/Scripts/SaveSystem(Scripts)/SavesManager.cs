@@ -43,7 +43,7 @@ public class SavesManager : MonoBehaviour
     }
     private void Start()
     {
-        InputController.Instance.Attack += OnDelete;
+        InputController.Instance.Delete += OnDelete;
         for (int i = 0; i < saveWidgets.Count; i++)
         {
             saveWidgets[i].SetWidget();
@@ -59,7 +59,10 @@ public class SavesManager : MonoBehaviour
             SaveSystem.Delete(currentSelected);
         }
     }
-    
+    private void OnDestroy()
+    {
+        InputController.Instance.Delete -= OnDelete;
+    }
     public void setIndex(int i)
     {
         currentSelected = i;

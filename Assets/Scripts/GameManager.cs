@@ -132,6 +132,14 @@ public class GameManager : MonoBehaviour
         Save();
         ChangeScene(SceneController.Instance.CurrentLevel);
     }
+
+    public void MainScreen()
+    {
+        Debug.Log("Main");
+        Pause_Unpause();
+        Save();
+        ChangeScene(GameScene.MainScreen);
+    }
     public void SetChamber(int currentChamber)
     {
         current.chamber = currentChamber;

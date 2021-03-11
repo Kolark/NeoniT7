@@ -10,6 +10,7 @@ public class MenuManager : MonoBehaviour
     private static MenuManager instance;
     public static MenuManager Instance => instance;
     bool canPause = false;
+    bool hasEndedTransition = true;
     RectTransform pausePanel;
     Vector2 initPos;
     Button2[] uIButtons;
@@ -45,7 +46,10 @@ public class MenuManager : MonoBehaviour
     public void Pause()
     {
         if (!canPause) return;
+        if (!hasEndedTransition) return;
+
         GameManager.Instance.Pause_Unpause();
+        hasEndedTransition = false;
         if (GameManager.Instance.IsPaused)
         {
             pausePanel.gameObject.SetActive(true);
@@ -53,7 +57,11 @@ public class MenuManager : MonoBehaviour
             {
                 uIButtons[i].interactable = true;
             }
-            pausePanel.DOAnchorPos(Vector2.zero + Vector2.up * 20, 1.0f).SetEase(Ease.InSine).SetUpdate(true);
+            if (!BasicCharacter.Instance.IsAlive)
+            {
+                uIButtons[0].interactable = false;
+            }
+            pausePanel.DOAnchorPos(Vector2.zero + Vector2.up * 20, 0.15f).SetEase(Ease.InSine).SetUpdate(true).OnComplete(()=> { hasEndedTransition = true; });
         }
         else
         {
@@ -61,11 +69,11 @@ public class MenuManager : MonoBehaviour
             {
                 uIButtons[i].interactable = false;
             }
-            pausePanel.DOAnchorPos(initPos, 1.0f).SetEase(Ease.InBack).SetUpdate(true)
+            pausePanel.DOAnchorPos(initPos, 0.35f).SetEase(Ease.InBack).SetUpdate(true)
             .OnComplete(()=> 
             {
                 pausePanel.gameObject.SetActive(false);
-
+                hasEndedTransition = true;
             });
         }
 
@@ -79,7 +87,10 @@ public class MenuManager : MonoBehaviour
     {
         GameManager.Instance.Restart();
     }
-
+    public void MainScreen()
+    {
+        GameManager.Instance.MainScreen();
+    }
     private void OnDestroy()
     {
         InputController.Instance.Pause-= Pause;

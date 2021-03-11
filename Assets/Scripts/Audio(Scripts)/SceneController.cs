@@ -45,13 +45,19 @@ public class SceneController : MonoBehaviour
 
     public void Start()
     {
-        int indexToSpawn = Mathf.Clamp((int)GameManager.Instance.Current.chamber, 1, CameraController.Instance.SceneLength)-1;
-        GameObject character = Instantiate(GameManager.Instance.Characters[(int)GameManager.Instance.Current.character],
-            CheckPoints[indexToSpawn].position,Quaternion.identity);
+        if (levelType == SceneType.Level)
+        {
+            int indexToSpawn = Mathf.Clamp((int)GameManager.Instance.Current.chamber, 1, CameraController.Instance.SceneLength) - 1;
+            GameObject character = Instantiate(GameManager.Instance.Characters[(int)GameManager.Instance.Current.character],
+                CheckPoints[indexToSpawn].position, Quaternion.identity);
+            GameManager.Instance.SetLevel(currentLevel);
+        }
+
+        
 
 
         GameManager.Instance.ChangeCurrentSceneType(levelType);
-        GameManager.Instance.SetLevel(currentLevel);
+        
         if (externalSounds.Length > 0)
         {
             AudioManager.Instance.ReceiveExternal(externalSounds);
@@ -66,6 +72,7 @@ public class SceneController : MonoBehaviour
     {
         GameManager.Instance.SetLevel(nextLevel);
         GameManager.Instance.Save();
+        GameManager.Instance.SetChamber(1);
         MenuManager.Instance.NextLevelTransition();
         DOVirtual.DelayedCall(5f,() => { GameManager.Instance.ChangeScene(GameManager.Instance.Current); });
         

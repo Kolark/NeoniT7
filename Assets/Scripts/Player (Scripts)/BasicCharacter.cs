@@ -16,6 +16,7 @@ public class BasicCharacter : MonoBehaviour
     protected InputController inputController;
     protected SoundModule soundModule;
     public CharacterMovement Character { get => character; }
+    public bool IsAlive { get => isAlive;}
     #endregion
     #region AttackInfos
     [Header("AttackPositions")]
@@ -212,6 +213,7 @@ public class BasicCharacter : MonoBehaviour
                 canReceiveDamage = false;
                 character.CanJump = false;
                 character.Anim.SetTrigger("Death");
+                MenuManager.Instance.Pause();
             }
         }
     }
@@ -227,7 +229,15 @@ public class BasicCharacter : MonoBehaviour
     {
 
     }
-
+    private void OnDestroy()
+    {
+        inputController.Jump -= character.Jump;
+        inputController.Attack -= Attack;
+        inputController.DefensiveAbility -= Defense;
+        inputController.SpecialAbility -= Ultimate;
+        inputController.Throw -= Throwable;
+        instance = null;
+    }
     protected virtual void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
@@ -259,6 +269,7 @@ public class BasicCharacter : MonoBehaviour
     }
  
 }
+
 public enum CharacterSounds
 {
     combo1, combo2, combo3, getHit,Jump

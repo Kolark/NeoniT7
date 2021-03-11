@@ -101,6 +101,7 @@ public class YakuzaCharacter : BasicCharacter
                 isAlive = false;
                 canReceiveDamage = false;
                 character.Anim.SetTrigger("Death");
+                MenuManager.Instance.Pause();
             }
         }
         else if (canTankDamage)
