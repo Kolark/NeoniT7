@@ -73,7 +73,7 @@ public class SceneController : MonoBehaviour
         GameManager.Instance.SetLevel(nextLevel);
         GameManager.Instance.Save();
         GameManager.Instance.SetChamber(1);
-        MenuManager.Instance.NextLevelTransition();
+        //MenuManager.Instance.NextLevelTransition();
         DOVirtual.DelayedCall(5f,() => { GameManager.Instance.ChangeScene(GameManager.Instance.Current); });
         
     }

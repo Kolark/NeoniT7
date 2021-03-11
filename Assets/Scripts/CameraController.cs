@@ -80,6 +80,7 @@ public class CameraController : MonoBehaviour
     {
         cameras[chambersUnlocked - 1].Priority = 11;
     }
+#if UNITY_EDITOR
     Color[] gizmosColors = { Color.red, Color.blue, Color.green, Color.cyan, Color.yellow, Color.magenta };
     private void OnDrawGizmos()
     {
@@ -158,12 +159,12 @@ public class CameraController : MonoBehaviour
         }
         CinemachineVirtualCamera firstCamera = transform.GetChild(0).GetChild(0).GetComponent<CinemachineVirtualCamera>();
         firstCamera.Priority = 11;
-
+    
 
 
 
     }
-    
+#endif
     private void OnDestroy()
     {
         if(instance != this)
