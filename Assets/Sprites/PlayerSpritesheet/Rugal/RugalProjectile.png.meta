@@ -1,7 +1,178 @@
 fileFormatVersion: 2
 guid: bd290196c0f217a4dbe8bddbc9671439
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -5638383542371604837
+    second: RugalProjectile_0
+  - first:
+      213: 8922238586580737239
+    second: RugalProjectile_1
+  - first:
+      213: -1884578163618848279
+    second: RugalProjectile_2
+  - first:
+      213: 4273818141022356744
+    second: RugalProjectile_3
+  - first:
+      213: 1715140360804965319
+    second: RugalProjectile_4
+  - first:
+      213: 7113783258812282482
+    second: RugalProjectile_5
+  - first:
+      213: 2487201759455176777
+    second: RugalProjectile_6
+  - first:
+      213: -6804291036893133580
+    second: RugalProjectile_7
+  - first:
+      213: -903914976155638449
+    second: RugalProjectile_8
+  - first:
+      213: 453148920421704545
+    second: RugalProjectile_9
+  - first:
+      213: -5271560537487801026
+    second: RugalProjectile_10
+  - first:
+      213: 3018564119928027895
+    second: RugalProjectile_11
+  - first:
+      213: -1945658876145585256
+    second: RugalProjectile_12
+  - first:
+      213: 89229598833332526
+    second: RugalProjectile_13
+  - first:
+      213: 8646084556768076396
+    second: RugalProjectile_14
+  - first:
+      213: 4652752849297293685
+    second: RugalProjectile_15
+  - first:
+      213: 6891558914021064267
+    second: RugalProjectile_16
+  - first:
+      213: -4806230700130658796
+    second: RugalProjectile_17
+  - first:
+      213: -2331432847699608865
+    second: RugalProjectile_18
+  - first:
+      213: -6937890964983126460
+    second: RugalProjectile_19
+  - first:
+      213: -5818485306119850749
+    second: RugalProjectile_20
+  - first:
+      213: 8570864639823806783
+    second: RugalProjectile_21
+  - first:
+      213: -3286639504501189272
+    second: RugalProjectile_22
+  - first:
+      213: 9099036291179134536
+    second: RugalProjectile_23
+  - first:
+      213: 1555751902531446432
+    second: RugalProjectile_24
+  - first:
+      213: -2979080688414732421
+    second: RugalProjectile_25
+  - first:
+      213: 7938763999216337517
+    second: RugalProjectile_26
+  - first:
+      213: 8924048916501259597
+    second: RugalProjectile_27
+  - first:
+      213: -1271862807012924729
+    second: RugalProjectile_28
+  - first:
+      213: -3656730312929691434
+    second: RugalProjectile_29
+  - first:
+      213: -6531581825663911485
+    second: RugalProjectile_30
+  - first:
+      213: -5020687913372087308
+    second: RugalProjectile_31
+  - first:
+      213: -1299676486713865707
+    second: RugalProjectile_32
+  - first:
+      213: 4727016735662241708
+    second: RugalProjectile_33
+  - first:
+      213: -1379857001993069107
+    second: RugalProjectile_34
+  - first:
+      213: -489574463107385257
+    second: RugalProjectile_35
+  - first:
+      213: 255476135901783169
+    second: RugalProjectile_36
+  - first:
+      213: 3043005351081329713
+    second: RugalProjectile_37
+  - first:
+      213: -1288153706876926222
+    second: RugalProjectile_38
+  - first:
+      213: 4431857339980821375
+    second: RugalProjectile_39
+  - first:
+      213: 7018100655654647386
+    second: RugalProjectile_40
+  - first:
+      213: 6496125138935603711
+    second: RugalProjectile_41
+  - first:
+      213: -4208156523313252787
+    second: RugalProjectile_42
+  - first:
+      213: -3454514800914137329
+    second: RugalProjectile_43
+  - first:
+      213: -8257321065645700961
+    second: RugalProjectile_44
+  - first:
+      213: -5479492318534774838
+    second: RugalProjectile_45
+  - first:
+      213: 7669920305380356017
+    second: RugalProjectile_46
+  - first:
+      213: -4774751983639156564
+    second: RugalProjectile_47
+  - first:
+      213: 3012895450991650767
+    second: RugalProjectile_48
+  - first:
+      213: 1150243740178214283
+    second: RugalProjectile_49
+  - first:
+      213: -7145704895770609620
+    second: RugalProjectile_50
+  - first:
+      213: 2790205056611841976
+    second: RugalProjectile_51
+  - first:
+      213: 5547028989183941323
+    second: RugalProjectile_52
+  - first:
+      213: -778767131266968405
+    second: RugalProjectile_53
+  - first:
+      213: 3264896772869837029
+    second: RugalProjectile_54
+  - first:
+      213: -6189233930114886944
+    second: RugalProjectile_55
+  - first:
+      213: -2321615808708392769
+    second: RugalProjectile_56
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -85,11 +256,1208 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: RugalProjectile_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1480
+        width: 214.5
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b962889aa0070c1b0800000000000000
+      internalID: -5638383542371604837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_1
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 1480
+        width: 214.5
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dc9d62f8b822db70800000000000000
+      internalID: 8922238586580737239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_2
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 1480
+        width: 214.5
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e16a062522a8d5e0800000000000000
+      internalID: -1884578163618848279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_3
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 1480
+        width: 214.5
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8050242a4f6af4b30800000000000000
+      internalID: 4273818141022356744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1295
+        width: 214.5
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cb17b922176dc710800000000000000
+      internalID: 1715140360804965319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_5
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 1295
+        width: 214.5
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27670a6fe2c39b260800000000000000
+      internalID: 7113783258812282482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_6
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 1295
+        width: 214.5
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9486d0d82d0548220800000000000000
+      internalID: 2487201759455176777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_7
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 1295
+        width: 214.5
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f44c954a5d4291a0800000000000000
+      internalID: -6804291036893133580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1110
+        width: 214.5
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f45661b4e16a473f0800000000000000
+      internalID: -903914976155638449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_9
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 1110
+        width: 214.5
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1636610da88e94600800000000000000
+      internalID: 453148920421704545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_10
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 1110
+        width: 214.5
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e35821ffe97a7d6b0800000000000000
+      internalID: -5271560537487801026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_11
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 1110
+        width: 214.5
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fabc04f21814e920800000000000000
+      internalID: 3018564119928027895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_12
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 1110
+        width: 214.5
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 893b1498f81aff4e0800000000000000
+      internalID: -1945658876145585256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_13
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 1110
+        width: 214.5
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2159ede8d10d3100800000000000000
+      internalID: 89229598833332526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_14
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 1110
+        width: 179
+        height: 185
+      alignment: 9
+      pivot: {x: 0.41, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c62e62078101df770800000000000000
+      internalID: 8646084556768076396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_15
+      rect:
+        serializedVersion: 2
+        x: 1463
+        y: 1110
+        width: 249
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5714d0aa016e19040800000000000000
+      internalID: 4652752849297293685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 925
+        width: 200
+        height: 185
+      alignment: 9
+      pivot: {x: 0.365, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4ef6eab15cb3af50800000000000000
+      internalID: 6891558914021064267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_17
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 925
+        width: 229
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 416922a84a6dc4db0800000000000000
+      internalID: -4806230700130658796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_18
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 925
+        width: 214.5
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdaff2f6d2615afd0800000000000000
+      internalID: -2331432847699608865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_19
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 925
+        width: 214.5
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 446e9c50de8a7bf90800000000000000
+      internalID: -6937890964983126460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_20
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 925
+        width: 214.5
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30575e51176904fa0800000000000000
+      internalID: -5818485306119850749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_21
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 925
+        width: 214.5
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3187a2caf3d1f670800000000000000
+      internalID: 8570864639823806783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_22
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 925
+        width: 214.5
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 865d075b8c28362d0800000000000000
+      internalID: -3286639504501189272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_23
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 925
+        width: 214.5
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84ebe1e4c45464e70800000000000000
+      internalID: 9099036291179134536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 740
+        width: 214.5
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a66605dc14279510800000000000000
+      internalID: 1555751902531446432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_25
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 740
+        width: 214.5
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7f40d1d5ed28a6d0800000000000000
+      internalID: -2979080688414732421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_26
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 740
+        width: 214.5
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6203f0cbc72c2e60800000000000000
+      internalID: 7938763999216337517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_27
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 740
+        width: 214.5
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d45644a353798db70800000000000000
+      internalID: 8924048916501259597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_28
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 740
+        width: 214
+        height: 185
+      alignment: 9
+      pivot: {x: 0.32, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c2a6f0048f695ee0800000000000000
+      internalID: -1271862807012924729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_29
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 740
+        width: 214.5
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d83c62972fa04dc0800000000000000
+      internalID: -3656730312929691434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_30
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 740
+        width: 214.5
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c9b7e37fe82b55a0800000000000000
+      internalID: -6531581825663911485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_31
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 740
+        width: 214.5
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fb0c5b81fee25ab0800000000000000
+      internalID: -5020687913372087308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 555
+        width: 214.5
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51a0e7e0f1f96fde0800000000000000
+      internalID: -1299676486713865707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_33
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 555
+        width: 214.5
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca779702dacb99140800000000000000
+      internalID: 4727016735662241708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_34
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 555
+        width: 214.5
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcd1e531e53c9dce0800000000000000
+      internalID: -1379857001993069107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_35
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 555
+        width: 214.5
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 758b163ae9ea439f0800000000000000
+      internalID: -489574463107385257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_36
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 555
+        width: 214.5
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 184e3092132ab8300800000000000000
+      internalID: 255476135901783169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_37
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 555
+        width: 214.5
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 134c0d88e3dea3a20800000000000000
+      internalID: 3043005351081329713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_38
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 555
+        width: 214.5
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f68f7d470f8f1ee0800000000000000
+      internalID: -1288153706876926222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_39
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 555
+        width: 214.5
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f73b3cc05ce118d30800000000000000
+      internalID: 4431857339980821375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 370
+        width: 214.5
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a563b32ec5d456160800000000000000
+      internalID: 7018100655654647386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_41
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 370
+        width: 214.5
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff1edba556fd62a50800000000000000
+      internalID: 6496125138935603711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_42
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 370
+        width: 214.5
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d46bba410ff9995c0800000000000000
+      internalID: -4208156523313252787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_43
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 370
+        width: 214.5
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0ffe2467191f00d0800000000000000
+      internalID: -3454514800914137329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_44
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 370
+        width: 214.5
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9886dd6d3a186d80800000000000000
+      internalID: -8257321065645700961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_45
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 370
+        width: 214.5
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acfc04494cee4f3b0800000000000000
+      internalID: -5479492318534774838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_46
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 370
+        width: 214.5
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bf60c971e7017a60800000000000000
+      internalID: 7669920305380356017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_47
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 370
+        width: 214.5
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca8a89c5e5cacbdb0800000000000000
+      internalID: -4774751983639156564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 185
+        width: 214.5
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc76fbd1374ffc920800000000000000
+      internalID: 3012895450991650767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_49
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 185
+        width: 214.5
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8d6072669c76ff00800000000000000
+      internalID: 1150243740178214283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_50
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 185
+        width: 214.5
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c28b2d1c14b55dc90800000000000000
+      internalID: -7145704895770609620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_51
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 185
+        width: 214.5
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b7f8d147bcc8b620800000000000000
+      internalID: 2790205056611841976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_52
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 185
+        width: 214.5
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bca5a1be9710bfc40800000000000000
+      internalID: 5547028989183941323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_53
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 185
+        width: 214.5
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba415129b634135f0800000000000000
+      internalID: -778767131266968405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_54
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 185
+        width: 214.5
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e0d937115e3f4d20800000000000000
+      internalID: 3264896772869837029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_55
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 185
+        width: 214.5
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e215b3588c6b1aa0800000000000000
+      internalID: -6189233930114886944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalProjectile_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 214.5
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb84101f8b6f7cfd0800000000000000
+      internalID: -2321615808708392769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 7a8c99b5d8f257142bbb2feaf62f08fc
     internalID: 0
     vertices: []
     indices: 

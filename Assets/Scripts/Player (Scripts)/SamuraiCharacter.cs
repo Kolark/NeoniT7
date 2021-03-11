@@ -4,12 +4,13 @@ using UnityEngine;
 using DG.Tweening;
 public class SamuraiCharacter : BasicCharacter
 {
-    
-    ///TO-DO sincronizar el ataque del ultimate con la animacion
 
+    ///TO-DO sincronizar el ataque del ultimate con la animacion
+    [SerializeField] Animator ultimateAnim;
     bool isParry = false;
     [SerializeField] GameObject projectil;
     [SerializeField] AttackInfo specialAttack;
+    [SerializeField] float ultimateOffsetTime;
     public override void Defense()
     {
         if (!isAlive) return;
@@ -44,12 +45,17 @@ public class SamuraiCharacter : BasicCharacter
         if (!canUseSpecial) return;
         if (!character.Grounded) return;
         base.Ultimate();
-        Collider2D[] Hit = Physics2D.OverlapCircleAll(specialAttack.pos.position, specialAttack.radius, specialAttack.layer);
-        for (int i = 0; i < Hit.Length; i++)
-        {
-            IEnemyHurtBox enemy = Hit[i]?.GetComponent<IEnemyHurtBox>();
-            enemy?.OnReceiveDamage();
-        }
+        ultimateAnim.SetTrigger("Ultimate");
+        DOVirtual.DelayedCall(ultimateOffsetTime,()=> {
+            Collider2D[] Hit = Physics2D.OverlapCircleAll(specialAttack.pos.position, specialAttack.radius, specialAttack.layer);
+            for (int i = 0; i < Hit.Length; i++)
+            {
+                IEnemyHurtBox enemy = Hit[i]?.GetComponent<IEnemyHurtBox>();
+                enemy?.OnReceiveDamage();
+            }
+        });
+
+
     }
     public override void Damage()
     {
@@ -84,5 +90,11 @@ public class SamuraiCharacter : BasicCharacter
             enemy?.OnReceiveDamage();
         }
     }
-    
+    protected override void OnDrawGizmos()
+    {
+        base.OnDrawGizmos();
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireSphere(specialAttack.pos.position, specialAttack.radius);
+
+    }
 }

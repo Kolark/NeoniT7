@@ -1,7 +1,55 @@
 fileFormatVersion: 2
 guid: b50ecfb12a6bbc440ac1fbd44ab8d2e3
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -5356792594299286844
+    second: RugalDefensive_0
+  - first:
+      213: 2822650832768212180
+    second: RugalDefensive_1
+  - first:
+      213: -4051723973284328466
+    second: RugalDefensive_2
+  - first:
+      213: 6535700456547013882
+    second: RugalDefensive_3
+  - first:
+      213: -6133815191663241713
+    second: RugalDefensive_4
+  - first:
+      213: 6347708275607447825
+    second: RugalDefensive_5
+  - first:
+      213: -8294864438807328128
+    second: RugalDefensive_6
+  - first:
+      213: 2279639523082998092
+    second: RugalDefensive_7
+  - first:
+      213: 2334902066455670952
+    second: RugalDefensive_8
+  - first:
+      213: 627584681347510601
+    second: RugalDefensive_9
+  - first:
+      213: 3499662142875395412
+    second: RugalDefensive_10
+  - first:
+      213: -10078263651685447
+    second: RugalDefensive_11
+  - first:
+      213: -8120107388631028004
+    second: RugalDefensive_12
+  - first:
+      213: 8868623508688191844
+    second: RugalDefensive_13
+  - first:
+      213: 572318170945590055
+    second: RugalDefensive_14
+  - first:
+      213: -7087081982214123324
+    second: RugalDefensive_15
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -85,11 +133,347 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: RugalDefensive_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 540
+        width: 258
+        height: 270
+      alignment: 9
+      pivot: {x: 0.475, y: 0.175}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ca09595489d8a5b0800000000000000
+      internalID: -5356792594299286844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalDefensive_1
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 540
+        width: 258
+        height: 270
+      alignment: 9
+      pivot: {x: 0.475, y: 0.175}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dc1c143af11c2720800000000000000
+      internalID: 2822650832768212180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalDefensive_2
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 540
+        width: 258
+        height: 270
+      alignment: 9
+      pivot: {x: 0.475, y: 0.175}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeb0474638265c7c0800000000000000
+      internalID: -4051723973284328466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalDefensive_3
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 540
+        width: 258
+        height: 270
+      alignment: 9
+      pivot: {x: 0.475, y: 0.175}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af4d7d600f873ba50800000000000000
+      internalID: 6535700456547013882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalDefensive_4
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 540
+        width: 258
+        height: 270
+      alignment: 9
+      pivot: {x: 0.475, y: 0.175}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f06940fd49f40eaa0800000000000000
+      internalID: -6133815191663241713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalDefensive_5
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 540
+        width: 258
+        height: 270
+      alignment: 9
+      pivot: {x: 0.475, y: 0.175}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 119a3698b07971850800000000000000
+      internalID: 6347708275607447825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalDefensive_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 270
+        width: 258
+        height: 270
+      alignment: 9
+      pivot: {x: 0.475, y: 0.175}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08a8ed0bdb8b2ec80800000000000000
+      internalID: -8294864438807328128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalDefensive_7
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 270
+        width: 258
+        height: 270
+      alignment: 9
+      pivot: {x: 0.475, y: 0.175}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c419d457118e2af10800000000000000
+      internalID: 2279639523082998092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalDefensive_8
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 270
+        width: 258
+        height: 270
+      alignment: 9
+      pivot: {x: 0.475, y: 0.175}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a07a600f0d376020800000000000000
+      internalID: 2334902066455670952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalDefensive_9
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 270
+        width: 258
+        height: 270
+      alignment: 9
+      pivot: {x: 0.475, y: 0.175}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 941f13e41f0a5b800800000000000000
+      internalID: 627584681347510601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalDefensive_10
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 270
+        width: 258
+        height: 270
+      alignment: 9
+      pivot: {x: 0.475, y: 0.175}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45568fb4d2c419030800000000000000
+      internalID: 3499662142875395412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalDefensive_11
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 270
+        width: 258
+        height: 270
+      alignment: 9
+      pivot: {x: 0.475, y: 0.175}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bba6136fd13cdff0800000000000000
+      internalID: -10078263651685447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalDefensive_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 258
+        height: 270
+      alignment: 9
+      pivot: {x: 0.475, y: 0.175}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cde6f9a2a559f4f80800000000000000
+      internalID: -8120107388631028004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalDefensive_13
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 0
+        width: 258
+        height: 270
+      alignment: 9
+      pivot: {x: 0.475, y: 0.175}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 461c90ad71ea31b70800000000000000
+      internalID: 8868623508688191844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalDefensive_14
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 0
+        width: 258
+        height: 270
+      alignment: 9
+      pivot: {x: 0.475, y: 0.175}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72396bd185841f700800000000000000
+      internalID: 572318170945590055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalDefensive_15
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 0
+        width: 258
+        height: 270
+      alignment: 9
+      pivot: {x: 0.475, y: 0.175}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c05e047c70a5ad90800000000000000
+      internalID: -7087081982214123324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 46b13ae4124b3e2419c4b2f164951186
     internalID: 0
     vertices: []
     indices: 

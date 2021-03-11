@@ -1,7 +1,31 @@
 fileFormatVersion: 2
 guid: ca8649adc68896f46b39c2a4fd52971e
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -452526777778545199
+    second: RugalRun_0
+  - first:
+      213: -5982081856655500951
+    second: RugalRun_1
+  - first:
+      213: 6340134885809340877
+    second: RugalRun_2
+  - first:
+      213: 4823808507663859603
+    second: RugalRun_3
+  - first:
+      213: 8044778812343880049
+    second: RugalRun_4
+  - first:
+      213: 9127145703908038938
+    second: RugalRun_5
+  - first:
+      213: -806131247201797054
+    second: RugalRun_6
+  - first:
+      213: -7111980834666795537
+    second: RugalRun_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -85,11 +109,179 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: RugalRun_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 91
+        width: 127
+        height: 91
+      alignment: 9
+      pivot: {x: 0.56, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dd582f0b4d48b9f0800000000000000
+      internalID: -452526777778545199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalRun_1
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 91
+        width: 127
+        height: 91
+      alignment: 9
+      pivot: {x: 0.56, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9695dbcee306bfca0800000000000000
+      internalID: -5982081856655500951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalRun_2
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 91
+        width: 127
+        height: 91
+      alignment: 9
+      pivot: {x: 0.56, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc14ab0561facf750800000000000000
+      internalID: 6340134885809340877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalRun_3
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 91
+        width: 127
+        height: 91
+      alignment: 9
+      pivot: {x: 0.56, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39fbfc3b74c91f240800000000000000
+      internalID: 4823808507663859603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalRun_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 127
+        height: 91
+      alignment: 9
+      pivot: {x: 0.56, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 179885ee4bbc4af60800000000000000
+      internalID: 8044778812343880049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalRun_5
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 0
+        width: 127
+        height: 91
+      alignment: 9
+      pivot: {x: 0.56, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a19dba6f8a22aae70800000000000000
+      internalID: 9127145703908038938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalRun_6
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 0
+        width: 127
+        height: 91
+      alignment: 9
+      pivot: {x: 0.56, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24cb138d6eb00d4f0800000000000000
+      internalID: -806131247201797054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalRun_7
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 0
+        width: 127
+        height: 91
+      alignment: 9
+      pivot: {x: 0.56, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fedac4c9c1b2d4d90800000000000000
+      internalID: -7111980834666795537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 52db5a675fc57bc4694a1ac5a2258a94
     internalID: 0
     vertices: []
     indices: 

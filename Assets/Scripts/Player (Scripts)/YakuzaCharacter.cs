@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class YakuzaCharacter : BasicCharacter
 {
@@ -8,6 +9,10 @@ public class YakuzaCharacter : BasicCharacter
     [SerializeField] GameObject projectil;
     [SerializeField] AttackInfo specialAttack;
     [SerializeField] AttackInfo explosiveinfo;
+    [SerializeField] float UltimateWalkDistance;
+    [SerializeField] Vector2 dir;
+    [SerializeField] float walkUltiTime, jumpUltiTime, suspensionUltiTime, fallUltiTime;
+    
     public override void Defense()
     {
         if (!isAlive) return;
@@ -51,7 +56,37 @@ public class YakuzaCharacter : BasicCharacter
         if (!canUseSpecial) return;
         if (!character.Grounded) return;
         base.Ultimate();
-///Aca va la ultimate
+        Vector2 vec = new Vector2(dir.x * transform.localScale.x, dir.y);
+        Vector2 vec2 = new Vector2(dir.x * transform.localScale.x, -dir.y);
+
+        ///Aca va la ultimate
+        DOTween.Sequence()
+            .Append(transform.DOLocalMoveX(transform.position.x + (UltimateWalkDistance * transform.localScale.x), walkUltiTime).SetEase(Ease.InOutSine))
+            .Append(transform.DOLocalMove((Vector2)transform.position + vec, jumpUltiTime).SetEase(Ease.OutSine))
+            .AppendCallback(() => 
+            {
+
+            Vector2 pos = transform.position;
+
+            DOVirtual.DelayedCall(suspensionUltiTime, null, true).OnUpdate(() =>
+            {
+                transform.position = pos;
+
+            }).OnComplete(() => 
+            {
+                
+                transform.DOLocalMove((Vector2)transform.position + vec2, fallUltiTime).SetEase(Ease.OutSine).OnComplete(() =>
+                {
+                Collider2D[] Hit = Physics2D.OverlapCircleAll(specialAttack.pos.position, specialAttack.radius, specialAttack.layer);
+                for (int i = 0; i < Hit.Length; i++)
+                {
+                    IEnemyHurtBox enemy = Hit[i]?.GetComponent<IEnemyHurtBox>();
+                    enemy?.OnReceiveDamage();
+                }
+                });
+            });
+            //Se mantiene en el aire
+            });
     }
     public override void Damage()
     {
