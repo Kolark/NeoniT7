@@ -45,6 +45,7 @@ public class SceneController : MonoBehaviour
 
     public void Start()
     {
+        GameManager.Instance.Unpause();
         if (levelType == SceneType.Level)
         {
             int indexToSpawn = Mathf.Clamp((int)GameManager.Instance.Current.chamber, 1, CameraController.Instance.SceneLength) - 1;
