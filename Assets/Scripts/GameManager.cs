@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] GameObject[] characters;
     private static GameManager instance;
     public static GameManager Instance => instance;
 
@@ -16,7 +17,7 @@ public class GameManager : MonoBehaviour
 
     private SaveInfo current;
     bool hasSaveInfo = false;
-
+    bool isPaused = false;
     
 
     private int saveSlot;
@@ -29,6 +30,8 @@ public class GameManager : MonoBehaviour
     }
 
     public SaveInfo Current { get => current; set => current = value; }
+    public bool IsPaused { get => isPaused;}
+    public GameObject[] Characters { get => characters;}
 
     private void Awake()
     {
@@ -104,24 +107,31 @@ public class GameManager : MonoBehaviour
     private void EvaluateEvents()
     {
         InputController.Instance.Escape = null;
-        InputController.Instance.Pause = null;
+        //InputController.Instance.Pause = null;
         if (currentSceneType == SceneType.Screen)
         {
             InputController.Instance.Escape += SceneBack;
         }
-        if (currentSceneType == SceneType.Level)
-        {
-            InputController.Instance.Pause += PauseGame;
-        }
+        //if (currentSceneType == SceneType.Level)
+        //{
+        //    InputController.Instance.Pause += PauseGame;
+        //}
     }
     /// <summary>
     /// This is where the pause logic will go.
     /// </summary>
-    public void PauseGame()
+    public void Pause_Unpause()
     {
-
+        isPaused = !isPaused;
+        Time.timeScale = isPaused ? 0 : 1;
     }
-    
+    public void Restart()
+    {
+        current.chamber = 1;
+        Pause_Unpause();
+        Save();
+        ChangeScene(SceneController.Instance.CurrentLevel);
+    }
     public void SetChamber(int currentChamber)
     {
         current.chamber = currentChamber;

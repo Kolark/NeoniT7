@@ -17,7 +17,7 @@ public class CameraController : MonoBehaviour
     [SerializeField] float scale = 1f;
     [SerializeField] List<InitCameraControllerInfo> infos;
 
-
+    public int SceneLength { get { return infos.Count; } }
 
     private void Awake()
     {
@@ -50,7 +50,7 @@ public class CameraController : MonoBehaviour
         if (chamberStatus)
         {
             chambersUnlocked++;
-            if(chambersUnlocked == (infos.Count - 1))
+            if(chambersUnlocked == (infos.Count))
             {
                 //Next Level
                 SceneController.Instance.NextLevel();

@@ -51,6 +51,22 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - id: 0
+  - m_Id: 7698430170800128
+    m_Localized: Continuar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7698459266686976
+    m_Localized: "Configuraci\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7698487527907328
+    m_Localized: Inicio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7698511133450240
+    m_Localized: Reiniciar
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
     00000000:
