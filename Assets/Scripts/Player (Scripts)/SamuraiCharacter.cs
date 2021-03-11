@@ -45,9 +45,9 @@ public class SamuraiCharacter : BasicCharacter
         if (!canUseSpecial) return;
         if (!character.Grounded) return;
         base.Ultimate();
-        Collider2D[] Hit = Physics2D.OverlapCircleAll(specialAttack.pos.position, specialAttack.radius, specialAttack.layer);
         ultimateAnim.SetTrigger("Ultimate");
         DOVirtual.DelayedCall(ultimateOffsetTime,()=> {
+            Collider2D[] Hit = Physics2D.OverlapCircleAll(specialAttack.pos.position, specialAttack.radius, specialAttack.layer);
             for (int i = 0; i < Hit.Length; i++)
             {
                 IEnemyHurtBox enemy = Hit[i]?.GetComponent<IEnemyHurtBox>();

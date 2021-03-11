@@ -725,7 +725,7 @@ MonoBehaviour:
   cdDefense: 5
   cdUltimate: 5
   cdThrow: 5
-  currentAttack: 0
+  currentAttack: 3
   projectil: {fileID: 399827546245339802, guid: f524c8747554edd4bb137089ef67af1d,
     type: 3}
   specialAttack:
@@ -740,6 +740,12 @@ MonoBehaviour:
     layer:
       serializedVersion: 2
       m_Bits: 512
+  UltimateWalkDistance: 7
+  dir: {x: 10, y: 5}
+  walkUltiTime: 1.85
+  jumpUltiTime: 0.95
+  suspensionUltiTime: 0.32
+  fallUltiTime: 0.29
 --- !u!114 &665953511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1269,7 +1275,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1525183718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1871,7 +1877,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &1926744852
 Rigidbody2D:
   serializedVersion: 4
