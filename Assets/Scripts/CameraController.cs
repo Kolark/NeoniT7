@@ -17,7 +17,7 @@ public class CameraController : MonoBehaviour
     [SerializeField] float scale = 1f;
     [SerializeField] List<InitCameraControllerInfo> infos;
 
-
+    public int SceneLength { get { return infos.Count; } }
 
     private void Awake()
     {
@@ -43,16 +43,24 @@ public class CameraController : MonoBehaviour
             targets[i].setIndex(i + 1);
         }
     }
-    public void ChangePriority()
-    {
-        cameras[chambersUnlocked - 1].Priority = 11;
-    }
+   
     public bool updateChamber(int exitChamber)
     {
         bool chamberStatus = exitChamber == chambersUnlocked;
         if (chamberStatus)
         {
             chambersUnlocked++;
+            if(chambersUnlocked == (infos.Count))
+            {
+                //Next Level
+                SceneController.Instance.NextLevel();
+            }
+            else
+            {
+                GameManager.Instance.SetChamber(chambersUnlocked);
+                GameManager.Instance.Save();
+            }
+
         }
         LowerAllCamerasPriority();
         ChangePriority();
@@ -65,7 +73,10 @@ public class CameraController : MonoBehaviour
             cameras[i].Priority = 10;
         }
     }
-
+    public void ChangePriority()
+    {
+        cameras[chambersUnlocked - 1].Priority = 11;
+    }
     Color[] gizmosColors = { Color.red, Color.blue, Color.green, Color.cyan, Color.yellow, Color.magenta };
     private void OnDrawGizmos()
     {
@@ -83,7 +94,6 @@ public class CameraController : MonoBehaviour
         }
 
     }
-
 
     private void OnValidate()
     {

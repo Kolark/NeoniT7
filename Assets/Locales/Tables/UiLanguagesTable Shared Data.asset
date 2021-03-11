@@ -35,6 +35,30 @@ MonoBehaviour:
     m_Key: Empty Slot
     m_Metadata:
       m_Items: []
+  - m_Id: 7535786843480064
+    m_Key: Room
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7539420394201088
+    m_Key: Difficulty
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7698430170800128
+    m_Key: Continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7698459266686976
+    m_Key: Configuration
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7698487527907328
+    m_Key: Main Screen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7698511133450240
+    m_Key: Restart
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

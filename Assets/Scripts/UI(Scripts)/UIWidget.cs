@@ -64,7 +64,10 @@ public class UIWidget : MonoBehaviour
             @event.triggers.Add(deselect);
         }
     }
-
+    public void changeScene(GameScene scene)
+    {
+        sceneToGo = scene;
+    }
     public enum Widgetsounds
     {
         Select,

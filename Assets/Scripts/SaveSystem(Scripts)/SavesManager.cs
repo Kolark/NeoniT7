@@ -56,6 +56,7 @@ public class SavesManager : MonoBehaviour
         {
             saveWidgets[currentSelected].ClearSaveInfo();
             saveWidgets[currentSelected].SetWidget();
+            SaveSystem.Delete(currentSelected);
         }
     }
     

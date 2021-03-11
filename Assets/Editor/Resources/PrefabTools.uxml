@@ -17,6 +17,10 @@
       <Button text="InputController" class="createPrefab"/>
       <Box class="managerState" name="InputController"></Box>
     </Box>
+    <Box class="manager">
+      <Button text="CameraController" class="createPrefab"/>
+      <Box class="managerState" name="CameraController"></Box>
+    </Box>
   </Box>
   <Button text="Refresh" class="RefreshButton"/>
 </UXML>
