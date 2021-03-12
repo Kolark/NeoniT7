@@ -278,7 +278,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   groundCheck: {fileID: 6748483436937233256}
-  maxSpeed: 10
+  maxSpeed: 15
   terminalVelocity: 5
   jumpForce: 16
   fallMultiplier: 10
@@ -371,7 +371,7 @@ MonoBehaviour:
   canMove: 1
   canFlip: 1
   canReceiveDamage: 1
-  maxLife: 3
+  maxLife: 10000
   cdDefense: 10
   cdUltimate: 3
   cdThrow: 3

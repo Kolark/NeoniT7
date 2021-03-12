@@ -68,6 +68,14 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "DeleteSave",
+                    "type": "Button",
+                    "id": "a59c0ee4-82f0-4f63-8bbe-437aa196ec5e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -288,6 +296,28 @@
                     "processors": "",
                     "groups": "XboxController",
                     "action": "Escape",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ef9c9749-1bb3-4670-9d15-88a9c8aa4e1a",
+                    "path": "<Keyboard>/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "DeleteSave",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "81eb0df2-442b-4f22-a7dd-456d161d6e55",
+                    "path": "<XInputController>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "XboxController",
+                    "action": "DeleteSave",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

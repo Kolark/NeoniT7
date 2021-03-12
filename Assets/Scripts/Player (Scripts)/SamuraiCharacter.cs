@@ -70,6 +70,7 @@ public class SamuraiCharacter : BasicCharacter
                 isAlive = false;
                 canReceiveDamage = false;
                 character.Anim.SetTrigger("Death");
+                MenuManager.Instance.Pause();
             }
         }
         else if(isParry)

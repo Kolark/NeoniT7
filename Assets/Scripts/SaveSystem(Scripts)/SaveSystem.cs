@@ -34,18 +34,18 @@ public class SaveSystem
     /// </summary>
     /// <param name="info"></param>
     /// <param name="slot"></param>
-    public static void Save(SaveInfo info,int slot)
+    public static void Save(SaveInfo info)
     {
         BinaryFormatter binFor = new BinaryFormatter();
-        if (!File.Exists($"{SAVE_FOLDER}{SaveName}{slot.ToString()}.{fileFormat}"))
+        if (!File.Exists($"{SAVE_FOLDER}{SaveName}{info.slot.ToString()}.{fileFormat}"))
         {
-            FileStream file = File.Create($"{SAVE_FOLDER}{SaveName}{slot.ToString()}.{fileFormat}");
+            FileStream file = File.Create($"{SAVE_FOLDER}{SaveName}{info.slot.ToString()}.{fileFormat}");
             binFor.Serialize(file, info);
             file.Close();
         }
         else
         {
-            FileStream file = File.Open($"{SAVE_FOLDER}{SaveName}{slot.ToString()}.{fileFormat}", FileMode.Open);
+            FileStream file = File.Open($"{SAVE_FOLDER}{SaveName}{info.slot.ToString()}.{fileFormat}", FileMode.Open);
             binFor.Serialize(file, info);
             file.Close();
         }
@@ -82,4 +82,12 @@ public class SaveSystem
         }
         return saveInfos;
     }
+
+
+
+    public static void debugSaveinfo(SaveInfo info)
+    {
+        Debug.Log($"Save: Chamber:{info.chamber.ToString()},\n Character{info.character.ToString()},\n{info.lastSaved.ToShortDateString()},\n{info.currentScene.ToString()},\n{info.slot.ToString()}");
+    }
+
 }
