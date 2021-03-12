@@ -16,6 +16,7 @@ public class BasicCharacter : MonoBehaviour
     protected InputController inputController;
     protected SoundModule soundModule;
     public CharacterMovement Character { get => character; }
+    public bool IsAlive { get => isAlive;}
     #endregion
     #region AttackInfos
     [Header("AttackPositions")]
@@ -128,7 +129,7 @@ public class BasicCharacter : MonoBehaviour
         soundModule.Play((int)CharacterSounds.combo1);
         IEnemyHurtBox enemy = Hit?.GetComponent<IEnemyHurtBox>();
         enemy?.OnReceiveDamage();
-        GetComponent<Rigidbody2D>().AddForce(Vector2.right * transform.localScale.x *5, ForceMode2D.Impulse);
+        //GetComponent<Rigidbody2D>().AddForce(Vector2.right * transform.localScale.x *5, ForceMode2D.Impulse);
     }
     public virtual void AttackTwo()
     {
@@ -136,7 +137,7 @@ public class BasicCharacter : MonoBehaviour
         soundModule.Play((int)CharacterSounds.combo2);
         IEnemyHurtBox enemy = Hit?.GetComponent<IEnemyHurtBox>();
         enemy?.OnReceiveDamage();
-        GetComponent<Rigidbody2D>().AddForce(Vector2.right * transform.localScale.x * 10, ForceMode2D.Impulse);
+        //GetComponent<Rigidbody2D>().AddForce(Vector2.right * transform.localScale.x * 10, ForceMode2D.Impulse);
     }
     public virtual void AttackThree()
     {
@@ -147,7 +148,7 @@ public class BasicCharacter : MonoBehaviour
             IEnemyHurtBox enemy = Hit[i]?.GetComponent<IEnemyHurtBox>();
             enemy?.OnReceiveDamage();
         }
-        GetComponent<Rigidbody2D>().AddForce(Vector2.right * transform.localScale.x * 15, ForceMode2D.Impulse);
+        //GetComponent<Rigidbody2D>().AddForce(Vector2.right * transform.localScale.x * 15, ForceMode2D.Impulse);
     }
     public virtual void AirAttack()
     {
@@ -212,6 +213,7 @@ public class BasicCharacter : MonoBehaviour
                 canReceiveDamage = false;
                 character.CanJump = false;
                 character.Anim.SetTrigger("Death");
+                MenuManager.Instance.Pause();
             }
         }
     }
@@ -227,7 +229,15 @@ public class BasicCharacter : MonoBehaviour
     {
 
     }
-
+    private void OnDestroy()
+    {
+        inputController.Jump -= character.Jump;
+        inputController.Attack -= Attack;
+        inputController.DefensiveAbility -= Defense;
+        inputController.SpecialAbility -= Ultimate;
+        inputController.Throw -= Throwable;
+        instance = null;
+    }
     protected virtual void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
@@ -259,6 +269,7 @@ public class BasicCharacter : MonoBehaviour
     }
  
 }
+
 public enum CharacterSounds
 {
     combo1, combo2, combo3, getHit,Jump

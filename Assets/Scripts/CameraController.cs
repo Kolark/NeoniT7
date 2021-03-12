@@ -17,7 +17,7 @@ public class CameraController : MonoBehaviour
     [SerializeField] float scale = 1f;
     [SerializeField] List<InitCameraControllerInfo> infos;
 
-
+    public int SceneLength { get { return infos.Count; } }
 
     private void Awake()
     {
@@ -43,9 +43,9 @@ public class CameraController : MonoBehaviour
             targets[i].setIndex(i + 1);
         }
     }
-    public void ChangePriority()
+    private void Start()
     {
-        cameras[chambersUnlocked - 1].Priority = 11;
+        chambersUnlocked = GameManager.Instance.Current.chamber;
     }
     public bool updateChamber(int exitChamber)
     {
@@ -53,6 +53,17 @@ public class CameraController : MonoBehaviour
         if (chamberStatus)
         {
             chambersUnlocked++;
+            if(chambersUnlocked == (infos.Count))
+            {
+                //Next Level
+                SceneController.Instance.NextLevel();
+            }
+            else
+            {
+                GameManager.Instance.SetChamber(chambersUnlocked);
+                GameManager.Instance.Save();
+            }
+
         }
         LowerAllCamerasPriority();
         ChangePriority();
@@ -65,7 +76,11 @@ public class CameraController : MonoBehaviour
             cameras[i].Priority = 10;
         }
     }
-
+    public void ChangePriority()
+    {
+        cameras[chambersUnlocked - 1].Priority = 11;
+    }
+#if UNITY_EDITOR
     Color[] gizmosColors = { Color.red, Color.blue, Color.green, Color.cyan, Color.yellow, Color.magenta };
     private void OnDrawGizmos()
     {
@@ -83,7 +98,6 @@ public class CameraController : MonoBehaviour
         }
 
     }
-
 
     private void OnValidate()
     {
@@ -145,12 +159,12 @@ public class CameraController : MonoBehaviour
         }
         CinemachineVirtualCamera firstCamera = transform.GetChild(0).GetChild(0).GetComponent<CinemachineVirtualCamera>();
         firstCamera.Priority = 11;
-
+    
 
 
 
     }
-    
+#endif
     private void OnDestroy()
     {
         if(instance != this)

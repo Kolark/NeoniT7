@@ -1,0 +1,992 @@
+fileFormatVersion: 2
+guid: 399ee9dd8c454af47aed2996b50f7776
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1865846678716571801
+    second: RugalDeath_0
+  - first:
+      213: -4872803356439370706
+    second: RugalDeath_1
+  - first:
+      213: 244462263473630206
+    second: RugalDeath_2
+  - first:
+      213: 5024721279066386125
+    second: RugalDeath_3
+  - first:
+      213: -7983224076199736305
+    second: RugalDeath_4
+  - first:
+      213: -6514628594487870104
+    second: RugalDeath_5
+  - first:
+      213: 6365191225322948393
+    second: RugalDeath_6
+  - first:
+      213: -5876485066363942361
+    second: RugalDeath_7
+  - first:
+      213: -7208433280396545435
+    second: RugalDeath_8
+  - first:
+      213: -8029798507264233676
+    second: RugalDeath_9
+  - first:
+      213: 902286531634035739
+    second: RugalDeath_10
+  - first:
+      213: 5705153247390602765
+    second: RugalDeath_11
+  - first:
+      213: -8696789213085595209
+    second: RugalDeath_12
+  - first:
+      213: -29655522225477778
+    second: RugalDeath_13
+  - first:
+      213: 2524006621365270910
+    second: RugalDeath_14
+  - first:
+      213: -2316830856866954677
+    second: RugalDeath_15
+  - first:
+      213: -8304024045940607457
+    second: RugalDeath_16
+  - first:
+      213: -7119790389538242218
+    second: RugalDeath_17
+  - first:
+      213: -6086442722752996055
+    second: RugalDeath_18
+  - first:
+      213: 3401422131873713595
+    second: RugalDeath_19
+  - first:
+      213: -7936826048459156048
+    second: RugalDeath_20
+  - first:
+      213: -8661885260047799673
+    second: RugalDeath_21
+  - first:
+      213: -1428307419091072411
+    second: RugalDeath_22
+  - first:
+      213: 7432133916302124983
+    second: RugalDeath_23
+  - first:
+      213: 4052357144272367444
+    second: RugalDeath_24
+  - first:
+      213: 2650361705633818516
+    second: RugalDeath_25
+  - first:
+      213: -7341310800295659379
+    second: RugalDeath_26
+  - first:
+      213: 9082836933497386525
+    second: RugalDeath_27
+  - first:
+      213: 6402177047886152471
+    second: RugalDeath_28
+  - first:
+      213: -7663708536943328394
+    second: RugalDeath_29
+  - first:
+      213: 6433388940346692102
+    second: RugalDeath_30
+  - first:
+      213: 8021219504871702483
+    second: RugalDeath_31
+  - first:
+      213: -2930927663134217995
+    second: RugalDeath_32
+  - first:
+      213: 6036861657122796883
+    second: RugalDeath_33
+  - first:
+      213: 8194982526115561292
+    second: RugalDeath_34
+  - first:
+      213: 8255939375371774512
+    second: RugalDeath_35
+  - first:
+      213: 7592640475122433503
+    second: RugalDeath_36
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RugalDeath_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 990
+        width: 143
+        height: 165
+      alignment: 9
+      pivot: {x: 0.55, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9906e3a2ba1d4e910800000000000000
+      internalID: 1865846678716571801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalDeath_1
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 990
+        width: 143
+        height: 165
+      alignment: 9
+      pivot: {x: 0.55, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e24a91f1a23506cb0800000000000000
+      internalID: -4872803356439370706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalDeath_2
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 990
+        width: 143
+        height: 165
+      alignment: 9
+      pivot: {x: 0.55, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efb65572221846300800000000000000
+      internalID: 244462263473630206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalDeath_3
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 990
+        width: 143
+        height: 165
+      alignment: 9
+      pivot: {x: 0.55, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dce291691656bb540800000000000000
+      internalID: 5024721279066386125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalDeath_4
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 990
+        width: 143
+        height: 165
+      alignment: 9
+      pivot: {x: 0.55, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0cc4c7eff3e53190800000000000000
+      internalID: -7983224076199736305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalDeath_5
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 990
+        width: 143
+        height: 165
+      alignment: 9
+      pivot: {x: 0.55, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86db2fd2fc36795a0800000000000000
+      internalID: -6514628594487870104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalDeath_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 825
+        width: 143
+        height: 165
+      alignment: 9
+      pivot: {x: 0.55, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 927cec8f1b3b55850800000000000000
+      internalID: 6365191225322948393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalDeath_7
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 825
+        width: 143
+        height: 165
+      alignment: 9
+      pivot: {x: 0.55, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72a4d7397f7827ea0800000000000000
+      internalID: -5876485066363942361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalDeath_8
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 825
+        width: 143
+        height: 165
+      alignment: 9
+      pivot: {x: 0.55, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5623cd69f1086fb90800000000000000
+      internalID: -7208433280396545435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalDeath_9
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 825
+        width: 143
+        height: 165
+      alignment: 9
+      pivot: {x: 0.55, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43fad842dcc609090800000000000000
+      internalID: -8029798507264233676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalDeath_10
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 825
+        width: 143
+        height: 165
+      alignment: 9
+      pivot: {x: 0.55, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1c7aabe1d0958c00800000000000000
+      internalID: 902286531634035739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalDeath_11
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 825
+        width: 143
+        height: 165
+      alignment: 9
+      pivot: {x: 0.55, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0612ebb6a6cc2f40800000000000000
+      internalID: 5705153247390602765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalDeath_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 660
+        width: 143
+        height: 165
+      alignment: 9
+      pivot: {x: 0.55, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b9859bc94cce4780800000000000000
+      internalID: -8696789213085595209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalDeath_13
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 660
+        width: 143
+        height: 165
+      alignment: 9
+      pivot: {x: 0.55, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e672f1ca574a69ff0800000000000000
+      internalID: -29655522225477778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalDeath_14
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 660
+        width: 143
+        height: 165
+      alignment: 9
+      pivot: {x: 0.55, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e79f53d36a2170320800000000000000
+      internalID: 2524006621365270910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalDeath_15
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 660
+        width: 143
+        height: 165
+      alignment: 9
+      pivot: {x: 0.55, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4208cb5c96f8dfd0800000000000000
+      internalID: -2316830856866954677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalDeath_16
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 660
+        width: 143
+        height: 165
+      alignment: 9
+      pivot: {x: 0.55, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f167867702e22cc80800000000000000
+      internalID: -8304024045940607457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalDeath_17
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 660
+        width: 143
+        height: 165
+      alignment: 9
+      pivot: {x: 0.55, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 651455cec5c613d90800000000000000
+      internalID: -7119790389538242218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalDeath_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 495
+        width: 143
+        height: 165
+      alignment: 9
+      pivot: {x: 0.55, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92ddb8c479c988ba0800000000000000
+      internalID: -6086442722752996055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalDeath_19
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 495
+        width: 143
+        height: 165
+      alignment: 9
+      pivot: {x: 0.55, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbd0c7d4867443f20800000000000000
+      internalID: 3401422131873713595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalDeath_20
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 495
+        width: 143
+        height: 165
+      alignment: 9
+      pivot: {x: 0.55, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b5568192cabad190800000000000000
+      internalID: -7936826048459156048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalDeath_21
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 495
+        width: 143
+        height: 165
+      alignment: 9
+      pivot: {x: 0.55, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78aa8a5af3dcac780800000000000000
+      internalID: -8661885260047799673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalDeath_22
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 495
+        width: 143
+        height: 165
+      alignment: 9
+      pivot: {x: 0.55, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56a850748f1ad2ce0800000000000000
+      internalID: -1428307419091072411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalDeath_23
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 495
+        width: 143
+        height: 165
+      alignment: 9
+      pivot: {x: 0.55, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b722547b6e342760800000000000000
+      internalID: 7432133916302124983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalDeath_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 330
+        width: 143
+        height: 165
+      alignment: 9
+      pivot: {x: 0.55, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45fee573a5ddc3830800000000000000
+      internalID: 4052357144272367444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalDeath_25
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 330
+        width: 143
+        height: 165
+      alignment: 9
+      pivot: {x: 0.55, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4972a96dde9f7c420800000000000000
+      internalID: 2650361705633818516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalDeath_26
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 330
+        width: 143
+        height: 165
+      alignment: 9
+      pivot: {x: 0.55, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8873aa19bc6e1a90800000000000000
+      internalID: -7341310800295659379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalDeath_27
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 330
+        width: 143
+        height: 165
+      alignment: 9
+      pivot: {x: 0.55, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d16f8ed6118bc0e70800000000000000
+      internalID: 9082836933497386525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalDeath_28
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 330
+        width: 143
+        height: 165
+      alignment: 9
+      pivot: {x: 0.55, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 713c968da1a19d850800000000000000
+      internalID: 6402177047886152471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalDeath_29
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 330
+        width: 143
+        height: 165
+      alignment: 9
+      pivot: {x: 0.55, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6734d5190b905a590800000000000000
+      internalID: -7663708536943328394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalDeath_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 165
+        width: 143
+        height: 165
+      alignment: 9
+      pivot: {x: 0.55, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6029a4bd72df74950800000000000000
+      internalID: 6433388940346692102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalDeath_31
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 165
+        width: 143
+        height: 165
+      alignment: 9
+      pivot: {x: 0.55, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dfff4534a8115f60800000000000000
+      internalID: 8021219504871702483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalDeath_32
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 165
+        width: 143
+        height: 165
+      alignment: 9
+      pivot: {x: 0.55, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f8e480b1d04357d0800000000000000
+      internalID: -2930927663134217995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalDeath_33
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 165
+        width: 143
+        height: 165
+      alignment: 9
+      pivot: {x: 0.55, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 355faf641bd37c350800000000000000
+      internalID: 6036861657122796883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalDeath_34
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 165
+        width: 143
+        height: 165
+      alignment: 9
+      pivot: {x: 0.55, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4fb6a9403d6ab170800000000000000
+      internalID: 8194982526115561292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalDeath_35
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 165
+        width: 143
+        height: 165
+      alignment: 9
+      pivot: {x: 0.55, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03ae13cbe1df29270800000000000000
+      internalID: 8255939375371774512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalDeath_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 143
+        height: 165
+      alignment: 9
+      pivot: {x: 0.55, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fddfcead84a7e5960800000000000000
+      internalID: 7592640475122433503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 2a7cbf91f079dde4088b33d4f889471b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

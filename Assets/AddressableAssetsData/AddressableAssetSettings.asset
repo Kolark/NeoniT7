@@ -74,6 +74,8 @@ MonoBehaviour:
     - default
     - Locale-en
     - Locale-es
+    - Preload
+    - Locale
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
   - {fileID: 11400000, guid: 862f43fe5ed72544db8d56f374e428d7, type: 2}

@@ -53,6 +53,9 @@ public class PrefabTools : EditorWindow
             case "InputController":
                 @gameobject = FindObjectOfType<InputController>();
                 break;
+            case "CameraController":
+                @gameobject = FindObjectOfType<CameraController>();
+                break;
             default:
                 @gameobject = null;
                 break;
@@ -94,6 +97,9 @@ public class PrefabTools : EditorWindow
         switch (obj)
         {
             case "SceneController":
+                PrefabUtility.UnpackPrefabInstance(toInstatiate, PrefabUnpackMode.Completely, InteractionMode.UserAction);
+                break;
+            case "CameraController":
                 PrefabUtility.UnpackPrefabInstance(toInstatiate, PrefabUnpackMode.Completely, InteractionMode.UserAction);
                 break;
         }

@@ -1,7 +1,100 @@
 fileFormatVersion: 2
 guid: b5ed59759af5b7f4b9a18093e58e9adc
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 2852618791142497436
+    second: RugalUltimate2_0
+  - first:
+      213: -3916488900577517145
+    second: RugalUltimate2_1
+  - first:
+      213: 3783775267461854421
+    second: RugalUltimate2_2
+  - first:
+      213: -1249472579811198959
+    second: RugalUltimate2_3
+  - first:
+      213: 23610669281633662
+    second: RugalUltimate2_4
+  - first:
+      213: 8737123998772466253
+    second: RugalUltimate2_5
+  - first:
+      213: -741061109917238438
+    second: RugalUltimate2_6
+  - first:
+      213: 4528850983947731259
+    second: RugalUltimate2_7
+  - first:
+      213: 4156413558416187765
+    second: RugalUltimate2_8
+  - first:
+      213: -5512081933552432748
+    second: RugalUltimate2_9
+  - first:
+      213: 156273429563336220
+    second: RugalUltimate2_10
+  - first:
+      213: -3843520018685796176
+    second: RugalUltimate2_11
+  - first:
+      213: -6366184820941680801
+    second: RugalUltimate2_12
+  - first:
+      213: 2993599201968258632
+    second: RugalUltimate2_13
+  - first:
+      213: 2050399813885323248
+    second: RugalUltimate2_14
+  - first:
+      213: 6857327135472582077
+    second: RugalUltimate2_15
+  - first:
+      213: 7274396873692440658
+    second: RugalUltimate2_16
+  - first:
+      213: 4741794368491491852
+    second: RugalUltimate2_17
+  - first:
+      213: 5588228660505031553
+    second: RugalUltimate2_18
+  - first:
+      213: -5589876238675316238
+    second: RugalUltimate2_19
+  - first:
+      213: -4002199365251996428
+    second: RugalUltimate2_20
+  - first:
+      213: -8757151881292852652
+    second: RugalUltimate2_21
+  - first:
+      213: 3272906107221669324
+    second: RugalUltimate2_22
+  - first:
+      213: -5848116935481039301
+    second: RugalUltimate2_23
+  - first:
+      213: 6979733893404400998
+    second: RugalUltimate2_24
+  - first:
+      213: -6459590398059898447
+    second: RugalUltimate2_25
+  - first:
+      213: -5006495669368636147
+    second: RugalUltimate2_26
+  - first:
+      213: -3178531889849364910
+    second: RugalUltimate2_27
+  - first:
+      213: 8454359005624077394
+    second: RugalUltimate2_28
+  - first:
+      213: -3154451170265493620
+    second: RugalUltimate2_29
+  - first:
+      213: -5932336038389700713
+    second: RugalUltimate2_30
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -85,11 +178,662 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: RugalUltimate2_0
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 1344
+        width: 64
+        height: 122
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9c17ad3da9869720800000000000000
+      internalID: 2852618791142497436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalUltimate2_1
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 1352
+        width: 61
+        height: 133
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a1215a6816d5a9c0800000000000000
+      internalID: -3916488900577517145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalUltimate2_2
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 1374
+        width: 61
+        height: 133
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d4f8f6fe8ba28430800000000000000
+      internalID: 3783775267461854421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalUltimate2_3
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 1400
+        width: 61
+        height: 133
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11833c30f4bf8aee0800000000000000
+      internalID: -1249472579811198959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalUltimate2_4
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 1417
+        width: 61
+        height: 133
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e75e07357c1e35000800000000000000
+      internalID: 23610669281633662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalUltimate2_5
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 1199
+        width: 59
+        height: 131
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d429f515cff704970800000000000000
+      internalID: 8737123998772466253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalUltimate2_6
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 1208
+        width: 72
+        height: 116
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5bb68ac8d837b5f0800000000000000
+      internalID: -741061109917238438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalUltimate2_7
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 1199
+        width: 98
+        height: 120
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3102ea99f5b9de30800000000000000
+      internalID: 4528850983947731259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalUltimate2_8
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1199
+        width: 100
+        height: 144
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 571a3091c1c8ea930800000000000000
+      internalID: 4156413558416187765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalUltimate2_9
+      rect:
+        serializedVersion: 2
+        x: 1192
+        y: 1199
+        width: 105
+        height: 139
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49942c98fa62183b0800000000000000
+      internalID: -5512081933552432748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalUltimate2_10
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 975
+        width: 103
+        height: 145
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1664f03bd13b2200800000000000000
+      internalID: 156273429563336220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalUltimate2_11
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 975
+        width: 104
+        height: 144
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b0612728e219aac0800000000000000
+      internalID: -3843520018685796176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalUltimate2_12
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 975
+        width: 100
+        height: 144
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5f894582a4c6a7a0800000000000000
+      internalID: -6366184820941680801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalUltimate2_13
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 975
+        width: 105
+        height: 139
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84ef5390d966b8920800000000000000
+      internalID: 2993599201968258632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalUltimate2_14
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 975
+        width: 95
+        height: 133
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f7692a64cb747c10800000000000000
+      internalID: 2050399813885323248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalUltimate2_15
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 751
+        width: 87
+        height: 135
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbd7d72b2be1a2f50800000000000000
+      internalID: 6857327135472582077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalUltimate2_16
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 757
+        width: 141
+        height: 117
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25866ab4a69d3f460800000000000000
+      internalID: 7274396873692440658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalUltimate2_17
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 742
+        width: 159
+        height: 118
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0212e3eadc3ec140800000000000000
+      internalID: 4741794368491491852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalUltimate2_18
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 727
+        width: 155
+        height: 118
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1833f09eb506d8d40800000000000000
+      internalID: 5588228660505031553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalUltimate2_19
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 717
+        width: 140
+        height: 117
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f17c576d25cc62b0800000000000000
+      internalID: -5589876238675316238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalUltimate2_20
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 475
+        width: 147
+        height: 118
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f46cd1c1e45578c0800000000000000
+      internalID: -4002199365251996428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalUltimate2_21
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 448
+        width: 165
+        height: 118
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4525567e2c8587680800000000000000
+      internalID: -8757151881292852652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalUltimate2_22
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 448
+        width: 78
+        height: 122
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc5772093c2bb6d20800000000000000
+      internalID: 3272906107221669324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalUltimate2_23
+      rect:
+        serializedVersion: 2
+        x: 1062
+        y: 448
+        width: 69
+        height: 130
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b36e4bfb1a057dea0800000000000000
+      internalID: -5848116935481039301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalUltimate2_24
+      rect:
+        serializedVersion: 2
+        x: 1359
+        y: 448
+        width: 69
+        height: 130
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66d9f1feefefcd060800000000000000
+      internalID: 6979733893404400998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalUltimate2_25
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 224
+        width: 68
+        height: 130
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b99d11e1ccea56a0800000000000000
+      internalID: -6459590398059898447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalUltimate2_26
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 224
+        width: 67
+        height: 131
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0d30c9d6ba558ab0800000000000000
+      internalID: -5006495669368636147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalUltimate2_27
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 224
+        width: 67
+        height: 131
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25e0746361693e3d0800000000000000
+      internalID: -3178531889849364910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalUltimate2_28
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 224
+        width: 68
+        height: 131
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25c09d5f8bae35570800000000000000
+      internalID: 8454359005624077394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalUltimate2_29
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 224
+        width: 72
+        height: 131
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8f8207af532934d0800000000000000
+      internalID: -3154451170265493620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalUltimate2_30
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 0
+        width: 67
+        height: 131
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 797a88fcdcb1cada0800000000000000
+      internalID: -5932336038389700713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: e43f6b0a57eaa2a4f8d63fe318f396c3
     internalID: 0
     vertices: []
     indices: 
