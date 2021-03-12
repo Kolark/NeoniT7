@@ -21,6 +21,7 @@ public class InputController : MonoBehaviour
     public Action Escape;
     public Action<Vector2> OnMoveEvent;
     public Action<ControllerType> OnControlChanged;
+    public Action Delete;
     private Vector2 move;
     /// <summary>
     /// Vector 2 de joystick|WASD
@@ -87,7 +88,10 @@ public class InputController : MonoBehaviour
         ControllerType type = CurrentControlScheme;
         OnControlChanged?.Invoke(type);
     }
-    
+    public void OnDeleteSave()
+    {
+        Delete?.Invoke();
+    }
 }
 public enum ControllerType
 {

@@ -125,12 +125,26 @@ public class GameManager : MonoBehaviour
         isPaused = !isPaused;
         Time.timeScale = isPaused ? 0 : 1;
     }
+
+    public void Unpause()
+    {
+        isPaused = false;
+        Time.timeScale = 1;
+    }
     public void Restart()
     {
         current.chamber = 1;
         Pause_Unpause();
         Save();
         ChangeScene(SceneController.Instance.CurrentLevel);
+    }
+
+    public void MainScreen()
+    {
+        Debug.Log("Main");
+        Pause_Unpause();
+        Save();
+        ChangeScene(GameScene.MainScreen);
     }
     public void SetChamber(int currentChamber)
     {

@@ -7,7 +7,7 @@ public class NinjaCharacter : BasicCharacter
     //Ninja:Defensiva Dash.Se mueve hacia adelante, puede atravesar enemigos y es invulnerable durante este movimiento.
     //Ninja:Ultimate El ninja salta en su posición actual a gran altura y lanza shurikens en un cono debajo de sí mismo.
     
-    [SerializeField] LayerMask invulnerableLayer;
+    [SerializeField] int invulnerableLayer;
     private LayerMask defaultLayer;
     bool isParry = false;
     [SerializeField] GameObject projectil;

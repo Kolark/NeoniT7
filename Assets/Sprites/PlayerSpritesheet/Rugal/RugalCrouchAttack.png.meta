@@ -1,7 +1,151 @@
 fileFormatVersion: 2
 guid: 1a1a233350ba560488cede2c433704d8
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 9025698859462347314
+    second: RugalCrouchAttack_0
+  - first:
+      213: -2402577946674692330
+    second: RugalCrouchAttack_1
+  - first:
+      213: 5336637005084359630
+    second: RugalCrouchAttack_2
+  - first:
+      213: -747511042254045555
+    second: RugalCrouchAttack_3
+  - first:
+      213: -3914989095042312124
+    second: RugalCrouchAttack_4
+  - first:
+      213: 2576359642559983678
+    second: RugalCrouchAttack_5
+  - first:
+      213: 8468347300601536671
+    second: RugalCrouchAttack_6
+  - first:
+      213: -1060475032680305087
+    second: RugalCrouchAttack_7
+  - first:
+      213: -5825263687362165628
+    second: RugalCrouchAttack_8
+  - first:
+      213: -8539006159351276431
+    second: RugalCrouchAttack_9
+  - first:
+      213: 1548878084498370338
+    second: RugalCrouchAttack_10
+  - first:
+      213: 832592288263681910
+    second: RugalCrouchAttack_11
+  - first:
+      213: 3195741445041384377
+    second: RugalCrouchAttack_12
+  - first:
+      213: 794461229962565691
+    second: RugalCrouchAttack_13
+  - first:
+      213: 3923226503063301035
+    second: RugalCrouchAttack_14
+  - first:
+      213: 2369670208684022379
+    second: RugalCrouchAttack_15
+  - first:
+      213: 3888753491174586249
+    second: RugalCrouchAttack_16
+  - first:
+      213: 2193752843227816509
+    second: RugalCrouchAttack_17
+  - first:
+      213: -5699553435525072817
+    second: RugalCrouchAttack_18
+  - first:
+      213: 6940837600794491386
+    second: RugalCrouchAttack_19
+  - first:
+      213: -5156926042755891896
+    second: RugalCrouchAttack_20
+  - first:
+      213: 6331724697147102806
+    second: RugalCrouchAttack_21
+  - first:
+      213: -6908664124740904294
+    second: RugalCrouchAttack_22
+  - first:
+      213: 6047432554338737299
+    second: RugalCrouchAttack_23
+  - first:
+      213: -5169508012307820851
+    second: RugalCrouchAttack_24
+  - first:
+      213: -2575593795306917030
+    second: RugalCrouchAttack_25
+  - first:
+      213: -7483946184783914504
+    second: RugalCrouchAttack_26
+  - first:
+      213: -8424666673174983026
+    second: RugalCrouchAttack_27
+  - first:
+      213: 4814313507309457823
+    second: RugalCrouchAttack_28
+  - first:
+      213: -2726201137275460093
+    second: RugalCrouchAttack_29
+  - first:
+      213: -4657520591378453857
+    second: RugalCrouchAttack_30
+  - first:
+      213: -3390449303852942702
+    second: RugalCrouchAttack_31
+  - first:
+      213: -7078465258179511323
+    second: RugalCrouchAttack_32
+  - first:
+      213: 5206754193760133478
+    second: RugalCrouchAttack_33
+  - first:
+      213: 7094390087467033534
+    second: RugalCrouchAttack_34
+  - first:
+      213: -1155459705043704675
+    second: RugalCrouchAttack_35
+  - first:
+      213: 7793208694182559237
+    second: RugalCrouchAttack_36
+  - first:
+      213: 7557819054654224929
+    second: RugalCrouchAttack_37
+  - first:
+      213: 2724014815504028533
+    second: RugalCrouchAttack_38
+  - first:
+      213: 3552087990157364140
+    second: RugalCrouchAttack_39
+  - first:
+      213: -5585080384894413440
+    second: RugalCrouchAttack_40
+  - first:
+      213: -8315041306542310392
+    second: RugalCrouchAttack_41
+  - first:
+      213: 4992606828609887820
+    second: RugalCrouchAttack_42
+  - first:
+      213: -8273448048961038382
+    second: RugalCrouchAttack_43
+  - first:
+      213: -1116518439844615649
+    second: RugalCrouchAttack_44
+  - first:
+      213: -2541308462624264340
+    second: RugalCrouchAttack_45
+  - first:
+      213: -7317051695381913214
+    second: RugalCrouchAttack_46
+  - first:
+      213: 317349473437465122
+    second: RugalCrouchAttack_47
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -85,11 +229,1019 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: RugalCrouchAttack_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 777
+        width: 176
+        height: 111
+      alignment: 9
+      pivot: {x: 0.29, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23ac6efda49b14d70800000000000000
+      internalID: 9025698859462347314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouchAttack_1
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 777
+        width: 176
+        height: 111
+      alignment: 9
+      pivot: {x: 0.29, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61f744f361458aed0800000000000000
+      internalID: -2402577946674692330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouchAttack_2
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 777
+        width: 176
+        height: 111
+      alignment: 9
+      pivot: {x: 0.29, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecbf147d41b8f0a40800000000000000
+      internalID: 5336637005084359630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouchAttack_3
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 777
+        width: 176
+        height: 111
+      alignment: 9
+      pivot: {x: 0.29, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8ef3c4eaae40a5f0800000000000000
+      internalID: -747511042254045555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouchAttack_4
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 777
+        width: 176
+        height: 111
+      alignment: 9
+      pivot: {x: 0.29, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 448997a192a2ba9c0800000000000000
+      internalID: -3914989095042312124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouchAttack_5
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 777
+        width: 176
+        height: 111
+      alignment: 9
+      pivot: {x: 0.29, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e30b07cd17111c320800000000000000
+      internalID: 2576359642559983678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouchAttack_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 666
+        width: 176
+        height: 111
+      alignment: 9
+      pivot: {x: 0.29, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f902efea00d958570800000000000000
+      internalID: 8468347300601536671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouchAttack_7
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 666
+        width: 176
+        height: 111
+      alignment: 9
+      pivot: {x: 0.29, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14e6bef839f6841f0800000000000000
+      internalID: -1060475032680305087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouchAttack_8
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 666
+        width: 176
+        height: 111
+      alignment: 9
+      pivot: {x: 0.29, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 484cbc73a81882fa0800000000000000
+      internalID: -5825263687362165628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouchAttack_9
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 666
+        width: 176
+        height: 111
+      alignment: 9
+      pivot: {x: 0.29, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17c9ef0c32b5f7980800000000000000
+      internalID: -8539006159351276431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouchAttack_10
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 666
+        width: 176
+        height: 111
+      alignment: 9
+      pivot: {x: 0.29, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22fa9ea5968be7510800000000000000
+      internalID: 1548878084498370338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouchAttack_11
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 666
+        width: 176
+        height: 111
+      alignment: 9
+      pivot: {x: 0.29, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 677bfa06646fd8b00800000000000000
+      internalID: 832592288263681910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouchAttack_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 555
+        width: 176
+        height: 111
+      alignment: 9
+      pivot: {x: 0.29, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bb6fa999ed895c20800000000000000
+      internalID: 3195741445041384377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouchAttack_13
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 555
+        width: 176
+        height: 111
+      alignment: 9
+      pivot: {x: 0.29, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b381db7874e760b00800000000000000
+      internalID: 794461229962565691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouchAttack_14
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 555
+        width: 176
+        height: 111
+      alignment: 9
+      pivot: {x: 0.29, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bab6c78e7b9127630800000000000000
+      internalID: 3923226503063301035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouchAttack_15
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 555
+        width: 176
+        height: 111
+      alignment: 9
+      pivot: {x: 0.29, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6adf6fef72c2e020800000000000000
+      internalID: 2369670208684022379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouchAttack_16
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 555
+        width: 176
+        height: 111
+      alignment: 9
+      pivot: {x: 0.29, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 987758c52b0a7f530800000000000000
+      internalID: 3888753491174586249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouchAttack_17
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 555
+        width: 176
+        height: 111
+      alignment: 9
+      pivot: {x: 0.29, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d32e8918696c17e10800000000000000
+      internalID: 2193752843227816509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouchAttack_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 444
+        width: 176
+        height: 111
+      alignment: 9
+      pivot: {x: 0.29, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f48bb21195e17e0b0800000000000000
+      internalID: -5699553435525072817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouchAttack_19
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 444
+        width: 176
+        height: 111
+      alignment: 9
+      pivot: {x: 0.29, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af9b707160fc25060800000000000000
+      internalID: 6940837600794491386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouchAttack_20
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 444
+        width: 176
+        height: 111
+      alignment: 9
+      pivot: {x: 0.29, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84df290361bee68b0800000000000000
+      internalID: -5156926042755891896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouchAttack_21
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 444
+        width: 176
+        height: 111
+      alignment: 9
+      pivot: {x: 0.29, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 656550da01eced750800000000000000
+      internalID: 6331724697147102806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouchAttack_22
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 444
+        width: 176
+        height: 111
+      alignment: 9
+      pivot: {x: 0.29, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9a555c059e7f10a0800000000000000
+      internalID: -6908664124740904294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouchAttack_23
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 444
+        width: 176
+        height: 111
+      alignment: 9
+      pivot: {x: 0.29, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39c5e741edbcce350800000000000000
+      internalID: 6047432554338737299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouchAttack_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 333
+        width: 176
+        height: 111
+      alignment: 9
+      pivot: {x: 0.29, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dce4bde1ad73248b0800000000000000
+      internalID: -5169508012307820851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouchAttack_25
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 333
+        width: 176
+        height: 111
+      alignment: 9
+      pivot: {x: 0.29, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a53f709d617a14cd0800000000000000
+      internalID: -2575593795306917030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouchAttack_26
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 333
+        width: 176
+        height: 111
+      alignment: 9
+      pivot: {x: 0.29, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f990d9b89ea32890800000000000000
+      internalID: -7483946184783914504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouchAttack_27
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 333
+        width: 176
+        height: 111
+      alignment: 9
+      pivot: {x: 0.29, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8e455aeb42951b80800000000000000
+      internalID: -8424666673174983026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouchAttack_28
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 333
+        width: 176
+        height: 111
+      alignment: 9
+      pivot: {x: 0.29, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f919b88a0a0efc240800000000000000
+      internalID: 4814313507309457823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouchAttack_29
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 333
+        width: 176
+        height: 111
+      alignment: 9
+      pivot: {x: 0.29, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3062e6a72869a2ad0800000000000000
+      internalID: -2726201137275460093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouchAttack_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 222
+        width: 176
+        height: 111
+      alignment: 9
+      pivot: {x: 0.29, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ae1d0e2b92d5fb0800000000000000
+      internalID: -4657520591378453857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouchAttack_31
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 222
+        width: 176
+        height: 111
+      alignment: 9
+      pivot: {x: 0.29, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29affde4254b2f0d0800000000000000
+      internalID: -3390449303852942702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouchAttack_32
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 222
+        width: 176
+        height: 111
+      alignment: 9
+      pivot: {x: 0.29, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eb344bd95d34cd90800000000000000
+      internalID: -7078465258179511323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouchAttack_33
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 222
+        width: 176
+        height: 111
+      alignment: 9
+      pivot: {x: 0.29, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66129d74a5b124840800000000000000
+      internalID: 5206754193760133478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouchAttack_34
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 222
+        width: 176
+        height: 111
+      alignment: 9
+      pivot: {x: 0.29, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb366856236547260800000000000000
+      internalID: 7094390087467033534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouchAttack_35
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 222
+        width: 176
+        height: 111
+      alignment: 9
+      pivot: {x: 0.29, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d94a798258bf6ffe0800000000000000
+      internalID: -1155459705043704675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouchAttack_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 111
+        width: 176
+        height: 111
+      alignment: 9
+      pivot: {x: 0.29, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50ebc35640a072c60800000000000000
+      internalID: 7793208694182559237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouchAttack_37
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 111
+        width: 176
+        height: 111
+      alignment: 9
+      pivot: {x: 0.29, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12af75d1364c2e860800000000000000
+      internalID: 7557819054654224929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouchAttack_38
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 111
+        width: 176
+        height: 111
+      alignment: 9
+      pivot: {x: 0.29, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 573d401da05adc520800000000000000
+      internalID: 2724014815504028533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouchAttack_39
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 111
+        width: 176
+        height: 111
+      alignment: 9
+      pivot: {x: 0.29, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cabc240153d8b4130800000000000000
+      internalID: 3552087990157364140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouchAttack_40
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 111
+        width: 176
+        height: 111
+      alignment: 9
+      pivot: {x: 0.29, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 085dd502bfecd72b0800000000000000
+      internalID: -5585080384894413440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouchAttack_41
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 111
+        width: 176
+        height: 111
+      alignment: 9
+      pivot: {x: 0.29, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80c78d69cf90b9c80800000000000000
+      internalID: -8315041306542310392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouchAttack_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 176
+        height: 111
+      alignment: 9
+      pivot: {x: 0.29, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4e5b7a657d494540800000000000000
+      internalID: 4992606828609887820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouchAttack_43
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 0
+        width: 176
+        height: 111
+      alignment: 9
+      pivot: {x: 0.29, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d7570685dece2d80800000000000000
+      internalID: -8273448048961038382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouchAttack_44
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 176
+        height: 111
+      alignment: 9
+      pivot: {x: 0.29, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1a63eff4645180f0800000000000000
+      internalID: -1116518439844615649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouchAttack_45
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 0
+        width: 176
+        height: 111
+      alignment: 9
+      pivot: {x: 0.29, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6f269cea657bbcd0800000000000000
+      internalID: -2541308462624264340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouchAttack_46
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 176
+        height: 111
+      alignment: 9
+      pivot: {x: 0.29, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 281679d104c947a90800000000000000
+      internalID: -7317051695381913214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalCrouchAttack_47
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 0
+        width: 176
+        height: 111
+      alignment: 9
+      pivot: {x: 0.29, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22ab5e92aa3776400800000000000000
+      internalID: 317349473437465122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d24fdec68fc56f64a84273499914bcd9
     internalID: 0
     vertices: []
     indices: 

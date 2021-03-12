@@ -23781,7 +23781,7 @@ MonoBehaviour:
     loop: 1
     source: {fileID: 0}
   levelType: 1
-  currentLevel: 6
+  currentLevel: 7
   nextLevel: 0
   ScreenAudio: Nivel4
 --- !u!4 &3376049255278416989
@@ -23842,7 +23842,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 14.767742
+  orthographic size: 14.777778
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

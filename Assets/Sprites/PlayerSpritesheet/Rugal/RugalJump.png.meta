@@ -1,7 +1,76 @@
 fileFormatVersion: 2
 guid: 31d893e442bfab54e8d18c245376f511
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -253501013192036856
+    second: RugalJump_0
+  - first:
+      213: -5266584460698629278
+    second: RugalJump_1
+  - first:
+      213: 4059891224727096154
+    second: RugalJump_2
+  - first:
+      213: -6033461015712135093
+    second: RugalJump_3
+  - first:
+      213: 3214105859836867563
+    second: RugalJump_4
+  - first:
+      213: -6880766235765377447
+    second: RugalJump_5
+  - first:
+      213: -6686877183005773284
+    second: RugalJump_6
+  - first:
+      213: -7759716478530320381
+    second: RugalJump_7
+  - first:
+      213: 1849146355409488240
+    second: RugalJump_8
+  - first:
+      213: -2829116887309981792
+    second: RugalJump_9
+  - first:
+      213: 3961081926944117743
+    second: RugalJump_10
+  - first:
+      213: -5406786745570775561
+    second: RugalJump_11
+  - first:
+      213: 333194586297791934
+    second: RugalJump_12
+  - first:
+      213: -1582108894518506995
+    second: RugalJump_13
+  - first:
+      213: -3533327628106574141
+    second: RugalJump_14
+  - first:
+      213: 8221065067230556477
+    second: RugalJump_15
+  - first:
+      213: 2087301524462322236
+    second: RugalJump_16
+  - first:
+      213: 4510766787865842281
+    second: RugalJump_17
+  - first:
+      213: -6914866865818118195
+    second: RugalJump_18
+  - first:
+      213: -6840716912298760790
+    second: RugalJump_19
+  - first:
+      213: -1307691211216052051
+    second: RugalJump_20
+  - first:
+      213: -4829175435624443042
+    second: RugalJump_21
+  - first:
+      213: 5512337322313649599
+    second: RugalJump_22
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -85,11 +154,494 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: RugalJump_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 645
+        width: 105
+        height: 215
+      alignment: 9
+      pivot: {x: 0.555, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80eac7eeb226b7cf0800000000000000
+      internalID: -253501013192036856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalJump_1
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 645
+        width: 105
+        height: 215
+      alignment: 9
+      pivot: {x: 0.555, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26b4778265559e6b0800000000000000
+      internalID: -5266584460698629278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalJump_2
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 645
+        width: 105
+        height: 215
+      alignment: 9
+      pivot: {x: 0.555, y: 0.14}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5b85940f81a75830800000000000000
+      internalID: 4059891224727096154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalJump_3
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 645
+        width: 105
+        height: 215
+      alignment: 9
+      pivot: {x: 0.555, y: 0.265}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b488f404c27d44ca0800000000000000
+      internalID: -6033461015712135093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalJump_4
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 645
+        width: 105
+        height: 215
+      alignment: 9
+      pivot: {x: 0.555, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be3f31e104cca9c20800000000000000
+      internalID: 3214105859836867563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalJump_5
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 645
+        width: 105
+        height: 215
+      alignment: 9
+      pivot: {x: 0.555, y: 0.365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 956f3be709b9280a0800000000000000
+      internalID: -6880766235765377447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalJump_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 430
+        width: 105
+        height: 215
+      alignment: 9
+      pivot: {x: 0.555, y: 0.42}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c12b64271a07333a0800000000000000
+      internalID: -6686877183005773284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalJump_7
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 430
+        width: 105
+        height: 215
+      alignment: 9
+      pivot: {x: 0.555, y: 0.415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 308847bb9f2ff4490800000000000000
+      internalID: -7759716478530320381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalJump_8
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 430
+        width: 105
+        height: 215
+      alignment: 9
+      pivot: {x: 0.555, y: 0.38}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07904e320dc79a910800000000000000
+      internalID: 1849146355409488240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalJump_9
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 430
+        width: 105
+        height: 215
+      alignment: 9
+      pivot: {x: 0.555, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a764d72e25fcb8d0800000000000000
+      internalID: -2829116887309981792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalJump_10
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 430
+        width: 105
+        height: 215
+      alignment: 9
+      pivot: {x: 0.555, y: 0.275}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe359bd960798f630800000000000000
+      internalID: 3961081926944117743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalJump_11
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 430
+        width: 105
+        height: 215
+      alignment: 9
+      pivot: {x: 0.555, y: 0.22}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fda6fde91c37f4b0800000000000000
+      internalID: -5406786745570775561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalJump_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 215
+        width: 105
+        height: 215
+      alignment: 9
+      pivot: {x: 0.555, y: 0.145}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb5fc5df5bebf9400800000000000000
+      internalID: 333194586297791934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalJump_13
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 215
+        width: 105
+        height: 215
+      alignment: 9
+      pivot: {x: 0.555, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0a0d32c7583b0ae0800000000000000
+      internalID: -1582108894518506995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalJump_14
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 215
+        width: 105
+        height: 215
+      alignment: 9
+      pivot: {x: 0.555, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c652ab1e3917fec0800000000000000
+      internalID: -3533327628106574141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalJump_15
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 215
+        width: 105
+        height: 215
+      alignment: 9
+      pivot: {x: 0.555, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3176af1f17171270800000000000000
+      internalID: 8221065067230556477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalJump_16
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 215
+        width: 105
+        height: 215
+      alignment: 9
+      pivot: {x: 0.555, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3245b07da597fc10800000000000000
+      internalID: 2087301524462322236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalJump_17
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 215
+        width: 105
+        height: 215
+      alignment: 9
+      pivot: {x: 0.555, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9629f579e76799e30800000000000000
+      internalID: 4510766787865842281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalJump_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 105
+        height: 215
+      alignment: 9
+      pivot: {x: 0.555, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc7dac9d8357900a0800000000000000
+      internalID: -6914866865818118195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalJump_19
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 0
+        width: 105
+        height: 215
+      alignment: 9
+      pivot: {x: 0.555, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa5ec614634e011a0800000000000000
+      internalID: -6840716912298760790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalJump_20
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 0
+        width: 105
+        height: 215
+      alignment: 9
+      pivot: {x: 0.555, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da0219795c52adde0800000000000000
+      internalID: -1307691211216052051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalJump_21
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 0
+        width: 105
+        height: 215
+      alignment: 9
+      pivot: {x: 0.555, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e53109107825bfcb0800000000000000
+      internalID: -4829175435624443042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RugalJump_22
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 0
+        width: 105
+        height: 215
+      alignment: 9
+      pivot: {x: 0.555, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbd02aac691cf7c40800000000000000
+      internalID: 5512337322313649599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 302c6ea70ed7b80479aeaf55eb9b7c81
     internalID: 0
     vertices: []
     indices: 
