@@ -80,7 +80,7 @@ public class CharacterMovement : MonoBehaviour
     public void Crouch()
     {
         Vector2 inputVector = GetInput();
-        isCrouching = inputVector.y < 0f;
+        isCrouching = inputVector.y < -0.9f;
         anim.SetBool("IsCrouching", isCrouching);
     }
 
