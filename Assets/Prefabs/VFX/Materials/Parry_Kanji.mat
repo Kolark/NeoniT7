@@ -7,10 +7,10 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Line Parry
+  m_Name: Parry_Kanji
   m_Shader: {fileID: 4800000, guid: 0406db5a14f94604a8c57ccfbc9f3b46, type: 3}
-  m_ShaderKeywords: _EMISSION
-  m_LightmapFlags: 2
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 3000
@@ -21,12 +21,16 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Texture2D_C11E3335:
+        m_Texture: {fileID: 2800000, guid: 491ab6ca4ec643947899e0c90145af38, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _AlphaTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: 05d89946bd995b245a770e13628b792d, type: 3}
+        m_Texture: {fileID: 2800000, guid: d4fda633359cc4b4b8d475320eed9d7f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -34,7 +38,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
-        m_Texture: {fileID: 2800000, guid: 92ef78b9f07cd8342be8fae97717f538, type: 3}
+        m_Texture: {fileID: 2800000, guid: d4fda633359cc4b4b8d475320eed9d7f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -50,6 +54,9 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Vector1_894C35E: 10
+    - Vector1_E9562DAD: 0.5
+    - Vector1_EC6F1718: 0.5
     - _AlphaClip: 0
     - _Blend: 2
     - _BlendOp: 0
@@ -61,8 +68,8 @@ Material:
     - _Cutoff: 0.5
     - _DistortionBlend: 0.5
     - _DistortionEnabled: 0
-    - _DistortionStrength: 0
-    - _DistortionStrengthScaled: 0
+    - _DistortionStrength: 5
+    - _DistortionStrengthScaled: 0.5
     - _DstBlend: 1
     - _EnableExternalAlpha: 0
     - _FlipbookBlending: 0
@@ -76,15 +83,16 @@ Material:
     - _Surface: 1
     - _ZWrite: 0
     m_Colors:
-    - _BaseColor: {r: 0.5434802, g: 1, b: 0.4575472, a: 1}
-    - _BaseColorAddSubDiff: {r: 0, g: 0, b: 0, a: 0}
+    - Color_F7368EE0: {r: 1, g: 1, b: 1, a: 0.9647059}
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _BaseColorAddSubDiff: {r: 1, g: 0, b: 0, a: 0}
     - _CameraFadeParams: {r: 0, g: Infinity, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 283.22876, g: 1024, b: 0, a: 1}
+    - _EmissionColor: {r: 1024.0007, g: 0, b: 825.6344, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
     - _SoftParticleFadeParams: {r: 0, g: 0, b: 0, a: 0}
---- !u!114 &378639817146580361
+--- !u!114 &4668902658263978951
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
