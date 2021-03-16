@@ -271,6 +271,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grounded: 0
+  facingRight: 1
   canJump: 1
   MaxYVelocity: 0
   groundCheckRadius: 0.2
@@ -386,6 +387,7 @@ MonoBehaviour:
       serializedVersion: 2
       m_Bits: 512
   ultimateOffsetTime: 0.6
+  projectileDelay: 0.45
 --- !u!82 &4591866177448519533
 AudioSource:
   m_ObjectHideFlags: 0

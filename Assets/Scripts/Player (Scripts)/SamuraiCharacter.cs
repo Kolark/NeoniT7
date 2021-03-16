@@ -11,6 +11,7 @@ public class SamuraiCharacter : BasicCharacter
     [SerializeField] GameObject projectil;
     [SerializeField] AttackInfo specialAttack;
     [SerializeField] float ultimateOffsetTime;
+    [SerializeField] float projectileDelay = .45f;
     public override void Defense()
     {
         if (!isAlive) return;
@@ -34,10 +35,14 @@ public class SamuraiCharacter : BasicCharacter
         if (!isAlive) return;
         if (!canUseThrowable) return;
         if (!character.Grounded) return;
-        base.Throwable();
-        GameObject gameObject = Instantiate(projectil,firstAttack.pos.position,Quaternion.identity);
-        Proyectil proyectil = gameObject.GetComponent<Proyectil>();
-        proyectil.push(Vector2.right * transform.localScale.x);
+        base.Throwable(); 
+        DOVirtual.DelayedCall(projectileDelay, null, true).OnComplete(() =>
+        {
+            ProjectileFlip();
+            GameObject gameObject = Instantiate(projectil, firstAttack.pos.position, Quaternion.identity);
+            Proyectil proyectil = gameObject.GetComponent<Proyectil>();
+            proyectil.push(Vector2.right * transform.localScale.x);
+        });
     }
     public override void Ultimate()
     {
@@ -97,5 +102,22 @@ public class SamuraiCharacter : BasicCharacter
         Gizmos.color = Color.blue;
         Gizmos.DrawWireSphere(specialAttack.pos.position, specialAttack.radius);
 
+    }
+
+    public void ProjectileFlip()
+    {
+        //Vector2 inputVector = character.GetInput();
+        if (!character.facingRight && projectil.transform.localScale.x == 1)
+        {
+            Vector3 theScale = projectil.transform.localScale;
+            theScale.x *= -1;
+            projectil.transform.localScale = theScale;
+        }
+        else if (character.facingRight && projectil.transform.localScale.x == -1)
+        {
+            Vector3 theScale = projectil.transform.localScale;
+            theScale.x *= -1;
+            projectil.transform.localScale = theScale;
+        }
     }
 }
