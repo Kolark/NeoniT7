@@ -10,6 +10,6 @@ public class EnemyDamageHandler : MonoBehaviour, IEnemyHurtBox
     }
 
     public void OnReceiveDamage() {
-        Destroy(enemy.gameObject);
+        enemy.ReceiveDamage();
     }
 }
