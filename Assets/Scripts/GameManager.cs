@@ -3,6 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
+
+/// <summary>
+/// The GameManager is in charge of the overall Game Behaviour. Not specific to one scene, but rather all of them. 
+/// Stuff like saving the game. Constructing a new save SaveInfo. Going between scenes.
+/// 
+/// Will primarily deal the overall in game information. Such as the current Scene(not level).
+/// Basically transition between scenes and information that is relevant to the savesystem;
+/// </summary>
 public class GameManager : MonoBehaviour
 {
     [SerializeField] GameObject[] characters;
@@ -146,6 +154,7 @@ public class GameManager : MonoBehaviour
         Save();
         ChangeScene(GameScene.MainScreen);
     }
+
     public void SetChamber(int currentChamber)
     {
         current.chamber = currentChamber;
