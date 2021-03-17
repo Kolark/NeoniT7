@@ -106,7 +106,7 @@ public class EnemyMovement : MonoBehaviour
             {
                 force = Vector2.zero;
                 rb.velocity = Vector2.zero;
-                
+                animator.SetBool("isRunning", false);
             }
         }
         rb.AddForce(force);

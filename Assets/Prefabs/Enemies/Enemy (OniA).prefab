@@ -46,12 +46,12 @@ GameObject:
   - component: {fileID: 7323760723879704639}
   - component: {fileID: 259744720963509288}
   m_Layer: 11
-  m_Name: Enemy
+  m_Name: Enemy (OniA)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &507823204554322947
 Transform:
   m_ObjectHideFlags: 0
@@ -194,7 +194,7 @@ MonoBehaviour:
   target: {fileID: 0}
   followEnabled: 1
   pathUpdateSeconds: 0.5
-  activateDistance: 50
+  activateDistance: 10
   attackDistance: 4
   attackRate: 1
   spawnAnimationSeconds: 1.25
