@@ -5,6 +5,10 @@ using DG.Tweening;
 /// <summary>
 /// This class will refer to individual things that have need to be setup in each scene, therefore
 /// this class will not be in the DontDestroyOnLoad Method and lastly it will not be a prefab.
+/// 
+/// This class will be the one that communicates more to the gameManager.
+/// 
+/// Will primarily hold information about the current scene.
 /// </summary>
 public class SceneController : MonoBehaviour
 {
@@ -48,7 +52,7 @@ public class SceneController : MonoBehaviour
         GameManager.Instance.Unpause();
         if (levelType == SceneType.Level)
         {
-            int indexToSpawn = Mathf.Clamp((int)GameManager.Instance.Current.chamber, 1, CameraController.Instance.SceneLength) - 1;
+            int indexToSpawn = GameManager.Instance.Current.chamber;
             GameObject character = Instantiate(GameManager.Instance.Characters[(int)GameManager.Instance.Current.character],
                 CheckPoints[indexToSpawn].position, Quaternion.identity);
             GameManager.Instance.SetLevel(currentLevel);
@@ -73,11 +77,18 @@ public class SceneController : MonoBehaviour
     {
         GameManager.Instance.SetLevel(nextLevel);
         GameManager.Instance.Save();
-        GameManager.Instance.SetChamber(1);
-        //MenuManager.Instance.NextLevelTransition();
+        GameManager.Instance.SetChamber(0);
+        MenuManager.Instance.NextLevelTransition();
         DOVirtual.DelayedCall(5f,() => { GameManager.Instance.ChangeScene(GameManager.Instance.Current); });
         
     }
+
+    public void GoToLastCheckpoint()
+    {
+        //Revive
+        BasicCharacter.Instance.transform.position = CheckPoints[GameManager.Instance.Current.chamber].position;
+    }
+
     private void OnDestroy()
     {
         if (instance != this)
