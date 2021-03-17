@@ -35,6 +35,7 @@ public class EnemyMovement : MonoBehaviour
     public bool directionLookEnabled = true;
     
     public bool jumpEnabled = true;
+    [SerializeField] float groundOffset;
     [SerializeField] float maxYVelocity;
 
     Animator animator;
@@ -170,14 +171,14 @@ public class EnemyMovement : MonoBehaviour
 
     protected virtual void CheckGround()
     {
-        Vector3 startOffset = transform.position - new Vector3(0f, GetComponent<Collider2D>().bounds.extents.y + jumpCheckOffset);
+        Vector3 startOffset = transform.position -  new Vector3 (0, groundOffset, 0); //new Vector3(0f, GetComponent<Collider2D>().bounds.extents.y + jumpCheckOffset);
         Debug.DrawRay(startOffset, Vector3.down, Color.red, 0.05f);
         isGrounded = Physics2D.Raycast(startOffset, Vector3.down, 0.05f);
         animator.SetBool("isGround", isGrounded);
     }
     public void CheckJumpStatus()
     {
-        RaycastHit2D groundInfoDownRayCast = Physics2D.Raycast(groundDetection.position, Vector2.down, 6f, groundLayer);//HOLE
+        RaycastHit2D groundInfoDownRayCast = Physics2D.Raycast(groundDetection.position, Vector2.down, 20f, groundLayer);//HOLE
         RaycastHit2D groundInfoFwdRayCast = Physics2D.Raycast(groundDetection.position, Vector2.right*transform.localScale.x, 2f, groundLayer);//WALL
         groundInfoDown = groundInfoDownRayCast.collider;
         groundInfoFwd = groundInfoFwdRayCast.collider;
@@ -217,7 +218,7 @@ public class EnemyMovement : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawLine(groundDetection.position, (Vector2)groundDetection.position + Vector2.down * 6);
+        Gizmos.DrawLine(groundDetection.position, (Vector2)groundDetection.position + Vector2.down * 20);
         Gizmos.color = Color.cyan;
         Gizmos.DrawLine(groundDetection.position, (Vector2)groundDetection.position + Vector2.right * transform.localScale.x * 2f);
     }

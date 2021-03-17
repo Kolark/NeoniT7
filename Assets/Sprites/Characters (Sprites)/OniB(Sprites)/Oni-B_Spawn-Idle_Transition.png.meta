@@ -1,37 +1,31 @@
 fileFormatVersion: 2
-guid: 4d78c9134e9dadd43ade3bd2b49ef61b
+guid: 8d904d12414f0f841ba1a1fe81c78fe3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3817054552019035463
-    second: OniA_Attack_0
+      213: -508694221501676154
+    second: Oni-B_Spawn-Idle_Transition_0
   - first:
-      213: 6066548717870160187
-    second: OniA_Attack_1
+      213: -2119170639298573812
+    second: Oni-B_Spawn-Idle_Transition_1
   - first:
-      213: -3078975409765195878
-    second: OniA_Attack_2
+      213: -7983093941229784103
+    second: Oni-B_Spawn-Idle_Transition_2
   - first:
-      213: -2368471677627979452
-    second: OniA_Attack_3
+      213: -4636810681995623491
+    second: Oni-B_Spawn-Idle_Transition_3
   - first:
-      213: 2277105834331357059
-    second: OniA_Attack_4
+      213: -5703763629933040810
+    second: Oni-B_Spawn-Idle_Transition_4
   - first:
-      213: -6646441534327293778
-    second: OniA_Attack_5
+      213: 2127350841188624611
+    second: Oni-B_Spawn-Idle_Transition_5
   - first:
-      213: -543562563184250629
-    second: OniA_Attack_6
+      213: -4631967444612248936
+    second: Oni-B_Spawn-Idle_Transition_6
   - first:
-      213: -9195058053850778114
-    second: OniA_Attack_7
-  - first:
-      213: -8453288451907392397
-    second: OniA_Attack_8
-  - first:
-      213: -238830001088746648
-    second: OniA_Attack_9
+      213: -2398116654975205380
+    second: Oni-B_Spawn-Idle_Transition_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -129,211 +123,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: OniA_Attack_0
+      name: Oni-B_Spawn-Idle_Transition_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 82
-        width: 120
-        height: 82
-      alignment: 7
+        y: 60
+        width: 80
+        height: 60
+      alignment: 9
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ba1e9acb19170bc0800000000000000
-      internalID: -3817054552019035463
+      spriteID: 685491cfc41c0f8f0800000000000000
+      internalID: -508694221501676154
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OniA_Attack_1
+      name: Oni-B_Spawn-Idle_Transition_1
       rect:
         serializedVersion: 2
-        x: 120
-        y: 82
-        width: 120
-        height: 82
-      alignment: 7
+        x: 80
+        y: 60
+        width: 80
+        height: 60
+      alignment: 9
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b39904dbae5b03450800000000000000
-      internalID: 6066548717870160187
+      spriteID: c0acb2a08813792e0800000000000000
+      internalID: -2119170639298573812
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OniA_Attack_2
+      name: Oni-B_Spawn-Idle_Transition_2
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 60
+        width: 80
+        height: 60
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d3fc605b5a563190800000000000000
+      internalID: -7983093941229784103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oni-B_Spawn-Idle_Transition_3
       rect:
         serializedVersion: 2
         x: 240
-        y: 82
-        width: 120
-        height: 82
-      alignment: 7
+        y: 60
+        width: 80
+        height: 60
+      alignment: 9
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9f58cc8d284545d0800000000000000
-      internalID: -3078975409765195878
+      spriteID: db30ae8604db6afb0800000000000000
+      internalID: -4636810681995623491
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OniA_Attack_3
-      rect:
-        serializedVersion: 2
-        x: 360
-        y: 82
-        width: 120
-        height: 82
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4492962de8f712fd0800000000000000
-      internalID: -2368471677627979452
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OniA_Attack_4
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 82
-        width: 120
-        height: 82
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 38f3a4311b7e99f10800000000000000
-      internalID: 2277105834331357059
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OniA_Attack_5
+      name: Oni-B_Spawn-Idle_Transition_4
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 120
-        height: 82
-      alignment: 7
+        width: 80
+        height: 60
+      alignment: 9
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea8f40e83a813c3a0800000000000000
-      internalID: -6646441534327293778
+      spriteID: 65b6c0bc23928d0b0800000000000000
+      internalID: -5703763629933040810
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OniA_Attack_6
+      name: Oni-B_Spawn-Idle_Transition_5
       rect:
         serializedVersion: 2
-        x: 120
+        x: 81
         y: 0
-        width: 120
-        height: 82
-      alignment: 7
+        width: 80
+        height: 60
+      alignment: 9
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf0b33c8ab0e478f0800000000000000
-      internalID: -543562563184250629
+      spriteID: 3e82da1a15ed58d10800000000000000
+      internalID: 2127350841188624611
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OniA_Attack_7
+      name: Oni-B_Spawn-Idle_Transition_6
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 80
+        height: 60
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89a86bc7622f7bfb0800000000000000
+      internalID: -4631967444612248936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oni-B_Spawn-Idle_Transition_7
       rect:
         serializedVersion: 2
         x: 240
         y: 0
-        width: 120
-        height: 82
-      alignment: 7
+        width: 80
+        height: 60
+      alignment: 9
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef53123ea67946080800000000000000
-      internalID: -9195058053850778114
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OniA_Attack_8
-      rect:
-        serializedVersion: 2
-        x: 360
-        y: 0
-        width: 120
-        height: 82
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 37ce520c0f2efaa80800000000000000
-      internalID: -8453288451907392397
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OniA_Attack_9
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 0
-        width: 120
-        height: 82
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 86b266f11618facf0800000000000000
-      internalID: -238830001088746648
+      spriteID: cff314aab9d28bed0800000000000000
+      internalID: -2398116654975205380
       vertices: []
       indices: 
       edges: []
@@ -341,7 +293,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 9894328a7c1d2264588d23b124b78391
     internalID: 0
     vertices: []
     indices: 

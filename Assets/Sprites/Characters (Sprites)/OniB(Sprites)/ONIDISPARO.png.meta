@@ -1,37 +1,34 @@
 fileFormatVersion: 2
-guid: 4d78c9134e9dadd43ade3bd2b49ef61b
+guid: 54cd7dbbeff1f9f41b685503e5c76e29
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3817054552019035463
-    second: OniA_Attack_0
+      213: -4057219047011148242
+    second: ONIDISPARO_0
   - first:
-      213: 6066548717870160187
-    second: OniA_Attack_1
+      213: -2521409773140066419
+    second: ONIDISPARO_1
   - first:
-      213: -3078975409765195878
-    second: OniA_Attack_2
+      213: 7716257164337815484
+    second: ONIDISPARO_2
   - first:
-      213: -2368471677627979452
-    second: OniA_Attack_3
+      213: 5473429378492929968
+    second: ONIDISPARO_3
   - first:
-      213: 2277105834331357059
-    second: OniA_Attack_4
+      213: 7639282218023076809
+    second: ONIDISPARO_4
   - first:
-      213: -6646441534327293778
-    second: OniA_Attack_5
+      213: 7666813717593975747
+    second: ONIDISPARO_5
   - first:
-      213: -543562563184250629
-    second: OniA_Attack_6
+      213: 3428421690418904149
+    second: ONIDISPARO_6
   - first:
-      213: -9195058053850778114
-    second: OniA_Attack_7
+      213: 705908647630633533
+    second: ONIDISPARO_7
   - first:
-      213: -8453288451907392397
-    second: OniA_Attack_8
-  - first:
-      213: -238830001088746648
-    second: OniA_Attack_9
+      213: 1490880782436632038
+    second: ONIDISPARO_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -129,211 +126,190 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: OniA_Attack_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 82
-        width: 120
-        height: 82
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9ba1e9acb19170bc0800000000000000
-      internalID: -3817054552019035463
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OniA_Attack_1
-      rect:
-        serializedVersion: 2
-        x: 120
-        y: 82
-        width: 120
-        height: 82
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b39904dbae5b03450800000000000000
-      internalID: 6066548717870160187
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OniA_Attack_2
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 82
-        width: 120
-        height: 82
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a9f58cc8d284545d0800000000000000
-      internalID: -3078975409765195878
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OniA_Attack_3
-      rect:
-        serializedVersion: 2
-        x: 360
-        y: 82
-        width: 120
-        height: 82
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4492962de8f712fd0800000000000000
-      internalID: -2368471677627979452
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OniA_Attack_4
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 82
-        width: 120
-        height: 82
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 38f3a4311b7e99f10800000000000000
-      internalID: 2277105834331357059
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OniA_Attack_5
+      name: ONIDISPARO_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 120
-        height: 82
-      alignment: 7
+        width: 65
+        height: 66
+      alignment: 9
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea8f40e83a813c3a0800000000000000
-      internalID: -6646441534327293778
+      spriteID: e2e93f6d5ccd1b7c0800000000000000
+      internalID: -4057219047011148242
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OniA_Attack_6
+      name: ONIDISPARO_1
       rect:
         serializedVersion: 2
-        x: 120
+        x: 65
         y: 0
-        width: 120
-        height: 82
-      alignment: 7
+        width: 65
+        height: 66
+      alignment: 9
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf0b33c8ab0e478f0800000000000000
-      internalID: -543562563184250629
+      spriteID: d8fb9ca9b27220dd0800000000000000
+      internalID: -2521409773140066419
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OniA_Attack_7
+      name: ONIDISPARO_2
       rect:
         serializedVersion: 2
-        x: 240
+        x: 130
         y: 0
-        width: 120
-        height: 82
-      alignment: 7
+        width: 65
+        height: 66
+      alignment: 9
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef53123ea67946080800000000000000
-      internalID: -9195058053850778114
+      spriteID: cbf1beb2207a51b60800000000000000
+      internalID: 7716257164337815484
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OniA_Attack_8
+      name: ONIDISPARO_3
       rect:
         serializedVersion: 2
-        x: 360
+        x: 195
         y: 0
-        width: 120
-        height: 82
-      alignment: 7
+        width: 65
+        height: 66
+      alignment: 9
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37ce520c0f2efaa80800000000000000
-      internalID: -8453288451907392397
+      spriteID: 0b71240350785fb40800000000000000
+      internalID: 5473429378492929968
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OniA_Attack_9
+      name: ONIDISPARO_4
       rect:
         serializedVersion: 2
-        x: 480
+        x: 260
         y: 0
-        width: 120
-        height: 82
-      alignment: 7
+        width: 65
+        height: 66
+      alignment: 9
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86b266f11618facf0800000000000000
-      internalID: -238830001088746648
+      spriteID: 9c34930e3be240a60800000000000000
+      internalID: 7639282218023076809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ONIDISPARO_5
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 0
+        width: 65
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cbe744a47ef56a60800000000000000
+      internalID: 7666813717593975747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ONIDISPARO_6
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 0
+        width: 65
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55cb9a5ec53349f20800000000000000
+      internalID: 3428421690418904149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ONIDISPARO_7
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 0
+        width: 65
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3a76e9cc24ebc900800000000000000
+      internalID: 705908647630633533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ONIDISPARO_8
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 0
+        width: 65
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e5879f2c2ca0b410800000000000000
+      internalID: 1490880782436632038
       vertices: []
       indices: 
       edges: []
@@ -341,7 +317,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 77009037fb94b1d408a358ab5bc09861
     internalID: 0
     vertices: []
     indices: 
