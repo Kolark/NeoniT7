@@ -17,7 +17,7 @@ public class CharacterMovement : MonoBehaviour
     private SoundModule soundModule;
     private Vector3 slopeNormal;
     [SerializeField]private bool grounded;
-    public bool facingRight = true;
+    private bool facingRight = true;
     private bool isCrouching;
     [SerializeField]private bool canJump = true;
     private float verticalVelocity;

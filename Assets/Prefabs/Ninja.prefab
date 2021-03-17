@@ -418,7 +418,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grounded: 0
-  facingRight: 1
   canJump: 1
   MaxYVelocity: 0
   groundCheckRadius: 0.2
