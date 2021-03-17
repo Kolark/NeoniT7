@@ -56,7 +56,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 7698511133450240
-    m_Key: Restart
+    m_Key: Restart Level
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9758082492891136
+    m_Key: Last Checkpoint
     m_Metadata:
       m_Items: []
   m_Metadata:
