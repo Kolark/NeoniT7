@@ -67,6 +67,10 @@ MonoBehaviour:
     m_Localized: Reiniciar
     m_Metadata:
       m_Items: []
+  - m_Id: 9758082492891136
+    m_Localized: ultimo guardado
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
     00000000:

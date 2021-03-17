@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
-
+using System;
 /// <summary>
 /// The GameManager is in charge of the overall Game Behaviour. Not specific to one scene, but rather all of them. 
 /// Stuff like saving the game. Constructing a new save SaveInfo. Going between scenes.
@@ -18,15 +18,14 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance => instance;
 
     private GameScene currentScene;
-    public GameScene CurrentScene { get => currentScene;}
+    public GameScene CurrentScene { get => currentScene; }
 
     private SceneType currentSceneType;
-    private ControllerType controllerType {get=> InputController.Instance.CurrentControlScheme;}
+    private ControllerType controllerType { get => InputController.Instance.CurrentControlScheme; }
 
     private SaveInfo current;
     bool hasSaveInfo = false;
     bool isPaused = false;
-    
 
     private int saveSlot;
     public int Saveslot { 
@@ -125,32 +124,42 @@ public class GameManager : MonoBehaviour
         //    InputController.Instance.Pause += PauseGame;
         //}
     }
-    /// <summary>
-    /// This is where the pause logic will go.
-    /// </summary>
-    public void Pause_Unpause()
-    {
-        isPaused = !isPaused;
-        Time.timeScale = isPaused ? 0 : 1;
-    }
 
     public void Unpause()
     {
         isPaused = false;
         Time.timeScale = 1;
     }
+    public void DisableCharacter()
+    {
+        //Disables all player input on the Character
+    }
+    public void EnableCharacter()
+    {
+        //Reenables all playeri nput on the Character
+    }
+    public void Pause()
+    {
+        isPaused = true;
+        Time.timeScale = 0;
+    }
+
+    /// <summary>
+    /// Restart the current Lvl at Chamber 0
+    /// </summary>
     public void Restart()
     {
-        current.chamber = 1;
-        Pause_Unpause();
+        current.chamber = 0 ;
+        Unpause();
         Save();
         ChangeScene(SceneController.Instance.CurrentLevel);
     }
-
+    /// <summary>
+    /// Changes the scene to the currentScene
+    /// </summary>
     public void MainScreen()
     {
-        Debug.Log("Main");
-        Pause_Unpause();
+        Unpause();
         Save();
         ChangeScene(GameScene.MainScreen);
     }

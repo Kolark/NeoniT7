@@ -51,11 +51,12 @@ public class SoundModule : MonoBehaviour
         this.source.loop = sound.loop;
         this.source.outputAudioMixerGroup = AudioManager.Instance.mixers[(int)sound.mixerChannel];
     }
-
-    private void OnValidate()
-    {
-        source = GetComponent<AudioSource>();
-        source.spatialBlend = 1;
-        source.playOnAwake = false;
-    }
+    //#if UNITY_EDITOR
+    //    private void OnValidate()
+    //    {
+    //        source = GetComponent<AudioSource>();
+    //        source.spatialBlend = 1;
+    //        source.playOnAwake = false;
+    //    }
+    //#endif
 }
