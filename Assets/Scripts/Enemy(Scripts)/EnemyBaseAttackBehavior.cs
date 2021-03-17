@@ -20,6 +20,7 @@ public class EnemyBaseAttackBehavior : StateMachineBehaviour
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         EnemyController enemy = animator.GetComponentInParent<EnemyController>();
-        enemy.Ai.onAttackEnd();
+        enemy.Ai.OnAttackEnd();
+        Debug.Log("AttackEnd-STATEBEHAVIOUR");
     }
 }
