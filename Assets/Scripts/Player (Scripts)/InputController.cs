@@ -46,48 +46,54 @@ public class InputController : MonoBehaviour
         DontDestroyOnLoad(gameObject);
         playerInput = GetComponent<PlayerInput>();
     }
-
+    //Move event
     public void OnMove(InputValue value)
     {
         move = value.Get<Vector2>();
         OnMoveEvent?.Invoke(move);
     }
-
+    //Jump event
     public void OnJump()
     {
         Jump?.Invoke();
     }
-
+    //Attack event
     public void OnAttack()
     {
         Attack?.Invoke();
     }
-
+    //SpecialAbility event
     public void OnSpecialAbility()
     {
         SpecialAbility?.Invoke();
     }
+    //Defensive Ability event
     public void OnDefensiveAbility()
     {
         DefensiveAbility?.Invoke();
     }
+    //TODELETE event
     public void OnThrowWeapon()
     {
         Throw?.Invoke();
     }
+    //pAUSE event
     public void OnPause()
     {
         Pause?.Invoke();
     }
+    //Escape event
     public void OnEscape()
     {
         Escape?.Invoke();
     }
+    //ControlsChanged event
     public void OnControlsChanged()
     {
         ControllerType type = CurrentControlScheme;
         OnControlChanged?.Invoke(type);
     }
+    //Move event
     public void OnDeleteSave()
     {
         Delete?.Invoke();

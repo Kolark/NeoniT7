@@ -238,6 +238,7 @@ public class BasicCharacter : MonoBehaviour
         inputController.Throw -= Throwable;
         instance = null;
     }
+    
     protected virtual void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
