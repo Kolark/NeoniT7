@@ -1,31 +1,31 @@
 fileFormatVersion: 2
-guid: 161713fdcb5f5404eb4a039fd652bf11
+guid: 80a00e352e4f0764eb2b9297d946f63f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5958005586344425008
-    second: CerezoTiny_0
+      213: -5285891815623530136
+    second: Cerezo_0
   - first:
-      213: -5139594954003180685
-    second: CerezoTiny_1
+      213: -8012157131160218277
+    second: Cerezo_1
   - first:
-      213: -3514892591454214188
-    second: CerezoTiny_2
+      213: -1266094254865264667
+    second: Cerezo_2
   - first:
-      213: 8435146471125636586
-    second: CerezoTiny_3
+      213: 2113723544367392375
+    second: Cerezo_3
   - first:
-      213: -4737319551586928005
-    second: CerezoTiny_4
+      213: -1257289639406300085
+    second: Cerezo_4
   - first:
-      213: 976342906222988602
-    second: CerezoTiny_5
+      213: 892150270029206994
+    second: Cerezo_5
   - first:
-      213: 3043499167899036326
-    second: CerezoTiny_6
+      213: 309462950465932380
+    second: Cerezo_6
   - first:
-      213: 238120419618654327
-    second: CerezoTiny_7
+      213: -6234713668189429363
+    second: Cerezo_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -60,7 +60,7 @@ TextureImporter:
     mipBias: -100
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -85,7 +85,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -97,7 +97,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -109,7 +109,19 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
-    maxTextureSize: 2048
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -123,7 +135,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CerezoTiny_0
+      name: Cerezo_0
       rect:
         serializedVersion: 2
         x: 0
@@ -137,14 +149,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d9c5207c79e05da0800000000000000
-      internalID: -5958005586344425008
+      spriteID: 8696d98466db4a6b0800000000000000
+      internalID: -5285891815623530136
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CerezoTiny_1
+      name: Cerezo_1
       rect:
         serializedVersion: 2
         x: 640
@@ -158,14 +170,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 373104dbe9d7ca8b0800000000000000
-      internalID: -5139594954003180685
+      spriteID: b5515981a891fc090800000000000000
+      internalID: -8012157131160218277
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CerezoTiny_2
+      name: Cerezo_2
       rect:
         serializedVersion: 2
         x: 1280
@@ -179,14 +191,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d728be8fc7983fc0800000000000000
-      internalID: -3514892591454214188
+      spriteID: 5efc796bbfded6ee0800000000000000
+      internalID: -1266094254865264667
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CerezoTiny_3
+      name: Cerezo_3
       rect:
         serializedVersion: 2
         x: 1920
@@ -200,14 +212,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae555df2609af0570800000000000000
-      internalID: 8435146471125636586
+      spriteID: 776e5675d54755d10800000000000000
+      internalID: 2113723544367392375
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CerezoTiny_4
+      name: Cerezo_4
       rect:
         serializedVersion: 2
         x: 2560
@@ -221,14 +233,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7af52c97f8a14eb0800000000000000
-      internalID: -4737319551586928005
+      spriteID: b44986ffbb53d8ee0800000000000000
+      internalID: -1257289639406300085
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CerezoTiny_5
+      name: Cerezo_5
       rect:
         serializedVersion: 2
         x: 3200
@@ -242,14 +254,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3dc46843baac8d00800000000000000
-      internalID: 976342906222988602
+      spriteID: 2d51c5b91fd816c00800000000000000
+      internalID: 892150270029206994
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CerezoTiny_6
+      name: Cerezo_6
       rect:
         serializedVersion: 2
         x: 3840
@@ -263,14 +275,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6aaa1d83e5eac3a20800000000000000
-      internalID: 3043499167899036326
+      spriteID: c5c8aa1f9ee6b4400800000000000000
+      internalID: 309462950465932380
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CerezoTiny_7
+      name: Cerezo_7
       rect:
         serializedVersion: 2
         x: 4480
@@ -284,8 +296,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77803219249fd4300800000000000000
-      internalID: 238120419618654327
+      spriteID: d81eb43a3f8d979a0800000000000000
+      internalID: -6234713668189429363
       vertices: []
       indices: 
       edges: []
