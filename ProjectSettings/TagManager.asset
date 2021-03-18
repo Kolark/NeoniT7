@@ -21,6 +21,8 @@ TagManager:
   - projectiles
   - Player
   - InvulnerablePlayer
+  - 
+  - ChamberSpawnTrigger
   - EnemyProjectile
   - 
   - 
