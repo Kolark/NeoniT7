@@ -13,9 +13,9 @@ public class EffectsModule : MonoBehaviour
         }
         else
         {
-            if (particles[i].isPaused)
+            if (!particles[i].isPlaying)
             {
-                particles[i].Play();
+                particles[i].Play(true);
             }
         }
     }

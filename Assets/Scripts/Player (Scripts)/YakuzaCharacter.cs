@@ -56,6 +56,7 @@ public class YakuzaCharacter : BasicCharacter
         if (!canUseSpecial) return;
         if (!character.Grounded) return;
         base.Ultimate();
+        DOVirtual.DelayedCall(cdUltimate, () => { canUseSpecial = true; }, true);
         Vector2 vec = new Vector2(dir.x * transform.localScale.x, dir.y);
         Vector2 vec2 = new Vector2(dir.x * transform.localScale.x, -dir.y);
 

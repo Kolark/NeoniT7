@@ -15,6 +15,7 @@ public class BasicCharacter : MonoBehaviour
     protected CharacterMovement character;
     protected InputController inputController;
     protected SoundModule soundModule;
+    protected EffectsModule effectsModule;
     public CharacterMovement Character { get => character; }
     public bool IsAlive { get => isAlive;}
     #endregion
@@ -59,6 +60,7 @@ public class BasicCharacter : MonoBehaviour
         }
         instance = this;
         soundModule = GetComponent<SoundModule>();
+        effectsModule = GetComponent<EffectsModule>();
         character = GetComponent<CharacterMovement>();
     }
     protected virtual void Start()
@@ -184,7 +186,7 @@ public class BasicCharacter : MonoBehaviour
         
         character.Anim.SetTrigger("Special");
         canUseSpecial = false;
-        DOVirtual.DelayedCall(cdUltimate, () => { canUseSpecial = true; },true);
+        //DOVirtual.DelayedCall(cdUltimate, () => { canUseSpecial = true; },true);
     }
     
     public virtual void Throwable()
