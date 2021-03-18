@@ -94,9 +94,9 @@ public class YakuzaCharacter : BasicCharacter
         Debug.Log("Attack step 5");
         if (canReceiveDamage)
         {
-            maxLife--;
+            currentLife--;
             Debug.Log("Attack step 6");
-            bool isDead = maxLife <= 0;
+            bool isDead = currentLife <= 0;
             if (isDead)
             {
                 isAlive = false;

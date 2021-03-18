@@ -87,6 +87,7 @@ public class SceneController : MonoBehaviour
     {
         //Revive
         BasicCharacter.Instance.transform.position = CheckPoints[GameManager.Instance.Current.chamber].position;
+        BasicCharacter.Instance.Revive();
     }
 
     private void OnDestroy()
