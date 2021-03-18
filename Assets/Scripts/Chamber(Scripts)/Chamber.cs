@@ -43,24 +43,23 @@ public class Chamber : MonoBehaviour
         for (int i = 0; i < toSpawn.baseEnemies.Length; i++)
         {
             //Call factory to spawn EnemyA
-            enemies
-                .Add(
-                EnemyFactory.Instance.CreateEnemy(toSpawn.baseEnemies[i].transform, EnemyTipe.Base));
-            
+            EnemyController baseEnemy = EnemyFactory.Instance.CreateEnemy(toSpawn.baseEnemies[i].transform, EnemyType.Base);
+            baseEnemy.AssignChamber(this);
+            enemies.Add(baseEnemy);
         }
         for (int i = 0; i < toSpawn.distanceEnemies.Length; i++)
         {
             //Call factory to spawn EnemyB
-            enemies
-                .Add(
-                EnemyFactory.Instance.CreateEnemy(toSpawn.baseEnemies[i].transform, EnemyTipe.Distance));
+            EnemyController distanceEnemy = EnemyFactory.Instance.CreateEnemy(toSpawn.baseEnemies[i].transform, EnemyType.Distance);
+            distanceEnemy.AssignChamber(this);
+            enemies.Add(distanceEnemy);
         }
         for (int i = 0; i < toSpawn.wallEnemies.Length; i++)
         {
             //Call factory to spawn EnemyC
-            enemies
-                .Add(
-                EnemyFactory.Instance.CreateEnemy(toSpawn.baseEnemies[i].transform, EnemyTipe.Wall));
+            EnemyController wallEnemy = EnemyFactory.Instance.CreateEnemy(toSpawn.baseEnemies[i].transform, EnemyType.Wall);
+            wallEnemy.AssignChamber(this);
+            enemies.Add(wallEnemy);
         }
     }
 
@@ -94,7 +93,7 @@ public class Chamber : MonoBehaviour
         {
             ChamberManager.Instance.ChangeCurrentChamber(chamberIndex);
             compositeCollider2D.isTrigger = false;
-            ChamberManager.Instance.UnlockNextChamber();//TEMPORAL
+            //ChamberManager.Instance.UnlockNextChamber();//TEMPORAL
             Debug.Log($"name : {collision.name}");
         }
     }

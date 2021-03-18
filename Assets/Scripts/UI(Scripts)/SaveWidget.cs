@@ -73,7 +73,7 @@ public class SaveWidget : UIWidget
         }
         else
         {
-            GameManager.Instance.Current = new SaveInfo(GameScene.Level1, 1, widgetIndex, DateTime.Now, CharacterType.Samurai, Difficulty.Normal);
+            GameManager.Instance.Current = new SaveInfo(GameScene.Level1, 0, widgetIndex, DateTime.Now, CharacterType.Samurai, Difficulty.Normal);
             GameManager.Instance.ChangeScene(sceneToGo);
         }
     }

@@ -15,6 +15,7 @@ public class BasicCharacter : MonoBehaviour
     protected CharacterMovement character;
     protected InputController inputController;
     protected SoundModule soundModule;
+    protected EffectsModule effectsModule;
     public CharacterMovement Character { get => character; }
     public bool IsAlive { get => isAlive;}
     #endregion
@@ -42,7 +43,8 @@ public class BasicCharacter : MonoBehaviour
     #endregion
     #region Attributes
     [Header("Attributes")]
-    [SerializeField] protected int maxLife;
+    [SerializeField] protected int currentLife;
+    [SerializeField] protected int MaxLife;
     [SerializeField] protected float cdDefense;
     [SerializeField] protected float cdUltimate;
     [SerializeField] protected float cdThrow;
@@ -58,7 +60,9 @@ public class BasicCharacter : MonoBehaviour
             return;
         }
         instance = this;
+        currentLife = MaxLife;
         soundModule = GetComponent<SoundModule>();
+        effectsModule = GetComponent<EffectsModule>();
         character = GetComponent<CharacterMovement>();
     }
     protected virtual void Start()
@@ -184,7 +188,7 @@ public class BasicCharacter : MonoBehaviour
         
         character.Anim.SetTrigger("Special");
         canUseSpecial = false;
-        DOVirtual.DelayedCall(cdUltimate, () => { canUseSpecial = true; },true);
+        //DOVirtual.DelayedCall(cdUltimate, () => { canUseSpecial = true; },true);
     }
     
     public virtual void Throwable()
@@ -204,9 +208,9 @@ public class BasicCharacter : MonoBehaviour
     {
         if (canReceiveDamage)
         {
-            maxLife--;
+            currentLife--;
             soundModule.Play((int)CharacterSounds.getHit);
-            bool isDead = maxLife <= 0;
+            bool isDead = currentLife <= 0;
             if (isDead)
             {
                 isAlive = false;
@@ -268,7 +272,12 @@ public class BasicCharacter : MonoBehaviour
         }
         
     }
- 
+ public void Revive()
+    {
+        currentLife = MaxLife;
+        isAlive = true;
+        character.Anim.SetBool("isAlive", isAlive);
+    }
 }
 
 public enum CharacterSounds
