@@ -412,7 +412,7 @@ MonoBehaviour:
   canFlip: 1
   canReceiveDamage: 1
   currentLife: 0
-  MaxLife: 1000
+  MaxLife: 5
   cdDefense: 10
   cdUltimate: 3
   cdThrow: 3
