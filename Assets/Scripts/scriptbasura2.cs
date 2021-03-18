@@ -5,10 +5,13 @@ using UnityEngine.UIElements;
 using UnityEngine.UI;
 public class scriptbasura2 : MonoBehaviour
 {
-    public void Canceled()
+    private void OnTriggerExit2D(Collider2D collision)
     {
-        Debug.Log("Cancell");
-        UnityEngine.UI.Button xd;
-        UnityEngine.UIElements.Button xd2;
+        Debug.Log("collision Exit");
+        
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("collision Enter");
     }
 }

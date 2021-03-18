@@ -59,12 +59,26 @@ public class OniA_AI : MonoBehaviour,IStateMachineAI
 
             case OniAStates.Idle:
                 Idle();
+                float distanceToTarget = 0;
+                if (target != null) distanceToTarget = Vector2.Distance(transform.position, target.position);
+
+                timer += Time.fixedDeltaTime;
+
+                if (distanceToTarget < attackDistance)//within distance
+                {
+                    if (timer >= attackRate)
+                    {
+                        rb.velocity = Vector2.zero;
+                        currentState = OniAStates.Attack;
+                        timer = 0;
+                    }
+                }
                 break;
 
             case OniAStates.Chase:
                 enemyMovement.Chase();
                 //if (!enemyMovement.IsGrounded) return;
-                float distanceToTarget = 0;
+                distanceToTarget = 0;
                 if (target != null) distanceToTarget = Vector2.Distance(transform.position, target.position);
 
                 timer += Time.fixedDeltaTime;

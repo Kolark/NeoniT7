@@ -15,10 +15,9 @@ public class EnemyMovement : MonoBehaviour
     public Seeker seeker;
     private Path path;
     [Header("Pathfinding")]
-    public Transform target;
-    
-    
+    public Transform target;   
     public LayerMask groundLayer;
+    [SerializeField] float pathfindOffset;
 
     #endregion
 
@@ -106,7 +105,7 @@ public class EnemyMovement : MonoBehaviour
             {
                 force = Vector2.zero;
                 rb.velocity = Vector2.zero;
-                
+                animator.SetBool("isRunning", false);
             }
         }
         rb.AddForce(force);
@@ -134,10 +133,12 @@ public class EnemyMovement : MonoBehaviour
         {
             if (direction.x > 0.05f)
             {
+                Debug.Log("Going right");
                 transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
             }
             else if (direction.x < -0.05f)
             {
+                Debug.Log("Going left");
                 transform.localScale = new Vector3(-1f * Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
             }
         }
@@ -194,7 +195,7 @@ public class EnemyMovement : MonoBehaviour
     {
         if (seeker.IsDone())
         {
-            seeker.StartPath(rb.position, target.position, OnPathComplete);
+            seeker.StartPath(rb.position + new Vector2(0, pathfindOffset), target.position, OnPathComplete);
         }
     }
 
