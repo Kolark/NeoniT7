@@ -51,7 +51,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &507823204554322947
 Transform:
   m_ObjectHideFlags: 0
@@ -166,9 +166,10 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 1024
-  speed: 25
+  pathfindOffset: 0.2
+  speed: 10
   maxSpeed: 10
-  acceleration: 5
+  acceleration: 50
   nextWaypointDistance: 3
   jumpNodeHeightRequirement: 0.8
   jumpForce: 25
@@ -193,8 +194,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   followEnabled: 1
-  pathUpdateSeconds: 0.5
-  activateDistance: 10
+  pathUpdateSeconds: 1
+  activateDistance: 30
   attackDistance: 4
   attackRate: 1
   spawnAnimationSeconds: 1.25
