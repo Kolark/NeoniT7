@@ -23,12 +23,14 @@ public class OniB_AI : MonoBehaviour,IStateMachineAI
     [SerializeField] float attackRate = 2f;
     [SerializeField] float spawnAnimationSeconds;
     [SerializeField] GameObject projectile;
-    [SerializeField] GameObject attackPosition;
+    [SerializeField] Transform attackPosition;
     [SerializeField] LayerMask playerLayer;
+    [SerializeField] float shootForce;
 
     float spawntimer = 0;
 
     float timer = 0;
+    float nextAttackTime = 0f;
 
     private void Awake()
     {
@@ -39,7 +41,6 @@ public class OniB_AI : MonoBehaviour,IStateMachineAI
     IEnumerator Start() //Refactor into GetTarget()
     {
         yield return new WaitUntil(() => BasicCharacter.Instance != null);
-        //target = BasicCharacter.Instance.transform;
     }
 
     public void StateMachine()
@@ -65,15 +66,10 @@ public class OniB_AI : MonoBehaviour,IStateMachineAI
 
     public void Idle()
     {
-        animator.SetBool("isRunning", false);
         GetTarget();
-        //If in distance start chase
-        // if (TargetInDistance() && followEnabled)
-        // {
-        //     InvokeRepeating("UpdateMovementPath", 0f, pathUpdateSeconds);
-        //     currentState = OniBStates.Chase;
-        // }
-        //else enemyMovement.seeker.enabled = false;
+        if (target != null) {
+            currentState = OniBStates.Attack;
+        } else currentState = OniBStates.Idle;
     }
 
     public void Attack()
@@ -81,17 +77,14 @@ public class OniB_AI : MonoBehaviour,IStateMachineAI
         if (canAttack)
         {
             animator.SetTrigger("Attack");
-            //Collider2D Hit = Physics2D.OverlapCircle(attackInfo.pos.position, attackInfo.radius, attackInfo.layer);
-            // if (Hit != null)
-            // {
-            //     PlayerDamageHandler player = Hit.GetComponent<PlayerDamageHandler>();
-            //     if (player != null)
-            //     {
-            //         player.OnReceiveDamage();
-            //     }
-            // }
+
+            GameObject clone = Instantiate(projectile, attackPosition.position, attackPosition.rotation);
+            clone.transform.localScale = new Vector3(GetDirection().x, clone.transform.localScale.y, clone.transform.localScale.z);
+            clone.GetComponent<Rigidbody2D>().AddForce(GetDirection() * shootForce, ForceMode2D.Impulse);
+            nextAttackTime = Time.time + 1f / attackRate;            
             canAttack = false;
         }
+        GetTarget();
     }
 
     public void OnAttackEnd()
@@ -103,10 +96,12 @@ public class OniB_AI : MonoBehaviour,IStateMachineAI
     }
 
     void GetTarget() {
-        RaycastHit2D playerDetection = Physics2D.Raycast(attackPosition.transform.position, GetDirection(), detectionRange, playerLayer);
+        RaycastHit2D playerDetection = Physics2D.Raycast(attackPosition.position, GetDirection(), detectionRange, playerLayer);
         playerDetected = playerDetection.collider;
 
         if (playerDetected) target = BasicCharacter.Instance.transform;
+        else if (!playerDetected) target = null;
+        //else if (!playerDetected) target = null;
     }
 
     Vector2 GetDirection() {
@@ -119,6 +114,6 @@ public class OniB_AI : MonoBehaviour,IStateMachineAI
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawLine(attackPosition.transform.position, (Vector2)attackPosition.transform.position + GetDirection() * detectionRange);
+        Gizmos.DrawLine(attackPosition.position, (Vector2)attackPosition.position + GetDirection() * detectionRange);
     }
 }

@@ -16,8 +16,22 @@ public class ChamberSpawnTrigger : MonoBehaviour
     {
         if (!hasActivated)
         {
-            hasActivated = true;
-            chamber.SpawnEnemies(index);;
+            if (collision.CompareTag("Player"))
+            {
+                hasActivated = true;
+                chamber.SpawnEnemies(index); ;
+
+            }
         }
     }
+
+    private void OnDrawGizmos()
+    {
+        BoxCollider2D boxCollider2D = GetComponent<BoxCollider2D>();
+
+        Gizmos.color = new Color(1,1,1,0.5f);
+        Gizmos.DrawCube(transform.position,
+        new Vector3(boxCollider2D.size.x, boxCollider2D.size.y, 0));
+    }
+
 }

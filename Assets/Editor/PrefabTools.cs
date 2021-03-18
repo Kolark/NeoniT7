@@ -56,6 +56,9 @@ public class PrefabTools : EditorWindow
             case "CameraController":
                 @gameobject = FindObjectOfType<CameraController>();
                 break;
+            case "ChamberManager":
+                @gameobject = FindObjectOfType<ChamberManager>();
+                break;
             default:
                 @gameobject = null;
                 break;
@@ -100,6 +103,9 @@ public class PrefabTools : EditorWindow
                 PrefabUtility.UnpackPrefabInstance(toInstatiate, PrefabUnpackMode.Completely, InteractionMode.UserAction);
                 break;
             case "CameraController":
+                PrefabUtility.UnpackPrefabInstance(toInstatiate, PrefabUnpackMode.Completely, InteractionMode.UserAction);
+                break;
+            case "ChamberManager":
                 PrefabUtility.UnpackPrefabInstance(toInstatiate, PrefabUnpackMode.Completely, InteractionMode.UserAction);
                 break;
         }

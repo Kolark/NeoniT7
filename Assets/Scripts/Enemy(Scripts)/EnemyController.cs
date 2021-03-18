@@ -18,6 +18,8 @@ public class EnemyController : MonoBehaviour
     public IStateMachineAI Ai { get => ai;}
 
     Animator animator;
+    Rigidbody2D rb; 
+    RigidbodyConstraints2D rbc; 
     bool isDead;
     bool isAttacking;
     #endregion
@@ -26,6 +28,8 @@ public class EnemyController : MonoBehaviour
         ai = GetComponent<IStateMachineAI>();
         animator = GetComponentInChildren<Animator>();
         currentHealth = maxHealth;
+        rb = GetComponent<Rigidbody2D>();
+        rbc = rb.constraints;
     }
     void FixedUpdate()
     {
@@ -41,7 +45,26 @@ public class EnemyController : MonoBehaviour
         {
             isAlive = false;
             animator.SetTrigger("Dead");
+            Invoke("DestroyEnemy", 1.5f); // Debug only 
         }
     }
+
+    private void OnCollisionStay2D(Collision2D other) {
+        if (other.gameObject.CompareTag("Player")) {
+            rb.constraints = RigidbodyConstraints2D.FreezeAll;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D other) {
+        if (other.gameObject.CompareTag("Player")) {
+            //rb.constraints = RigidbodyConstraints2D.None;
+            rb.constraints = rbc;
+        }
+    }
+    
+    //Debug purpose only
+    void DestroyEnemy() {
+        Destroy(gameObject);
+    } 
   
 }
