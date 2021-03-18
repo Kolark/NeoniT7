@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -504,8 +504,8 @@ MonoBehaviour:
   - baseEnemies:
     - {fileID: 43221875}
     - {fileID: 1847643816}
+    distanceEnemies:
     - {fileID: 1530778297}
-    distanceEnemies: []
     wallEnemies: []
 --- !u!1 &109756878
 GameObject:
@@ -5911,7 +5911,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2087732043}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1915953691
 GameObject:
@@ -6425,8 +6425,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1683342001}
   - {fileID: 1885088456}
+  - {fileID: 1683342001}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6969,11 +6969,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b19eaa0ba5f49b046af763632e211561, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waveSpawns:
-  - baseEnemies:
-    - {fileID: 43221875}
-    distanceEnemies: []
-    wallEnemies: []
+  waveSpawns: []
 --- !u!61 &2236584697917139551
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -54795,16 +54791,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Menu
-      objectReference: {fileID: 0}
-    - target: {fileID: 5092368942720522073, guid: 7bb0de0642cc4de4e8f0006b2d4e4bcd,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5092368942832479273, guid: 7bb0de0642cc4de4e8f0006b2d4e4bcd,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bb0de0642cc4de4e8f0006b2d4e4bcd, type: 3}
