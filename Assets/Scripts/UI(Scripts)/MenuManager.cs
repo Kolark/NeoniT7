@@ -60,7 +60,7 @@ public class MenuManager : MonoBehaviour
 
         EvaluateBottonOne();
 
-        if (!BasicCharacter.Instance.IsAlive)
+        if (!BasicCharacter.Instance.IsAlive && GameManager.Instance.IsPaused)
         {
             return;
         }
@@ -100,8 +100,9 @@ public class MenuManager : MonoBehaviour
 
     public void LastCheckPoint()
     {
-        Pause();
+        Debug.Log("Last Cehckpoint");
         SceneController.Instance.GoToLastCheckpoint();
+        Pause();
     }
 
     public void NextLevelTransition()

@@ -56,6 +56,7 @@ public class YakuzaCharacter : BasicCharacter
         if (!canUseSpecial) return;
         if (!character.Grounded) return;
         base.Ultimate();
+        DOVirtual.DelayedCall(cdUltimate, () => { canUseSpecial = true; }, true);
         Vector2 vec = new Vector2(dir.x * transform.localScale.x, dir.y);
         Vector2 vec2 = new Vector2(dir.x * transform.localScale.x, -dir.y);
 
@@ -93,9 +94,9 @@ public class YakuzaCharacter : BasicCharacter
         Debug.Log("Attack step 5");
         if (canReceiveDamage)
         {
-            maxLife--;
+            currentLife--;
             Debug.Log("Attack step 6");
-            bool isDead = maxLife <= 0;
+            bool isDead = currentLife <= 0;
             if (isDead)
             {
                 isAlive = false;
