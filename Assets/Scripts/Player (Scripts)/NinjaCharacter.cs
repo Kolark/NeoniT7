@@ -51,6 +51,7 @@ public class NinjaCharacter : BasicCharacter
         if (!canUseSpecial) return;
         if (!character.Grounded) return;
         base.Ultimate();
+        DOVirtual.DelayedCall(cdUltimate, () => { canUseSpecial = true; }, true);
         Character.CanJump = false;
         //salte, se quede arriba, y luego caiga
 
