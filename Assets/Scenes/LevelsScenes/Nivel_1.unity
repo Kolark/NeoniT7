@@ -5863,10 +5863,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waveSpawns:
   - baseEnemies:
-    - {fileID: 924046647}
     - {fileID: 991906017}
-    distanceEnemies: []
-    wallEnemies: []
+    distanceEnemies:
+    - {fileID: 924046647}
+    wallEnemies:
+    - {fileID: 924046647}
 --- !u!1 &1860662987
 GameObject:
   m_ObjectHideFlags: 0

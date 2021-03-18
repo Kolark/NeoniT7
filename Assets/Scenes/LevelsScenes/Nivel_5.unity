@@ -611,11 +611,10 @@ MonoBehaviour:
   - baseEnemies:
     - {fileID: 43221875}
     - {fileID: 1847643816}
-    - {fileID: 1530778297}
-    - {fileID: 1847643816}
     distanceEnemies:
+    - {fileID: 913177031}
+    wallEnemies:
     - {fileID: 1530778297}
-    wallEnemies: []
 --- !u!1 &100076675
 GameObject:
   m_ObjectHideFlags: 0
@@ -2635,9 +2634,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waveSpawns:
   - baseEnemies:
-    - {fileID: 1409909860}
+    - {fileID: 0}
     - {fileID: 1563245374}
-    distanceEnemies: []
+    distanceEnemies:
+    - {fileID: 1409909860}
     wallEnemies: []
 --- !u!1 &474345340
 GameObject:
@@ -10243,7 +10243,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1347473326
 Transform:
   m_ObjectHideFlags: 0
@@ -11178,7 +11178,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1444326845
 Transform:
   m_ObjectHideFlags: 0
@@ -13076,12 +13076,15 @@ MonoBehaviour:
     - {fileID: 1306927745}
     - {fileID: 1286940933}
     - {fileID: 659336625}
-    - {fileID: 1003103044}
-    - {fileID: 2083547676}
+    - {fileID: 0}
+    - {fileID: 0}
     - {fileID: 1481647587}
     - {fileID: 1736554156}
+    - {fileID: 0}
+    distanceEnemies:
+    - {fileID: 1003103044}
+    - {fileID: 2083547676}
     - {fileID: 513370592}
-    distanceEnemies: []
     wallEnemies: []
 --- !u!1 &1776639477
 GameObject:
@@ -13632,12 +13635,14 @@ MonoBehaviour:
   - baseEnemies:
     - {fileID: 924046647}
     - {fileID: 991906017}
-    - {fileID: 1032666082}
+    - {fileID: 0}
     - {fileID: 831080605}
     - {fileID: 1141860547}
+    - {fileID: 0}
+    distanceEnemies:
+    - {fileID: 1032666082}
+    wallEnemies:
     - {fileID: 539101346}
-    distanceEnemies: []
-    wallEnemies: []
 --- !u!1 &1880867060
 GameObject:
   m_ObjectHideFlags: 0
@@ -15061,12 +15066,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waveSpawns:
   - baseEnemies:
-    - {fileID: 1220786225}
+    - {fileID: 0}
     - {fileID: 1956551818}
     - {fileID: 35047604}
-    - {fileID: 146904444}
+    - {fileID: 0}
     distanceEnemies: []
-    wallEnemies: []
+    wallEnemies:
+    - {fileID: 1220786225}
+    - {fileID: 146904444}
 --- !u!1 &2124682074
 GameObject:
   m_ObjectHideFlags: 0

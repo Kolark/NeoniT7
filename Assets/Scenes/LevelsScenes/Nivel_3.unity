@@ -645,9 +645,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waveSpawns:
-  - baseEnemies:
+  - baseEnemies: []
+    distanceEnemies:
     - {fileID: 43221875}
-    distanceEnemies: []
     wallEnemies: []
 --- !u!1 &109756878
 GameObject:
@@ -864,10 +864,11 @@ MonoBehaviour:
     - {fileID: 90639022}
     - {fileID: 1776639478}
     - {fileID: 1006915098}
-    - {fileID: 684948317}
+    - {fileID: 0}
     - {fileID: 2066338694}
     - {fileID: 336126766}
-    distanceEnemies: []
+    distanceEnemies:
+    - {fileID: 684948317}
     wallEnemies: []
 --- !u!1 &185649431
 GameObject:
@@ -6066,8 +6067,8 @@ MonoBehaviour:
     - {fileID: 1295004277}
     - {fileID: 710270708}
     - {fileID: 503232972}
+    distanceEnemies:
     - {fileID: 1523973817}
-    distanceEnemies: []
     wallEnemies: []
 --- !u!1 &1885074137
 GameObject:
