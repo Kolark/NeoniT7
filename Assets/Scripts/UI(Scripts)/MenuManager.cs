@@ -65,9 +65,9 @@ public class MenuManager : MonoBehaviour
             return;
         }
 
-        if (GameManager.Instance.IsPaused)
+        if (!GameManager.Instance.IsPaused)
         {
-            GameManager.Instance.Unpause();
+            GameManager.Instance.Pause();
             pausePanel.gameObject.SetActive(true);
             for (int i = 0; i < uIButtons.Length; i++)
             {
@@ -77,7 +77,7 @@ public class MenuManager : MonoBehaviour
         }
         else
         {
-            GameManager.Instance.Pause();
+            GameManager.Instance.Unpause();
             for (int i = 0; i < uIButtons.Length; i++)
             {
                 uIButtons[i].interactable = false;
@@ -94,7 +94,7 @@ public class MenuManager : MonoBehaviour
 
     void EvaluateBottonOne()
     {
-        ContinueButton.gameObject.SetActive(!BasicCharacter.Instance.IsAlive);
+        ContinueButton.gameObject.SetActive(BasicCharacter.Instance.IsAlive);
         LastCheckPointButton.gameObject.SetActive(!BasicCharacter.Instance.IsAlive);
     }
 

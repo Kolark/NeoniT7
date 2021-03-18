@@ -830,8 +830,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transitionImage: {fileID: 5092368943644777857}
-  ContinueButton: {fileID: 0}
-  LastCheckPointButton: {fileID: 0}
+  ContinueButton: {fileID: 5092368942115760831}
+  LastCheckPointButton: {fileID: 1658265028926599247}
 --- !u!1 &5092368942832479273
 GameObject:
   m_ObjectHideFlags: 0
