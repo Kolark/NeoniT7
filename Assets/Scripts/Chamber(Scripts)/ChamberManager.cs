@@ -37,9 +37,11 @@ public class ChamberManager : MonoBehaviour
             compositeCollider2Ds[i].isTrigger = false;
         }
         UnlockNextChamber();
+        compositeCollider2Ds[0].isTrigger = true;
         for (int i = 0; i < chambers.Length; i++)
         {
-            chambers[i].setIndex(i);
+            Transform spawnTriggerParent = transform.GetChild(1).GetChild(i);
+            chambers[i].setIndex(i,spawnTriggerParent);
         }
 
     }
@@ -82,7 +84,12 @@ public class ChamberManager : MonoBehaviour
 
     private void OnValidate()
     {
-        BoxCollider2D[] colliders = GetComponentsInChildren<BoxCollider2D>();
+        //BoxCollider2D[] colliders = GetComponentsInChildren<BoxCollider2D>();
+        BoxCollider2D[] colliders = new BoxCollider2D[transform.childCount];
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            colliders[i] = transform.GetChild(0).GetChild(i).GetComponent<BoxCollider2D>();
+        }
         float Xpos = transform.position.x;
         float Ypos = transform.position.y;
         colliders[0].transform.position = new Vector2(Xpos, Ypos);

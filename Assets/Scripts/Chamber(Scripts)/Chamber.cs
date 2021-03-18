@@ -21,17 +21,18 @@ public class Chamber : MonoBehaviour
     {
         col2d = GetComponent<Collider2D>();
         compositeCollider2D = GetComponent<CompositeCollider2D>();
-        ChamberSpawnTrigger[] spawnTriggers = GetComponentsInChildren<ChamberSpawnTrigger>();
-        for (int i = 0; i < spawnTriggers.Length; i++)
-        {
-            spawnTriggers[i].SetIndex(i, this);
-        }
+        
 
     }
 
-    public void setIndex(int i)
+    public void setIndex(int i,Transform parentTriggers)
     {
         chamberIndex = i;
+        ChamberSpawnTrigger[] spawnTriggers = parentTriggers.GetComponentsInChildren<ChamberSpawnTrigger>();
+        for (int u = 0; u < spawnTriggers.Length; u++)
+        {
+            spawnTriggers[u].SetIndex(u, this);
+        }
     }
 
 
@@ -78,30 +79,27 @@ public class Chamber : MonoBehaviour
     /// Player arrives at the chamber
     /// </summary>
     /// <param name="collision"></param>
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-        {
-            ChamberManager.Instance.UnlockNextChamber();//TEMPORAL
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    if (collision.CompareTag("Player"))
+    //    {
+            
             
 
-        }
-    }
+    //    }
+    //}
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
             ChamberManager.Instance.ChangeCurrentChamber(chamberIndex);
             compositeCollider2D.isTrigger = false;
-
+            ChamberManager.Instance.UnlockNextChamber();//TEMPORAL
+            Debug.Log($"name : {collision.name}");
         }
     }
     #endregion
 
-    private void OnDrawGizmos()
-    {
-        
-    }
 
 }
 
