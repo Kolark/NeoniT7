@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-enum EnemyType {Base, Distance, Wall}
+public enum EnemyType {Base, Distance, Wall}
 public class EnemyController : MonoBehaviour
 {
     [Header("Attributes")]
@@ -12,6 +12,8 @@ public class EnemyController : MonoBehaviour
     //WIP: Need to add different attack colliders. 
  
     bool isAlive = true;//<-----------------------
+    Chamber chamber;
+
 
     #region Private Variables
     private IStateMachineAI ai; 
@@ -45,6 +47,7 @@ public class EnemyController : MonoBehaviour
         {
             isAlive = false;
             animator.SetTrigger("Dead");
+            chamber.OnEnemyDead(this);
             Invoke("DestroyEnemy", 1.5f); // Debug only 
         }
     }
@@ -62,6 +65,10 @@ public class EnemyController : MonoBehaviour
         }
     }
     
+    public void AssignChamber(Chamber chamber){
+        this.chamber = chamber;
+    }
+
     //Debug purpose only
     void DestroyEnemy() {
         Destroy(gameObject);
