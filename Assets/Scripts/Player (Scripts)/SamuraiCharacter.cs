@@ -77,13 +77,14 @@ public class SamuraiCharacter : BasicCharacter
         if (canReceiveDamage)
         {
             effectsModule.PlayEffect((int)effectsSamurai.PlayerHitA);
-            maxLife--;
+            currentLife--;
             Debug.Log("Attack step 6");
-            bool isDead = maxLife <= 0;
+            bool isDead = currentLife <= 0;
             if (isDead)
             {
                 isAlive = false;
                 canReceiveDamage = false;
+                character.Anim.SetBool("isAlive", isAlive);
                 character.Anim.SetTrigger("Death");
                 MenuManager.Instance.Pause();
             }

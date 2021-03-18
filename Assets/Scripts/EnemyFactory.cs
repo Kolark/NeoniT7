@@ -26,7 +26,7 @@ public class EnemyFactory : MonoBehaviour
         }
     }
 
-    public EnemyController CreateEnemy(Transform pos,EnemyTipe type)
+    public EnemyController CreateEnemy(Transform pos,EnemyType type)
     {
         GameObject instance = Instantiate(enemies[(int)type], pos.position, Quaternion.identity);
         EnemyController enemyController = instance.GetComponent<EnemyController>();
@@ -35,4 +35,3 @@ public class EnemyFactory : MonoBehaviour
     }
 
 }
-public enum EnemyTipe { Base, Distance, Wall }//Temporal
