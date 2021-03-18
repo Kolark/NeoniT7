@@ -1141,7 +1141,7 @@ GameObject:
   m_Component:
   - component: {fileID: 296019510}
   m_Layer: 9
-  m_Name: Sistem 1
+  m_Name: System 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2329,7 +2329,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 505233559}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.175396, y: -2.54, z: 0}
+  m_LocalPosition: {x: 46.22, y: 7.564436, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 185649432}
@@ -5259,7 +5259,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1099014789}
   m_Layer: 9
-  m_Name: Sistem 2
+  m_Name: System 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8774,7 +8774,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1347473326}
   m_Layer: 0
-  m_Name: Enemies Spawn Sistem
+  m_Name: Enemies Spawn System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12474,7 +12474,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2096729853}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 56.395397, y: 10.104436, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 505233560}
