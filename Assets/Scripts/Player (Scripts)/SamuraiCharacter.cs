@@ -11,6 +11,7 @@ public class SamuraiCharacter : BasicCharacter
     [SerializeField] GameObject projectil;
     [SerializeField] AttackInfo specialAttack;
     [SerializeField] float ultimateOffsetTime;
+    [SerializeField] float projectileDelay =.45f;
     public override void Defense()
     {
         if (!isAlive) return;
@@ -23,6 +24,8 @@ public class SamuraiCharacter : BasicCharacter
     {
         canReceiveDamage = false;
         isParry = true;
+        effectsModule.PlayEffect((int)effectsSamurai.startParry);
+        Debug.Log("StartParry");
     }
     public override void EndParry()
     {
@@ -35,9 +38,13 @@ public class SamuraiCharacter : BasicCharacter
         if (!canUseThrowable) return;
         if (!character.Grounded) return;
         base.Throwable();
-        GameObject gameObject = Instantiate(projectil,firstAttack.pos.position,Quaternion.identity);
-        Proyectil proyectil = gameObject.GetComponent<Proyectil>();
-        proyectil.push(Vector2.right * transform.localScale.x);
+        DOVirtual.DelayedCall(projectileDelay, null, true).OnComplete(() =>
+        {
+            ProjectileFlip();
+            GameObject gameObject = Instantiate(projectil, firstAttack.pos.position, Quaternion.identity);
+            Proyectil proyectil = gameObject.GetComponent<Proyectil>();
+            proyectil.push(Vector2.right * transform.localScale.x);
+        });
     }
     public override void Ultimate()
     {
@@ -45,6 +52,13 @@ public class SamuraiCharacter : BasicCharacter
         if (!canUseSpecial) return;
         if (!character.Grounded) return;
         base.Ultimate();
+        effectsModule.StopEffect((int)effectsSamurai.UltReady);
+        DOVirtual.DelayedCall(0.3f, () => {
+            effectsModule.PlayEffect((int)effectsSamurai.EnergyCharging);
+        });
+        DOVirtual.DelayedCall(cdUltimate, () => {
+            effectsModule.PlayEffect((int)effectsSamurai.UltReady);
+            canUseSpecial = true; }, true);
         ultimateAnim.SetTrigger("Ultimate");
         DOVirtual.DelayedCall(ultimateOffsetTime,()=> {
             Collider2D[] Hit = Physics2D.OverlapCircleAll(specialAttack.pos.position, specialAttack.radius, specialAttack.layer);
@@ -62,13 +76,15 @@ public class SamuraiCharacter : BasicCharacter
         Debug.Log("Attack step 5");
         if (canReceiveDamage)
         {
-            maxLife--;
+            effectsModule.PlayEffect((int)effectsSamurai.PlayerHitA);
+            currentLife--;
             Debug.Log("Attack step 6");
-            bool isDead = maxLife <= 0;
+            bool isDead = currentLife <= 0;
             if (isDead)
             {
                 isAlive = false;
                 canReceiveDamage = false;
+                character.Anim.SetBool("isAlive", isAlive);
                 character.Anim.SetTrigger("Death");
                 MenuManager.Instance.Pause();
             }
@@ -83,6 +99,7 @@ public class SamuraiCharacter : BasicCharacter
     }
     public override void Counter()
     {
+        effectsModule.PlayEffect((int)effectsSamurai.endParry);
         character.Anim.SetTrigger("Counter");
         Collider2D[] Hit = Physics2D.OverlapCircleAll(counter.pos.position, counter.radius, counter.layer);
         for (int i = 0; i < Hit.Length; i++)
@@ -97,5 +114,25 @@ public class SamuraiCharacter : BasicCharacter
         Gizmos.color = Color.blue;
         Gizmos.DrawWireSphere(specialAttack.pos.position, specialAttack.radius);
 
+    }
+
+    public void ProjectileFlip()
+    {
+        if (projectil.transform.localScale.x > 0 && !character.facingRight)
+        {
+            Vector3 theScale = projectil.transform.localScale;
+            theScale.x *= -1;
+            projectil.transform.localScale = theScale;
+        }
+        else if (projectil.transform.localScale.x < 0 && character.facingRight)
+        {
+            Vector3 theScale = projectil.transform.localScale;
+            theScale.x *= -1;
+            projectil.transform.localScale = theScale;
+        }
+    }
+
+    public enum effectsSamurai{
+        startParry, endParry, jumpParticle, UltReady, PlayerHitA, PlayerHitC, EnergyCharging
     }
 }
