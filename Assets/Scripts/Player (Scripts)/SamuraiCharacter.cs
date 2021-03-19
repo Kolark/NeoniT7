@@ -82,11 +82,7 @@ public class SamuraiCharacter : BasicCharacter
             bool isDead = currentLife <= 0;
             if (isDead)
             {
-                isAlive = false;
-                canReceiveDamage = false;
-                character.Anim.SetBool("isAlive", isAlive);
-                character.Anim.SetTrigger("Death");
-                MenuManager.Instance.Pause();
+                Death();
             }
         }
         else if(isParry)
@@ -97,6 +93,16 @@ public class SamuraiCharacter : BasicCharacter
             canReceiveDamage = true;
         }
     }
+
+    public override void Death()
+    {
+        isAlive = false;
+        canReceiveDamage = false;
+        character.Anim.SetBool("isAlive", isAlive);
+        character.Anim.SetTrigger("Death");
+        MenuManager.Instance.Pause();
+    }
+
     public override void Counter()
     {
         effectsModule.PlayEffect((int)effectsSamurai.endParry);

@@ -13,4 +13,10 @@ public class PlayerDamageHandler : MonoBehaviour, IEnemyHurtBox
         player.Damage();
         Debug.Log("Attack step 4");
     }
+
+    public void Death()
+    {
+        player.Death();
+    }
+
 }

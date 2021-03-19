@@ -99,10 +99,7 @@ public class YakuzaCharacter : BasicCharacter
             bool isDead = currentLife <= 0;
             if (isDead)
             {
-                isAlive = false;
-                canReceiveDamage = false;
-                character.Anim.SetTrigger("Death");
-                MenuManager.Instance.Pause();
+                Death();
             }
         }
         else if (canTankDamage)
@@ -112,6 +109,14 @@ public class YakuzaCharacter : BasicCharacter
             //Shield Break
             canReceiveDamage = true;
         }
+    }
+
+    public override void Death()
+    {
+        isAlive = false;
+        canReceiveDamage = false;
+        character.Anim.SetTrigger("Death");
+        MenuManager.Instance.Pause();
     }
 
 }

@@ -50,14 +50,14 @@ public class Chamber : MonoBehaviour
         for (int i = 0; i < toSpawn.distanceEnemies.Length; i++)
         {
             //Call factory to spawn EnemyB
-            EnemyController distanceEnemy = EnemyFactory.Instance.CreateEnemy(toSpawn.baseEnemies[i].transform, EnemyType.Distance);
+            EnemyController distanceEnemy = EnemyFactory.Instance.CreateEnemy(toSpawn.distanceEnemies[i].transform, EnemyType.Distance);
             distanceEnemy.AssignChamber(this);
             enemies.Add(distanceEnemy);
         }
         for (int i = 0; i < toSpawn.wallEnemies.Length; i++)
         {
             //Call factory to spawn EnemyC
-            EnemyController wallEnemy = EnemyFactory.Instance.CreateEnemy(toSpawn.baseEnemies[i].transform, EnemyType.Wall);
+            EnemyController wallEnemy = EnemyFactory.Instance.CreateEnemy(toSpawn.wallEnemies[i].transform, EnemyType.Wall);
             wallEnemy.AssignChamber(this);
             enemies.Add(wallEnemy);
         }
