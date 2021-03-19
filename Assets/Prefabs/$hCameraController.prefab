@@ -226,7 +226,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -280,8 +280,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68565bb4681245d48af629b87f2d3a8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scale: 2.5
-  infos: []
 --- !u!1 &6953272563396166190
 GameObject:
   m_ObjectHideFlags: 0
