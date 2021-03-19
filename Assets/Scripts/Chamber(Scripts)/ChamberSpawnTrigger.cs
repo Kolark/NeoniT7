@@ -19,7 +19,7 @@ public class ChamberSpawnTrigger : MonoBehaviour
             if (collision.CompareTag("Player"))
             {
                 hasActivated = true;
-                chamber.SpawnEnemies(index); ;
+                chamber.SpawnEnemies(index);
 
             }
         }
