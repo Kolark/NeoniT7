@@ -213,14 +213,20 @@ public class BasicCharacter : MonoBehaviour
             bool isDead = currentLife <= 0;
             if (isDead)
             {
-                isAlive = false;
-                canReceiveDamage = false;
-                character.CanJump = false;
-                character.Anim.SetTrigger("Death");
-                MenuManager.Instance.Pause();
+                Death();
             }
         }
     }
+
+    public virtual void Death()
+    {
+        isAlive = false;
+        canReceiveDamage = false;
+        character.CanJump = false;
+        character.Anim.SetTrigger("Death");
+        MenuManager.Instance.Pause();
+    }
+
     public virtual void Counter()
     {
 
