@@ -56,11 +56,10 @@ public class CharacterMovement : MonoBehaviour
  
     public void Move()
     {
-        BetterJump();
-
+        //BetterJump();
+        Debug.Log("g: " + grounded);
         Vector2 inputVector = GetInput();
 
-        verticalVelocity = rb.velocity.y;
         if (!isCrouching)
         {
             Vector2 direcction = new Vector2(inputVector.x, 0);
@@ -71,6 +70,7 @@ public class CharacterMovement : MonoBehaviour
     public void UpdateAnimatorValues()
     {
         Vector2 inputVector = GetInput();
+        verticalVelocity = rb.velocity.y;
         anim?.SetFloat("Speed", Mathf.Abs(inputVector.x));
         grounded = GetGrounded();
         anim?.SetBool("IsGrounded", grounded);

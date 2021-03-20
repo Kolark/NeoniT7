@@ -88,6 +88,7 @@ public class BasicCharacter : MonoBehaviour
         {
             character.Flip();
         }
+        character.BetterJump();
         if (canMove && !character.IsCrouching)
         {
             character.Move();
