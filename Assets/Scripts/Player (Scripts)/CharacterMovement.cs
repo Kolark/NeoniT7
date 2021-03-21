@@ -24,7 +24,7 @@ public class CharacterMovement : MonoBehaviour
     private Rigidbody2D rb;
     [SerializeField] float MaxYVelocity;
 
-
+    [SerializeField] float jumpDownDelay;
 
     Vector2 velocity;
     #endregion
@@ -93,7 +93,7 @@ public class CharacterMovement : MonoBehaviour
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             anim?.SetTrigger("Jump");
             soundModule.Play((int)CharacterSounds.Jump);
-            DOVirtual.DelayedCall(0.69f, () => {
+            DOVirtual.DelayedCall(jumpDownDelay, () => {
                 if(rb.velocity.y > 0)
                 {
                     Vector2 vel = rb.velocity;

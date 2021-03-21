@@ -313,6 +313,7 @@ MonoBehaviour:
   facingRight: 1
   canJump: 1
   MaxYVelocity: 0
+  jumpDownDelay: 0.35
   groundCheckRadius: 0.2
   groundlayer:
     serializedVersion: 2
@@ -320,8 +321,8 @@ MonoBehaviour:
   groundCheck: {fileID: 6748483436937233256}
   maxSpeed: 15
   terminalVelocity: 5
-  jumpForce: 16
-  fallMultiplier: 10
+  jumpForce: 32
+  fallMultiplier: 20
 --- !u!50 &6748483437568352507
 Rigidbody2D:
   serializedVersion: 4
@@ -664,7 +665,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_Sprite: {fileID: -5511359603735983883, guid: f0f19009b4d053142b8540ae2fc155da,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
