@@ -98,9 +98,9 @@ public class SamuraiCharacter : BasicCharacter
     {
         isAlive = false;
         canReceiveDamage = false;
-        character.Anim.SetBool("isAlive", isAlive);
         character.Anim.SetTrigger("Death");
-        MenuManager.Instance.Pause();
+        DOVirtual.DelayedCall(0.8f,()=> { MenuManager.Instance.Pause(); });
+        
     }
 
     public override void Counter()
