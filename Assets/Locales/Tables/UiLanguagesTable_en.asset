@@ -28,7 +28,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3883097215508480
-    m_Localized: 'Current Level: {lastSaved}'
+    m_Localized: 'Last Played: {lastSaved}'
     m_Metadata:
       m_Items:
       - id: 0
