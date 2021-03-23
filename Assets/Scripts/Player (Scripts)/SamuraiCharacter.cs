@@ -9,8 +9,14 @@ public class SamuraiCharacter : BasicCharacter
     [SerializeField] Animator ultimateAnim;
     bool isParry = false;
     [SerializeField] GameObject projectil;
+    [Header("Ulti")]
+    [SerializeField] GameObject projectilUlti;
+    [SerializeField] Transform UltiTransform;
     [SerializeField] AttackInfo specialAttack;
+    [SerializeField] float delayProjectil;
     [SerializeField] float ultimateOffsetTime;
+    [Space]
+    [Space]
     [SerializeField] float projectileDelay =.45f;
     public override void Defense()
     {
@@ -40,7 +46,7 @@ public class SamuraiCharacter : BasicCharacter
         base.Throwable();
         DOVirtual.DelayedCall(projectileDelay, null, true).OnComplete(() =>
         {
-            ProjectileFlip();
+
             GameObject gameObject = Instantiate(projectil, firstAttack.pos.position, Quaternion.identity);
             Proyectil proyectil = gameObject.GetComponent<Proyectil>();
             proyectil.push(Vector2.right * transform.localScale.x);
@@ -52,10 +58,20 @@ public class SamuraiCharacter : BasicCharacter
         if (!canUseSpecial) return;
         if (!character.Grounded) return;
         base.Ultimate();
+
+       
         effectsModule.StopEffect((int)effectsSamurai.UltReady);
         DOVirtual.DelayedCall(0.3f, () => {
             effectsModule.PlayEffect((int)effectsSamurai.EnergyCharging);
         });
+        DOVirtual.DelayedCall(delayProjectil, () => {
+            GameObject gameObject = Instantiate(projectilUlti, firstAttack.pos.position, Quaternion.identity);
+            Proyectil proyectil = gameObject.GetComponent<Proyectil>();
+            proyectil.push(Vector2.right * transform.localScale.x);
+
+        });
+
+
         DOVirtual.DelayedCall(cdUltimate, () => {
             effectsModule.PlayEffect((int)effectsSamurai.UltReady);
             canUseSpecial = true; }, true);
@@ -120,22 +136,6 @@ public class SamuraiCharacter : BasicCharacter
         Gizmos.color = Color.blue;
         Gizmos.DrawWireSphere(specialAttack.pos.position, specialAttack.radius);
 
-    }
-
-    public void ProjectileFlip()
-    {
-        if (projectil.transform.localScale.x > 0 && !character.facingRight)
-        {
-            Vector3 theScale = projectil.transform.localScale;
-            theScale.x *= -1;
-            projectil.transform.localScale = theScale;
-        }
-        else if (projectil.transform.localScale.x < 0 && character.facingRight)
-        {
-            Vector3 theScale = projectil.transform.localScale;
-            theScale.x *= -1;
-            projectil.transform.localScale = theScale;
-        }
     }
 
     public enum effectsSamurai{

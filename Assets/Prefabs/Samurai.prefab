@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1016672411746620126
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 602289809040667658}
+  m_Layer: 8
+  m_Name: UltiProjectil
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &602289809040667658
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016672411746620126}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.1, y: 1.9, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6748483437749586371}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1492235781239045628
 GameObject:
   m_ObjectHideFlags: 0
@@ -421,6 +451,9 @@ MonoBehaviour:
   ultimateAnim: {fileID: 7931771221869996087}
   projectil: {fileID: 399827546245339802, guid: f524c8747554edd4bb137089ef67af1d,
     type: 3}
+  projectilUlti: {fileID: 5731700169008212516, guid: a0a40c488652cee4bb5cd0b2cb2b1cc6,
+    type: 3}
+  UltiTransform: {fileID: 602289809040667658}
   specialAttack:
     pos: {fileID: 6748483436222164043}
     radius: 5
@@ -624,6 +657,7 @@ Transform:
   - {fileID: 730873646741066313}
   - {fileID: 6748483437129614192}
   - {fileID: 6748483436719083418}
+  - {fileID: 602289809040667658}
   m_Father: {fileID: 6748483437568352262}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
