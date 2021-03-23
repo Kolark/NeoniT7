@@ -76,6 +76,7 @@ public class BasicCharacter : MonoBehaviour
     }
     protected virtual void Update()
     {
+        character.Anim.SetBool("isAlive", isAlive);
         if (!isAlive) return;
         
         character.UpdateAnimatorValues();
@@ -88,6 +89,7 @@ public class BasicCharacter : MonoBehaviour
         {
             character.Flip();
         }
+        character.BetterJump();
         if (canMove && !character.IsCrouching)
         {
             character.Move();
@@ -224,7 +226,7 @@ public class BasicCharacter : MonoBehaviour
         canReceiveDamage = false;
         character.CanJump = false;
         character.Anim.SetTrigger("Death");
-        MenuManager.Instance.Pause();
+        DOVirtual.DelayedCall(0.8f, () => { MenuManager.Instance.Pause(); });
     }
 
     public virtual void Counter()
@@ -278,11 +280,12 @@ public class BasicCharacter : MonoBehaviour
         }
         
     }
- public void Revive()
+    public void Revive()
     {
         currentLife = MaxLife;
         isAlive = true;
-        character.Anim.SetBool("isAlive", isAlive);
+        canReceiveDamage = true;
+        Debug.Log("revived");
     }
 }
 
