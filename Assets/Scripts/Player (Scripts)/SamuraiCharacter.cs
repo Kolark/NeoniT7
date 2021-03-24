@@ -65,17 +65,18 @@ public class SamuraiCharacter : BasicCharacter
             effectsModule.PlayEffect((int)effectsSamurai.EnergyCharging);
         });
         DOVirtual.DelayedCall(delayProjectil, () => {
-            GameObject gameObject = Instantiate(projectilUlti, firstAttack.pos.position, Quaternion.identity);
+            GameObject gameObject = Instantiate(projectilUlti, UltiTransform.position, Quaternion.identity);
             Proyectil proyectil = gameObject.GetComponent<Proyectil>();
             proyectil.push(Vector2.right * transform.localScale.x);
 
         });
 
-
+        onUltAbility?.Invoke(cdUltimate);
         DOVirtual.DelayedCall(cdUltimate, () => {
             effectsModule.PlayEffect((int)effectsSamurai.UltReady);
             canUseSpecial = true; }, true);
         ultimateAnim.SetTrigger("Ultimate");
+
         DOVirtual.DelayedCall(ultimateOffsetTime,()=> {
             Collider2D[] Hit = Physics2D.OverlapCircleAll(specialAttack.pos.position, specialAttack.radius, specialAttack.layer);
             for (int i = 0; i < Hit.Length; i++)
@@ -94,6 +95,8 @@ public class SamuraiCharacter : BasicCharacter
         {
             effectsModule.PlayEffect((int)effectsSamurai.PlayerHitA);
             currentLife--;
+            character.Anim.SetTrigger("Damage");
+            soundModule.Play((int)CharacterSounds.getHit);
             Debug.Log("Attack step 6");
             bool isDead = currentLife <= 0;
             if (isDead)
