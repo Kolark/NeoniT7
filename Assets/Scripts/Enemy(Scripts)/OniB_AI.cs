@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
+using DG.Tweening;
 
 
 public class OniB_AI : MonoBehaviour,IStateMachineAI
@@ -77,12 +78,15 @@ public class OniB_AI : MonoBehaviour,IStateMachineAI
         if (canAttack)
         {
             animator.SetTrigger("Attack");
-
-            GameObject clone = Instantiate(projectile, attackPosition.position, attackPosition.rotation);
-            clone.transform.localScale = new Vector3(GetDirection().x, clone.transform.localScale.y, clone.transform.localScale.z);
-            clone.GetComponent<Rigidbody2D>().AddForce(GetDirection() * shootForce, ForceMode2D.Impulse);
-            nextAttackTime = Time.time + 1f / attackRate;            
             canAttack = false;
+            DOVirtual.DelayedCall(0.8f, null, true).OnComplete(() =>
+            {
+                GameObject clone = Instantiate(projectile, attackPosition.position, attackPosition.rotation);
+                clone.transform.localScale = new Vector3(GetDirection().x, clone.transform.localScale.y, clone.transform.localScale.z);
+                clone.GetComponent<Rigidbody2D>().AddForce(GetDirection() * shootForce, ForceMode2D.Impulse);
+                nextAttackTime = Time.time + 1f / attackRate;
+            });
+                  
         }
         GetTarget();
     }

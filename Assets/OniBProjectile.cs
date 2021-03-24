@@ -18,9 +18,9 @@ public class OniBProjectile : MonoBehaviour
             if (player != null)  {
                 player.OnReceiveDamage();
                 rb.velocity = new Vector2(0f, rb.velocity.y);
-                Destroy(gameObject); //TO-DO (?): Implement pool 
             }
         }
+        Destroy(gameObject); //TO-DO (?): Implement pool 
     }
 
     void DestroyProjectile() {
