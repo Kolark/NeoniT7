@@ -15,10 +15,10 @@ public class EffectsModule : MonoBehaviour
         }
         else
         {
-            if (!particles[i].isPlaying && particles[i] != particles[2])
+            if (!particles[i].isPlaying && particles[i].name != "JumpParticleSystem")
             {
                 particles[i].Play(true);
-            }else if(!particles[i].isPlaying && particles[i] == particles[2])
+            }else if(!particles[i].isPlaying && particles[i].name == "JumpParticleSystem")
             {
                 Debug.Log("Entro en el ELSE");
                 if(jump == null)
