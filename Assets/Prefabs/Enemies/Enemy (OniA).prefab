@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 507823204554322945}
   - component: {fileID: 7323760723879704639}
   - component: {fileID: 259744720963509288}
+  - component: {fileID: 1788470821}
   m_Layer: 11
   m_Name: Enemy (OniA)
   m_TagString: Untagged
@@ -83,9 +84,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.19, y: -1.2}
+  m_Offset: {x: 0.19000006, y: -0.98022807}
   serializedVersion: 2
-  m_Radius: 0.75
+  m_Radius: 0.969772
 --- !u!114 &507823204554322948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -205,6 +206,22 @@ MonoBehaviour:
     layer:
       serializedVersion: 2
       m_Bits: 256
+--- !u!70 &1788470821
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507823204554322958}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.14353013, y: -0.9419172}
+  m_Size: {x: 1.2894163, y: 1.9867702}
+  m_Direction: 0
 --- !u!1 &507823204791236383
 GameObject:
   m_ObjectHideFlags: 0
@@ -408,7 +425,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.21810293, y: 1.6110823}
+  m_Offset: {x: 0.13, y: 2.05}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}

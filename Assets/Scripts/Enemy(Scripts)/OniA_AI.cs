@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
-
+using DG.Tweening;
 
 [RequireComponent(typeof(EnemyMovement))]
 public class OniA_AI : MonoBehaviour,IStateMachineAI
@@ -88,6 +88,7 @@ public class OniA_AI : MonoBehaviour,IStateMachineAI
                     if (timer >= attackRate)
                     {
                         rb.velocity = Vector2.zero;
+                        
                         currentState = OniAStates.Attack;
                         timer = 0;
                     }
@@ -116,16 +117,20 @@ public class OniA_AI : MonoBehaviour,IStateMachineAI
         if (canAttack)
         {
             animator.SetTrigger("Attack");
-            Collider2D Hit = Physics2D.OverlapCircle(attackInfo.pos.position, attackInfo.radius, attackInfo.layer);
-            if (Hit != null)
-            {
-                PlayerDamageHandler player = Hit.GetComponent<PlayerDamageHandler>();
-                if (player != null)
-                {
-                    player.OnReceiveDamage();
-                }
-            }
             canAttack = false;
+            DOVirtual.DelayedCall(0.5f, null, true).OnComplete(() =>
+            {
+                Collider2D Hit = Physics2D.OverlapCircle(attackInfo.pos.position, attackInfo.radius, attackInfo.layer);
+                if (Hit != null)
+                {
+                    PlayerDamageHandler player = Hit.GetComponent<PlayerDamageHandler>();
+                    if (player != null)
+                    {
+                        player.OnReceiveDamage();
+                    }
+                }
+            });
+            
         }
     }
 
