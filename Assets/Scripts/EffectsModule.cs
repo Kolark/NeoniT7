@@ -6,7 +6,6 @@ public class EffectsModule : MonoBehaviour
 {
     [SerializeField] List<ParticleSystem> particles;
     [SerializeField] Transform jumpPos;
-    [SerializeField]
     ParticleSystem jump;
     public void PlayEffect(int i)
     {
