@@ -47,8 +47,9 @@ public class EnemyController : MonoBehaviour
         {
             isAlive = false;
             animator.SetTrigger("Dead");
-            chamber.OnEnemyDead(this);
+            gameObject.layer = 13;
             Invoke("DestroyEnemy", 1.5f); // Debug only 
+            chamber.OnEnemyDead(this);
         }
     }
 
