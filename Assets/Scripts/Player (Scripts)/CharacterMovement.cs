@@ -25,6 +25,7 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField] float MaxYVelocity;
 
     [SerializeField] float jumpDownDelay;
+    EffectsModule effectsModule;
 
     Vector2 velocity;
     #endregion
@@ -52,6 +53,7 @@ public class CharacterMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         controller = GetComponent<CharacterController>();
         anim = transform.GetChild(0).GetComponent<Animator>();
+        effectsModule = GetComponent<EffectsModule>();
     }
  
     public void Move()
@@ -102,6 +104,7 @@ public class CharacterMovement : MonoBehaviour
                 }
 
             }, true);
+            effectsModule.PlayEffect((int)effectsSamurai.jumpParticle);
         }
     }
 
@@ -149,6 +152,11 @@ public class CharacterMovement : MonoBehaviour
         //Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
         Gizmos.color = Color.cyan;
         Gizmos.DrawWireCube(groundCheck.position, Vector2.right * groundCheckRadius + Vector2.up * 0.35f);
+    }
+
+    public enum effectsSamurai
+    {
+        startParry, endParry, jumpParticle, UltReady, PlayerHitA, PlayerHitC, EnergyCharging
     }
 
 }
