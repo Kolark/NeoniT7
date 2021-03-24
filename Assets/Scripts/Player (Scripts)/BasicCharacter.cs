@@ -18,6 +18,7 @@ public class BasicCharacter : MonoBehaviour
     protected EffectsModule effectsModule;
     public CharacterMovement Character { get => character; }
     public bool IsAlive { get => isAlive;}
+
     #endregion
     #region AttackInfos
     [Header("AttackPositions")]
@@ -41,6 +42,25 @@ public class BasicCharacter : MonoBehaviour
     protected bool isAlive = true;
     [Space]
     #endregion
+
+    #region SpritesAbilities
+    [Header("AbilitesSprites")]
+    [SerializeField] Sprite throwAbility;
+    [SerializeField] Sprite ultAbility;
+    [SerializeField] Sprite defenseAbility;
+    public Sprite ThrowAbility { get => throwAbility;}
+    public Sprite UltAbility { get => ultAbility;}
+    public Sprite DefenseAbility { get => defenseAbility;}
+    #endregion
+
+    #region AbilitiesActions
+    public Action<float> onThrowAbility;
+    public Action<float> onUltAbility;
+    public Action<float> onDefenseAbility;
+    #endregion
+
+
+
     #region Attributes
     [Header("Attributes")]
     [SerializeField] protected int currentLife;
@@ -176,6 +196,8 @@ public class BasicCharacter : MonoBehaviour
         if (!canUseDefense) return;
         character.Anim.SetTrigger("Parry");
         canUseDefense = false;
+
+        onDefenseAbility?.Invoke(cdDefense);
         DOVirtual.DelayedCall(cdDefense, () => { canUseDefense = true;}, true);
         //SetTrigger(Defense)
         //SAmurai-Se vuelve invulnerable al siguiente ataque - Y Cuando recibe daño hace un ataque. - No se cancela
@@ -202,6 +224,7 @@ public class BasicCharacter : MonoBehaviour
             Debug.Log("THROW");
             character.Anim.SetTrigger("Throw");
             canUseThrowable = false;
+            onThrowAbility?.Invoke(cdThrow);
             DOVirtual.DelayedCall(cdThrow, () => { canUseThrowable = true; }, true);
 
         
@@ -211,6 +234,7 @@ public class BasicCharacter : MonoBehaviour
         if (canReceiveDamage)
         {
             currentLife--;
+            character.Anim.SetTrigger("Damage");
             soundModule.Play((int)CharacterSounds.getHit);
             bool isDead = currentLife <= 0;
             if (isDead)
