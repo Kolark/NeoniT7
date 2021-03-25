@@ -81522,8 +81522,8 @@ MonoBehaviour:
     loop: 1
     source: {fileID: 0}
   levelType: 1
-  currentLevel: 7
-  nextLevel: 0
+  currentLevel: 8
+  nextLevel: 8
   ScreenAudio: Nivel4
 --- !u!61 &2940152268926307944
 BoxCollider2D:

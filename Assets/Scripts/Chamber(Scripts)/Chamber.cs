@@ -24,7 +24,6 @@ public class Chamber : MonoBehaviour
         
 
     }
-
     public void setIndex(int i,Transform parentTriggers)
     {
         chamberIndex = i;
@@ -76,6 +75,16 @@ public class Chamber : MonoBehaviour
     public void ResetChamber()
     {
         wavesCounter = 0;
+
+        //----------------------TEMPORAL USAR POOL EN EL FUTURO PARA ELIMINAR PROYECTILES
+        OniBProjectile[] projectiles = FindObjectsOfType<OniBProjectile>();
+        for (int i = 0; i < projectiles.Length; i++)
+        {
+            Destroy(projectiles[i].gameObject);
+        }
+        //----------------------TEMPORAL USAR POOL EN EL FUTURO PARA ELIMINAR PROYECTILES
+
+
         for (int i = 0; i < enemies.Count; i++)
         {
             enemies[i].InstaDeath();
@@ -97,8 +106,12 @@ public class Chamber : MonoBehaviour
     //{
     //    if (collision.CompareTag("Player"))
     //    {
-            
-            
+
+    //        if (waveSpawns.Count == 0)
+    //        {
+    //            ChamberManager.Instance.UnlockNextChamber();
+    //            Debug.Log("0 WAVES UNLOCK");
+    //        }
 
     //    }
     //}
