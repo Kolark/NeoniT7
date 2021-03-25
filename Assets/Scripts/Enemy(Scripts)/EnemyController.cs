@@ -18,40 +18,59 @@ public class EnemyController : MonoBehaviour
     #region Private Variables
     private IStateMachineAI ai; 
     public IStateMachineAI Ai { get => ai;}
-
+    EffectsModule effectsModule;
     Animator animator;
     Rigidbody2D rb; 
     RigidbodyConstraints2D rbc; 
     bool isDead;
     bool isAttacking;
+    [SerializeField]
+    float spawnAnimationSeconds;
+    float spawntimer;
     #endregion
     private void Awake()
     {
         ai = GetComponent<IStateMachineAI>();
         animator = GetComponentInChildren<Animator>();
         currentHealth = maxHealth;
+        effectsModule = GetComponent<EffectsModule>();
         rb = GetComponent<Rigidbody2D>();
         rbc = rb.constraints;
+        spawntimer = 0;
     }
     void FixedUpdate()
     {
         if (!isAlive) return;
         ai.StateMachine();
+        spawntimer += Time.deltaTime;
     }
 
     public void ReceiveDamage()
     {
-        if (!isAlive) return;
-        currentHealth--;
-        if (currentHealth < 0)
+        if (spawntimer >= spawnAnimationSeconds)
         {
-            isAlive = false;
-            animator.SetTrigger("Dead");
-            gameObject.layer = 13;
-            Invoke("DestroyEnemy", 1.5f); // Debug only 
-            chamber.OnEnemyDead(this);
+            if (!isAlive) return;
+            currentHealth--;
+            effectsModule.PlayEffect((int)effectsOniA.hit);
+            if (currentHealth < 0)
+            {
+                isAlive = false;
+                animator.SetTrigger("Dead");
+                gameObject.layer = 13;
+                Invoke("DestroyEnemy", 1.5f); // Debug only 
+                chamber.OnEnemyDead(this);
+            }
         }
     }
+
+    public void InstaDeath()
+    {
+        isAlive = false;
+        animator.SetTrigger("Dead");
+        gameObject.layer = 13;
+        Destroy(this.gameObject); // Debug only 
+    }
+
 
     private void OnCollisionStay2D(Collision2D other) {
         if (other.gameObject.CompareTag("Player")) {
@@ -73,6 +92,12 @@ public class EnemyController : MonoBehaviour
     //Debug purpose only
     void DestroyEnemy() {
         Destroy(gameObject);
-    } 
-  
+    }
+
+
+    public enum effectsOniA
+    {
+        hit, portal
+    }
+
 }
