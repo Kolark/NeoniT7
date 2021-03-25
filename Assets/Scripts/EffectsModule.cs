@@ -5,6 +5,8 @@ using System;
 public class EffectsModule : MonoBehaviour
 {
     [SerializeField] List<ParticleSystem> particles;
+    [SerializeField] Transform jumpPos;
+    ParticleSystem jump;
     public void PlayEffect(int i)
     {
         if (particles[i].main.loop)
@@ -13,9 +15,22 @@ public class EffectsModule : MonoBehaviour
         }
         else
         {
-            if (!particles[i].isPlaying)
+            if (!particles[i].isPlaying && particles[i].name != "JumpParticleSystem")
             {
                 particles[i].Play(true);
+            }else if(!particles[i].isPlaying && particles[i].name == "JumpParticleSystem")
+            {
+                Debug.Log("Entro en el ELSE");
+                if(jump == null)
+                {
+                    jump = Instantiate(particles[i], jumpPos.position, jumpPos.rotation);
+                }
+                else
+                {
+                    jump.transform.position = jumpPos.position;
+                    jump.transform.rotation = jumpPos.rotation;
+                    jump.Play(true);
+                }
             }
         }
     }

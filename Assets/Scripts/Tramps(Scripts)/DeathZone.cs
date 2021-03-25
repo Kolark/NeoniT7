@@ -15,6 +15,12 @@ public class DeathZone : MonoBehaviour
             PlayerDamageHandler player = Hit?.GetComponent<PlayerDamageHandler>();
             player?.Death();
         }
+
+        if (collision.gameObject.GetComponent<EnemyController>() != null)
+        {
+            ///DEATH
+        }
+
     }
 
     private void OnDrawGizmos()

@@ -12,8 +12,6 @@ public class MenuManager : MonoBehaviour
 
     bool canPause = false;
     bool hasEndedTransition = true;
-
-
     RectTransform pausePanel;
     Vector2 initPos;
     Button2[] uIButtons;

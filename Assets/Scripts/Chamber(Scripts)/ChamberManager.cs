@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using System;
 public class ChamberManager : MonoBehaviour
 {
 
@@ -14,6 +14,10 @@ public class ChamberManager : MonoBehaviour
     public int UnlockedChambers { get => unlockedChambers;}
     Chamber[] chambers;
     CompositeCollider2D[] compositeCollider2Ds;
+
+    public Action<int> onChamberUpdate;
+
+    public bool CanChamberTriggerExit = true;
 
     public int ChamberLength { get => chambers.Length;}
 
@@ -55,9 +59,10 @@ public class ChamberManager : MonoBehaviour
     {
         if (i == unlockedChambers)
         {
-            unlockedChambers++;
             GameManager.Instance.SetChamber(unlockedChambers);
             GameManager.Instance.Save();
+            onChamberUpdate?.Invoke(unlockedChambers);
+            unlockedChambers++;
         }
         if(i == (ChamberLength - 2))
         {
@@ -69,6 +74,21 @@ public class ChamberManager : MonoBehaviour
     {
         compositeCollider2Ds[unlockedChambers+1].isTrigger = true;
     }
+
+    public void UnlockPreviousChamber()
+    {
+        compositeCollider2Ds[unlockedChambers-1].isTrigger = true;
+        CanChamberTriggerExit = false;
+        chambers[unlockedChambers].ResetChamber();
+        CameraController.Instance.ChangeConfiner(chambers[unlockedChambers-1].CompositeCollider2D);
+    }
+
+    public void EnableTriggerExit()
+    {
+        CanChamberTriggerExit = true;
+    }
+    
+
 
     Color[] gizmosColors = { Color.red, Color.blue, Color.green, Color.cyan, Color.yellow, Color.magenta };
     private void OnDrawGizmos()
@@ -99,6 +119,5 @@ public class ChamberManager : MonoBehaviour
             colliders[i].transform.position = new Vector3(Xpos, Ypos, 0);
             
         }
-        Debug.Log("l: " + colliders.Length);
     }
 }

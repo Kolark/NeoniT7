@@ -16,7 +16,7 @@ public class Chamber : MonoBehaviour
     int wavesCounter = 0;
     List<EnemyController> enemies = new List<EnemyController>();
     public CompositeCollider2D CompositeCollider2D { get => compositeCollider2D;}
-
+    ChamberSpawnTrigger[] spawnTriggers;
     private void Awake()
     {
         col2d = GetComponent<Collider2D>();
@@ -28,7 +28,7 @@ public class Chamber : MonoBehaviour
     public void setIndex(int i,Transform parentTriggers)
     {
         chamberIndex = i;
-        ChamberSpawnTrigger[] spawnTriggers = parentTriggers.GetComponentsInChildren<ChamberSpawnTrigger>();
+        spawnTriggers = parentTriggers.GetComponentsInChildren<ChamberSpawnTrigger>();
         for (int u = 0; u < spawnTriggers.Length; u++)
         {
             spawnTriggers[u].SetIndex(u, this);
@@ -73,6 +73,20 @@ public class Chamber : MonoBehaviour
         }
     }
 
+    public void ResetChamber()
+    {
+        wavesCounter = 0;
+        for (int i = 0; i < enemies.Count; i++)
+        {
+            //INSTADEATH
+        }
+        for (int i = 0; i < spawnTriggers.Length; i++)
+        {
+            spawnTriggers[i].Reset();
+        }
+    }
+
+
     #region triggers
     /// <summary>
     /// Player arrives at the chamber
@@ -89,12 +103,12 @@ public class Chamber : MonoBehaviour
     //}
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") && ChamberManager.Instance.CanChamberTriggerExit)
         {
             ChamberManager.Instance.ChangeCurrentChamber(chamberIndex);
             compositeCollider2D.isTrigger = false;
+            
             //ChamberManager.Instance.UnlockNextChamber();//TEMPORAL
-            Debug.Log($"name : {collision.name}");
         }
     }
     #endregion
