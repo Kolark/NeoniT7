@@ -40,6 +40,7 @@ public class BasicCharacter : MonoBehaviour
     protected bool canUseDefense = true;
     protected bool canUseThrowable = true;
     protected bool isAlive = true;
+
     [Space]
     #endregion
 
@@ -51,12 +52,14 @@ public class BasicCharacter : MonoBehaviour
     public Sprite ThrowAbility { get => throwAbility;}
     public Sprite UltAbility { get => ultAbility;}
     public Sprite DefenseAbility { get => defenseAbility;}
+    [SerializeField] float regenerationFrequency;
     #endregion
 
     #region AbilitiesActions
     public Action<float> onThrowAbility;
     public Action<float> onUltAbility;
     public Action<float> onDefenseAbility;
+    public Action<int> onLifeChange;
     #endregion
 
 
@@ -93,6 +96,7 @@ public class BasicCharacter : MonoBehaviour
         inputController.DefensiveAbility += Defense;
         inputController.SpecialAbility += Ultimate;
         inputController.Throw += Throwable;
+        StartCoroutine(regeneration());
     }
     protected virtual void Update()
     {
@@ -234,6 +238,8 @@ public class BasicCharacter : MonoBehaviour
         if (canReceiveDamage)
         {
             currentLife--;
+            //update ui
+            onLifeChange?.Invoke(currentLife);
             character.Anim.SetTrigger("Damage");
             soundModule.Play((int)CharacterSounds.getHit);
             bool isDead = currentLife <= 0;
@@ -243,6 +249,19 @@ public class BasicCharacter : MonoBehaviour
             }
         }
     }
+
+
+    IEnumerator regeneration()
+    {
+        yield return new WaitUntil(() => currentLife < MaxLife && isAlive);
+        yield return new WaitForSeconds(regenerationFrequency);
+        if (isAlive)
+        {
+            currentLife++;
+            onLifeChange?.Invoke(currentLife);
+        }
+        StartCoroutine(regeneration());
+}
 
     public virtual void Death()
     {

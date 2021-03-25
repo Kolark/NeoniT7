@@ -86,8 +86,8 @@ public class SamuraiCharacter : BasicCharacter
             }
         });
 
-
     }
+
     public override void Damage()
     {
         Debug.Log("Attack step 5");
@@ -95,6 +95,7 @@ public class SamuraiCharacter : BasicCharacter
         {
             effectsModule.PlayEffect((int)effectsSamurai.PlayerHitA);
             currentLife--;
+            onLifeChange?.Invoke(currentLife);
             character.Anim.SetTrigger("Damage");
             soundModule.Play((int)CharacterSounds.getHit);
             Debug.Log("Attack step 6");

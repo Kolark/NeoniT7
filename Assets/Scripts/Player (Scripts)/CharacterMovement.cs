@@ -59,7 +59,6 @@ public class CharacterMovement : MonoBehaviour
     public void Move()
     {
         //BetterJump();
-        Debug.Log("g: " + grounded);
         Vector2 inputVector = GetInput();
 
         if (!isCrouching)
