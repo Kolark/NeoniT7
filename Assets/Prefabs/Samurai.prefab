@@ -434,19 +434,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firstAttack:
     pos: {fileID: 6748483436222164043}
-    radius: 0.25
+    radius: 2
     layer:
       serializedVersion: 2
       m_Bits: 512
   secondAttack:
     pos: {fileID: 6748483436222164043}
-    radius: 0.5
+    radius: 2.5
     layer:
       serializedVersion: 2
       m_Bits: 512
   thirdAttack:
     pos: {fileID: 6748483436222164043}
-    radius: 2
+    radius: 3.25
     layer:
       serializedVersion: 2
       m_Bits: 512

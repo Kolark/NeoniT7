@@ -254,7 +254,7 @@ public class BasicCharacter : MonoBehaviour
     {
         yield return new WaitUntil(() => currentLife < MaxLife && isAlive);
         yield return new WaitForSeconds(regenerationFrequency);
-        if (isAlive)
+        if (isAlive&&currentLife+1<=MaxLife)
         {
             currentLife++;
             onLifeChange?.Invoke(currentLife);

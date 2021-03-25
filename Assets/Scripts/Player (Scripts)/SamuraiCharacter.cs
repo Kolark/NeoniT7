@@ -93,13 +93,14 @@ public class SamuraiCharacter : BasicCharacter
             effectsModule.PlayEffect((int)effectsSamurai.PlayerHitA);
             currentLife--;
             onLifeChange?.Invoke(currentLife);
-            character.Anim.SetTrigger("Damage");
             soundModule.Play((int)CharacterSounds.getHit);
             bool isDead = currentLife <= 0;
             if (isDead)
             {
                 Death();
+                return;
             }
+            character.Anim.SetTrigger("Damage");
         }
         else if(isParry)
         {
