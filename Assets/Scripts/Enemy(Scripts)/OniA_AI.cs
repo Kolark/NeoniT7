@@ -14,6 +14,7 @@ public class OniA_AI : MonoBehaviour,IStateMachineAI
     //[walk,jump],[muerte],[spawn],[idle],[ataque]
 
 
+    EffectsModule effectsModule;
     Animator animator;
     Rigidbody2D rb;
     EnemyMovement enemyMovement;
@@ -34,6 +35,7 @@ public class OniA_AI : MonoBehaviour,IStateMachineAI
 
     private void Awake()
     {
+        effectsModule = GetComponent<EffectsModule>();
         enemyMovement = GetComponent<EnemyMovement>();
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponentInChildren<Animator>();
@@ -43,6 +45,7 @@ public class OniA_AI : MonoBehaviour,IStateMachineAI
     {
         yield return new WaitUntil(() => BasicCharacter.Instance != null);
         target = BasicCharacter.Instance.transform;
+        effectsModule.PlayEffect((int)effectsOniA.portal);
     }
 
     public void StateMachine()
@@ -169,4 +172,10 @@ public class OniA_AI : MonoBehaviour,IStateMachineAI
         Gizmos.color = Color.black;
         Gizmos.DrawWireSphere(transform.position, attackDistance);
     }
+
+    public enum effectsOniA
+    {
+        hit, portal
+    }
+
 }
