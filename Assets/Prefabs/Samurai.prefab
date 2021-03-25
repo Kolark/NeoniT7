@@ -606,31 +606,55 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - clip: {fileID: 8300000, guid: ea78e497cbc234e429a79e4af3f42f9a, type: 3}
+  - clip: {fileID: 8300000, guid: 8c1604f6e1da5104aaf477be2f928152, type: 3}
+    mixerChannel: 1
+    volume: 1
+    pitch: 0.8
+    loop: 0
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: 8c1604f6e1da5104aaf477be2f928152, type: 3}
+    mixerChannel: 1
+    volume: 1
+    pitch: 0.9
+    loop: 0
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: 8c1604f6e1da5104aaf477be2f928152, type: 3}
     mixerChannel: 1
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  - clip: {fileID: 8300000, guid: 74364ca0814282b4a9db58faeac5853e, type: 3}
+  - clip: {fileID: 8300000, guid: 73964f080a9442644bb1dc90b6c79989, type: 3}
     mixerChannel: 1
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  - clip: {fileID: 8300000, guid: 2a7026ea7c14fff48b1af540159270a2, type: 3}
+  - clip: {fileID: 8300000, guid: 74b8ace5353426040bf4ef08be10c78c, type: 3}
     mixerChannel: 1
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  - clip: {fileID: 8300000, guid: c13f954c937a79841b8feae52ac27505, type: 3}
+  - clip: {fileID: 8300000, guid: 066bf2d04c0a829428d0eba0b68082ef, type: 3}
     mixerChannel: 1
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  - clip: {fileID: 8300000, guid: 1d60a9127427eed4db8aa71c60c9325b, type: 3}
+  - clip: {fileID: 8300000, guid: 448f4f46475e82f45b558718414f9f6c, type: 3}
+    mixerChannel: 1
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: c5827c19325bd33488c3c0eae515e2a3, type: 3}
+    mixerChannel: 1
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: b92bb88c3389b92418113d784ee85832, type: 3}
     mixerChannel: 1
     volume: 1
     pitch: 1

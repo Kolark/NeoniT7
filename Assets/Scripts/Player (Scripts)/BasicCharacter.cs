@@ -213,7 +213,7 @@ public class BasicCharacter : MonoBehaviour
         if (!isAlive) return;
         if (!canUseSpecial) return;
         if (!character.Grounded) return;
-        
+        soundModule.Play((int)CharacterSounds.Ultimate);
         character.Anim.SetTrigger("Special");
         canUseSpecial = false;
         //DOVirtual.DelayedCall(cdUltimate, () => { canUseSpecial = true; },true);
@@ -266,6 +266,7 @@ public class BasicCharacter : MonoBehaviour
     public virtual void Death()
     {
         isAlive = false;
+        soundModule.Play((int)CharacterSounds.Death);
         canReceiveDamage = false;
         character.CanJump = false;
         character.Anim.SetTrigger("Death");
@@ -334,7 +335,7 @@ public class BasicCharacter : MonoBehaviour
 
 public enum CharacterSounds
 {
-    combo1, combo2, combo3, getHit,Jump
+    combo1, combo2, combo3, getHit,Jump,Death,Ultimate,UltimateCharged
 }
 public enum attackTypes
 {

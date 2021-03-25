@@ -29,14 +29,14 @@ public class UIWidget : MonoBehaviour
     }
     protected virtual void OnPointerDown()
     {
-        AudioManager.Instance.Play("Nota-001");
+        AudioManager.Instance.Play("Ui_Confirm");
         GameManager.Instance.ChangeScene(sceneToGo);
     }
     protected virtual void OnSelect()
     {
         rectTransform.DOAnchorPos(initPos + finalPos, duration).SetEase(easeType);
         rectTransform.DOScale(initScale + finalScale, duration).SetEase(easeType);
-        AudioManager.Instance.Play("Test");
+        AudioManager.Instance.Play("Ui_Navigation");
     }
     protected virtual void OnDeselect()
     {
