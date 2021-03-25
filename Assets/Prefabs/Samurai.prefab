@@ -479,7 +479,7 @@ MonoBehaviour:
   currentLife: 0
   MaxLife: 2
   cdDefense: 2
-  cdUltimate: 10
+  cdUltimate: 2
   cdThrow: 4
   currentAttack: 0
   ultimateAnim: {fileID: 7931771221869996087}

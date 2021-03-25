@@ -98,7 +98,6 @@ public class MenuManager : MonoBehaviour
 
     public void LastCheckPoint()
     {
-        Debug.Log("Last Cehckpoint");
         SceneController.Instance.GoToLastCheckpoint();
         Pause();
     }

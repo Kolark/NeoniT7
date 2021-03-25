@@ -64,6 +64,7 @@ public class ChamberManager : MonoBehaviour
             onChamberUpdate?.Invoke(unlockedChambers);
             unlockedChambers++;
         }
+            Debug.Log("change i: " + i);
         if(i == (ChamberLength - 2))
         {
             SceneController.Instance.NextLevel();

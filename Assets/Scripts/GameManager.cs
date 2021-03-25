@@ -129,7 +129,6 @@ public class GameManager : MonoBehaviour
     {
         isPaused = false;
         Time.timeScale = 1;
-        Debug.Log("Unpaused");
     }
     public void DisableCharacter()
     {

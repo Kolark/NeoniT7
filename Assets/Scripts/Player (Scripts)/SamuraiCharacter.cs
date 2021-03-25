@@ -88,7 +88,6 @@ public class SamuraiCharacter : BasicCharacter
 
     public override void Damage()
     {
-        Debug.Log("Attack step 5");
         if (canReceiveDamage)
         {
             effectsModule.PlayEffect((int)effectsSamurai.PlayerHitA);
@@ -96,7 +95,6 @@ public class SamuraiCharacter : BasicCharacter
             onLifeChange?.Invoke(currentLife);
             character.Anim.SetTrigger("Damage");
             soundModule.Play((int)CharacterSounds.getHit);
-            Debug.Log("Attack step 6");
             bool isDead = currentLife <= 0;
             if (isDead)
             {

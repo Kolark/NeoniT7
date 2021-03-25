@@ -78,8 +78,9 @@ public class Chamber : MonoBehaviour
         wavesCounter = 0;
         for (int i = 0; i < enemies.Count; i++)
         {
-            //INSTADEATH
+            enemies[i].InstaDeath();
         }
+        enemies = new List<EnemyController>();
         for (int i = 0; i < spawnTriggers.Length; i++)
         {
             spawnTriggers[i].Reset();

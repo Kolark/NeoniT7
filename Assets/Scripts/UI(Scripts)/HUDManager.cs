@@ -25,6 +25,7 @@ public class HUDManager : MonoBehaviour
         BasicCharacter.Instance.onUltAbility += cooldownAbilityUlti.CoolDownAnimation;
         BasicCharacter.Instance.onLifeChange += SetLifes;
         ChamberManager.Instance.onChamberUpdate += onChamberIncrease;
+        InstatiateRooms();
         hasPerformedStart = transform;
     }
     void InstatiateRooms()
@@ -51,9 +52,9 @@ public class HUDManager : MonoBehaviour
         }
         for (int i = 0; i < currentLife; i++)
         {
+            Debug.Log("i: " + i);
             lifes[i].enabled = true;
         }
-        Debug.Log("updated: " + currentLife);
     }
 
     private void OnEnable()
@@ -68,12 +69,12 @@ public class HUDManager : MonoBehaviour
 
 
 
-    private void OnDestroy()
-    {
-        BasicCharacter.Instance.onDefenseAbility -= cooldownAbilityDefense.CoolDownAnimation;
-        BasicCharacter.Instance.onThrowAbility -= cooldownAbilityThrow.CoolDownAnimation;
-        BasicCharacter.Instance.onUltAbility -= cooldownAbilityUlti.CoolDownAnimation;
-        BasicCharacter.Instance.onLifeChange -= SetLifes;
-        ChamberManager.Instance.onChamberUpdate -= onChamberIncrease;
-    }
+    //private void OnDestroy()
+    //{
+    //    BasicCharacter.Instance.onDefenseAbility -= cooldownAbilityDefense.CoolDownAnimation;
+    //    BasicCharacter.Instance.onThrowAbility -= cooldownAbilityThrow.CoolDownAnimation;
+    //    BasicCharacter.Instance.onUltAbility -= cooldownAbilityUlti.CoolDownAnimation;
+    //    BasicCharacter.Instance.onLifeChange -= SetLifes;
+    //    ChamberManager.Instance.onChamberUpdate -= onChamberIncrease;
+    //}
 }

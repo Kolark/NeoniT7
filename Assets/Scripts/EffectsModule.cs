@@ -20,7 +20,6 @@ public class EffectsModule : MonoBehaviour
                 particles[i].Play(true);
             }else if(!particles[i].isPlaying && particles[i].name == "JumpParticleSystem")
             {
-                Debug.Log("Entro en el ELSE");
                 if(jump == null)
                 {
                     jump = Instantiate(particles[i], jumpPos.position, jumpPos.rotation);

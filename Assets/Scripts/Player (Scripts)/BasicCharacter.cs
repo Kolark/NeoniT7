@@ -225,7 +225,6 @@ public class BasicCharacter : MonoBehaviour
         if (!canUseThrowable) return;
         if (!character.Grounded) return;
         
-            Debug.Log("THROW");
             character.Anim.SetTrigger("Throw");
             canUseThrowable = false;
             onThrowAbility?.Invoke(cdThrow);
@@ -329,6 +328,7 @@ public class BasicCharacter : MonoBehaviour
         currentLife = MaxLife;
         isAlive = true;
         canReceiveDamage = true;
+        onLifeChange?.Invoke(currentLife);
         Debug.Log("revived");
     }
 }

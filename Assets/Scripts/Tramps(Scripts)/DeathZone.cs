@@ -18,6 +18,7 @@ public class DeathZone : MonoBehaviour
 
         if (collision.gameObject.GetComponent<EnemyController>() != null)
         {
+            collision.gameObject.GetComponent<EnemyController>().Death();
             ///DEATH
         }
 
