@@ -12,8 +12,6 @@ public class MenuManager : MonoBehaviour
 
     bool canPause = false;
     bool hasEndedTransition = true;
-
-
     RectTransform pausePanel;
     Vector2 initPos;
     Button2[] uIButtons;
@@ -100,7 +98,6 @@ public class MenuManager : MonoBehaviour
 
     public void LastCheckPoint()
     {
-        Debug.Log("Last Cehckpoint");
         SceneController.Instance.GoToLastCheckpoint();
         Pause();
     }

@@ -40,6 +40,7 @@ public class BasicCharacter : MonoBehaviour
     protected bool canUseDefense = true;
     protected bool canUseThrowable = true;
     protected bool isAlive = true;
+
     [Space]
     #endregion
 
@@ -51,12 +52,14 @@ public class BasicCharacter : MonoBehaviour
     public Sprite ThrowAbility { get => throwAbility;}
     public Sprite UltAbility { get => ultAbility;}
     public Sprite DefenseAbility { get => defenseAbility;}
+    [SerializeField] float regenerationFrequency;
     #endregion
 
     #region AbilitiesActions
     public Action<float> onThrowAbility;
     public Action<float> onUltAbility;
     public Action<float> onDefenseAbility;
+    public Action<int> onLifeChange;
     #endregion
 
 
@@ -93,6 +96,7 @@ public class BasicCharacter : MonoBehaviour
         inputController.DefensiveAbility += Defense;
         inputController.SpecialAbility += Ultimate;
         inputController.Throw += Throwable;
+        StartCoroutine(regeneration());
     }
     protected virtual void Update()
     {
@@ -209,7 +213,7 @@ public class BasicCharacter : MonoBehaviour
         if (!isAlive) return;
         if (!canUseSpecial) return;
         if (!character.Grounded) return;
-        
+        soundModule.Play((int)CharacterSounds.Ultimate);
         character.Anim.SetTrigger("Special");
         canUseSpecial = false;
         //DOVirtual.DelayedCall(cdUltimate, () => { canUseSpecial = true; },true);
@@ -221,7 +225,6 @@ public class BasicCharacter : MonoBehaviour
         if (!canUseThrowable) return;
         if (!character.Grounded) return;
         
-            Debug.Log("THROW");
             character.Anim.SetTrigger("Throw");
             canUseThrowable = false;
             onThrowAbility?.Invoke(cdThrow);
@@ -234,6 +237,8 @@ public class BasicCharacter : MonoBehaviour
         if (canReceiveDamage)
         {
             currentLife--;
+            //update ui
+            onLifeChange?.Invoke(currentLife);
             character.Anim.SetTrigger("Damage");
             soundModule.Play((int)CharacterSounds.getHit);
             bool isDead = currentLife <= 0;
@@ -244,9 +249,23 @@ public class BasicCharacter : MonoBehaviour
         }
     }
 
+
+    IEnumerator regeneration()
+    {
+        yield return new WaitUntil(() => currentLife < MaxLife && isAlive);
+        yield return new WaitForSeconds(regenerationFrequency);
+        if (isAlive&&currentLife+1<=MaxLife)
+        {
+            currentLife++;
+            onLifeChange?.Invoke(currentLife);
+        }
+        StartCoroutine(regeneration());
+}
+
     public virtual void Death()
     {
         isAlive = false;
+        soundModule.Play((int)CharacterSounds.Death);
         canReceiveDamage = false;
         character.CanJump = false;
         character.Anim.SetTrigger("Death");
@@ -309,13 +328,14 @@ public class BasicCharacter : MonoBehaviour
         currentLife = MaxLife;
         isAlive = true;
         canReceiveDamage = true;
+        onLifeChange?.Invoke(currentLife);
         Debug.Log("revived");
     }
 }
 
 public enum CharacterSounds
 {
-    combo1, combo2, combo3, getHit,Jump
+    combo1, combo2, combo3, getHit,Jump,Death,Ultimate,UltimateCharged
 }
 public enum attackTypes
 {

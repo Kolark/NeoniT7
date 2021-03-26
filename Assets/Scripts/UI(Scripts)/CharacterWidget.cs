@@ -7,7 +7,7 @@ public class CharacterWidget : UIWidget
     [SerializeField] CharacterType character;
     protected override void OnPointerDown()
     {
-        AudioManager.Instance.Play("Nota-001");
+        AudioManager.Instance.Play("Ui_Confirm");
         GameManager.Instance.SetCharacter(character);
         GameManager.Instance.ChangeScene(sceneToGo);
 
