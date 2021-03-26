@@ -103,6 +103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 5
   currentHealth: 0
+  spawnAnimationSeconds: 3
 --- !u!114 &4784759856445036223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -221,6 +222,7 @@ MonoBehaviour:
   particles:
   - {fileID: 2245077129724399900}
   - {fileID: 3437124096852148531}
+  jumpPos: {fileID: 0}
 --- !u!82 &1116730713889133432
 AudioSource:
   m_ObjectHideFlags: 0
@@ -416,8 +418,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1729387287
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7520995146857463393, guid: f7a65bf2fcb8e434aabacde0d209401a,
     type: 3}

@@ -370,8 +370,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grounded: 0
+  facingRight: 1
   canJump: 1
   MaxYVelocity: 0
+  jumpDownDelay: 0.35
   groundCheckRadius: 0.2
   groundlayer:
     serializedVersion: 2
@@ -470,7 +472,12 @@ MonoBehaviour:
   canMove: 1
   canFlip: 1
   canReceiveDamage: 1
-  maxLife: 0
+  throwAbility: {fileID: 21300000, guid: 2af9c738899956c4abaa66377e7a1458, type: 3}
+  ultAbility: {fileID: 21300000, guid: 00f3a7c3d612e65469649a6c63e5b55f, type: 3}
+  defenseAbility: {fileID: 21300000, guid: dfb999ec096c43d428380b9cf8ab8134, type: 3}
+  regenerationFrequency: 1
+  currentLife: 0
+  MaxLife: 2
   cdDefense: 2
   cdUltimate: 2
   cdThrow: 4
@@ -478,13 +485,18 @@ MonoBehaviour:
   ultimateAnim: {fileID: 7931771221869996087}
   projectil: {fileID: 399827546245339802, guid: f524c8747554edd4bb137089ef67af1d,
     type: 3}
+  projectilUlti: {fileID: 5731700169008212516, guid: a0a40c488652cee4bb5cd0b2cb2b1cc6,
+    type: 3}
+  UltiTransform: {fileID: 602289809040667658}
   specialAttack:
     pos: {fileID: 6748483436222164043}
     radius: 5
     layer:
       serializedVersion: 2
       m_Bits: 512
+  delayProjectil: 0.45
   ultimateOffsetTime: 0.6
+  projectileDelay: 0.45
 --- !u!82 &4591866177448519533
 AudioSource:
   m_ObjectHideFlags: 0
@@ -668,6 +680,7 @@ MonoBehaviour:
   - {fileID: 3543967038620910446}
   - {fileID: 7551335860172187835}
   - {fileID: 4047032214696716186}
+  jumpPos: {fileID: 3115522585173208924}
 --- !u!1 &6748483437749586368
 GameObject:
   m_ObjectHideFlags: 0
@@ -744,8 +757,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1729387287
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 100
   m_Sprite: {fileID: -5511359603735983883, guid: f0f19009b4d053142b8540ae2fc155da,
     type: 3}
