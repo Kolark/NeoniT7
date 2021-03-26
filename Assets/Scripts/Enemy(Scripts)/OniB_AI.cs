@@ -27,7 +27,7 @@ public class OniB_AI : MonoBehaviour,IStateMachineAI
     [SerializeField] Transform attackPosition;
     [SerializeField] LayerMask playerLayer;
     [SerializeField] float shootForce;
-
+    SoundModule soundModule;
     float spawntimer = 0;
 
     float timer = 0;
@@ -37,6 +37,7 @@ public class OniB_AI : MonoBehaviour,IStateMachineAI
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponentInChildren<Animator>();
+        soundModule = GetComponent<SoundModule>();
     }
 
     IEnumerator Start() //Refactor into GetTarget()
@@ -81,6 +82,7 @@ public class OniB_AI : MonoBehaviour,IStateMachineAI
             canAttack = false;
             DOVirtual.DelayedCall(0.8f, null, true).OnComplete(() =>
             {
+                soundModule.Play((int)EnemySounds.Attack);
                 GameObject clone = Instantiate(projectile, attackPosition.position, attackPosition.rotation);
                 clone.transform.localScale = new Vector3(GetDirection().x, clone.transform.localScale.y, clone.transform.localScale.z);
                 clone.GetComponent<Rigidbody2D>().AddForce(GetDirection() * shootForce, ForceMode2D.Impulse);
