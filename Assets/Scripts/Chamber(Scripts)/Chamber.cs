@@ -7,7 +7,7 @@ using System;
 
 public class Chamber : MonoBehaviour
 {
-    Collider2D col2d;
+    BoxCollider2D col2d;
     CompositeCollider2D compositeCollider2D;
     int chamberIndex = 0;
     
@@ -19,7 +19,7 @@ public class Chamber : MonoBehaviour
     ChamberSpawnTrigger[] spawnTriggers;
     private void Awake()
     {
-        col2d = GetComponent<Collider2D>();
+        col2d = GetComponent<BoxCollider2D>();
         compositeCollider2D = GetComponent<CompositeCollider2D>();
         
 
@@ -119,14 +119,32 @@ public class Chamber : MonoBehaviour
     {
         if (collision.CompareTag("Player") && ChamberManager.Instance.CanChamberTriggerExit)
         {
-            ChamberManager.Instance.ChangeCurrentChamber(chamberIndex);
-            compositeCollider2D.isTrigger = false;
-            
+            float x = collision.transform.position.x;
+            float y = collision.transform.position.y;
+            float MaxY = transform.position.y + col2d.size.y/2f;
+            float MinY = transform.position.y - col2d.size.y/2f;
+            Debug.Log($"x: {x},y: {y}");
+            Debug.Log($"X:{transform.position.x} MaxY: {MaxY},MinY: {MinY}");
+            if (x > transform.position.x && y < MaxY && y > MinY)
+            {
+                ChamberManager.Instance.ChangeCurrentChamber(chamberIndex);
+                compositeCollider2D.isTrigger = false;
+            }
             //ChamberManager.Instance.UnlockNextChamber();//TEMPORAL
         }
     }
     #endregion
-
+#if UNITY_EDITOR
+    private void OnDrawGizmos()
+    {
+        col2d = GetComponent<BoxCollider2D>();
+        float x = transform.position.x + col2d.size.x/2f;
+        float MaxY = transform.position.y + col2d.size.y / 2f;
+        float MinY = transform.position.y - col2d.size.y / 2f;
+        Gizmos.DrawCube(new Vector2(x,MaxY), new Vector3(2, 2, 0));
+        Gizmos.DrawCube(new Vector2(x, MinY), new Vector3(2, 2, 0));
+    }
+#endif
 
 }
 
