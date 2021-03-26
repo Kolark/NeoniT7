@@ -133,6 +133,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: SaveWidget (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8203272248466041370, guid: ac2b5acebd16486419b93bed65d6e8e0,
+        type: 3}
+      propertyPath: duration
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8203272248466041370, guid: ac2b5acebd16486419b93bed65d6e8e0,
+        type: 3}
+      propertyPath: easeType
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8203272248466041370, guid: ac2b5acebd16486419b93bed65d6e8e0,
+        type: 3}
+      propertyPath: finalPos.x
+      value: 35
+      objectReference: {fileID: 0}
     - target: {fileID: 8203272248466041375, guid: ac2b5acebd16486419b93bed65d6e8e0,
         type: 3}
       propertyPath: m_Pivot.x
@@ -257,6 +272,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SaveWidget (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8203272248466041370, guid: ac2b5acebd16486419b93bed65d6e8e0,
+        type: 3}
+      propertyPath: duration
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8203272248466041370, guid: ac2b5acebd16486419b93bed65d6e8e0,
+        type: 3}
+      propertyPath: easeType
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8203272248466041370, guid: ac2b5acebd16486419b93bed65d6e8e0,
+        type: 3}
+      propertyPath: finalPos.x
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 8203272248466041375, guid: ac2b5acebd16486419b93bed65d6e8e0,
         type: 3}
@@ -467,6 +497,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SaveWidget (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8203272248466041370, guid: ac2b5acebd16486419b93bed65d6e8e0,
+        type: 3}
+      propertyPath: duration
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8203272248466041370, guid: ac2b5acebd16486419b93bed65d6e8e0,
+        type: 3}
+      propertyPath: easeType
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8203272248466041370, guid: ac2b5acebd16486419b93bed65d6e8e0,
+        type: 3}
+      propertyPath: finalPos.x
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 8203272248466041375, guid: ac2b5acebd16486419b93bed65d6e8e0,
         type: 3}
