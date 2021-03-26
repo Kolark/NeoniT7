@@ -21,6 +21,5 @@ public class EnemyBaseAttackBehavior : StateMachineBehaviour
     {
         EnemyController enemy = animator.GetComponentInParent<EnemyController>();
         enemy.Ai.OnAttackEnd();
-        Debug.Log("AttackEnd-STATEBEHAVIOUR");
     }
 }

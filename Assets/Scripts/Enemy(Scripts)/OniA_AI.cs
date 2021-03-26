@@ -11,9 +11,11 @@ public class OniA_AI : MonoBehaviour,IStateMachineAI
     {
         Spawn,Idle, Chase, Attack
     }
+
     //[walk,jump],[muerte],[spawn],[idle],[ataque]
 
-
+    
+    EffectsModule effectsModule;
     Animator animator;
     Rigidbody2D rb;
     EnemyMovement enemyMovement;
@@ -29,20 +31,23 @@ public class OniA_AI : MonoBehaviour,IStateMachineAI
     [SerializeField] float spawnAnimationSeconds;
     [SerializeField] AttackInfo attackInfo;
     float spawntimer = 0;
-
+    SoundModule soundModule;
     float timer = 0;
 
     private void Awake()
     {
+        effectsModule = GetComponent<EffectsModule>();
         enemyMovement = GetComponent<EnemyMovement>();
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponentInChildren<Animator>();
+        soundModule = GetComponent<SoundModule>();
     }
 
     IEnumerator Start()
     {
         yield return new WaitUntil(() => BasicCharacter.Instance != null);
         target = BasicCharacter.Instance.transform;
+        effectsModule.PlayEffect((int)effectsOniA.portal);
     }
 
     public void StateMachine()
@@ -120,6 +125,7 @@ public class OniA_AI : MonoBehaviour,IStateMachineAI
             canAttack = false;
             DOVirtual.DelayedCall(0.5f, null, true).OnComplete(() =>
             {
+                soundModule.Play((int)EnemySounds.Attack);
                 Collider2D Hit = Physics2D.OverlapCircle(attackInfo.pos.position, attackInfo.radius, attackInfo.layer);
                 if (Hit != null)
                 {
@@ -136,7 +142,6 @@ public class OniA_AI : MonoBehaviour,IStateMachineAI
 
     public void OnAttackEnd()
     {
-        Debug.Log("AttackEnd-END");
         canAttack = true;
         if (target == null) currentState = OniAStates.Idle;
         else currentState = OniAStates.Chase;
@@ -169,4 +174,10 @@ public class OniA_AI : MonoBehaviour,IStateMachineAI
         Gizmos.color = Color.black;
         Gizmos.DrawWireSphere(transform.position, attackDistance);
     }
+
+    public enum effectsOniA
+    {
+        hit, portal
+    }
+
 }

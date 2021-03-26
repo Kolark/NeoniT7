@@ -133,12 +133,10 @@ public class EnemyMovement : MonoBehaviour
         {
             if (direction.x > 0.05f)
             {
-                Debug.Log("Going right");
                 transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
             }
             else if (direction.x < -0.05f)
             {
-                Debug.Log("Going left");
                 transform.localScale = new Vector3(-1f * Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
             }
         }

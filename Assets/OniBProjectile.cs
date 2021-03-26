@@ -11,7 +11,6 @@ public class OniBProjectile : MonoBehaviour
     }
 
     private void OnCollisionEnter2D(Collision2D other) {
-        Debug.Log("Colision con" + LayerMask.LayerToName(other.gameObject.layer));
         if (other.gameObject.CompareTag("Player")) { //Piratada necesaria
             Rigidbody2D rb = other.gameObject.GetComponent<Rigidbody2D>();
             PlayerDamageHandler player = other.gameObject.GetComponentInChildren<PlayerDamageHandler>();

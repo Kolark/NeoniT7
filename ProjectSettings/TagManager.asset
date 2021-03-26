@@ -37,9 +37,10 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: LightLess
+    uniqueID: 1729387287
     locked: 0

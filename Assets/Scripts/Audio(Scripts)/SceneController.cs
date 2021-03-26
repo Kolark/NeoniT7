@@ -86,8 +86,12 @@ public class SceneController : MonoBehaviour
     public void GoToLastCheckpoint()
     {
         //Revive
+        ChamberManager.Instance.UnlockPreviousChamber();
         BasicCharacter.Instance.transform.position = CheckPoints[GameManager.Instance.Current.chamber].position;
         BasicCharacter.Instance.Revive();
+        DOVirtual.DelayedCall(0.25f, () => {
+            ChamberManager.Instance.EnableTriggerExit();
+        }).SetUpdate(true);
     }
 
     private void OnDestroy()

@@ -31,7 +31,6 @@ public class SamuraiCharacter : BasicCharacter
         canReceiveDamage = false;
         isParry = true;
         effectsModule.PlayEffect((int)effectsSamurai.startParry);
-        Debug.Log("StartParry");
     }
     public override void EndParry()
     {
@@ -58,8 +57,6 @@ public class SamuraiCharacter : BasicCharacter
         if (!canUseSpecial) return;
         if (!character.Grounded) return;
         base.Ultimate();
-
-       
         effectsModule.StopEffect((int)effectsSamurai.UltReady);
         DOVirtual.DelayedCall(0.3f, () => {
             effectsModule.PlayEffect((int)effectsSamurai.EnergyCharging);
@@ -73,6 +70,7 @@ public class SamuraiCharacter : BasicCharacter
 
         onUltAbility?.Invoke(cdUltimate);
         DOVirtual.DelayedCall(cdUltimate, () => {
+            soundModule.Play((int)SamuraiSounds.UltimateCharged);
             effectsModule.PlayEffect((int)effectsSamurai.UltReady);
             canUseSpecial = true; }, true);
         ultimateAnim.SetTrigger("Ultimate");
@@ -86,23 +84,23 @@ public class SamuraiCharacter : BasicCharacter
             }
         });
 
-
     }
+
     public override void Damage()
     {
-        Debug.Log("Attack step 5");
         if (canReceiveDamage)
         {
             effectsModule.PlayEffect((int)effectsSamurai.PlayerHitA);
             currentLife--;
-            character.Anim.SetTrigger("Damage");
+            onLifeChange?.Invoke(currentLife);
             soundModule.Play((int)CharacterSounds.getHit);
-            Debug.Log("Attack step 6");
             bool isDead = currentLife <= 0;
             if (isDead)
             {
                 Death();
+                return;
             }
+            character.Anim.SetTrigger("Damage");
         }
         else if(isParry)
         {
@@ -116,6 +114,7 @@ public class SamuraiCharacter : BasicCharacter
     public override void Death()
     {
         isAlive = false;
+        soundModule.Play((int)SamuraiSounds.Death);
         canReceiveDamage = false;
         character.Anim.SetTrigger("Death");
         DOVirtual.DelayedCall(0.8f,()=> { MenuManager.Instance.Pause(); });
@@ -125,6 +124,7 @@ public class SamuraiCharacter : BasicCharacter
     public override void Counter()
     {
         effectsModule.PlayEffect((int)effectsSamurai.endParry);
+        soundModule.Play((int)SamuraiSounds.Parry);
         character.Anim.SetTrigger("Counter");
         Collider2D[] Hit = Physics2D.OverlapCircleAll(counter.pos.position, counter.radius, counter.layer);
         for (int i = 0; i < Hit.Length; i++)
@@ -143,5 +143,9 @@ public class SamuraiCharacter : BasicCharacter
 
     public enum effectsSamurai{
         startParry, endParry, jumpParticle, UltReady, PlayerHitA, PlayerHitC, EnergyCharging
+    }
+    public enum SamuraiSounds
+    {
+        combo1, combo2, combo3, getHit, Jump, Death, Ultimate, UltimateCharged,Parry
     }
 }
