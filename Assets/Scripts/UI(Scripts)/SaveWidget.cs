@@ -66,7 +66,7 @@ public class SaveWidget : UIWidget
     protected override void OnPointerDown()
     {
         base.OnPointerDown();
-        AudioManager.Instance.Play("Nota-001");
+        AudioManager.Instance.Play("Ui_Confirm");
         if (hasSaveInfo)
         {
             GameManager.Instance.ChangeScene(saveInfo);
