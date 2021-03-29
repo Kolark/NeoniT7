@@ -382,7 +382,7 @@ MonoBehaviour:
   maxSpeed: 15
   terminalVelocity: 5
   jumpForce: 32
-  fallMultiplier: 20
+  fallMultiplier: 15
 --- !u!50 &6748483437568352507
 Rigidbody2D:
   serializedVersion: 4
@@ -479,7 +479,7 @@ MonoBehaviour:
   currentLife: 0
   MaxLife: 2
   cdDefense: 2
-  cdUltimate: 2
+  cdUltimate: 6
   cdThrow: 4
   currentAttack: 0
   ultimateAnim: {fileID: 7931771221869996087}
@@ -759,7 +759,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 1
   m_Sprite: {fileID: -5511359603735983883, guid: f0f19009b4d053142b8540ae2fc155da,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

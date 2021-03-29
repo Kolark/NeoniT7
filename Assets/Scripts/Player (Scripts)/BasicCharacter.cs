@@ -100,14 +100,16 @@ public class BasicCharacter : MonoBehaviour
     }
     protected virtual void Update()
     {
+
         character.Anim.SetBool("isAlive", isAlive);
         if (!isAlive) return;
-        
+        if (GameManager.Instance.IsPaused) return;
         character.UpdateAnimatorValues();
     }
     protected virtual void FixedUpdate()
     {
         if (!isAlive) return;
+        if (GameManager.Instance.IsPaused) return;
         character.Crouch();
         if (canFlip)
         {
@@ -123,6 +125,7 @@ public class BasicCharacter : MonoBehaviour
     #region Attacks
     public virtual void Attack()
     {
+        if (GameManager.Instance.IsPaused) return;
         if (canReceiveInput)
         {
             //isAttacking = true;
@@ -198,6 +201,7 @@ public class BasicCharacter : MonoBehaviour
     {
         if (!isAlive) return;
         if (!canUseDefense) return;
+        if (GameManager.Instance.IsPaused) return;
         character.Anim.SetTrigger("Parry");
         canUseDefense = false;
 
@@ -213,6 +217,7 @@ public class BasicCharacter : MonoBehaviour
         if (!isAlive) return;
         if (!canUseSpecial) return;
         if (!character.Grounded) return;
+        if (GameManager.Instance.IsPaused) return;
         soundModule.Play((int)CharacterSounds.Ultimate);
         character.Anim.SetTrigger("Special");
         canUseSpecial = false;
@@ -224,8 +229,8 @@ public class BasicCharacter : MonoBehaviour
         if (!isAlive) return;
         if (!canUseThrowable) return;
         if (!character.Grounded) return;
-        
-            character.Anim.SetTrigger("Throw");
+        if (GameManager.Instance.IsPaused) return;
+        character.Anim.SetTrigger("Throw");
             canUseThrowable = false;
             onThrowAbility?.Invoke(cdThrow);
             DOVirtual.DelayedCall(cdThrow, () => { canUseThrowable = true; }, true);

@@ -21,6 +21,7 @@ public class SamuraiCharacter : BasicCharacter
     public override void Defense()
     {
         if (!isAlive) return;
+        if (GameManager.Instance.IsPaused) return;
         if (!canUseDefense) return;
         base.Defense();
         
@@ -42,6 +43,7 @@ public class SamuraiCharacter : BasicCharacter
         if (!isAlive) return;
         if (!canUseThrowable) return;
         if (!character.Grounded) return;
+        if (GameManager.Instance.IsPaused) return;
         base.Throwable();
         DOVirtual.DelayedCall(projectileDelay, null, true).OnComplete(() =>
         {
@@ -56,6 +58,7 @@ public class SamuraiCharacter : BasicCharacter
         if (!isAlive) return;
         if (!canUseSpecial) return;
         if (!character.Grounded) return;
+        if (GameManager.Instance.IsPaused) return;
         base.Ultimate();
         effectsModule.StopEffect((int)effectsSamurai.UltReady);
         DOVirtual.DelayedCall(0.3f, () => {
