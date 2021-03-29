@@ -482,7 +482,6 @@ GameObject:
   - component: {fileID: 94387956}
   - component: {fileID: 94387955}
   - component: {fileID: 94387954}
-  - component: {fileID: 94387958}
   m_Layer: 12
   m_Name: ChamberSection (1)
   m_TagString: Untagged
@@ -579,26 +578,12 @@ CompositeCollider2D:
         Y: 139999707
       - X: -264999707
         Y: -150000000
-  - m_Collider: {fileID: 94387958}
-    m_ColliderPaths:
-    - - X: 89399699
-        Y: -705500032
-      - X: 89399699
-        Y: -132500016
-      - X: -124399992
-        Y: -132500309
-      - X: -124399699
-        Y: -705500032
   m_CompositePaths:
     m_Paths:
-    - - {x: 8.93994, y: -70.55}
-      - {x: 8.94, y: -15}
-      - {x: 26.499971, y: -14.999971}
+    - - {x: 26.49994, y: -15}
       - {x: 26.49994, y: 14}
       - {x: -26.5, y: 13.999941}
       - {x: -26.49994, y: -15}
-      - {x: -12.439999, y: -15.000029}
-      - {x: -12.439941, y: -70.55}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
 --- !u!114 &94387957
@@ -619,32 +604,6 @@ MonoBehaviour:
     - {fileID: 43221875}
     wallEnemies:
     - {fileID: 1847643816}
---- !u!61 &94387958
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 94387952}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 1
-  m_Offset: {x: -1.75, y: -41.9}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 21.38, y: 57.3}
-  m_EdgeRadius: 0
 --- !u!1 &109756878
 GameObject:
   m_ObjectHideFlags: 0
@@ -869,7 +828,6 @@ GameObject:
   - component: {fileID: 142518037}
   - component: {fileID: 142518036}
   - component: {fileID: 142518035}
-  - component: {fileID: 142518039}
   m_Layer: 12
   m_Name: ChamberSection (4)
   m_TagString: Untagged
@@ -966,26 +924,12 @@ CompositeCollider2D:
         Y: 139999707
       - X: -264999707
         Y: -150000000
-  - m_Collider: {fileID: 142518039}
-    m_ColliderPaths:
-    - - X: 265499707
-        Y: -705500032
-      - X: 265499707
-        Y: -132500016
-      - X: -265500000
-        Y: -132500309
-      - X: -265499707
-        Y: -705500032
   m_CompositePaths:
     m_Paths:
-    - - {x: 26.549942, y: -70.55}
-      - {x: 26.549942, y: -13.250002}
-      - {x: 26.499971, y: -13.249972}
+    - - {x: 26.49994, y: -15}
       - {x: 26.49994, y: 14}
       - {x: -26.5, y: 13.999941}
-      - {x: -26.500002, y: -13.250031}
-      - {x: -26.550001, y: -13.25006}
-      - {x: -26.549942, y: -70.55}
+      - {x: -26.49994, y: -15}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
 --- !u!114 &142518038
@@ -1006,32 +950,6 @@ MonoBehaviour:
     wallEnemies:
     - {fileID: 90639022}
     - {fileID: 1776639478}
---- !u!61 &142518039
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 142518033}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 1
-  m_Offset: {x: 0, y: -41.9}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 53.1, y: 57.3}
-  m_EdgeRadius: 0
 --- !u!1 &164367061
 GameObject:
   m_ObjectHideFlags: 0
@@ -21398,7 +21316,6 @@ GameObject:
   - component: {fileID: 437981338}
   - component: {fileID: 437981337}
   - component: {fileID: 437981336}
-  - component: {fileID: 437981340}
   m_Layer: 12
   m_Name: ChamberSection (2)
   m_TagString: Untagged
@@ -21495,26 +21412,12 @@ CompositeCollider2D:
         Y: 139999707
       - X: -264999707
         Y: -150000000
-  - m_Collider: {fileID: 437981340}
-    m_ColliderPaths:
-    - - X: 89399699
-        Y: -708499968
-      - X: 89399699
-        Y: -135500016
-      - X: -124399992
-        Y: -135500309
-      - X: -124399699
-        Y: -708499968
   m_CompositePaths:
     m_Paths:
-    - - {x: 8.93994, y: -70.85}
-      - {x: 8.94, y: -15}
-      - {x: 26.499971, y: -14.999971}
+    - - {x: 26.49994, y: -15}
       - {x: 26.49994, y: 14}
       - {x: -26.5, y: 13.999941}
       - {x: -26.49994, y: -15}
-      - {x: -12.439999, y: -15.000029}
-      - {x: -12.439941, y: -70.85}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
 --- !u!114 &437981339
@@ -21536,32 +21439,6 @@ MonoBehaviour:
     distanceEnemies:
     - {fileID: 240591141}
     wallEnemies: []
---- !u!61 &437981340
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 437981334}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 1
-  m_Offset: {x: -1.75, y: -42.2}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 21.38, y: 57.3}
-  m_EdgeRadius: 0
 --- !u!1 &441330353
 GameObject:
   m_ObjectHideFlags: 0
@@ -63457,7 +63334,6 @@ GameObject:
   - component: {fileID: 1855426058}
   - component: {fileID: 1855426057}
   - component: {fileID: 1855426056}
-  - component: {fileID: 1855426060}
   m_Layer: 12
   m_Name: ChamberSection (3)
   m_TagString: Untagged
@@ -63554,26 +63430,12 @@ CompositeCollider2D:
         Y: 139999707
       - X: -264999707
         Y: -150000000
-  - m_Collider: {fileID: 1855426060}
-    m_ColliderPaths:
-    - - X: 265499707
-        Y: -705500032
-      - X: 265499707
-        Y: -132500016
-      - X: -265500000
-        Y: -132500309
-      - X: -265499707
-        Y: -705500032
   m_CompositePaths:
     m_Paths:
-    - - {x: 26.549942, y: -70.55}
-      - {x: 26.549942, y: -13.250002}
-      - {x: 26.499971, y: -13.249972}
+    - - {x: 26.49994, y: -15}
       - {x: 26.49994, y: 14}
       - {x: -26.5, y: 13.999941}
-      - {x: -26.500002, y: -13.250031}
-      - {x: -26.550001, y: -13.25006}
-      - {x: -26.549942, y: -70.55}
+      - {x: -26.49994, y: -15}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
 --- !u!114 &1855426059
@@ -63593,32 +63455,6 @@ MonoBehaviour:
     distanceEnemies:
     - {fileID: 81800806}
     wallEnemies: []
---- !u!61 &1855426060
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1855426054}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 1
-  m_Offset: {x: 0, y: -41.9}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 53.1, y: 57.3}
-  m_EdgeRadius: 0
 --- !u!1 &1856119264
 GameObject:
   m_ObjectHideFlags: 0
