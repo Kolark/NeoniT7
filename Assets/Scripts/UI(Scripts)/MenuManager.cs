@@ -14,13 +14,15 @@ public class MenuManager : MonoBehaviour
     bool hasEndedTransition = true;
     RectTransform pausePanel;
     Vector2 initPos;
-    Button2[] uIButtons;
+    Button[] uIButtons;
     //UIWidget[] uIWidgets;
     EventSystem eventSystem;
     [SerializeField] Image transitionImage;
 
     [SerializeField] RectTransform ContinueButton;
+    Button button2Continue;
     [SerializeField] RectTransform LastCheckPointButton;
+    Button button2LastCheckpoint;
 
     private void Awake()
     {
@@ -33,9 +35,13 @@ public class MenuManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
+        button2Continue = ContinueButton.GetComponent<Button>();
+        button2LastCheckpoint = LastCheckPointButton.GetComponent<Button>();
+
         pausePanel = transform.GetChild(0).GetChild(0).GetComponent<RectTransform>();
-        uIButtons = pausePanel.GetChild(1).GetComponentsInChildren<Button2>(); 
+        uIButtons = pausePanel.GetChild(1).GetComponentsInChildren<Button>(); 
         initPos = pausePanel.anchoredPosition;
+        eventSystem = GetComponentInChildren<EventSystem>();
     }
 
     private void Start()
@@ -66,11 +72,13 @@ public class MenuManager : MonoBehaviour
         if (!GameManager.Instance.IsPaused)
         {
             GameManager.Instance.Pause();
-            pausePanel.gameObject.SetActive(true);
+            //pausePanel.gameObject.SetActive(true);
             for (int i = 0; i < uIButtons.Length; i++)
             {
                 uIButtons[i].interactable = true;
             }
+
+
             pausePanel.DOAnchorPos(Vector2.zero + Vector2.up * 20, 0.15f).SetEase(Ease.InSine).SetUpdate(true).OnComplete(()=> { hasEndedTransition = true; });
         }
         else
@@ -80,10 +88,13 @@ public class MenuManager : MonoBehaviour
             {
                 uIButtons[i].interactable = false;
             }
+
+
+
             pausePanel.DOAnchorPos(initPos, 0.35f).SetEase(Ease.InBack).SetUpdate(true)
             .OnComplete(()=> 
             {
-                pausePanel.gameObject.SetActive(false);
+                //pausePanel.gameObject.SetActive(false);
                 hasEndedTransition = true;
             });
         }
@@ -94,11 +105,20 @@ public class MenuManager : MonoBehaviour
     {
         ContinueButton.gameObject.SetActive(BasicCharacter.Instance.IsAlive);
         LastCheckPointButton.gameObject.SetActive(!BasicCharacter.Instance.IsAlive);
+        if (BasicCharacter.Instance.IsAlive)
+        {
+            
+            eventSystem.SetSelectedGameObject(ContinueButton.gameObject);
+        }
+        else
+        {
+            eventSystem.SetSelectedGameObject(LastCheckPointButton.gameObject);
+        }
+        Debug.Log(eventSystem.currentSelectedGameObject.name);
     }
 
     public void LastCheckPoint()
     {
-        Debug.Log("Last Cehckpoint");
         SceneController.Instance.GoToLastCheckpoint();
         Pause();
     }

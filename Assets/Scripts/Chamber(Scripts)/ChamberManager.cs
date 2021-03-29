@@ -64,6 +64,7 @@ public class ChamberManager : MonoBehaviour
             onChamberUpdate?.Invoke(unlockedChambers);
             unlockedChambers++;
         }
+            Debug.Log("change i: " + i);
         if(i == (ChamberLength - 2))
         {
             SceneController.Instance.NextLevel();
@@ -73,6 +74,7 @@ public class ChamberManager : MonoBehaviour
     public void UnlockNextChamber()
     {
         compositeCollider2Ds[unlockedChambers+1].isTrigger = true;
+        Debug.Log(compositeCollider2Ds[unlockedChambers + 1].gameObject.name);
     }
 
     public void UnlockPreviousChamber()

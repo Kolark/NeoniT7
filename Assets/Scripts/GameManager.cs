@@ -129,7 +129,6 @@ public class GameManager : MonoBehaviour
     {
         isPaused = false;
         Time.timeScale = 1;
-        Debug.Log("Unpaused");
     }
     public void DisableCharacter()
     {
@@ -205,5 +204,6 @@ public enum GameScene
     Level1,
     Level2,
     Level3,
-    Level4
+    Level4,
+    Level5
 }

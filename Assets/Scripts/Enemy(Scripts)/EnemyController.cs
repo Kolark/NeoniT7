@@ -13,7 +13,7 @@ public class EnemyController : MonoBehaviour
  
     bool isAlive = true;//<-----------------------
     Chamber chamber;
-
+    SoundModule soundModule;
 
     #region Private Variables
     private IStateMachineAI ai; 
@@ -35,8 +35,13 @@ public class EnemyController : MonoBehaviour
         currentHealth = maxHealth;
         effectsModule = GetComponent<EffectsModule>();
         rb = GetComponent<Rigidbody2D>();
+        soundModule = GetComponent<SoundModule>();
         rbc = rb.constraints;
         spawntimer = 0;
+    }
+    private void Start()
+    {
+        soundModule.Play((int)EnemySounds.Appear);
     }
     void FixedUpdate()
     {
@@ -54,14 +59,22 @@ public class EnemyController : MonoBehaviour
             effectsModule.PlayEffect((int)effectsOniA.hit);
             if (currentHealth < 0)
             {
-                isAlive = false;
-                animator.SetTrigger("Dead");
-                gameObject.layer = 13;
-                Invoke("DestroyEnemy", 1.5f); // Debug only 
-                chamber.OnEnemyDead(this);
+                Death();
             }
         }
     }
+
+    public void Death()
+    {
+
+        isAlive = false;
+        animator.SetTrigger("Dead");
+        gameObject.layer = 13;
+        Invoke("DestroyEnemy", 1.5f); // Debug only 
+        soundModule.Play((int)EnemySounds.Disappear);
+        chamber.OnEnemyDead(this);
+    }
+
 
     public void InstaDeath()
     {
@@ -100,4 +113,8 @@ public class EnemyController : MonoBehaviour
         hit, portal
     }
 
+}
+public enum EnemySounds
+{
+    Attack,Appear,Disappear
 }

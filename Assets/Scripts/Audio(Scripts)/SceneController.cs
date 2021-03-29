@@ -94,6 +94,11 @@ public class SceneController : MonoBehaviour
         }).SetUpdate(true);
     }
 
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
     private void OnDestroy()
     {
         if (instance != this)
