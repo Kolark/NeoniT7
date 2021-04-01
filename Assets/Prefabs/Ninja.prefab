@@ -321,7 +321,7 @@ Animator:
   m_GameObject: {fileID: 7193628012888815705}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c9989a53ae7951c49b35e185ca157376, type: 2}
+  m_Controller: {fileID: 22100000, guid: 0ebdea6ea2c3c254dba9e8ad610806d5, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -418,8 +418,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grounded: 0
+  facingRight: 1
   canJump: 1
   MaxYVelocity: 0
+  jumpDownDelay: 0
   groundCheckRadius: 0.2
   groundlayer:
     serializedVersion: 2
@@ -657,7 +659,12 @@ MonoBehaviour:
   canMove: 1
   canFlip: 1
   canReceiveDamage: 1
-  maxLife: 10000
+  throwAbility: {fileID: 0}
+  ultAbility: {fileID: 0}
+  defenseAbility: {fileID: 0}
+  regenerationFrequency: 0
+  currentLife: 0
+  MaxLife: 0
   cdDefense: 5
   cdUltimate: 5
   cdThrow: 5
