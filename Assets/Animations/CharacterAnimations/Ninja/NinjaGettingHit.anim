@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: NinjaAttackTwo
+  m_Name: NinjaGettingHit
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,10 +20,19 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -373449615685528967, guid: d203b7c2c003a524c9fb29549408cf16,
+      value: {fileID: 558028284227761286, guid: 9b9b042e653255f42a99c0fc39523afa,
         type: 3}
     - time: 0.083333336
-      value: {fileID: -373449615685528967, guid: d203b7c2c003a524c9fb29549408cf16,
+      value: {fileID: 7615384563204320538, guid: 9b9b042e653255f42a99c0fc39523afa,
+        type: 3}
+    - time: 0.16666667
+      value: {fileID: -5013235377810598087, guid: 9b9b042e653255f42a99c0fc39523afa,
+        type: 3}
+    - time: 0.25
+      value: {fileID: -2022868737171218145, guid: 9b9b042e653255f42a99c0fc39523afa,
+        type: 3}
+    - time: 0.33333334
+      value: {fileID: 3502596664794127068, guid: 9b9b042e653255f42a99c0fc39523afa,
         type: 3}
     attribute: m_Sprite
     path: 
@@ -44,14 +53,17 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -373449615685528967, guid: d203b7c2c003a524c9fb29549408cf16, type: 3}
-    - {fileID: -373449615685528967, guid: d203b7c2c003a524c9fb29549408cf16, type: 3}
+    - {fileID: 558028284227761286, guid: 9b9b042e653255f42a99c0fc39523afa, type: 3}
+    - {fileID: 7615384563204320538, guid: 9b9b042e653255f42a99c0fc39523afa, type: 3}
+    - {fileID: -5013235377810598087, guid: 9b9b042e653255f42a99c0fc39523afa, type: 3}
+    - {fileID: -2022868737171218145, guid: 9b9b042e653255f42a99c0fc39523afa, type: 3}
+    - {fileID: 3502596664794127068, guid: 9b9b042e653255f42a99c0fc39523afa, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.16666667
+    m_StopTime: 0.41666666
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

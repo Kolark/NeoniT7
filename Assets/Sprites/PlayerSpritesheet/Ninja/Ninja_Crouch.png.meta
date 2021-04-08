@@ -1,37 +1,31 @@
 fileFormatVersion: 2
-guid: d203b7c2c003a524c9fb29549408cf16
+guid: 71533ec1a4591c04794910cb1a46e21d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2865052415589878586
-    second: Ninjacombo_0
+      213: 3206246167141545538
+    second: Ninja_Crouch_0
   - first:
-      213: -1362733597865713281
-    second: Ninjacombo_1
+      213: 6499837206291752375
+    second: Ninja_Crouch_1
   - first:
-      213: -3739838474075714820
-    second: Ninjacombo_2
+      213: -339035928273432348
+    second: Ninja_Crouch_2
   - first:
-      213: -373449615685528967
-    second: Ninjacombo_3
+      213: 4059591115127628059
+    second: Ninja_Crouch_3
   - first:
-      213: -3653873766987349800
-    second: Ninjacombo_4
+      213: -6279472964224440463
+    second: Ninja_Crouch_4
   - first:
-      213: -2354790871914453258
-    second: Ninjacombo_5
+      213: -208748735340176316
+    second: Ninja_Crouch_5
   - first:
-      213: 3201301118158129120
-    second: Ninjacombo_6
+      213: -4885336632152643289
+    second: Ninja_Crouch_6
   - first:
-      213: 1625852902104589740
-    second: Ninjacombo_7
-  - first:
-      213: -7287556375590664505
-    second: Ninjacombo_8
-  - first:
-      213: -6945882227378312008
-    second: Ninjacombo_9
+      213: -5339036909269370315
+    second: Ninja_Crouch_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -113,227 +107,173 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ninjacombo_0
+      name: Ninja_Crouch_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 70
+        width: 64
+        height: 70
+      alignment: 9
+      pivot: {x: 0.55, y: 0.385}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 246fdeec6efde7c20800000000000000
+      internalID: 3206246167141545538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja_Crouch_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 70
+        width: 64
+        height: 70
+      alignment: 9
+      pivot: {x: 0.55, y: 0.385}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b523e2608f043a50800000000000000
+      internalID: 6499837206291752375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja_Crouch_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 70
+        width: 64
+        height: 70
+      alignment: 9
+      pivot: {x: 0.55, y: 0.385}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e0da299e908b4bf0800000000000000
+      internalID: -339035928273432348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja_Crouch_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 70
+        width: 64
+        height: 70
+      alignment: 9
+      pivot: {x: 0.55, y: 0.385}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b11a38e4c90965830800000000000000
+      internalID: 4059591115127628059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja_Crouch_4
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 94
-        height: 90
+        width: 64
+        height: 70
       alignment: 9
-      pivot: {x: 0.37, y: 0.3}
+      pivot: {x: 0.55, y: 0.385}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c4f3e9f10a4d38d0800000000000000
-      internalID: -2865052415589878586
+      spriteID: 177abbeeb94dad8a0800000000000000
+      internalID: -6279472964224440463
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ninjacombo_1
+      name: Ninja_Crouch_5
       rect:
         serializedVersion: 2
-        x: 94
+        x: 64
         y: 0
-        width: 94
-        height: 90
+        width: 64
+        height: 70
       alignment: 9
-      pivot: {x: 0.37, y: 0.3}
+      pivot: {x: 0.55, y: 0.385}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7169b74309961de0800000000000000
-      internalID: -1362733597865713281
+      spriteID: 44c9cb691206a1df0800000000000000
+      internalID: -208748735340176316
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ninjacombo_2
+      name: Ninja_Crouch_6
       rect:
         serializedVersion: 2
-        x: 188
+        x: 128
         y: 0
-        width: 94
-        height: 90
+        width: 64
+        height: 70
       alignment: 9
-      pivot: {x: 0.37, y: 0.3}
+      pivot: {x: 0.55, y: 0.385}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cfac06be8bc691cc0800000000000000
-      internalID: -3739838474075714820
+      spriteID: 729a658773cc33cb0800000000000000
+      internalID: -4885336632152643289
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ninjacombo_3
+      name: Ninja_Crouch_7
       rect:
         serializedVersion: 2
-        x: 282
+        x: 192
         y: 0
-        width: 94
-        height: 90
+        width: 64
+        height: 70
       alignment: 9
-      pivot: {x: 0.37, y: 0.3}
+      pivot: {x: 0.55, y: 0.385}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 972de8b9d8d31daf0800000000000000
-      internalID: -373449615685528967
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ninjacombo_4
-      rect:
-        serializedVersion: 2
-        x: 376
-        y: 0
-        width: 94
-        height: 90
-      alignment: 9
-      pivot: {x: 0.37, y: 0.3}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8d0c9900b25da4dc0800000000000000
-      internalID: -3653873766987349800
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ninjacombo_5
-      rect:
-        serializedVersion: 2
-        x: 470
-        y: 0
-        width: 94
-        height: 90
-      alignment: 9
-      pivot: {x: 0.37, y: 0.3}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6f6e43f9d2a125fd0800000000000000
-      internalID: -2354790871914453258
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ninjacombo_6
-      rect:
-        serializedVersion: 2
-        x: 564
-        y: 0
-        width: 94
-        height: 90
-      alignment: 9
-      pivot: {x: 0.37, y: 0.3}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0e740eed76e4d6c20800000000000000
-      internalID: 3201301118158129120
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ninjacombo_7
-      rect:
-        serializedVersion: 2
-        x: 658
-        y: 0
-        width: 94
-        height: 90
-      alignment: 9
-      pivot: {x: 0.37, y: 0.3}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ca56bfea990309610800000000000000
-      internalID: 1625852902104589740
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ninjacombo_8
-      rect:
-        serializedVersion: 2
-        x: 752
-        y: 0
-        width: 94
-        height: 90
-      alignment: 9
-      pivot: {x: 0.37, y: 0.3}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7c6094866166dda90800000000000000
-      internalID: -7287556375590664505
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ninjacombo_9
-      rect:
-        serializedVersion: 2
-        x: 846
-        y: 0
-        width: 94
-        height: 90
-      alignment: 9
-      pivot: {x: 0.37, y: 0.3}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8bcaa614ae44b9f90800000000000000
-      internalID: -6945882227378312008
+      spriteID: 53abc4ce73ee7e5b0800000000000000
+      internalID: -5339036909269370315
       vertices: []
       indices: 
       edges: []
@@ -341,7 +281,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: d5269bd126470764085a2636e8a3815c
+    spriteID: 5e0e9f4d984cc7d439edf7c6b048e096
     internalID: 0
     vertices: []
     indices: 
