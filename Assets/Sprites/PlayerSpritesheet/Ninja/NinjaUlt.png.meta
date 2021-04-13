@@ -1,0 +1,476 @@
+fileFormatVersion: 2
+guid: 08d962ee710cb0547bd9f49f8f5c449b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3323185533358897439
+    second: NinjaUlt_0
+  - first:
+      213: 6517159211992313890
+    second: NinjaUlt_1
+  - first:
+      213: 9156177876247206238
+    second: NinjaUlt_2
+  - first:
+      213: 7300543650664946652
+    second: NinjaUlt_3
+  - first:
+      213: 7833968957667221605
+    second: NinjaUlt_4
+  - first:
+      213: -8117007919284926194
+    second: NinjaUlt_5
+  - first:
+      213: 304254404270913251
+    second: NinjaUlt_6
+  - first:
+      213: 8739655714310918117
+    second: NinjaUlt_7
+  - first:
+      213: -7114321241409866210
+    second: NinjaUlt_8
+  - first:
+      213: -3726851073288837875
+    second: NinjaUlt_9
+  - first:
+      213: -4158942827053950238
+    second: NinjaUlt_10
+  - first:
+      213: -1777584157753317528
+    second: NinjaUlt_11
+  - first:
+      213: 4888069163727075165
+    second: NinjaUlt_12
+  - first:
+      213: -1522923001565981847
+    second: NinjaUlt_13
+  - first:
+      213: 2391915932763578218
+    second: NinjaUlt_14
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: NinjaUlt_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3444
+        width: 210
+        height: 246
+      alignment: 9
+      pivot: {x: 0.5191091, y: 0.0822615}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e60d694d5ca1e1d0800000000000000
+      internalID: -3323185533358897439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NinjaUlt_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3198
+        width: 210
+        height: 246
+      alignment: 9
+      pivot: {x: 0.5191091, y: 0.0822615}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 220777f16c9917a50800000000000000
+      internalID: 6517159211992313890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NinjaUlt_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2952
+        width: 210
+        height: 246
+      alignment: 9
+      pivot: {x: 0.5191091, y: 0.0822615}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5951065447411f70800000000000000
+      internalID: 9156177876247206238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NinjaUlt_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2705
+        width: 210
+        height: 246
+      alignment: 9
+      pivot: {x: 0.5191091, y: 0.38}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdb1e1535cdb05560800000000000000
+      internalID: 7300543650664946652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NinjaUlt_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2460
+        width: 210
+        height: 246
+      alignment: 9
+      pivot: {x: 0.5191091, y: 0.76}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5602137c249d7bc60800000000000000
+      internalID: 7833968957667221605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NinjaUlt_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2214
+        width: 210
+        height: 246
+      alignment: 9
+      pivot: {x: 0.5191091, y: 0.85}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e094dfb9d489a5f80800000000000000
+      internalID: -8117007919284926194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NinjaUlt_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1968
+        width: 210
+        height: 246
+      alignment: 9
+      pivot: {x: 0.5191091, y: 0.88}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e67ae7c4cde83400800000000000000
+      internalID: 304254404270913251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NinjaUlt_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1722
+        width: 210
+        height: 246
+      alignment: 9
+      pivot: {x: 0.5191091, y: 0.88}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ef07b6419e794970800000000000000
+      internalID: 8739655714310918117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NinjaUlt_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1476
+        width: 210
+        height: 246
+      alignment: 9
+      pivot: {x: 0.5191091, y: 0.88}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e16bfb3368ad44d90800000000000000
+      internalID: -7114321241409866210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NinjaUlt_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1230
+        width: 210
+        height: 246
+      alignment: 9
+      pivot: {x: 0.5191091, y: 0.88}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d05e5ddc1b0974cc0800000000000000
+      internalID: -3726851073288837875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NinjaUlt_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 982
+        width: 210
+        height: 246
+      alignment: 9
+      pivot: {x: 0.5191091, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ea5a48a8877846c0800000000000000
+      internalID: -4158942827053950238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NinjaUlt_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 738
+        width: 210
+        height: 246
+      alignment: 9
+      pivot: {x: 0.5191091, y: 0.06}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86760c660a0c457e0800000000000000
+      internalID: -1777584157753317528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NinjaUlt_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 492
+        width: 210
+        height: 246
+      alignment: 9
+      pivot: {x: 0.5191091, y: 0.06}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d573e7d9109e5d340800000000000000
+      internalID: 4888069163727075165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NinjaUlt_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 246
+        width: 210
+        height: 246
+      alignment: 9
+      pivot: {x: 0.5191091, y: 0.06}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 963536f499d7ddae0800000000000000
+      internalID: -1522923001565981847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NinjaUlt_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 210
+        height: 246
+      alignment: 9
+      pivot: {x: 0.5191091, y: 0.06}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6f58f03edac13120800000000000000
+      internalID: 2391915932763578218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 331d2089594588345bb30c3b34d5ba5c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -248,31 +248,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ninja
       objectReference: {fileID: 0}
-    - target: {fileID: 7193628013013815648, guid: b198cc339ae52e440a9af28639affce7,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7193628013013815649, guid: b198cc339ae52e440a9af28639affce7,
-        type: 3}
-      propertyPath: DashForce
-      value: 27
-      objectReference: {fileID: 0}
-    - target: {fileID: 7193628013013815708, guid: b198cc339ae52e440a9af28639affce7,
-        type: 3}
-      propertyPath: jumpForce
-      value: 32
-      objectReference: {fileID: 0}
-    - target: {fileID: 7193628013013815708, guid: b198cc339ae52e440a9af28639affce7,
-        type: 3}
-      propertyPath: jumpDownDelay
-      value: 0.35
-      objectReference: {fileID: 0}
-    - target: {fileID: 7193628013013815708, guid: b198cc339ae52e440a9af28639affce7,
-        type: 3}
-      propertyPath: fallMultiplier
-      value: 15
-      objectReference: {fileID: 0}
     - target: {fileID: 7193628013013815711, guid: b198cc339ae52e440a9af28639affce7,
         type: 3}
       propertyPath: m_RootOrder
