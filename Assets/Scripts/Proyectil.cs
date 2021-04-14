@@ -31,6 +31,7 @@ public class Proyectil : MonoBehaviour
             for (int i = 0; i < hitsNumber; i++)//cambiarlo a que en vesd e un for sea un parametro del recibir daño
             {
                 enemy?.OnReceiveDamage();
+                ScoreManager.Instance.AddScore(enemy.getPos().position, 150);
             }
         }
             

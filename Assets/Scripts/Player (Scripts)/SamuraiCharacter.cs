@@ -83,7 +83,11 @@ public class SamuraiCharacter : BasicCharacter
             for (int i = 0; i < Hit.Length; i++)
             {
                 IEnemyHurtBox enemy = Hit[i]?.GetComponent<IEnemyHurtBox>();
-                enemy?.OnReceiveDamage();
+                if (enemy != null)
+                {
+                    enemy.OnReceiveDamage();
+                    ScoreManager.Instance.AddScore(enemy.getPos().position, 200);
+                }
             }
         });
 
@@ -133,7 +137,11 @@ public class SamuraiCharacter : BasicCharacter
         for (int i = 0; i < Hit.Length; i++)
         {
             IEnemyHurtBox enemy = Hit[i]?.GetComponent<IEnemyHurtBox>();
-            enemy?.OnReceiveDamage();
+            if (enemy != null)
+            {
+                enemy.OnReceiveDamage();
+                ScoreManager.Instance.AddScore(enemy.getPos().position, 1000);
+            }
         }
     }
     protected override void OnDrawGizmos()

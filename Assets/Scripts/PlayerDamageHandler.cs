@@ -18,4 +18,8 @@ public class PlayerDamageHandler : MonoBehaviour, IEnemyHurtBox
         player.Death();
     }
 
+    public Transform getPos()
+    {
+        return transform;
+    }
 }
