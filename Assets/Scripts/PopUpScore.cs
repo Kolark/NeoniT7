@@ -8,9 +8,10 @@ public class PopUpScore : MonoBehaviour
     TextMeshPro text;
     public void SetScore(int scoreText)
     {
-        text = GetComponent<TextMeshPro>();
+        text = transform.GetChild(0).GetComponent<TextMeshPro>();
         text.text = scoreText.ToString();
-        transform.DOMoveY(2, 0.35f).OnComplete(() => {
+        transform.DOMove((Vector2)transform.position + Vector2.up * 2 + Vector2.right * UnityEngine.Random.Range(-1f, 1f), 0.35f).OnComplete(() =>
+        {
             Destroy(gameObject);
         });
     }

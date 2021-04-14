@@ -38,11 +38,12 @@ public class ScoreManager : MonoBehaviour
         timePlayed += Time.deltaTime;
     }
 
-    public void AddScore(int toAdd)
+    public void AddScore(Vector3 position,int toAdd)
     {
         score += toAdd;
         scoreText.text = score.ToString();
-        GameObject toInstance = Instantiate(popUpScore, Vector3.zero, Quaternion.identity);
+        GameObject toInstance = Instantiate(popUpScore,position, Quaternion.identity);
+        Debug.Log("pos: - " + position);
         PopUpScore popUp = toInstance.GetComponent<PopUpScore>();
         popUp.SetScore(toAdd);
     }
