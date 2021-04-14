@@ -1,0 +1,1196 @@
+fileFormatVersion: 2
+guid: 00b7dff4199631048bde129933cde225
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7405161216303652816
+    second: PlataformasConLuz_0
+  - first:
+      213: 4518654595420915136
+    second: PlataformasConLuz_1
+  - first:
+      213: 3207519238644998742
+    second: PlataformasConLuz_2
+  - first:
+      213: 2527880081731025954
+    second: PlataformasConLuz_3
+  - first:
+      213: 4984801195086885251
+    second: PlataformasConLuz_4
+  - first:
+      213: 1533948803159821303
+    second: PlataformasConLuz_5
+  - first:
+      213: -352605069473858704
+    second: PlataformasConLuz_6
+  - first:
+      213: -6013865387879430309
+    second: PlataformasConLuz_7
+  - first:
+      213: 6483671499070127832
+    second: PlataformasConLuz_8
+  - first:
+      213: 127535246732656889
+    second: PlataformasConLuz_9
+  - first:
+      213: -739085348539273127
+    second: PlataformasConLuz_10
+  - first:
+      213: 7648685243989860447
+    second: PlataformasConLuz_11
+  - first:
+      213: 957811242865636973
+    second: PlataformasConLuz_12
+  - first:
+      213: -3152209589981122746
+    second: PlataformasConLuz_13
+  - first:
+      213: -9008144870719539175
+    second: PlataformasConLuz_14
+  - first:
+      213: -8739428800069889312
+    second: PlataformasConLuz_15
+  - first:
+      213: -365711100798155543
+    second: PlataformasConLuz_16
+  - first:
+      213: -393667839007257013
+    second: PlataformasConLuz_17
+  - first:
+      213: 6999309883477300836
+    second: PlataformasConLuz_18
+  - first:
+      213: 5302919321184823550
+    second: PlataformasConLuz_19
+  - first:
+      213: 3686600200110998698
+    second: PlataformasConLuz_20
+  - first:
+      213: -7282611649906635497
+    second: PlataformasConLuz_21
+  - first:
+      213: 868098813004606055
+    second: PlataformasConLuz_22
+  - first:
+      213: -3490476884176019698
+    second: PlataformasConLuz_23
+  - first:
+      213: 1579758847912666628
+    second: PlataformasConLuz_24
+  - first:
+      213: 2403935758127267708
+    second: PlataformasConLuz_25
+  - first:
+      213: -1765701369665077782
+    second: PlataformasConLuz_26
+  - first:
+      213: -7591667991415505251
+    second: PlataformasConLuz_27
+  - first:
+      213: -2122502796437792328
+    second: PlataformasConLuz_28
+  - first:
+      213: -8186392410946643834
+    second: PlataformasConLuz_29
+  - first:
+      213: 8102950249742124277
+    second: PlataformasConLuz_30
+  - first:
+      213: -5358414918722583904
+    second: PlataformasConLuz_31
+  - first:
+      213: 1825068329530118351
+    second: PlataformasConLuz_32
+  - first:
+      213: 4833656015580376612
+    second: PlataformasConLuz_33
+  - first:
+      213: -6743993321053883903
+    second: PlataformasConLuz_34
+  - first:
+      213: 5535974724582458877
+    second: PlataformasConLuz_35
+  - first:
+      213: 4460696022101416938
+    second: PlataformasConLuz_36
+  - first:
+      213: -4990415094595539229
+    second: PlataformasConLuz_37
+  - first:
+      213: 6802562634217897710
+    second: PlataformasConLuz_38
+  - first:
+      213: -4092029898719260359
+    second: PlataformasConLuz_39
+  - first:
+      213: -6440040705555585064
+    second: PlataformasConLuz_40
+  - first:
+      213: -1190543556173693641
+    second: PlataformasConLuz_41
+  - first:
+      213: 7789364929786140038
+    second: PlataformasConLuz_42
+  - first:
+      213: 3448666557771340962
+    second: PlataformasConLuz_43
+  - first:
+      213: -3911748053994234790
+    second: PlataformasConLuz_44
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PlataformasConLuz_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 282
+        width: 153
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 030a8b5ab159b3990800000000000000
+      internalID: -7405161216303652816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasConLuz_1
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 282
+        width: 153
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c500c6e96c75be30800000000000000
+      internalID: 4518654595420915136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasConLuz_2
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 282
+        width: 153
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 652aaadd0c5638c20800000000000000
+      internalID: 3207519238644998742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasConLuz_3
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 282
+        width: 153
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22cfc528a85d41320800000000000000
+      internalID: 2527880081731025954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasConLuz_4
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 282
+        width: 153
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 381b81db6429d2540800000000000000
+      internalID: 4984801195086885251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasConLuz_5
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 282
+        width: 153
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fb0afb2f4ea94510800000000000000
+      internalID: 1533948803159821303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasConLuz_6
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 282
+        width: 153
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07b3208be8b4b1bf0800000000000000
+      internalID: -352605069473858704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasConLuz_7
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 282
+        width: 153
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b570e64ea457a8ca0800000000000000
+      internalID: -6013865387879430309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasConLuz_8
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 282
+        width: 153
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8de366e50e0aaf950800000000000000
+      internalID: 6483671499070127832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasConLuz_9
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 218
+        width: 153
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f087d591a815c100800000000000000
+      internalID: 127535246732656889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasConLuz_10
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 218
+        width: 153
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 950fe959acd3eb5f0800000000000000
+      internalID: -739085348539273127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasConLuz_11
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 218
+        width: 153
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f50a9c674b6952a60800000000000000
+      internalID: 7648685243989860447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasConLuz_12
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 218
+        width: 153
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d66b1ec2044da4d00800000000000000
+      internalID: 957811242865636973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasConLuz_13
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 218
+        width: 153
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64f689b341a1144d0800000000000000
+      internalID: -3152209589981122746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasConLuz_14
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 218
+        width: 153
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 918318f97f3acf280800000000000000
+      internalID: -9008144870719539175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasConLuz_15
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 218
+        width: 153
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e214005fcf47b680800000000000000
+      internalID: -8739428800069889312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasConLuz_16
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 218
+        width: 153
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e4428201bbbceaf0800000000000000
+      internalID: -365711100798155543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasConLuz_17
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 218
+        width: 153
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4e0a78af29698af0800000000000000
+      internalID: -393667839007257013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasConLuz_18
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 155
+        width: 153
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4669b8d414b822160800000000000000
+      internalID: 6999309883477300836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasConLuz_19
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 155
+        width: 153
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef8e6cbc601c79940800000000000000
+      internalID: 5302919321184823550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasConLuz_20
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 155
+        width: 153
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa4008c795f692330800000000000000
+      internalID: 3686600200110998698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasConLuz_21
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 155
+        width: 153
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71d81321a47feea90800000000000000
+      internalID: -7282611649906635497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasConLuz_22
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 155
+        width: 153
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76ae313654b1c0c00800000000000000
+      internalID: 868098813004606055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasConLuz_23
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 155
+        width: 153
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0fd9f564c55f8fc0800000000000000
+      internalID: -3490476884176019698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasConLuz_24
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 155
+        width: 153
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4066d906d4e6ce510800000000000000
+      internalID: 1579758847912666628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasConLuz_25
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 155
+        width: 153
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7ff80ed5de7c5120800000000000000
+      internalID: 2403935758127267708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasConLuz_26
+      rect:
+        serializedVersion: 2
+        x: 1423
+        y: 155
+        width: 153
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aed31b995f7fe77e0800000000000000
+      internalID: -1765701369665077782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasConLuz_27
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 91
+        width: 153
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9eb9f62f2af4a690800000000000000
+      internalID: -7591667991415505251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasConLuz_28
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 91
+        width: 153
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b95d8fb3fa5b82e0800000000000000
+      internalID: -2122502796437792328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasConLuz_29
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 91
+        width: 153
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6885291c977146e80800000000000000
+      internalID: -8186392410946643834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasConLuz_30
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 91
+        width: 153
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f4ca842256737070800000000000000
+      internalID: 8102950249742124277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasConLuz_31
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 91
+        width: 153
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a20362850613a5b0800000000000000
+      internalID: -5358414918722583904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasConLuz_32
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 91
+        width: 153
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc05570e9f1f35910800000000000000
+      internalID: 1825068329530118351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasConLuz_33
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 91
+        width: 153
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42e291f4988941340800000000000000
+      internalID: 4833656015580376612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasConLuz_34
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 91
+        width: 153
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 102f9f24ec58862a0800000000000000
+      internalID: -6743993321053883903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasConLuz_35
+      rect:
+        serializedVersion: 2
+        x: 1423
+        y: 91
+        width: 153
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df547406eabb3dc40800000000000000
+      internalID: 5535974724582458877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasConLuz_36
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 21
+        width: 151
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeb5a58f56397ed30800000000000000
+      internalID: 4460696022101416938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasConLuz_37
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 21
+        width: 151
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eea2ec69eb7ebab0800000000000000
+      internalID: -4990415094595539229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasConLuz_38
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 21
+        width: 151
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eee37ee9cae876e50800000000000000
+      internalID: 6802562634217897710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasConLuz_39
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 21
+        width: 151
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9319f84dc703637c0800000000000000
+      internalID: -4092029898719260359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasConLuz_40
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 21
+        width: 151
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d7ad4e591160a6a0800000000000000
+      internalID: -6440040705555585064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasConLuz_41
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 21
+        width: 151
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73df2a481f65a7fe0800000000000000
+      internalID: -1190543556173693641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasConLuz_42
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 21
+        width: 151
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 685d9c14222691c60800000000000000
+      internalID: 7789364929786140038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasConLuz_43
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 21
+        width: 151
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2acdab466ff1cdf20800000000000000
+      internalID: 3448666557771340962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlataformasConLuz_44
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 21
+        width: 151
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5c19d6cedda6b9c0800000000000000
+      internalID: -3911748053994234790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: d4b1967725e82b749833473edc51f4af
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

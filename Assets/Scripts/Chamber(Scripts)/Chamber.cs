@@ -12,7 +12,7 @@ public class Chamber : MonoBehaviour
     int chamberIndex = 0;
     
     [SerializeField] List<WaveSpawn> waveSpawns;
-    bool hasUnlockedNextRoom = false;
+    bool isCompleted = false;
     int wavesCounter = 0;
     List<EnemyController> enemies = new List<EnemyController>();
     public CompositeCollider2D CompositeCollider2D { get => compositeCollider2D;}
@@ -92,7 +92,7 @@ public class Chamber : MonoBehaviour
         enemies = new List<EnemyController>();
         for (int i = 0; i < spawnTriggers.Length; i++)
         {
-            spawnTriggers[i].Reset();
+            spawnTriggers[i].TriggerReset();
         }
     }
 
@@ -102,19 +102,19 @@ public class Chamber : MonoBehaviour
     /// Player arrives at the chamber
     /// </summary>
     /// <param name="collision"></param>
-    //private void OnTriggerEnter2D(Collider2D collision)
-    //{
-    //    if (collision.CompareTag("Player"))
-    //    {
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player") && !isCompleted)
+        {
 
-    //        if (waveSpawns.Count == 0)
-    //        {
-    //            ChamberManager.Instance.UnlockNextChamber();
-    //            Debug.Log("0 WAVES UNLOCK");
-    //        }
+            if (waveSpawns.Count == 0)
+            {
+                ChamberManager.Instance.UnlockNextChamber();
+                isCompleted = true;
+            }
 
-    //    }
-    //}
+        }
+    }
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.CompareTag("Player") && ChamberManager.Instance.CanChamberTriggerExit)
@@ -123,12 +123,11 @@ public class Chamber : MonoBehaviour
             float y = collision.transform.position.y;
             float MaxY = transform.position.y + col2d.size.y/2f;
             float MinY = transform.position.y - col2d.size.y/2f;
-            Debug.Log($"x: {x},y: {y}");
-            Debug.Log($"X:{transform.position.x} MaxY: {MaxY},MinY: {MinY}");
             if (x > transform.position.x && y < MaxY && y > MinY)
             {
                 ChamberManager.Instance.ChangeCurrentChamber(chamberIndex);
                 compositeCollider2D.isTrigger = false;
+                isCompleted = true;
             }
             //ChamberManager.Instance.UnlockNextChamber();//TEMPORAL
         }
