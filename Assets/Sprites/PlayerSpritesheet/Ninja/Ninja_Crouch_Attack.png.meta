@@ -1,28 +1,25 @@
 fileFormatVersion: 2
-guid: aa040909c5a4e154f9df06a7b0af35a3
+guid: 67034d02c3ba9fb42abc7b30b22ff2ca
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8207696366955402134
-    second: Ninja_Jump-Sheet_0
+      213: -6214166849474629065
+    second: Ninja_Crouch_Attack_0
   - first:
-      213: -133197997698384313
-    second: Ninja_Jump-Sheet_1
+      213: 8333233773819215213
+    second: Ninja_Crouch_Attack_1
   - first:
-      213: 2371255926179962029
-    second: Ninja_Jump-Sheet_2
+      213: 254750066836960811
+    second: Ninja_Crouch_Attack_2
   - first:
-      213: 3310302320497456657
-    second: Ninja_Jump-Sheet_3
+      213: -7465984103396402726
+    second: Ninja_Crouch_Attack_3
   - first:
-      213: -4651330502333403325
-    second: Ninja_Jump-Sheet_4
+      213: -1563845995839703483
+    second: Ninja_Crouch_Attack_4
   - first:
-      213: -1016869725776876534
-    second: Ninja_Jump-Sheet_5
-  - first:
-      213: 500006428041977620
-    second: Ninja_Jump-Sheet_6
+      213: 175283533682767998
+    second: Ninja_Crouch_Attack_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -53,7 +50,7 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: 1
+    aniso: -1
     mipBias: -100
     wrapU: 1
     wrapV: 1
@@ -104,164 +101,131 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ninja_Jump-Sheet_0
+      name: Ninja_Crouch_Attack_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 70
+        width: 120
+        height: 70
+      alignment: 9
+      pivot: {x: 0.527, y: 0.385}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7327e0aac28d2c9a0800000000000000
+      internalID: -6214166849474629065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja_Crouch_Attack_1
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 70
+        width: 120
+        height: 70
+      alignment: 9
+      pivot: {x: 0.527, y: 0.385}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6d38c647f795a370800000000000000
+      internalID: 8333233773819215213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja_Crouch_Attack_2
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 70
+        width: 120
+        height: 70
+      alignment: 9
+      pivot: {x: 0.527, y: 0.385}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b26f25806dd098300800000000000000
+      internalID: 254750066836960811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja_Crouch_Attack_3
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 96
-        height: 112
+        width: 120
+        height: 70
       alignment: 9
-      pivot: {x: 0.5, y: 0.37}
+      pivot: {x: 0.527, y: 0.385}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69314a80c5897e170800000000000000
-      internalID: 8207696366955402134
+      spriteID: ad91852b30f736890800000000000000
+      internalID: -7465984103396402726
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ninja_Jump-Sheet_1
+      name: Ninja_Crouch_Attack_4
       rect:
         serializedVersion: 2
-        x: 96
+        x: 120
         y: 0
-        width: 96
-        height: 112
+        width: 120
+        height: 70
       alignment: 9
-      pivot: {x: 0.5, y: 0.44}
+      pivot: {x: 0.527, y: 0.385}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74ef4667029c62ef0800000000000000
-      internalID: -133197997698384313
+      spriteID: 546be863a5a1c4ae0800000000000000
+      internalID: -1563845995839703483
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ninja_Jump-Sheet_2
+      name: Ninja_Crouch_Attack_5
       rect:
         serializedVersion: 2
-        x: 192
+        x: 240
         y: 0
-        width: 96
-        height: 112
+        width: 120
+        height: 70
       alignment: 9
-      pivot: {x: 0.5, y: 0.49}
+      pivot: {x: 0.527, y: 0.385}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dac1f7f83b468e020800000000000000
-      internalID: 2371255926179962029
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ninja_Jump-Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 0
-        width: 96
-        height: 112
-      alignment: 9
-      pivot: {x: 0.5, y: 0.52}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 116f668fb6e80fd20800000000000000
-      internalID: 3310302320497456657
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ninja_Jump-Sheet_4
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 0
-        width: 96
-        height: 112
-      alignment: 9
-      pivot: {x: 0.5, y: 0.52}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 34f6a7b4d87237fb0800000000000000
-      internalID: -4651330502333403325
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ninja_Jump-Sheet_5
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 0
-        width: 96
-        height: 112
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a0c683c3f5a53e1f0800000000000000
-      internalID: -1016869725776876534
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ninja_Jump-Sheet_6
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 0
-        width: 96
-        height: 112
-      alignment: 9
-      pivot: {x: 0.5, y: 0.46}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 41f9ad8723160f600800000000000000
-      internalID: 500006428041977620
+      spriteID: e78f228f17bbe6200800000000000000
+      internalID: 175283533682767998
       vertices: []
       indices: 
       edges: []
@@ -269,7 +233,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: da3c10da57d87a64e97676af4ec8d8e6
     internalID: 0
     vertices: []
     indices: 
