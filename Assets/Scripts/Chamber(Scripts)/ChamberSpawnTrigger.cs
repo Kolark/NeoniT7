@@ -25,7 +25,7 @@ public class ChamberSpawnTrigger : MonoBehaviour
         }
     }
 
-    public void Reset()
+    public void TriggerReset()
     {
         hasActivated = false;        
     }

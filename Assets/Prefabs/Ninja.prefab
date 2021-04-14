@@ -299,7 +299,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1745199631861623891, guid: 0745ea1558e81d242973516d3ca8462c,
+  m_Sprite: {fileID: -934153248185395938, guid: 31ce389127c17a041842340c62338a22,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -346,8 +346,8 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.45, y: 0.5}
-    oldSize: {x: 2.625, y: 3.375}
+    pivot: {x: 0.55, y: 0.385}
+    oldSize: {x: 4, y: 4.375}
     newSize: {x: 4, y: 4}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -421,7 +421,7 @@ MonoBehaviour:
   facingRight: 1
   canJump: 1
   MaxYVelocity: 0
-  jumpDownDelay: 0
+  jumpDownDelay: 0.35
   groundCheckRadius: 0.2
   groundlayer:
     serializedVersion: 2
@@ -429,8 +429,8 @@ MonoBehaviour:
   groundCheck: {fileID: 7193628012080984817}
   maxSpeed: 15
   terminalVelocity: 5
-  jumpForce: 16
-  fallMultiplier: 10
+  jumpForce: 32
+  fallMultiplier: 15
 --- !u!50 &7193628013013815650
 Rigidbody2D:
   serializedVersion: 4
@@ -670,7 +670,7 @@ MonoBehaviour:
   cdThrow: 5
   currentAttack: 0
   invulnerableLayer: 15
-  projectil: {fileID: 399827546245339802, guid: f524c8747554edd4bb137089ef67af1d,
+  projectil: {fileID: 399827546245339802, guid: 0cfc822ccb178b840a720e85b45cc62f,
     type: 3}
   specialAttack:
     pos: {fileID: 7193628011663695314}
@@ -678,5 +678,5 @@ MonoBehaviour:
     layer:
       serializedVersion: 2
       m_Bits: 512
-  DashForce: 10
+  DashForce: 27
   UltimateJumpDistance: 10

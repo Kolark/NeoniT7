@@ -17,6 +17,8 @@ public class ChamberManager : MonoBehaviour
 
     public Action<int> onChamberUpdate;
 
+    //Represents whether or not the player is able to go to the next Chamber. 
+    //When he just wiped a chamber or the checkpoint got him there.
     public bool CanChamberTriggerExit = true;
 
     public int ChamberLength { get => chambers.Length;}
@@ -76,15 +78,14 @@ public class ChamberManager : MonoBehaviour
         compositeCollider2Ds[unlockedChambers+1].isTrigger = true;
         Debug.Log(compositeCollider2Ds[unlockedChambers + 1].gameObject.name);
     }
-
     public void UnlockPreviousChamber()
     {
-        compositeCollider2Ds[unlockedChambers-1].isTrigger = true;
-        CanChamberTriggerExit = false;
-        chambers[unlockedChambers].ResetChamber();
-        CameraController.Instance.ChangeConfiner(chambers[unlockedChambers-1].CompositeCollider2D);
+        compositeCollider2Ds[unlockedChambers-1].isTrigger = true;//Makes the last played chamber trigger.
+        CanChamberTriggerExit = false;//False so that when a triggerexit is detected, it doesn't unlock a chamber
+        chambers[unlockedChambers].ResetChamber();//Reset the chamber in which the player died.
+        CameraController.Instance.ChangeConfiner(chambers[unlockedChambers-1].CompositeCollider2D);//Changescameraconfiner
     }
-
+    //Called with delay, it enables to go to the next Chamber
     public void EnableTriggerExit()
     {
         CanChamberTriggerExit = true;
