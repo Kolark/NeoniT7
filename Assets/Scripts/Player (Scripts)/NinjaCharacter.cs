@@ -6,14 +6,16 @@ public class NinjaCharacter : BasicCharacter
 {
     //Ninja:Defensiva Dash.Se mueve hacia adelante, puede atravesar enemigos y es invulnerable durante este movimiento.
     //Ninja:Ultimate El ninja salta en su posición actual a gran altura y lanza shurikens en un cono debajo de sí mismo.
-    
+    [Header("Ninja Attributes")]
     [SerializeField] int invulnerableLayer;
-    private LayerMask defaultLayer;
-    bool isParry = false;
     [SerializeField] GameObject projectil;
     [SerializeField] AttackInfo specialAttack;
     [SerializeField] float DashForce;
     [SerializeField] float UltimateJumpDistance;
+
+
+    private LayerMask defaultLayer;
+    bool isParry = false;
     public override void Defense()
     {
         if (!isAlive) return;
@@ -31,9 +33,12 @@ public class NinjaCharacter : BasicCharacter
     }
     public override void EndParry()
     {
-        gameObject.layer = defaultLayer;
-        isParry = false;
-        canReceiveDamage = true;
+        DOVirtual.DelayedCall(1f, () => {
+            gameObject.layer = defaultLayer;
+            isParry = false;
+            canReceiveDamage = true;
+            character.Rb.velocity = Vector2.zero;
+        });
     }
     public override void Throwable()
     {
@@ -51,6 +56,9 @@ public class NinjaCharacter : BasicCharacter
         if (!canUseSpecial) return;
         if (!character.Grounded) return;
         base.Ultimate();
+
+
+        onUltAbility?.Invoke(cdUltimate);
         DOVirtual.DelayedCall(cdUltimate, () => { canUseSpecial = true; }, true);
         Character.CanJump = false;
         //salte, se quede arriba, y luego caiga

@@ -85,7 +85,7 @@ public class YakuzaCharacter : BasicCharacter
                     if (enemy != null)
                     {
                         enemy.OnReceiveDamage();
-                        ScoreManager.Instance.AddScore(enemy.getPos().position, 150);
+                        ScoreManager.Instance?.AddScore(enemy.getPos().position, 150);
                     }
                     }
                 });

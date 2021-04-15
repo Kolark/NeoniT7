@@ -86,7 +86,7 @@ public class SamuraiCharacter : BasicCharacter
                 if (enemy != null)
                 {
                     enemy.OnReceiveDamage();
-                    ScoreManager.Instance.AddScore(enemy.getPos().position, 200);
+                    ScoreManager.Instance?.AddScore(enemy.getPos().position, 200);
                 }
             }
         });
@@ -140,7 +140,7 @@ public class SamuraiCharacter : BasicCharacter
             if (enemy != null)
             {
                 enemy.OnReceiveDamage();
-                ScoreManager.Instance.AddScore(enemy.getPos().position, 1000);
+                ScoreManager.Instance?.AddScore(enemy.getPos().position, 1000);
             }
         }
     }

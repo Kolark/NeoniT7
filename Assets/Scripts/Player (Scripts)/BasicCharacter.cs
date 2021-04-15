@@ -164,7 +164,7 @@ public class BasicCharacter : MonoBehaviour
         if(enemy != null)
         {
         enemy.OnReceiveDamage();
-        ScoreManager.Instance.AddScore(enemy.getPos().position, 100);
+        ScoreManager.Instance?.AddScore(enemy.getPos().position, 100);
         }
     }
     public virtual void AttackTwo()
@@ -175,7 +175,7 @@ public class BasicCharacter : MonoBehaviour
         if (enemy != null)
         {
             enemy.OnReceiveDamage();
-            ScoreManager.Instance.AddScore(enemy.getPos().position, 200);
+            ScoreManager.Instance?.AddScore(enemy.getPos().position, 200);
         }
     }
     public virtual void AttackThree()
@@ -188,7 +188,7 @@ public class BasicCharacter : MonoBehaviour
             if (enemy != null)
             {
                 enemy.OnReceiveDamage();
-                ScoreManager.Instance.AddScore(enemy.getPos().position, 300);
+                ScoreManager.Instance?.AddScore(enemy.getPos().position, 300);
             }
         }
 
@@ -201,7 +201,7 @@ public class BasicCharacter : MonoBehaviour
         if (enemy != null)
         {
             enemy.OnReceiveDamage();
-            ScoreManager.Instance.AddScore(enemy.getPos().position, 500);
+            ScoreManager.Instance?.AddScore(enemy.getPos().position, 500);
         }
     }
     public virtual void CrouchAttack()
@@ -211,7 +211,7 @@ public class BasicCharacter : MonoBehaviour
         if (enemy != null)
         {
             enemy.OnReceiveDamage();
-            ScoreManager.Instance.AddScore(enemy.getPos().position, 150);
+            ScoreManager.Instance?.AddScore(enemy.getPos().position, 150);
         }
     }
     #endregion
