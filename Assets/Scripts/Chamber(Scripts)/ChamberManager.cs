@@ -57,6 +57,7 @@ public class ChamberManager : MonoBehaviour
     {
         ChangeCurrentChamber(-1);
     }
+    //Called when a chamber was cleared and ontriggerExit was detected
     public void ChangeCurrentChamber(int i)
     {
         if (i == unlockedChambers)
@@ -65,24 +66,30 @@ public class ChamberManager : MonoBehaviour
             GameManager.Instance.Save();
             onChamberUpdate?.Invoke(unlockedChambers);
             unlockedChambers++;
+            if(chambers[unlockedChambers].wavesSize == 0)
+            {
+                UnlockNextChamber();
+            }
         }
-            Debug.Log("change i: " + i);
         if(i == (ChamberLength - 2))
         {
             SceneController.Instance.NextLevel();
         }
         CameraController.Instance.ChangeConfiner(chambers[unlockedChambers].CompositeCollider2D);
     }
+
     public void UnlockNextChamber()
     {
         compositeCollider2Ds[unlockedChambers+1].isTrigger = true;
-        Debug.Log(compositeCollider2Ds[unlockedChambers + 1].gameObject.name);
+        chambers[unlockedChambers+1].chamberPreSpawn();
     }
+
     public void UnlockPreviousChamber()
     {
         compositeCollider2Ds[unlockedChambers-1].isTrigger = true;//Makes the last played chamber trigger.
         CanChamberTriggerExit = false;//False so that when a triggerexit is detected, it doesn't unlock a chamber
         chambers[unlockedChambers].ResetChamber();//Reset the chamber in which the player died.
+        chambers[unlockedChambers].chamberPreSpawn();
         CameraController.Instance.ChangeConfiner(chambers[unlockedChambers-1].CompositeCollider2D);//Changescameraconfiner
     }
     //Called with delay, it enables to go to the next Chamber
@@ -90,9 +97,9 @@ public class ChamberManager : MonoBehaviour
     {
         CanChamberTriggerExit = true;
     }
-    
 
 
+    #region Gizmos
     Color[] gizmosColors = { Color.red, Color.blue, Color.green, Color.cyan, Color.yellow, Color.magenta };
     private void OnDrawGizmos()
     {
@@ -104,7 +111,9 @@ public class ChamberManager : MonoBehaviour
                 new Vector3(colliders[i].size.x, colliders[i].size.y, 0));
         }
     }
+    #endregion
 
+    #region onValidate
     private void OnValidate()
     {
         //BoxCollider2D[] colliders = GetComponentsInChildren<BoxCollider2D>();
@@ -123,4 +132,5 @@ public class ChamberManager : MonoBehaviour
             
         }
     }
+    #endregion
 }
