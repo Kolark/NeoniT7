@@ -235,7 +235,7 @@ GameObject:
   - component: {fileID: 7193628012888815701}
   - component: {fileID: 9210635585881750399}
   m_Layer: 8
-  m_Name: Moriya
+  m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -298,7 +298,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -934153248185395938, guid: 31ce389127c17a041842340c62338a22,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
