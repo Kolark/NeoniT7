@@ -79965,7 +79965,7 @@ MonoBehaviour:
   externalSounds:
   - clip: {fileID: 8300000, guid: a8438720893f6594dbb6054a05f53c91, type: 3}
     mixerChannel: 0
-    volume: 1
+    volume: 0.243
     pitch: 1
     loop: 1
     source: {fileID: 0}
