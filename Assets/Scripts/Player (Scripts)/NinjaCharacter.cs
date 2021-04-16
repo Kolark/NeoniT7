@@ -12,6 +12,7 @@ public class NinjaCharacter : BasicCharacter
     [SerializeField] AttackInfo specialAttack;
     [SerializeField] float DashForce;
     [SerializeField] float UltimateJumpDistance;
+    [SerializeField] float throwableTime;
 
 
     private LayerMask defaultLayer;
@@ -46,9 +47,11 @@ public class NinjaCharacter : BasicCharacter
         if (!canUseThrowable) return;
         if (!character.Grounded) return;
         base.Throwable();
-        GameObject gameObject = Instantiate(projectil, firstAttack.pos.position, Quaternion.identity);
-        Proyectil proyectil = gameObject.GetComponent<Proyectil>();
-        proyectil.push(Vector2.right * transform.localScale.x);
+        DOVirtual.DelayedCall(throwableTime, () => {
+            GameObject gameObject = Instantiate(projectil, firstAttack.pos.position, Quaternion.identity);
+            Proyectil proyectil = gameObject.GetComponent<Proyectil>();
+            proyectil.push(Vector2.right * transform.localScale.x);
+        });
     }
     public override void Ultimate()///Dotween con ticks
     {
@@ -59,17 +62,31 @@ public class NinjaCharacter : BasicCharacter
 
 
         onUltAbility?.Invoke(cdUltimate);
+
         DOVirtual.DelayedCall(cdUltimate, () => { canUseSpecial = true; }, true);
         Character.CanJump = false;
         //salte, se quede arriba, y luego caiga
 
-        DOTween.Sequence().Append(transform.DOLocalMoveY(UltimateJumpDistance,1.0f)).AppendCallback(()=> {
-            Vector2 pos = transform.position;
+        DOTween.Sequence().Append(transform.DOLocalMoveY(UltimateJumpDistance,0.5f)).AppendCallback(()=> {
 
-            DOVirtual.DelayedCall(4, null, true).OnUpdate(() =>
+            Vector2 pos = transform.position;
+            Collider2D[] Hit = Physics2D.OverlapCircleAll(specialAttack.pos.position, specialAttack.radius, specialAttack.layer);
+            for (int i = 0; i < Hit.Length; i++)
+            {
+                IEnemyHurtBox enemy = Hit[i]?.GetComponent<IEnemyHurtBox>();
+                if (enemy != null)
+                {
+                    for (int j = 0; j < 6; j++)
+                    {
+                        enemy.OnReceiveDamage();
+                        ScoreManager.Instance?.AddScore(enemy.getPos().position, 200);
+                    }
+                }
+            }
+
+            DOVirtual.DelayedCall(.3f, null, true).OnUpdate(() =>
             {
                 transform.position = pos;
-
             });
             //Se mantiene en el aire
         });
