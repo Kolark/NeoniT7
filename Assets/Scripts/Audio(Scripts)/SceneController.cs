@@ -88,6 +88,7 @@ public class SceneController : MonoBehaviour
         //Revive
         Debug.Log("Lat Checkpoint");
         ChamberManager.Instance.UnlockPreviousChamber();
+        ScoreManager.Instance.ResetUnsavedValues();
         BasicCharacter.Instance.transform.position = CheckPoints[GameManager.Instance.Current.chamber].position;
         BasicCharacter.Instance.Revive();
         DOVirtual.DelayedCall(0.25f, () => {
