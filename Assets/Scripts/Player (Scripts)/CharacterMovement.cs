@@ -103,7 +103,7 @@ public class CharacterMovement : MonoBehaviour
                 }
 
             }, true);
-            effectsModule.PlayEffect((int)effectsSamurai.jumpParticle);
+            effectsModule?.PlayEffect((int)effectsSamurai.jumpParticle);
         }
     }
 

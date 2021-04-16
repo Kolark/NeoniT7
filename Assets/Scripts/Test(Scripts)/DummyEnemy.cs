@@ -12,7 +12,6 @@ public class DummyEnemy : MonoBehaviour, IEnemyHurtBox
     public void OnReceiveDamage()
     {
         Debug.Log("enemy attacked");
-        ScoreManager.Instance.AddScore(this.transform.position,100);
         rend.DOColor(Color.red, 0.15f).OnComplete(()=> { rend.DOColor(Color.white, 0.15f);});
     }
 
@@ -23,5 +22,10 @@ public class DummyEnemy : MonoBehaviour, IEnemyHurtBox
         {
             FindObjectOfType<PlayerDamageHandler>().OnReceiveDamage();
         }
+    }
+
+    public Transform getPos()
+    {
+        return transform;
     }
 }

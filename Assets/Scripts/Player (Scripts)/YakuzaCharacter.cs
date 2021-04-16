@@ -82,8 +82,12 @@ public class YakuzaCharacter : BasicCharacter
                 for (int i = 0; i < Hit.Length; i++)
                 {
                     IEnemyHurtBox enemy = Hit[i]?.GetComponent<IEnemyHurtBox>();
-                    enemy?.OnReceiveDamage();
-                }
+                    if (enemy != null)
+                    {
+                        enemy.OnReceiveDamage();
+                        ScoreManager.Instance?.AddScore(enemy.getPos().position, 150);
+                    }
+                    }
                 });
             });
             //Se mantiene en el aire

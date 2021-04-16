@@ -12,4 +12,9 @@ public class EnemyDamageHandler : MonoBehaviour, IEnemyHurtBox
     public void OnReceiveDamage() {
         enemy.ReceiveDamage();
     }
+
+    public Transform getPos()
+    {
+        return transform;
+    }
 }

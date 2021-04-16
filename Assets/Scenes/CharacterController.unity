@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -566,6 +566,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Samurai
+      objectReference: {fileID: 0}
+    - target: {fileID: 6748483437568352505, guid: 19d9ae5052f008c4c8ba7facee35f4e5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19d9ae5052f008c4c8ba7facee35f4e5, type: 3}
@@ -1961,11 +1966,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ninja
-      objectReference: {fileID: 0}
-    - target: {fileID: 7193628013013815648, guid: b198cc339ae52e440a9af28639affce7,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7193628013013815711, guid: b198cc339ae52e440a9af28639affce7,
         type: 3}
