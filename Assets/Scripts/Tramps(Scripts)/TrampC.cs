@@ -9,11 +9,13 @@ public class TrampC : MonoBehaviour
     [SerializeField] float releseTime;
     [SerializeField] GameObject col;
     [SerializeField] bool active = false, objectActive;
+    [SerializeField] Animator animator;
     float time = 0;
 
     private void Start()
     {
         active = objectActive;
+        animator = animator.GetComponent<Animator>();
     }
 
     private void Update()
@@ -30,10 +32,12 @@ public class TrampC : MonoBehaviour
 
         if(time>=releseTime && active)
         {
+            animator.SetBool("Active", false);
             time = 0;
             active = false;
         }else if(time >= releseTime && !active)
         {
+            animator.SetBool("Active", true);
             time = 0;
             active = true;
         }

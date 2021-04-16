@@ -8,15 +8,18 @@ public class TrampA : MonoBehaviour
     [SerializeField] Vector3 size;
     [SerializeField] LayerMask layer;
     [SerializeField] float releseTime;
-    [SerializeField] SpriteRenderer col;
-    Color previousCol;
+    Animator animator;
+
+    private void Awake()
+    {
+        animator = gameObject.GetComponent<Animator>();
+    }
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
         
         if (collision.gameObject.tag == "Player")
         {
-            
             Invoke("ActiveTramp", releseTime);
         }
     }
@@ -26,14 +29,13 @@ public class TrampA : MonoBehaviour
         Collider2D Hit = Physics2D.OverlapBox(pos.position, size, 0f, layer);
         PlayerDamageHandler player = Hit?.GetComponent<PlayerDamageHandler>();
         player?.OnReceiveDamage();
-        previousCol = col.color;
-        col.color = Color.red;
+        animator.SetTrigger("Activate");
         Invoke("Release", releseTime);
     }
 
     public void Release()
     {
-        col.color = previousCol;
+        animator.SetTrigger("Release");
     }
 
     private void OnDrawGizmos()
