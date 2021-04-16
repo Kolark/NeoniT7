@@ -83,6 +83,13 @@ public class BasicCharacter : MonoBehaviour
             return;
         }
         instance = this;
+
+
+        if(GameManager.Instance.Current.difficulty == Difficulty.Hardcore)
+        {
+            MaxLife = 1;
+        }
+
         currentLife = MaxLife;
         soundModule = GetComponent<SoundModule>();
         effectsModule = GetComponent<EffectsModule>();
