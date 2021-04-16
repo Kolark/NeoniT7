@@ -239,7 +239,7 @@ MonoBehaviour:
   currentCharacter: {fileID: 503658285}
   characters:
   - {fileID: 21300000, guid: f31cf50a53682b44680605a56dbd6db3, type: 3}
-  - {fileID: 4801478721689337830, guid: d60044253dd8e04408c55aac9f38ec0b, type: 3}
+  - {fileID: 3206246167141545538, guid: 71533ec1a4591c04794910cb1a46e21d, type: 3}
   - {fileID: 6140979293061220463, guid: 5ec518d8c0a8bb14792331ef62c4304f, type: 3}
 --- !u!1 &503658283
 GameObject:

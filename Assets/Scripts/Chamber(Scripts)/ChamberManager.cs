@@ -66,7 +66,7 @@ public class ChamberManager : MonoBehaviour
             GameManager.Instance.Save();
             onChamberUpdate?.Invoke(unlockedChambers);
             unlockedChambers++;
-            if(chambers[unlockedChambers].wavesSize == 0)
+            if(chambers[unlockedChambers].wavesSize == 0 && i != (ChamberLength - 2))
             {
                 UnlockNextChamber();
             }
