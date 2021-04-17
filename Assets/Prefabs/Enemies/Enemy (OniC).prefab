@@ -334,19 +334,19 @@ MonoBehaviour:
   sounds:
   - clip: {fileID: 8300000, guid: a30da980e18edc34e82f677b3b6aab7b, type: 3}
     mixerChannel: 1
-    volume: 1
+    volume: 0.2
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - clip: {fileID: 8300000, guid: 2288722a3f8d9d048b9caca752a96c16, type: 3}
     mixerChannel: 1
-    volume: 1
+    volume: 0.09
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - clip: {fileID: 8300000, guid: bad5d132ed28f4e4d92a736c9fd69765, type: 3}
     mixerChannel: 1
-    volume: 1
+    volume: 0.27
     pitch: 1
     loop: 0
     source: {fileID: 0}

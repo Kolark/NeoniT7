@@ -38,6 +38,8 @@ public class ScoreManager : MonoBehaviour
     private void Start()
     {
         ChamberManager.Instance.onChamberUpdate += onChamberUpdated;
+        savedScore = GameManager.Instance.Current.currentScore;
+        ResetUnsavedValues();
     }
     private void Update()
     {
@@ -48,18 +50,21 @@ public class ScoreManager : MonoBehaviour
 
     public void ResetUnsavedValues()
     {
+
         score = 0;
         timePlayed = 0;
+
+        scoreText.text = Score.ToString();
     }
 
 
     public void onChamberUpdated(int chamber)
     {
-        savedScore = score;
-        savedTimePlayed = timePlayed;
+        savedScore += score;
+        savedTimePlayed += timePlayed;
         GameManager.Instance.SetScore(savedScore, timePlayed);
-        ResetUnsavedValues();
         GameManager.Instance.Save();
+        ResetUnsavedValues();
     }
 
     public void AddScore(Vector3 position,int toAdd)
