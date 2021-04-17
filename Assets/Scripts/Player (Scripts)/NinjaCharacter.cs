@@ -97,6 +97,14 @@ public class NinjaCharacter : BasicCharacter
         });
     }
 
+    public override void Damage()
+    {
+        float f = currentLife;
+        base.Damage();
+        if(currentLife!=f) effectsModule.PlayEffect((int)effectsNinja.PlayerHitA);
+
+    }
+
     public enum effectsNinja
     {
         Dash, UltiRange, jumpParticle, UltReady, PlayerHitA, PlayerHitC
