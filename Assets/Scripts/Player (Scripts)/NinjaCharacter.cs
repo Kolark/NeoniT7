@@ -30,6 +30,7 @@ public class NinjaCharacter : BasicCharacter
         canReceiveDamage = false;
         isParry = true;
         character.Rb.AddForce(transform.localScale.x * Vector2.right * DashForce, ForceMode2D.Impulse);
+        effectsModule.PlayEffect((int)effectsNinja.Dash);
         soundModule.Play((int)NinjaSounds.Dash);
     }
     public override void EndParry()
@@ -63,13 +64,17 @@ public class NinjaCharacter : BasicCharacter
 
         onUltAbility?.Invoke(cdUltimate);
 
-        DOVirtual.DelayedCall(cdUltimate, () => { canUseSpecial = true; }, true);
+        DOVirtual.DelayedCall(cdUltimate, () => {
+            effectsModule.PlayEffect((int)effectsNinja.UltReady);
+            canUseSpecial = true; }, true);
         Character.CanJump = false;
         //salte, se quede arriba, y luego caiga
 
         DOTween.Sequence().Append(transform.DOLocalMoveY(UltimateJumpDistance,0.5f)).AppendCallback(()=> {
 
             Vector2 pos = transform.position;
+            effectsModule.PlayEffect((int)effectsNinja.UltiRange);
+            effectsModule.StopEffect((int)effectsNinja.UltReady);
             Collider2D[] Hit = Physics2D.OverlapCircleAll(specialAttack.pos.position, specialAttack.radius, specialAttack.layer);
             for (int i = 0; i < Hit.Length; i++)
             {
@@ -90,6 +95,11 @@ public class NinjaCharacter : BasicCharacter
             });
             //Se mantiene en el aire
         });
+    }
+
+    public enum effectsNinja
+    {
+        Dash, UltiRange, jumpParticle, UltReady, PlayerHitA, PlayerHitC
     }
 
     public enum NinjaSounds
