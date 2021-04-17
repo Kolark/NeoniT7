@@ -608,19 +608,19 @@ MonoBehaviour:
   sounds:
   - clip: {fileID: 8300000, guid: 8c1604f6e1da5104aaf477be2f928152, type: 3}
     mixerChannel: 1
-    volume: 1
+    volume: 0.55
     pitch: 0.8
     loop: 0
     source: {fileID: 0}
   - clip: {fileID: 8300000, guid: 8c1604f6e1da5104aaf477be2f928152, type: 3}
     mixerChannel: 1
-    volume: 1
+    volume: 0.55
     pitch: 0.9
     loop: 0
     source: {fileID: 0}
   - clip: {fileID: 8300000, guid: 8c1604f6e1da5104aaf477be2f928152, type: 3}
     mixerChannel: 1
-    volume: 1
+    volume: 0.55
     pitch: 1
     loop: 0
     source: {fileID: 0}
@@ -632,7 +632,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - clip: {fileID: 8300000, guid: 74b8ace5353426040bf4ef08be10c78c, type: 3}
     mixerChannel: 1
-    volume: 1
+    volume: 0.75
     pitch: 1
     loop: 0
     source: {fileID: 0}
