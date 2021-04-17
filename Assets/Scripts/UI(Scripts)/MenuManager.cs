@@ -114,7 +114,6 @@ public class MenuManager : MonoBehaviour
         {
             eventSystem.SetSelectedGameObject(LastCheckPointButton.gameObject);
         }
-        Debug.Log(eventSystem.currentSelectedGameObject.name);
     }
 
     public void LastCheckPoint()

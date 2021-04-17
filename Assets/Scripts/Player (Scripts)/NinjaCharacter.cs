@@ -6,14 +6,17 @@ public class NinjaCharacter : BasicCharacter
 {
     //Ninja:Defensiva Dash.Se mueve hacia adelante, puede atravesar enemigos y es invulnerable durante este movimiento.
     //Ninja:Ultimate El ninja salta en su posición actual a gran altura y lanza shurikens en un cono debajo de sí mismo.
-    
+    [Header("Ninja Attributes")]
     [SerializeField] int invulnerableLayer;
-    private LayerMask defaultLayer;
-    bool isParry = false;
     [SerializeField] GameObject projectil;
     [SerializeField] AttackInfo specialAttack;
     [SerializeField] float DashForce;
     [SerializeField] float UltimateJumpDistance;
+    [SerializeField] float throwableTime;
+
+
+    private LayerMask defaultLayer;
+    bool isParry = false;
     public override void Defense()
     {
         if (!isAlive) return;
@@ -31,9 +34,12 @@ public class NinjaCharacter : BasicCharacter
     }
     public override void EndParry()
     {
-        gameObject.layer = defaultLayer;
-        isParry = false;
-        canReceiveDamage = true;
+        DOVirtual.DelayedCall(1f, () => {
+            gameObject.layer = defaultLayer;
+            isParry = false;
+            canReceiveDamage = true;
+            character.Rb.velocity = Vector2.zero;
+        });
     }
     public override void Throwable()
     {
@@ -41,9 +47,11 @@ public class NinjaCharacter : BasicCharacter
         if (!canUseThrowable) return;
         if (!character.Grounded) return;
         base.Throwable();
-        GameObject gameObject = Instantiate(projectil, firstAttack.pos.position, Quaternion.identity);
-        Proyectil proyectil = gameObject.GetComponent<Proyectil>();
-        proyectil.push(Vector2.right * transform.localScale.x);
+        DOVirtual.DelayedCall(throwableTime, () => {
+            GameObject gameObject = Instantiate(projectil, firstAttack.pos.position, Quaternion.identity);
+            Proyectil proyectil = gameObject.GetComponent<Proyectil>();
+            proyectil.push(Vector2.right * transform.localScale.x);
+        });
     }
     public override void Ultimate()///Dotween con ticks
     {
@@ -51,17 +59,34 @@ public class NinjaCharacter : BasicCharacter
         if (!canUseSpecial) return;
         if (!character.Grounded) return;
         base.Ultimate();
+
+
+        onUltAbility?.Invoke(cdUltimate);
+
         DOVirtual.DelayedCall(cdUltimate, () => { canUseSpecial = true; }, true);
         Character.CanJump = false;
         //salte, se quede arriba, y luego caiga
 
-        DOTween.Sequence().Append(transform.DOLocalMoveY(UltimateJumpDistance,1.0f)).AppendCallback(()=> {
-            Vector2 pos = transform.position;
+        DOTween.Sequence().Append(transform.DOLocalMoveY(UltimateJumpDistance,0.5f)).AppendCallback(()=> {
 
-            DOVirtual.DelayedCall(4, null, true).OnUpdate(() =>
+            Vector2 pos = transform.position;
+            Collider2D[] Hit = Physics2D.OverlapCircleAll(specialAttack.pos.position, specialAttack.radius, specialAttack.layer);
+            for (int i = 0; i < Hit.Length; i++)
+            {
+                IEnemyHurtBox enemy = Hit[i]?.GetComponent<IEnemyHurtBox>();
+                if (enemy != null)
+                {
+                    for (int j = 0; j < 6; j++)
+                    {
+                        enemy.OnReceiveDamage();
+                        ScoreManager.Instance?.AddScore(enemy.getPos().position, 200);
+                    }
+                }
+            }
+
+            DOVirtual.DelayedCall(.3f, null, true).OnUpdate(() =>
             {
                 transform.position = pos;
-
             });
             //Se mantiene en el aire
         });

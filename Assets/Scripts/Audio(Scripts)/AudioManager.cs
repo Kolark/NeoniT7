@@ -78,7 +78,6 @@ public class AudioManager : MonoBehaviour
     public void Play(string name)
     {
         Sound s = soundDictionary[name];
-        Debug.Log("nameDictionary: " + name);
         if (s == null)
         {
             Debug.LogWarning("Sound: " + name + " not found!");

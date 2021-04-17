@@ -10,20 +10,30 @@ public class Chamber : MonoBehaviour
     BoxCollider2D col2d;
     CompositeCollider2D compositeCollider2D;
     int chamberIndex = 0;
-    
+    [SerializeField] WaveSpawn preSpawn;
+
     [SerializeField] List<WaveSpawn> waveSpawns;
     bool isCompleted = false;
     int wavesCounter = 0;
     List<EnemyController> enemies = new List<EnemyController>();
     public CompositeCollider2D CompositeCollider2D { get => compositeCollider2D;}
     ChamberSpawnTrigger[] spawnTriggers;
+
+    public int wavesSize => waveSpawns.Count;
+
+
     private void Awake()
     {
         col2d = GetComponent<BoxCollider2D>();
         compositeCollider2D = GetComponent<CompositeCollider2D>();
-        
-
     }
+
+    public void chamberPreSpawn()
+    {
+        SpawnWave(preSpawn);
+    }
+
+
     public void setIndex(int i,Transform parentTriggers)
     {
         chamberIndex = i;
@@ -34,34 +44,42 @@ public class Chamber : MonoBehaviour
         }
     }
 
-
     public void SpawnEnemies(int wave)
     {
         WaveSpawn toSpawn = waveSpawns[wave];
         wavesCounter++;
-        for (int i = 0; i < toSpawn.baseEnemies.Length; i++)
+        SpawnWave(toSpawn);
+    }
+
+    #region SpawnMethods
+
+    void SpawnWave(WaveSpawn wave)
+    {
+        for (int i = 0; i < wave.baseEnemies.Length; i++)
         {
             //Call factory to spawn EnemyA
-            EnemyController baseEnemy = EnemyFactory.Instance.CreateEnemy(toSpawn.baseEnemies[i].transform, EnemyType.Base);
-            baseEnemy.AssignChamber(this);
-            enemies.Add(baseEnemy);
+            SpawnEnemy(wave.baseEnemies[i].transform, EnemyType.Base);
         }
-        for (int i = 0; i < toSpawn.distanceEnemies.Length; i++)
+        for (int i = 0; i < wave.distanceEnemies.Length; i++)
         {
             //Call factory to spawn EnemyB
-            EnemyController distanceEnemy = EnemyFactory.Instance.CreateEnemy(toSpawn.distanceEnemies[i].transform, EnemyType.Distance);
-            distanceEnemy.AssignChamber(this);
-            enemies.Add(distanceEnemy);
+            SpawnEnemy(wave.distanceEnemies[i].transform, EnemyType.Distance);
         }
-        for (int i = 0; i < toSpawn.wallEnemies.Length; i++)
+        for (int i = 0; i < wave.wallEnemies.Length; i++)
         {
             //Call factory to spawn EnemyC
-            EnemyController wallEnemy = EnemyFactory.Instance.CreateEnemy(toSpawn.wallEnemies[i].transform, EnemyType.Wall);
-            wallEnemy.AssignChamber(this);
-            enemies.Add(wallEnemy);
+            SpawnEnemy(wave.wallEnemies[i].transform, EnemyType.Wall);
         }
     }
 
+    void SpawnEnemy(Transform _transform,EnemyType type)
+    {
+        EnemyController enemy = EnemyFactory.Instance.CreateEnemy(_transform, type);
+        enemy.AssignChamber(this);
+        enemies.Add(enemy);
+    }
+
+    #endregion
 
     public void OnEnemyDead(EnemyController enemyController)
     {
@@ -102,19 +120,21 @@ public class Chamber : MonoBehaviour
     /// Player arrives at the chamber
     /// </summary>
     /// <param name="collision"></param>
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player") && !isCompleted)
-        {
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    if (collision.CompareTag("Player") && !isCompleted)
+    //    {
 
-            if (waveSpawns.Count == 0)
-            {
-                ChamberManager.Instance.UnlockNextChamber();
-                isCompleted = true;
-            }
+    //        if (waveSpawns.Count == 0)
+    //        {
+    //            ChamberManager.Instance.UnlockNextChamber();
+    //            isCompleted = true;
+    //        }
 
-        }
-    }
+    //    }
+    //}
+
+
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.CompareTag("Player") && ChamberManager.Instance.CanChamberTriggerExit)
@@ -133,6 +153,8 @@ public class Chamber : MonoBehaviour
         }
     }
     #endregion
+
+
 #if UNITY_EDITOR
     private void OnDrawGizmos()
     {

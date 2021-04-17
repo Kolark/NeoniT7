@@ -83,6 +83,13 @@ public class BasicCharacter : MonoBehaviour
             return;
         }
         instance = this;
+
+
+        if(GameManager.Instance.Current.difficulty == Difficulty.Hardcore)
+        {
+            MaxLife = 1;
+        }
+
         currentLife = MaxLife;
         soundModule = GetComponent<SoundModule>();
         effectsModule = GetComponent<EffectsModule>();
@@ -161,16 +168,22 @@ public class BasicCharacter : MonoBehaviour
         Collider2D Hit = Physics2D.OverlapCircle(firstAttack.pos.position, firstAttack.radius, firstAttack.layer);
         soundModule.Play((int)CharacterSounds.combo1);
         IEnemyHurtBox enemy = Hit?.GetComponent<IEnemyHurtBox>();
-        enemy?.OnReceiveDamage();
-        //GetComponent<Rigidbody2D>().AddForce(Vector2.right * transform.localScale.x *5, ForceMode2D.Impulse);
+        if(enemy != null)
+        {
+        enemy.OnReceiveDamage();
+        ScoreManager.Instance?.AddScore(enemy.getPos().position, 100);
+        }
     }
     public virtual void AttackTwo()
     {
         Collider2D Hit = Physics2D.OverlapCircle(secondAttack.pos.position, secondAttack.radius, secondAttack.layer);
         soundModule.Play((int)CharacterSounds.combo2);
         IEnemyHurtBox enemy = Hit?.GetComponent<IEnemyHurtBox>();
-        enemy?.OnReceiveDamage();
-        //GetComponent<Rigidbody2D>().AddForce(Vector2.right * transform.localScale.x * 10, ForceMode2D.Impulse);
+        if (enemy != null)
+        {
+            enemy.OnReceiveDamage();
+            ScoreManager.Instance?.AddScore(enemy.getPos().position, 200);
+        }
     }
     public virtual void AttackThree()
     {
@@ -179,21 +192,34 @@ public class BasicCharacter : MonoBehaviour
         for (int i = 0; i < Hit.Length; i++)
         {
             IEnemyHurtBox enemy = Hit[i]?.GetComponent<IEnemyHurtBox>();
-            enemy?.OnReceiveDamage();
+            if (enemy != null)
+            {
+                enemy.OnReceiveDamage();
+                ScoreManager.Instance?.AddScore(enemy.getPos().position, 300);
+            }
         }
+
         //GetComponent<Rigidbody2D>().AddForce(Vector2.right * transform.localScale.x * 15, ForceMode2D.Impulse);
     }
     public virtual void AirAttack()
     {
         Collider2D Hit = Physics2D.OverlapCircle(airAttack.pos.position, airAttack.radius, airAttack.layer);
         IEnemyHurtBox enemy = Hit?.GetComponent<IEnemyHurtBox>();
-        enemy?.OnReceiveDamage();
+        if (enemy != null)
+        {
+            enemy.OnReceiveDamage();
+            ScoreManager.Instance?.AddScore(enemy.getPos().position, 500);
+        }
     }
     public virtual void CrouchAttack()
     {
         Collider2D Hit = Physics2D.OverlapBox(crouchAttack.pos.position, Vector2.right*crouchAttack.radius + Vector2.up, 0, crouchAttack.layer);
         IEnemyHurtBox enemy = Hit?.GetComponent<IEnemyHurtBox>();
-        enemy?.OnReceiveDamage();
+        if (enemy != null)
+        {
+            enemy.OnReceiveDamage();
+            ScoreManager.Instance?.AddScore(enemy.getPos().position, 150);
+        }
     }
     #endregion
 
