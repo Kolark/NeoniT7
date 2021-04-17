@@ -181,6 +181,12 @@ public class GameManager : MonoBehaviour
         current.difficulty = difficulty;
     }
 
+    public void SetScore(int score, float timeSpent)
+    {
+        current.currentScore = score;
+        current.timeSpentInLevel = timeSpent;
+    }
+
 }
 
 public enum Difficulty

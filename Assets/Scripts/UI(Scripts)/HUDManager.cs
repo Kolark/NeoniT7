@@ -14,9 +14,28 @@ public class HUDManager : MonoBehaviour
     [SerializeField] RectTransform enemyChamberIMG;
     bool hasPerformedStart = false;
     Image[] chambers;
+
+
+    private void Awake()
+    {
+        if (GameManager.Instance.Current.difficulty == Difficulty.Hardcore)
+        {
+            Image[] tochange = new Image[1];
+            tochange[0] = lifes[0];
+            for (int i = 1; i < lifes.Length; i++)
+            {
+                Destroy(lifes[i].gameObject);
+            }
+            lifes = tochange;
+        }
+    }
     IEnumerator Start()
     {
         yield return new WaitUntil(() => BasicCharacter.Instance != null);
+
+        
+
+
         cooldownAbilityUlti.INIT(BasicCharacter.Instance.UltAbility);
         cooldownAbilityThrow.INIT(BasicCharacter.Instance.ThrowAbility);
         cooldownAbilityDefense.INIT(BasicCharacter.Instance.DefenseAbility);
