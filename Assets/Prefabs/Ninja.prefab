@@ -577,19 +577,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - clip: {fileID: 8300000, guid: ea78e497cbc234e429a79e4af3f42f9a, type: 3}
+  - clip: {fileID: 8300000, guid: f4c286fe2cec1b64cb08e98cca6ba2ab, type: 3}
     mixerChannel: 1
     volume: 1
-    pitch: 1
+    pitch: 0.8
     loop: 0
     source: {fileID: 0}
-  - clip: {fileID: 8300000, guid: 74364ca0814282b4a9db58faeac5853e, type: 3}
+  - clip: {fileID: 8300000, guid: f4c286fe2cec1b64cb08e98cca6ba2ab, type: 3}
     mixerChannel: 1
     volume: 1
-    pitch: 1
+    pitch: 0.9
     loop: 0
     source: {fileID: 0}
-  - clip: {fileID: 8300000, guid: 2a7026ea7c14fff48b1af540159270a2, type: 3}
+  - clip: {fileID: 8300000, guid: f4c286fe2cec1b64cb08e98cca6ba2ab, type: 3}
     mixerChannel: 1
     volume: 1
     pitch: 1
@@ -613,7 +613,7 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  - clip: {fileID: 8300000, guid: 448f4f46475e82f45b558718414f9f6c, type: 3}
+  - clip: {fileID: 8300000, guid: 087ab8fd99e4b124aadf9ee52c3b9f45, type: 3}
     mixerChannel: 1
     volume: 1
     pitch: 1
