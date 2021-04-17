@@ -625,6 +625,12 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: b5ce4f31df7d37649bb592a7d595ec55, type: 3}
+    mixerChannel: 1
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
 --- !u!114 &7193628013013815649
 MonoBehaviour:
   m_ObjectHideFlags: 0

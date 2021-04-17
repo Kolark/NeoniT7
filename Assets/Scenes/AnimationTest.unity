@@ -243,26 +243,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 67319660049540756, guid: b198cc339ae52e440a9af28639affce7,
-        type: 3}
-      propertyPath: sounds.Array.data[6].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 087ab8fd99e4b124aadf9ee52c3b9f45, type: 3}
-    - target: {fileID: 67319660049540756, guid: b198cc339ae52e440a9af28639affce7,
-        type: 3}
-      propertyPath: sounds.Array.data[7].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: c5827c19325bd33488c3c0eae515e2a3, type: 3}
-    - target: {fileID: 628238870196219464, guid: b198cc339ae52e440a9af28639affce7,
-        type: 3}
-      propertyPath: sounds.Array.data[6].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 087ab8fd99e4b124aadf9ee52c3b9f45, type: 3}
-    - target: {fileID: 628238870196219464, guid: b198cc339ae52e440a9af28639affce7,
-        type: 3}
-      propertyPath: sounds.Array.data[7].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 087ab8fd99e4b124aadf9ee52c3b9f45, type: 3}
     - target: {fileID: 7193628013013815648, guid: b198cc339ae52e440a9af28639affce7,
         type: 3}
       propertyPath: m_Name
@@ -323,9 +303,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3888458688998051725, guid: b198cc339ae52e440a9af28639affce7, type: 3}
-    - {fileID: 628238870196219464, guid: b198cc339ae52e440a9af28639affce7, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b198cc339ae52e440a9af28639affce7, type: 3}
 --- !u!1001 &527170261
 PrefabInstance:

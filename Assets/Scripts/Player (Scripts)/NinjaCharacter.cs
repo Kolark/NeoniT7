@@ -14,7 +14,6 @@ public class NinjaCharacter : BasicCharacter
     [SerializeField] float UltimateJumpDistance;
     [SerializeField] float throwableTime;
 
-
     private LayerMask defaultLayer;
     bool isParry = false;
     public override void Defense()
@@ -31,6 +30,7 @@ public class NinjaCharacter : BasicCharacter
         canReceiveDamage = false;
         isParry = true;
         character.Rb.AddForce(transform.localScale.x * Vector2.right * DashForce, ForceMode2D.Impulse);
+        soundModule.Play((int)NinjaSounds.Dash);
     }
     public override void EndParry()
     {
@@ -91,6 +91,10 @@ public class NinjaCharacter : BasicCharacter
             //Se mantiene en el aire
         });
     }
-   
+
+    public enum NinjaSounds
+    {
+        combo1, combo2, combo3, getHit, Jump, Death, Ultimate, UltimateCharged, Dash
+    }
 
 }
