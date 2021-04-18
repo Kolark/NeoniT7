@@ -16,6 +16,9 @@ public class NinjaCharacter : BasicCharacter
 
     private LayerMask defaultLayer;
     bool isParry = false;
+
+    Sequence ultiSequence;
+
     public override void Defense()
     {
         if (!isAlive) return;
@@ -61,16 +64,24 @@ public class NinjaCharacter : BasicCharacter
         if (!character.Grounded) return;
         base.Ultimate();
 
-
+        //UltimateCoolDown
         onUltAbility?.Invoke(cdUltimate);
-
         DOVirtual.DelayedCall(cdUltimate, () => {
             effectsModule.PlayEffect((int)effectsNinja.UltReady);
             canUseSpecial = true; }, true);
+
         Character.CanJump = false;
         //salte, se quede arriba, y luego caiga
 
-        DOTween.Sequence().Append(transform.DOLocalMoveY(UltimateJumpDistance,0.5f)).AppendCallback(()=> {
+            //.Append(transform.DOLocalMoveY(UltimateJumpDistance,0.5f))
+
+        ultiSequence = DOTween.Sequence()
+            
+            .Append(DOVirtual.DelayedCall(0.5f,null).OnUpdate(()=> 
+            {
+                character.Rb.velocity = Vector2.up * UltimateJumpDistance;
+            }))
+            .AppendCallback(()=> {
 
             Vector2 pos = transform.position;
             effectsModule.PlayEffect((int)effectsNinja.UltiRange);
@@ -88,7 +99,7 @@ public class NinjaCharacter : BasicCharacter
                     }
                 }
             }
-
+            
             DOVirtual.DelayedCall(.3f, null, true).OnUpdate(() =>
             {
                 transform.position = pos;
@@ -104,7 +115,10 @@ public class NinjaCharacter : BasicCharacter
         if(currentLife!=f) effectsModule.PlayEffect((int)effectsNinja.PlayerHitA);
 
     }
-
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+    //    ultiSequence?.Kill();
+    //}
     public enum effectsNinja
     {
         Dash, UltiRange, jumpParticle, UltReady, PlayerHitA, PlayerHitC
