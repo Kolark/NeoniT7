@@ -99,7 +99,6 @@ public class NinjaCharacter : BasicCharacter
                     }
                 }
             }
-            
             DOVirtual.DelayedCall(.3f, null, true).OnUpdate(() =>
             {
                 transform.position = pos;

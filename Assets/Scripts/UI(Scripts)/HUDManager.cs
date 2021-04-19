@@ -45,6 +45,7 @@ public class HUDManager : MonoBehaviour
         BasicCharacter.Instance.onLifeChange += SetLifes;
         ChamberManager.Instance.onChamberUpdate += onChamberIncrease;
         InstatiateRooms();
+        SetChambers();
         hasPerformedStart = transform;
     }
     void InstatiateRooms()
@@ -62,7 +63,13 @@ public class HUDManager : MonoBehaviour
     {
         chambers[current].sprite = unlockedChamberSprite;
     }
-
+    void SetChambers()
+    {
+        for (int i = 0; i < ChamberManager.Instance.UnlockedChambers+1; i++)
+        {
+            onChamberIncrease(i);
+        }
+    }
     void SetLifes(int currentLife)
     {
         for (int i = 0; i < lifes.Length; i++)
