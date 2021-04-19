@@ -695,7 +695,7 @@ GameObject:
   - component: {fileID: 6748483437749586380}
   - component: {fileID: 4729143812858776294}
   m_Layer: 8
-  m_Name: Moriya
+  m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

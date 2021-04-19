@@ -40,6 +40,7 @@ public class GameManager : MonoBehaviour
     public bool IsPaused { get => isPaused;}
     public GameObject[] Characters { get => characters;}
 
+
     private void Awake()
     {
         if (instance == null)
@@ -186,6 +187,13 @@ public class GameManager : MonoBehaviour
         current.currentScore = score;
         current.timeSpentInLevel = timeSpent;
     }
+
+    #if UNITY_EDITOR
+    [Header("EDITOR STUFF")]
+    [SerializeField] public SaveInfo SaveInfoEDITOR;
+
+    #endif
+
 
 }
 

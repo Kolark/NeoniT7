@@ -57,10 +57,6 @@ public class SceneController : MonoBehaviour
                 CheckPoints[indexToSpawn].position, Quaternion.identity);
             GameManager.Instance.SetLevel(currentLevel);
         }
-
-        
-
-
         GameManager.Instance.ChangeCurrentSceneType(levelType);
         
         if (externalSounds.Length > 0)
@@ -68,9 +64,6 @@ public class SceneController : MonoBehaviour
             AudioManager.Instance.ReceiveExternal(externalSounds);
             AudioManager.Instance.Play(ScreenAudio);
         }
-
-        
-
     }
 
     public void NextLevel()
