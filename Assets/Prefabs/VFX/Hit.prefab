@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 3170320847512297625}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.59, y: 2.19, z: -1.45}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3170320847948714360}
   - {fileID: 3170320848961266691}
@@ -4732,8 +4732,8 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1729387287
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_RenderMode: 0
   m_SortMode: 0
@@ -4873,7 +4873,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.2
+      scalar: 0.1
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -5042,7 +5042,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 7
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -9544,8 +9544,8 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1729387287
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_RenderMode: 0
   m_SortMode: 0
@@ -9685,7 +9685,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.13
+      scalar: 0.065
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -9854,7 +9854,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 4
+      scalar: 6
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -14356,8 +14356,8 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1729387287
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_RenderMode: 0
   m_SortMode: 0
@@ -14497,7 +14497,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.25
+      scalar: 0.125
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -19168,8 +19168,8 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1729387287
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_RenderMode: 0
   m_SortMode: 0
@@ -19309,7 +19309,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.2
+      scalar: 0.1
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -19478,7 +19478,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5.5
+      scalar: 7.5
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -23989,8 +23989,8 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1729387287
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_RenderMode: 0
   m_SortMode: 0
