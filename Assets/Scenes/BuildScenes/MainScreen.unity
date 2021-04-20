@@ -929,6 +929,41 @@ PrefabInstance:
       propertyPath: m_Name
       value: $hGameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 6036265189149427116, guid: 97c7e36cf34e78643b9dbfbc7bea6241,
+        type: 3}
+      propertyPath: SaveInfoEDITOR.slot
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6036265189149427116, guid: 97c7e36cf34e78643b9dbfbc7bea6241,
+        type: 3}
+      propertyPath: SaveInfo.currentScene
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6036265189149427116, guid: 97c7e36cf34e78643b9dbfbc7bea6241,
+        type: 3}
+      propertyPath: SaveInfoEDITOR.chamber
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6036265189149427116, guid: 97c7e36cf34e78643b9dbfbc7bea6241,
+        type: 3}
+      propertyPath: SaveInfoEDITOR.character
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6036265189149427116, guid: 97c7e36cf34e78643b9dbfbc7bea6241,
+        type: 3}
+      propertyPath: SaveInfoEDITOR.currentScene
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6036265189149427116, guid: 97c7e36cf34e78643b9dbfbc7bea6241,
+        type: 3}
+      propertyPath: SaveInfoEDITOR.currentScore
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6036265189149427116, guid: 97c7e36cf34e78643b9dbfbc7bea6241,
+        type: 3}
+      propertyPath: SaveInfoEDITOR.timeSpentInLevel
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6036265189149427117, guid: 97c7e36cf34e78643b9dbfbc7bea6241,
         type: 3}
       propertyPath: m_RootOrder
