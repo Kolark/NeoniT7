@@ -82,7 +82,7 @@ public class NinjaCharacter : BasicCharacter
                 character.Rb.velocity = Vector2.up * UltimateJumpDistance;
             }))
             .AppendCallback(()=> {
-
+            character.Rb.velocity = Vector2.zero;
             Vector2 pos = transform.position;
             effectsModule.PlayEffect((int)effectsNinja.UltiRange);
             effectsModule.StopEffect((int)effectsNinja.UltReady);
@@ -101,6 +101,7 @@ public class NinjaCharacter : BasicCharacter
             }
             DOVirtual.DelayedCall(.3f, null, true).OnUpdate(() =>
             {
+                character.Rb.velocity = Vector2.zero;
                 transform.position = pos;
             });
             //Se mantiene en el aire
