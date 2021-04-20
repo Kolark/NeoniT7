@@ -267,15 +267,19 @@ public class BasicCharacter : MonoBehaviour
     {
         if (canReceiveDamage)
         {
+            soundModule.Play((int)CharacterSounds.getHit);
             currentLife--;
             //update ui
             onLifeChange?.Invoke(currentLife);
-            character.Anim.SetTrigger("Damage");
-            soundModule.Play((int)CharacterSounds.getHit);
+            
             bool isDead = currentLife <= 0;
             if (isDead)
             {
                 Death();
+            }
+            else
+            {
+                character.Anim.SetTrigger("Damage");
             }
         }
     }

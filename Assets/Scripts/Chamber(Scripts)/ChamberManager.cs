@@ -36,14 +36,22 @@ public class ChamberManager : MonoBehaviour
             return;
         }
         #endregion
+
+        if(GameManager.Instance != null)
+        {
+            unlockedChambers = GameManager.Instance.Current.chamber;
+        }
+
         chambers = GetComponentsInChildren<Chamber>();
         compositeCollider2Ds = GetComponentsInChildren<CompositeCollider2D>();
+
         for (int i = 0; i < compositeCollider2Ds.Length; i++)
         {
             compositeCollider2Ds[i].isTrigger = false;
         }
+
         UnlockNextChamber();
-        compositeCollider2Ds[0].isTrigger = true;
+        compositeCollider2Ds[unlockedChambers].isTrigger = true;
         for (int i = 0; i < chambers.Length; i++)
         {
             Transform spawnTriggerParent = transform.GetChild(1).GetChild(i);

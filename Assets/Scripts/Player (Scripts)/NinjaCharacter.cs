@@ -14,9 +14,11 @@ public class NinjaCharacter : BasicCharacter
     [SerializeField] float UltimateJumpDistance;
     [SerializeField] float throwableTime;
 
-
     private LayerMask defaultLayer;
     bool isParry = false;
+
+    Sequence ultiSequence;
+
     public override void Defense()
     {
         if (!isAlive) return;
@@ -31,6 +33,8 @@ public class NinjaCharacter : BasicCharacter
         canReceiveDamage = false;
         isParry = true;
         character.Rb.AddForce(transform.localScale.x * Vector2.right * DashForce, ForceMode2D.Impulse);
+        effectsModule.PlayEffect((int)effectsNinja.Dash);
+        soundModule.Play((int)NinjaSounds.Dash);
     }
     public override void EndParry()
     {
@@ -60,16 +64,28 @@ public class NinjaCharacter : BasicCharacter
         if (!character.Grounded) return;
         base.Ultimate();
 
-
+        //UltimateCoolDown
         onUltAbility?.Invoke(cdUltimate);
+        DOVirtual.DelayedCall(cdUltimate, () => {
+            effectsModule.PlayEffect((int)effectsNinja.UltReady);
+            canUseSpecial = true; }, true);
 
-        DOVirtual.DelayedCall(cdUltimate, () => { canUseSpecial = true; }, true);
         Character.CanJump = false;
         //salte, se quede arriba, y luego caiga
 
-        DOTween.Sequence().Append(transform.DOLocalMoveY(UltimateJumpDistance,0.5f)).AppendCallback(()=> {
+            //.Append(transform.DOLocalMoveY(UltimateJumpDistance,0.5f))
 
+        ultiSequence = DOTween.Sequence()
+            
+            .Append(DOVirtual.DelayedCall(0.5f,null).OnUpdate(()=> 
+            {
+                character.Rb.velocity = Vector2.up * UltimateJumpDistance;
+            }))
+            .AppendCallback(()=> {
+            character.Rb.velocity = Vector2.zero;
             Vector2 pos = transform.position;
+            effectsModule.PlayEffect((int)effectsNinja.UltiRange);
+            effectsModule.StopEffect((int)effectsNinja.UltReady);
             Collider2D[] Hit = Physics2D.OverlapCircleAll(specialAttack.pos.position, specialAttack.radius, specialAttack.layer);
             for (int i = 0; i < Hit.Length; i++)
             {
@@ -83,14 +99,34 @@ public class NinjaCharacter : BasicCharacter
                     }
                 }
             }
-
             DOVirtual.DelayedCall(.3f, null, true).OnUpdate(() =>
             {
+                character.Rb.velocity = Vector2.zero;
                 transform.position = pos;
             });
             //Se mantiene en el aire
         });
     }
-   
+
+    public override void Damage()
+    {
+        float f = currentLife;
+        base.Damage();
+        if(currentLife!=f) effectsModule.PlayEffect((int)effectsNinja.PlayerHitA);
+
+    }
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+    //    ultiSequence?.Kill();
+    //}
+    public enum effectsNinja
+    {
+        Dash, UltiRange, jumpParticle, UltReady, PlayerHitA, PlayerHitC
+    }
+
+    public enum NinjaSounds
+    {
+        combo1, combo2, combo3, getHit, Jump, Death, Ultimate, UltimateCharged, Dash
+    }
 
 }

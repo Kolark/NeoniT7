@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5176548922516128717}
   - component: {fileID: 5176548922516128754}
   m_Layer: 8
-  m_Name: Moriya
+  m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -5210093797034098098, guid: 86964da8284e6f34591e0e0da78873fa,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -197,8 +197,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grounded: 0
+  facingRight: 1
   canJump: 1
   MaxYVelocity: 0
+  jumpDownDelay: 0
   groundCheckRadius: 0.2
   groundlayer:
     serializedVersion: 2
@@ -436,7 +438,12 @@ MonoBehaviour:
   canMove: 1
   canFlip: 1
   canReceiveDamage: 1
-  maxLife: 10000
+  throwAbility: {fileID: 0}
+  ultAbility: {fileID: 0}
+  defenseAbility: {fileID: 0}
+  regenerationFrequency: 0
+  currentLife: 0
+  MaxLife: 0
   cdDefense: 5
   cdUltimate: 5
   cdThrow: 5
