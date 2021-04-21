@@ -71,6 +71,18 @@ MonoBehaviour:
     m_Localized: "Last Checkpoint\t"
     m_Metadata:
       m_Items: []
+  - m_Id: 22435039890210816
+    m_Localized: Continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22435059033014272
+    m_Localized: Back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22435103920455680
+    m_Localized: Delete Save
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
     00000000:

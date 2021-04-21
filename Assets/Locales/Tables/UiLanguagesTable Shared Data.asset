@@ -63,6 +63,18 @@ MonoBehaviour:
     m_Key: Last Checkpoint
     m_Metadata:
       m_Items: []
+  - m_Id: 22435039890210816
+    m_Key: ContinueUI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22435059033014272
+    m_Key: BackUI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22435103920455680
+    m_Key: Delete SaveUI
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

@@ -313,7 +313,7 @@
                 {
                     "name": "",
                     "id": "81eb0df2-442b-4f22-a7dd-456d161d6e55",
-                    "path": "<XInputController>/buttonEast",
+                    "path": "<XInputController>/buttonWest",
                     "interactions": "",
                     "processors": "",
                     "groups": "XboxController",
