@@ -75,6 +75,18 @@ MonoBehaviour:
     m_Key: Delete SaveUI
     m_Metadata:
       m_Items: []
+  - m_Id: 22765844848017408
+    m_Key: Score
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22765858739552256
+    m_Key: Points Accumulated
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22765888997261312
+    m_Key: Time Taken
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

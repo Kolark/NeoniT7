@@ -21,6 +21,7 @@ public class NinjaCharacter : BasicCharacter
 
     public override void Defense()
     {
+        if (!isActive) return;
         if (!isAlive) return;
         if (!canUseDefense) return;
         base.Defense();
@@ -47,6 +48,7 @@ public class NinjaCharacter : BasicCharacter
     }
     public override void Throwable()
     {
+        if (!isActive) return;
         if (!isAlive) return;
         if (!canUseThrowable) return;
         if (!character.Grounded) return;
@@ -59,6 +61,7 @@ public class NinjaCharacter : BasicCharacter
     }
     public override void Ultimate()///Dotween con ticks
     {
+        if (!isActive) return;
         if (!isAlive) return;
         if (!canUseSpecial) return;
         if (!character.Grounded) return;
