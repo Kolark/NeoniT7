@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 13481959}
   - component: {fileID: 13481961}
   - component: {fileID: 13481960}
+  - component: {fileID: 13481962}
   m_Layer: 0
   m_Name: Layer 16
   m_TagString: Untagged
@@ -147,7 +148,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 13481958}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 158.09, y: 17, z: 0}
+  m_LocalPosition: {x: 240.96, y: 17, z: 0}
   m_LocalScale: {x: 7, y: 7, z: 1}
   m_Children: []
   m_Father: {fileID: 1041633028}
@@ -217,12 +218,27 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 54, y: 3}
+  m_Size: {x: 79.7668, y: 3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &13481962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 13481958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74be23f654120a446bf6a7a4329d052d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxMultiplier: {x: -0.1, y: 0}
+  deltaMultiplier: 0.5
+  infiniteHorizontal: 0
 --- !u!1 &13818465
 GameObject:
   m_ObjectHideFlags: 0
@@ -54950,6 +54966,7 @@ GameObject:
   - component: {fileID: 1259196258}
   - component: {fileID: 1259196257}
   - component: {fileID: 1259196256}
+  - component: {fileID: 1259196259}
   m_Layer: 0
   m_Name: Layer 18
   m_TagString: Untagged
@@ -55021,7 +55038,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 75, y: 6.107885}
+  m_Size: {x: 110.787224, y: 6.107885}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -55035,12 +55052,27 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1259196255}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 158.09, y: 13.226, z: 0}
+  m_LocalPosition: {x: 240.96, y: 13.226, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 1041633028}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1259196259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259196255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74be23f654120a446bf6a7a4329d052d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxMultiplier: {x: -0.1, y: 0}
+  deltaMultiplier: 0.7
+  infiniteHorizontal: 0
 --- !u!1 &1295004276
 GameObject:
   m_ObjectHideFlags: 0
@@ -55242,6 +55274,7 @@ GameObject:
   - component: {fileID: 1339407848}
   - component: {fileID: 1339407850}
   - component: {fileID: 1339407849}
+  - component: {fileID: 1339407851}
   m_Layer: 0
   m_Name: Layer 14
   m_TagString: Untagged
@@ -55257,7 +55290,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1339407847}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 158.09, y: 14, z: 0}
+  m_LocalPosition: {x: 240.96, y: 14, z: 0}
   m_LocalScale: {x: 8, y: 8, z: 1}
   m_Children: []
   m_Father: {fileID: 1041633028}
@@ -55327,12 +55360,27 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 47, y: 3}
+  m_Size: {x: 69.42666, y: 3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1339407851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1339407847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74be23f654120a446bf6a7a4329d052d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxMultiplier: {x: -0.1, y: 0}
+  deltaMultiplier: 0.3
+  infiniteHorizontal: 0
 --- !u!1 &1358888499
 GameObject:
   m_ObjectHideFlags: 0
