@@ -349,7 +349,7 @@ MonoBehaviour:
   activateDistance: 30
   attackDistance: 4
   attackRate: 1.2
-  spawnAnimationSeconds: 4
+  spawnAnimationSeconds: 1
   attackInfo:
     pos: {fileID: 1205714093556348175}
     radius: 2
