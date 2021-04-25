@@ -127,7 +127,7 @@ public class SamuraiCharacter : BasicCharacter
         soundModule.Play((int)SamuraiSounds.Death);
         canReceiveDamage = false;
         character.Anim.SetTrigger("Death");
-        DOVirtual.DelayedCall(0.8f,()=> { MenuManager.Instance.Pause(); });
+        DOVirtual.DelayedCall(0.8f,()=> { SceneController.Instance.GoToLastCheckpoint(); });
         
     }
 

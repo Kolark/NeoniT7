@@ -120,7 +120,7 @@ public class YakuzaCharacter : BasicCharacter
         isAlive = false;
         canReceiveDamage = false;
         character.Anim.SetTrigger("Death");
-        DOVirtual.DelayedCall(0.8f, () => { MenuManager.Instance.Pause(); });
+        DOVirtual.DelayedCall(0.8f, () => { SceneController.Instance.GoToLastCheckpoint(); });
     }
 
 }
