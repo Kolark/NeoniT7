@@ -87,6 +87,7 @@ public class CharacterMovement : MonoBehaviour
 
     public void Jump()
     {
+
         if (grounded && canJump && !isCrouching)
         {
             //isJumping = true;

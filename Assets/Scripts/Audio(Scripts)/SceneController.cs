@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using Cinemachine;
 /// <summary>
 /// This class will refer to individual things that have need to be setup in each scene, therefore
 /// this class will not be in the DontDestroyOnLoad Method and lastly it will not be a prefab.
@@ -16,6 +17,7 @@ public class SceneController : MonoBehaviour
     private static SceneController instance;
     public static SceneController Instance { get => instance; }
     public GameScene CurrentLevel { get => currentLevel;}
+
     [SerializeField] Transform[] CheckPoints;
 
     /// <summary>
@@ -29,6 +31,18 @@ public class SceneController : MonoBehaviour
     [SerializeField] GameScene currentLevel;
     [SerializeField] GameScene nextLevel;
     [SerializeField] string ScreenAudio;
+
+
+    [Header("Level Info")]
+    [SerializeField] string levelName;
+    [Header("endingAnimation")]
+    [SerializeField] Transform train;
+    [SerializeField] CinemachineVirtualCamera endingAnimationVirtualCam;
+    [SerializeField] Transform[] spritePersonajes;
+
+    public Transform Train { get => train;}
+    public CinemachineVirtualCamera EndingAnimationVirtualCam { get => endingAnimationVirtualCam;}
+    public Transform[] SpritePersonajes { get => spritePersonajes;}
 
     private void Awake()
     {
@@ -56,6 +70,7 @@ public class SceneController : MonoBehaviour
             GameObject character = Instantiate(GameManager.Instance.Characters[(int)GameManager.Instance.Current.character],
                 CheckPoints[indexToSpawn].position, Quaternion.identity);
             GameManager.Instance.SetLevel(currentLevel);
+            MenuManager.Instance.StartLevelTransition(levelName);
         }
         GameManager.Instance.ChangeCurrentSceneType(levelType);
         
@@ -71,9 +86,7 @@ public class SceneController : MonoBehaviour
         GameManager.Instance.SetLevel(nextLevel);
         GameManager.Instance.Save();
         GameManager.Instance.SetChamber(0);
-        MenuManager.Instance.NextLevelTransition();
-        DOVirtual.DelayedCall(5f,() => { GameManager.Instance.ChangeScene(GameManager.Instance.Current); });
-        
+        MenuManager.Instance.NextLevelTransition(() => { GameManager.Instance.ChangeScene(GameManager.Instance.Current); });
     }
 
     public void GoToLastCheckpoint()

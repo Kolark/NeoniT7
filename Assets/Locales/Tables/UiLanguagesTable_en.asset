@@ -71,9 +71,35 @@ MonoBehaviour:
     m_Localized: "Last Checkpoint\t"
     m_Metadata:
       m_Items: []
+  - m_Id: 22435039890210816
+    m_Localized: Continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22435059033014272
+    m_Localized: Back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22435103920455680
+    m_Localized: Delete Save
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22765844848017408
+    m_Localized: Score
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22765858739552256
+    m_Localized: 'Points Accumulated: {getScore}'
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 22765888997261312
+    m_Localized: 'Time Taken: {getTimetaken}'
+    m_Metadata:
+      m_Items:
+      - id: 0
   references:
     version: 1
     00000000:
       type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_Entries: 00a0e83dd4cb0d0000a02806a8cb0d0000a0e819c2c51a0000a0681a10c91a00
+        m_Entries: 00a0e83dd4cb0d0000a02806a8cb0d0000a0e819c2c51a0000a0681a10c91a0000802d8b6de150000080ad9674e15000

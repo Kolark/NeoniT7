@@ -20,6 +20,7 @@ public class SamuraiCharacter : BasicCharacter
     [SerializeField] float projectileDelay =.45f;
     public override void Defense()
     {
+        if (!isActive) return;
         if (!isAlive) return;
         if (GameManager.Instance.IsPaused) return;
         if (!canUseDefense) return;
@@ -40,6 +41,7 @@ public class SamuraiCharacter : BasicCharacter
     }
     public override void Throwable()
     {
+        if (!isActive) return;
         if (!isAlive) return;
         if (!canUseThrowable) return;
         if (!character.Grounded) return;
@@ -55,6 +57,7 @@ public class SamuraiCharacter : BasicCharacter
     }
     public override void Ultimate()
     {
+        if (!isActive) return;
         if (!isAlive) return;
         if (!canUseSpecial) return;
         if (!character.Grounded) return;
@@ -124,7 +127,7 @@ public class SamuraiCharacter : BasicCharacter
         soundModule.Play((int)SamuraiSounds.Death);
         canReceiveDamage = false;
         character.Anim.SetTrigger("Death");
-        DOVirtual.DelayedCall(0.8f,()=> { MenuManager.Instance.Pause(); });
+        DOVirtual.DelayedCall(0.8f,()=> { SceneController.Instance.GoToLastCheckpoint(); });
         
     }
 

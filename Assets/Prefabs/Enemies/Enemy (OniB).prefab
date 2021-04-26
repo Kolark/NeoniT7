@@ -72,7 +72,7 @@ MonoBehaviour:
   detectionRange: 15
   attackDistance: 0
   attackRate: 0.5
-  spawnAnimationSeconds: 3
+  spawnAnimationSeconds: 1
   projectile: {fileID: 6205361250616600035, guid: e84017399edd9114188a8334b1d5b20a,
     type: 3}
   attackPosition: {fileID: 3393202428437890181}

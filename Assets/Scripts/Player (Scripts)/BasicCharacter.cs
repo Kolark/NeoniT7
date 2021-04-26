@@ -41,6 +41,8 @@ public class BasicCharacter : MonoBehaviour
     protected bool canUseThrowable = true;
     protected bool isAlive = true;
 
+    protected bool isActive = false;
+
     [Space]
     #endregion
 
@@ -107,7 +109,7 @@ public class BasicCharacter : MonoBehaviour
     }
     protected virtual void Update()
     {
-
+        if(!isActive) return;
         character.Anim.SetBool("isAlive", isAlive);
         if (!isAlive) return;
         if (GameManager.Instance.IsPaused) return;
@@ -115,6 +117,7 @@ public class BasicCharacter : MonoBehaviour
     }
     protected virtual void FixedUpdate()
     {
+        if (!isActive) return;
         if (!isAlive) return;
         if (GameManager.Instance.IsPaused) return;
         character.Crouch();
@@ -132,6 +135,7 @@ public class BasicCharacter : MonoBehaviour
     #region Attacks
     public virtual void Attack()
     {
+        if (!isActive) return;
         if (GameManager.Instance.IsPaused) return;
         if (canReceiveInput)
         {
@@ -225,6 +229,7 @@ public class BasicCharacter : MonoBehaviour
 
     public virtual void Defense()
     {
+        if (!isActive) return;
         if (!isAlive) return;
         if (!canUseDefense) return;
         if (GameManager.Instance.IsPaused) return;
@@ -240,6 +245,7 @@ public class BasicCharacter : MonoBehaviour
     }
     public virtual void Ultimate()
     {
+        if (!isActive) return;
         if (!isAlive) return;
         if (!canUseSpecial) return;
         if (!character.Grounded) return;
@@ -252,6 +258,7 @@ public class BasicCharacter : MonoBehaviour
     
     public virtual void Throwable()
     {
+        if (!isActive) return;
         if (!isAlive) return;
         if (!canUseThrowable) return;
         if (!character.Grounded) return;
@@ -304,7 +311,7 @@ public class BasicCharacter : MonoBehaviour
         canReceiveDamage = false;
         character.CanJump = false;
         character.Anim.SetTrigger("Death");
-        DOVirtual.DelayedCall(0.8f, () => { MenuManager.Instance.Pause(); });
+        DOVirtual.DelayedCall(0.8f, () => { SceneController.Instance.GoToLastCheckpoint(); });
     }
 
     public virtual void Counter()
@@ -366,6 +373,16 @@ public class BasicCharacter : MonoBehaviour
         onLifeChange?.Invoke(currentLife);
         Debug.Log("revived");
     }
+
+    public void Activate()
+    {
+        isActive = true;
+    }
+    public void Deactivate()
+    {
+        isActive = false;
+    }
+
 }
 
 public enum CharacterSounds

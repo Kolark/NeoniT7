@@ -18,6 +18,10 @@ public class EffectsModule : MonoBehaviour
             if (!particles[i].isPlaying && particles[i].name != "JumpParticleSystem")
             {
                 particles[i].Play(true);
+                if(particles[i].gameObject.name == "Portal")
+                {
+                    particles[i].gameObject.transform.SetParent(null);
+                }
             }else if(!particles[i].isPlaying && particles[i].name == "JumpParticleSystem")
             {
                 if(jump == null)
