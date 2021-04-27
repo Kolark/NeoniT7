@@ -69,7 +69,7 @@ public class SceneController : MonoBehaviour
                 CheckPoints[indexToSpawn].position, Quaternion.identity);
             GameManager.Instance.SetLevel(currentLevel);
             MenuManager.Instance.StartLevelTransition(levelName);
-            ScoreManager.Instance.
+
         }
         GameManager.Instance.ChangeCurrentSceneType(levelType);
         
