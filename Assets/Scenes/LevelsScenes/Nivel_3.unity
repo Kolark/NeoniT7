@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -64000,8 +64000,8 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
   levelType: 1
-  currentLevel: 6
-  nextLevel: 7
+  currentLevel: 7
+  nextLevel: 8
   ScreenAudio: Nivel3
   levelName: El mero nivel 3
   train: {fileID: 2050348310}

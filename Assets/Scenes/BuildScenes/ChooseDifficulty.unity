@@ -281,7 +281,7 @@ MonoBehaviour:
   finalScale: {x: 0.15, y: 0.15}
   easeType: 4
   duration: 0.25
-  sceneToGo: 4
+  sceneToGo: 5
   difficulty: 0
 --- !u!114 &78992582
 MonoBehaviour:
@@ -1001,7 +1001,7 @@ MonoBehaviour:
   finalScale: {x: 0.15, y: 0.15}
   easeType: 4
   duration: 0.25
-  sceneToGo: 4
+  sceneToGo: 5
   difficulty: 1
 --- !u!114 &634529040
 MonoBehaviour:
@@ -1771,9 +1771,13 @@ MonoBehaviour:
   CheckPoints: []
   externalSounds: []
   levelType: 0
-  currentLevel: 0
-  nextLevel: 0
+  currentLevel: 4
+  nextLevel: 5
   ScreenAudio: 
+  levelName: 
+  train: {fileID: 0}
+  endingAnimationVirtualCam: {fileID: 0}
+  spritePersonajes: []
 --- !u!1 &8400702300190365232
 GameObject:
   m_ObjectHideFlags: 0

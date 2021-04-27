@@ -4,19 +4,27 @@ using UnityEngine;
 using UnityEngine.UI;
 public class Comic : MonoBehaviour
 {
-    [SerializeField] Hoja[] hojas;
-    int sheetIndex = 0;
+    [SerializeField] Hoja hoja;
 
-    bool hasFinished = false;
+
+    private void Start()
+    {
+        InputController.Instance.Jump += Step;
+        InputController.Instance.SpecialAbility += Skip;
+        hoja.onCompleted += SceneController.Instance.NextLevel;
+    }
+
+    public void Skip()
+    {
+        InputController.Instance.Jump -= Step;
+        InputController.Instance.SpecialAbility -= Skip;
+        hoja.onCompleted?.Invoke();
+    }
 
     public void Step()
     {
-        if (hasFinished)
-        {
-            hojas[sheetIndex].NextVignete();
-            hasFinished = sheetIndex < hojas.Length;
-        }
+        hoja.NextVignete();
     }
-
+    
 
 }

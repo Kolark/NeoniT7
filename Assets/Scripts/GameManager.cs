@@ -193,8 +193,6 @@ public class GameManager : MonoBehaviour
     [SerializeField] public SaveInfo SaveInfoEDITOR;
 
     #endif
-
-
 }
 
 public enum Difficulty
@@ -209,10 +207,12 @@ public enum CharacterType
     Ninja,
     Yakuza
 }
+
 public enum GameScene
 {
     MainScreen,
     SaveScreen,
+    ComicIntroductionScreen,
     CharacterScreen,
     DifficultyScreen,
     Level1,

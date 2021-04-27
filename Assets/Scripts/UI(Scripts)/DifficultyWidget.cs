@@ -11,9 +11,8 @@ public class DifficultyWidget : UIWidget
         GameManager.Instance.SetDifficulty(difficulty);
         GameManager.Instance.Save();
 
-        SaveSystem.debugSaveinfo(GameManager.Instance.Current);
-        GameManager.Instance.ChangeScene(GameManager.Instance.Current.currentScene);
-
+        //SaveSystem.debugSaveinfo(GameManager.Instance.Current);
+        SceneController.Instance.NextLevel();
     }
 
 

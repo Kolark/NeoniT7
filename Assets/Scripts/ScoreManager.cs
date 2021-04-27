@@ -50,11 +50,9 @@ public class ScoreManager : MonoBehaviour
 
     public void ResetUnsavedValues()
     {
-
         score = 0;
         timePlayed = 0;
-
-        scoreText.text = Score.ToString();
+        scoreText.text = Score.ToString() + " pts";
     }
 
 

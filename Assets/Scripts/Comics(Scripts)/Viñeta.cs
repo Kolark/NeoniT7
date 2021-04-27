@@ -18,7 +18,7 @@ public class Viñeta
     public TweenEnterDirection directionEnter;
     public RectTransform rectT;
     public float DurationTween = 1;
-
+    public int row = 0;
 
     bool HasDoneTweening = false;
     bool hasCompletedAllTexts = false;

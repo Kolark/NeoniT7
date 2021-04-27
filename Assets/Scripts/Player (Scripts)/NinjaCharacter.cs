@@ -39,11 +39,12 @@ public class NinjaCharacter : BasicCharacter
     }
     public override void EndParry()
     {
-        DOVirtual.DelayedCall(1f, () => {
+        DOVirtual.DelayedCall(0.15f, () => {
             gameObject.layer = defaultLayer;
             isParry = false;
             canReceiveDamage = true;
             character.Rb.velocity = Vector2.zero;
+            Debug.Log("FORCED DOWN TO ZERO");
         });
     }
     public override void Throwable()

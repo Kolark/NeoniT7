@@ -93,7 +93,7 @@ public class MenuManager : MonoBehaviour
 
         hasEndedTransition = false;
 
-        //EvaluateBottonOne();
+        EvaluateBottonOne();
 
         if (!BasicCharacter.Instance.IsAlive && GameManager.Instance.IsPaused)
         {
@@ -128,20 +128,20 @@ public class MenuManager : MonoBehaviour
     }
 
     #region todeletesoon
-    //void EvaluateBottonOne()
-    //{
-    //    ContinueButton.gameObject.SetActive(BasicCharacter.Instance.IsAlive);
-    //    LastCheckPointButton.gameObject.SetActive(!BasicCharacter.Instance.IsAlive);
-    //    if (BasicCharacter.Instance.IsAlive)
-    //    {
+    void EvaluateBottonOne()
+    {
+        //ContinueButton.gameObject.SetActive(BasicCharacter.Instance.IsAlive);
+        //LastCheckPointButton.gameObject.SetActive(!BasicCharacter.Instance.IsAlive);
+        if (BasicCharacter.Instance.IsAlive)
+        {
 
-    //        eventSystem.SetSelectedGameObject(ContinueButton.gameObject);
-    //    }
-    //    else
-    //    {
-    //        eventSystem.SetSelectedGameObject(LastCheckPointButton.gameObject);
-    //    }
-    //}
+            eventSystem.SetSelectedGameObject(ContinueButton.gameObject);
+        }
+        //else
+        //{
+        //    eventSystem.SetSelectedGameObject(LastCheckPointButton.gameObject);
+        //}
+    }
 
     //public void LastCheckPoint()
     //{

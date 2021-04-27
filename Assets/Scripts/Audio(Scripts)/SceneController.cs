@@ -56,9 +56,7 @@ public class SceneController : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-        #endregion
-        
-        
+        #endregion   
     }
 
     public void Start()
@@ -71,6 +69,7 @@ public class SceneController : MonoBehaviour
                 CheckPoints[indexToSpawn].position, Quaternion.identity);
             GameManager.Instance.SetLevel(currentLevel);
             MenuManager.Instance.StartLevelTransition(levelName);
+            ScoreManager.Instance.
         }
         GameManager.Instance.ChangeCurrentSceneType(levelType);
         
@@ -86,7 +85,14 @@ public class SceneController : MonoBehaviour
         GameManager.Instance.SetLevel(nextLevel);
         GameManager.Instance.Save();
         GameManager.Instance.SetChamber(0);
-        MenuManager.Instance.NextLevelTransition(() => { GameManager.Instance.ChangeScene(GameManager.Instance.Current); });
+        if(MenuManager.Instance != null)
+        {
+            MenuManager.Instance.NextLevelTransition(() => { GameManager.Instance.ChangeScene(GameManager.Instance.Current); });
+        }
+        else
+        {
+            GameManager.Instance.ChangeScene(GameManager.Instance.Current);
+        }
     }
 
     public void GoToLastCheckpoint()

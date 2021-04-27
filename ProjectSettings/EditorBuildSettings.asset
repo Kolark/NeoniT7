@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/BuildScenes/ChooseSaveScreen.unity
     guid: 2477201f47603cf4a92881102e41f135
   - enabled: 1
+    path: Assets/Scenes/BuildScenes/ComicIntroduction.unity
+    guid: ab3b3e31fc5a44149b62832addd97d17
+  - enabled: 1
     path: Assets/Scenes/BuildScenes/ChooseCharacter.unity
     guid: 5bc7eb263f4815d43a9571eec2210d0d
   - enabled: 1

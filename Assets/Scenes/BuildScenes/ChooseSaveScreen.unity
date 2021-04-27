@@ -1716,9 +1716,13 @@ MonoBehaviour:
   CheckPoints: []
   externalSounds: []
   levelType: 0
-  currentLevel: 0
-  nextLevel: 0
+  currentLevel: 1
+  nextLevel: 2
   ScreenAudio: 
+  levelName: 
+  train: {fileID: 0}
+  endingAnimationVirtualCam: {fileID: 0}
+  spritePersonajes: []
 --- !u!224 &6676633596119424339 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4321323754902476398, guid: e3a7d19aa429573418ef9286f54f7990,

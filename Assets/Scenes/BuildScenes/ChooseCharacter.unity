@@ -374,7 +374,7 @@ MonoBehaviour:
   finalScale: {x: 0.1, y: 0.1}
   easeType: 4
   duration: 0.25
-  sceneToGo: 3
+  sceneToGo: 4
   character: 0
 --- !u!114 &553681889
 MonoBehaviour:
@@ -710,7 +710,7 @@ MonoBehaviour:
   finalScale: {x: 0.1, y: 0.1}
   easeType: 4
   duration: 0.25
-  sceneToGo: 3
+  sceneToGo: 4
   character: 2
 --- !u!114 &839015465
 MonoBehaviour:
@@ -1213,7 +1213,7 @@ MonoBehaviour:
   finalScale: {x: 0.1, y: 0.1}
   easeType: 4
   duration: 0.25
-  sceneToGo: 3
+  sceneToGo: 4
   character: 1
 --- !u!114 &1186406249
 MonoBehaviour:
@@ -2192,8 +2192,8 @@ MonoBehaviour:
   CheckPoints: []
   externalSounds: []
   levelType: 0
-  currentLevel: 0
-  nextLevel: 0
+  currentLevel: 3
+  nextLevel: 4
   ScreenAudio: 
   levelName: 
   train: {fileID: 0}
