@@ -11,16 +11,20 @@ public class Comic : MonoBehaviour
     {
         InputController.Instance.Jump += Step;
         InputController.Instance.SpecialAbility += Skip;
-        hoja.onCompleted += SceneController.Instance.NextLevel;
+        hoja.onCompleted += onCompleted;
     }
 
     public void Skip()
     {
-        InputController.Instance.Jump -= Step;
-        InputController.Instance.SpecialAbility -= Skip;
         hoja.onCompleted?.Invoke();
     }
-
+    public void onCompleted()
+    {
+        InputController.Instance.Jump -= Step;
+        InputController.Instance.SpecialAbility -= Skip;
+        SceneController.Instance.NextLevel();
+        
+    }
     public void Step()
     {
         hoja.NextVignete();
