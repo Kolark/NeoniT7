@@ -28,7 +28,7 @@ public class TrampA : MonoBehaviour
     {
         Collider2D Hit = Physics2D.OverlapBox(pos.position, size, 0f, layer);
         PlayerDamageHandler player = Hit?.GetComponent<PlayerDamageHandler>();
-        player?.OnReceiveDamage();
+        player?.Death();
         animator.SetTrigger("Activate");
         Invoke("Release", releseTime);
     }
