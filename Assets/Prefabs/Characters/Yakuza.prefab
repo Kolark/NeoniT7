@@ -100,7 +100,7 @@ Animator:
   m_GameObject: {fileID: 5176548922516128752}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 23c2330018a7c044783bc277ff8f5d59, type: 2}
+  m_Controller: {fileID: 22100000, guid: 4f469f0ef55155c45ab068ddca1da59f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -448,7 +448,7 @@ MonoBehaviour:
   cdUltimate: 5
   cdThrow: 5
   currentAttack: 3
-  projectil: {fileID: 399827546245339802, guid: f524c8747554edd4bb137089ef67af1d,
+  projectil: {fileID: 399827546245339802, guid: 259064eff7da2fc43b5a94b22aee977e,
     type: 3}
   specialAttack:
     pos: {fileID: 5176548923623687710}
