@@ -43569,7 +43569,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 1
   currentHealth: 0
-  spawnAnimationSeconds: 3
+  spawnAnimationSeconds: 1
 --- !u!114 &5310264088954597801
 MonoBehaviour:
   m_ObjectHideFlags: 0
