@@ -1172,8 +1172,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -1685}
-  m_SizeDelta: {x: 1358.8503, y: 2233.2576}
+  m_AnchoredPosition: {x: 0, y: -3245}
+  m_SizeDelta: {x: 1358.8503, y: 5352.5625}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1475232210
 MonoBehaviour:
@@ -1194,12 +1194,24 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna\n aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-    eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-    in culpa qui officia deserunt mollit anim id est laborum.\""
+  m_text: "Ne-Oni\r\npor\r\nPineapple Games\r\n\r\nDirecci\xF3n Y Producci\xF3n\r\nDaniel
+    Mu\xF1oz Perez - Productor\r\nNicol\xE1s Escobar Espinosa - Director y Coordinador\r\n\r\nDise\xF1o\r\nNicol\xE1s
+    Escobar Espinosa - Dise\xF1ador en L\xEDder\r\nJuan Fernando Ramirez - Dise\xF1ador\r\nDaniel
+    Giraldo - Dise\xF1ador\r\nJuan Camilo Calvache - Dise\xF1ador\r\n\r\nDesarrollo
+    y Programaci\xF3n\r\nFelipe Loaiza - Desarrollador en Jefe\r\nDaniel Giraldo
+    - Desarrollador\r\nJuan Camilo Calvache - Desarrollador\r\nJuan Camilo Sierra
+    - Desarrollador\r\n\r\nArte y Animaci\xF3n\r\nJulian Jaramillo - Director de
+    Arte, animaci\xF3n y conceptualizaci\xF3n\r\nChristian Enrique Andrade - Artista\r\nJulian
+    David Gutierrez - Artista y Animador\r\nSebastian Restrepo - Artista y Animador\r\nIlene
+    Moreno - Artista y Animador\r\nJuan Jose D\xEDaz - Artista y Animador\r\n\r\nEfectos
+    visuales\r\nSantiago Cortes Monsalve - Dise\xF1ador de Efectos Visuales en lider\r\nDaniel
+    Mu\xF1oz Perez - Dise\xF1ador de Efectos Visuales\r\nJuan Fernando Ramirez -
+    Dise\xF1ador de Efectos Visuales\r\nAndr\xE9s Mu\xF1oz Ramirez - Dise\xF1ador
+    de Efectos Visuales\r\n\r\nEfectos de Sonido\r\nAndr\xE9s Mu\xF1oz Ramirez -
+    Dise\xF1ador Sonoro Principal\r\nFelipe Loaiza - Dise\xF1ador de Sonido\r\n\r\nAgradecimientos
+    Especiales\r\nJoseph Robert Olin - Docente\r\nCristian Adarve - Docente\r\nLuz
+    Viviana Cobaleda - Docente\r\nAssets de Terceros (Dentro del Repositorio se encuentran
+    sus cuentas)\r\n\r\nInserte aqui foto de todos juntos\r\n\r\nFIN\r\nNe-Oni"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1226,24 +1238,24 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 108
-  m_fontSizeBase: 108
+  m_fontSize: 72
+  m_fontSizeBase: 72
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 8
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 10.8
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
   m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
+  m_wordWrappingRatios: 0
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
@@ -1288,7 +1300,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da3aa5582ddce9048b3a2e8a8e2b71db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MovementX: 1700
+  MovementX: 3245
   Duration: 30
 --- !u!1001 &1565075328
 PrefabInstance:
