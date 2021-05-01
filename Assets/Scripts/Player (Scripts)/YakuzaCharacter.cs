@@ -12,7 +12,8 @@ public class YakuzaCharacter : BasicCharacter
     [SerializeField] float UltimateWalkDistance;
     [SerializeField] Vector2 dir;
     [SerializeField] float walkUltiTime, jumpUltiTime, suspensionUltiTime, fallUltiTime;
-    
+    [SerializeField] float throwableTime;
+
     public override void Defense()
     {
         if (!isAlive) return;
@@ -46,9 +47,12 @@ public class YakuzaCharacter : BasicCharacter
         if (!canUseThrowable) return;
         if (!character.Grounded) return;
         base.Throwable();
-        GameObject gameObject = Instantiate(projectil, firstAttack.pos.position, Quaternion.identity);
-        Proyectil proyectil = gameObject.GetComponent<Proyectil>();
-        proyectil.push(Vector2.right * transform.localScale.x);
+        DOVirtual.DelayedCall(throwableTime, null, true).OnComplete(() =>
+        {
+            GameObject gameObject = Instantiate(projectil, firstAttack.pos.position, Quaternion.identity);
+            Proyectil proyectil = gameObject.GetComponent<Proyectil>();
+            proyectil.push(Vector2.right * transform.localScale.x);
+        });
     }
     public override void Ultimate()
     {

@@ -78,7 +78,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -5210093797034098098, guid: 86964da8284e6f34591e0e0da78873fa,
+  m_Sprite: {fileID: -241754078988592125, guid: f9315f7605e412944825437b4e48c80d,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -125,8 +125,8 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 2.17}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.425, y: 0}
-    oldSize: {x: 2.28125, y: 4.09375}
+    pivot: {x: 0.45, y: 0}
+    oldSize: {x: 4, y: 5}
     newSize: {x: 4, y: 4}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -200,7 +200,7 @@ MonoBehaviour:
   facingRight: 1
   canJump: 1
   MaxYVelocity: 0
-  jumpDownDelay: 0
+  jumpDownDelay: 0.35
   groundCheckRadius: 0.2
   groundlayer:
     serializedVersion: 2
@@ -208,8 +208,8 @@ MonoBehaviour:
   groundCheck: {fileID: 5176548924356040004}
   maxSpeed: 15
   terminalVelocity: 5
-  jumpForce: 16
-  fallMultiplier: 10
+  jumpForce: 32
+  fallMultiplier: 15
 --- !u!50 &5176548922549968135
 Rigidbody2D:
   serializedVersion: 4
@@ -468,6 +468,7 @@ MonoBehaviour:
   jumpUltiTime: 0.95
   suspensionUltiTime: 0.32
   fallUltiTime: 0.29
+  throwableTime: 0.6
 --- !u!1 &5176548923494640327
 GameObject:
   m_ObjectHideFlags: 0
@@ -522,7 +523,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5176548923623687711}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: 1.94, z: 0}
+  m_LocalPosition: {x: 2.68, y: 3.14, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5176548922516128755}
@@ -552,7 +553,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5176548923979001328}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.92, y: 0.36, z: 0}
+  m_LocalPosition: {x: 2.32, y: 1.97, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5176548922516128755}
