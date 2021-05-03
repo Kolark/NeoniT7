@@ -17,16 +17,44 @@ public class SaveSystem
     public static readonly int SavesNumber = 4;
     private static readonly string SaveName = "SaveSlot";
     private static readonly string fileFormat = "save";
-
+    public static readonly string version = "1";
     /// <summary>
     /// Checks if the saveFolder exists others it will procede to create one
     /// </summary>
     public static void Init()
     {
+        Debug.Log("INIT");
         if (!Directory.Exists(SAVE_FOLDER))
         {
             Directory.CreateDirectory(SAVE_FOLDER);
-        };
+            PlayerPrefs.SetString("version", version);
+        }
+        else
+        {
+            if (PlayerPrefs.HasKey("version"))
+            {
+                string currentVersion = PlayerPrefs.GetString("version");
+                Debug.Log("v - " + currentVersion);
+                if (version != currentVersion)
+                {
+                    //DeleteAllSaves
+                    for (int i = 0; i < SavesNumber; i++)
+                    {
+                        Delete(i);
+                    }
+                    //UpdateVersion
+                    PlayerPrefs.SetString("version", version);
+                }
+            }
+            else
+            {
+                for (int i = 0; i < SavesNumber; i++)
+                {
+                    Delete(i);
+                }
+                PlayerPrefs.SetString("version", version);
+            }
+        }
     }
     /// <summary>
     /// Checks if the file at that slot doesn't exist so that it can create it.
