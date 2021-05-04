@@ -48,11 +48,16 @@ public class Hoja : MonoBehaviour
                 }
             }
 
-            if(!(activated < viñetas.Count))
-            {
-                Debug.Log("ULTIMO");
-                onCompleted?.Invoke();
-            }
+            //if(!(activated < viñetas.Count))
+            //{
+            //    Debug.Log("ULTIMO");
+            //    onCompleted?.Invoke();
+            //}
+        }
+        else 
+        {
+            Debug.Log("ULTIMO");
+            onCompleted?.Invoke();
         }
     }
 
