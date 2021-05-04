@@ -32,7 +32,6 @@ public class SceneController : MonoBehaviour
     [SerializeField] GameScene nextLevel;
     [SerializeField] string ScreenAudio;
 
-
     [Header("Level Info")]
     [SerializeField] string levelName;
     [Header("endingAnimation")]
@@ -62,13 +61,28 @@ public class SceneController : MonoBehaviour
     public void Start()
     {
         GameManager.Instance.Unpause();
+        
+        if(Comic.Instance != null)
+        {
+            if(levelType == SceneType.Level)
+            {
+                Comic.Instance.INIT_COMIC(() => { MenuManager.Instance.StartLevelTransition(levelName); });
+            }
+            else
+            {
+                Comic.Instance.INIT_COMIC(() => { NextLevel(); });
+            }
+        }
+
+
         if (levelType == SceneType.Level)
         {
+            
             int indexToSpawn = GameManager.Instance.Current.chamber;
             GameObject character = Instantiate(GameManager.Instance.Characters[(int)GameManager.Instance.Current.character],
                 CheckPoints[indexToSpawn].position, Quaternion.identity);
             GameManager.Instance.SetLevel(currentLevel);
-            MenuManager.Instance.StartLevelTransition(levelName);
+            //MenuManager.Instance.StartLevelTransition(levelName);
 
         }
         GameManager.Instance.ChangeCurrentSceneType(levelType);

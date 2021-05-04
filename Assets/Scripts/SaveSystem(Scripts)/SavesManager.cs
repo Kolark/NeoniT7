@@ -7,6 +7,8 @@ public class SavesManager : MonoBehaviour
     private static SavesManager instance;
     public static SavesManager Instance { get { return instance;} }
 
+    
+
     List<SaveWidget> saveWidgets = new List<SaveWidget>();
     List<SaveInfo> saveInfos;
     int currentSelected = 0;
@@ -22,7 +24,7 @@ public class SavesManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-        SaveSystem.Init();
+        
         saveInfos = SaveSystem.LoadAll(); //Finds all SaveInfos
 
         for (int i = 0; i < transform.childCount; i++)
