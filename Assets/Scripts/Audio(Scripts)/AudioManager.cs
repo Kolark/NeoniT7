@@ -122,6 +122,11 @@ public class AudioManager : MonoBehaviour
         SetSounds(sounds);
         AddToDictionary(sounds);
     }
+
+    public void SetMixerVolume(MixerChannel mixerChannel,float vol)
+    {
+        mixers[(int)mixerChannel].audioMixer.SetFloat("mixerVol", vol);
+    }
 }
 /// <summary>
 /// List of all the possible mixer channels

@@ -94,7 +94,7 @@ public class PrefabTools : EditorWindow
 
     private void CreatePrefab(string obj)
     {
-        Object prefab = AssetDatabase.LoadAssetAtPath($"Assets/Prefabs/$h{obj}.prefab", typeof(GameObject));
+        Object prefab = AssetDatabase.LoadAssetAtPath($"Assets/Prefabs/Managers/$h{obj}.prefab", typeof(GameObject));
         
         //GameObject toInstatiate = Instantiate(prefab, Vector3.zero, Quaternion.identity) as GameObject;
         GameObject toInstatiate = PrefabUtility.InstantiatePrefab(prefab) as GameObject;
