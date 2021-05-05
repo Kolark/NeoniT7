@@ -107,7 +107,14 @@ public class OniB_AI : MonoBehaviour,IStateMachineAI
 
         if (playerDetected) target = BasicCharacter.Instance.transform;
         else if (!playerDetected) target = null;
+        Flip();
         //else if (!playerDetected) target = null;
+    }
+
+    void Flip() {
+        float distanceToPlayer = (transform.position.x - BasicCharacter.Instance.transform.position.x);
+        if (distanceToPlayer > 0) transform.localScale = new Vector3(-1,1,1);
+        else if (distanceToPlayer < 0) transform.localScale = new Vector3(1,1,1);
     }
 
     Vector2 GetDirection() {

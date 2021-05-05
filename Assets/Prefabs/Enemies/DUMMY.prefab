@@ -67,7 +67,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 1
   currentHealth: 0
-  spawnAnimationSeconds: 3
+  spawnAnimationSeconds: 1
 --- !u!50 &2189261123815632457
 Rigidbody2D:
   serializedVersion: 4
