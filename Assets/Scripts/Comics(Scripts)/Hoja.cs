@@ -7,9 +7,6 @@ using System;
 public class Hoja : MonoBehaviour
 {
 
-    private static Hoja instance;
-    public static Hoja Instance => instance;
-
     [SerializeField] Scrollbar scrollbar;
     [SerializeField] float[] scrollbarValue;
 
@@ -25,18 +22,6 @@ public class Hoja : MonoBehaviour
     public Action onCompleted;
     private void Awake()
     {
-        
-        if(instance == null)
-        {
-            instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-            return;
-        }
-
-
         for (int i = 0; i < viñetas.Count; i++)
         {
             viñetas[i].INIT();
@@ -63,11 +48,16 @@ public class Hoja : MonoBehaviour
                 }
             }
 
-            if(!(activated < viñetas.Count))
-            {
-                Debug.Log("ULTIMO");
-                onCompleted?.Invoke();
-            }
+            //if(!(activated < viñetas.Count))
+            //{
+            //    Debug.Log("ULTIMO");
+            //    onCompleted?.Invoke();
+            //}
+        }
+        else 
+        {
+            Debug.Log("ULTIMO");
+            onCompleted?.Invoke();
         }
     }
 

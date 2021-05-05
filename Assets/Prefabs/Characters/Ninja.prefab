@@ -14880,7 +14880,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   groundCheck: {fileID: 1414659799538752265}
-  maxSpeed: 15
+  maxSpeed: 20
   terminalVelocity: 5
   jumpForce: 32
   fallMultiplier: 15
@@ -15139,12 +15139,12 @@ MonoBehaviour:
   throwAbility: {fileID: 21300000, guid: 42f504aca6a04094094097f8d0f274a7, type: 3}
   ultAbility: {fileID: 21300000, guid: af5ea920c425f4442aec151d1c3104f8, type: 3}
   defenseAbility: {fileID: 21300000, guid: 86dd36f600aaf924aa69620217f34083, type: 3}
-  regenerationFrequency: 1
+  regenerationFrequency: 3
   currentLife: 0
   MaxLife: 2
-  cdDefense: 5
-  cdUltimate: 5
-  cdThrow: 5
+  cdDefense: 0.5
+  cdUltimate: 15
+  cdThrow: 6
   currentAttack: 0
   invulnerableLayer: 15
   projectil: {fileID: 399827546245339802, guid: 0cfc822ccb178b840a720e85b45cc62f,
