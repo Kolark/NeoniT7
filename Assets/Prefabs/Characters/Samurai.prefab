@@ -490,7 +490,7 @@ MonoBehaviour:
   UltiTransform: {fileID: 602289809040667658}
   specialAttack:
     pos: {fileID: 6748483436222164043}
-    radius: 5
+    radius: 10.9
     layer:
       serializedVersion: 2
       m_Bits: 512
