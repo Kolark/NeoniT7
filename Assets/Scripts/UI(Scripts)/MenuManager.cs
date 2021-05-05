@@ -8,6 +8,7 @@ using TMPro;
 using DG.Tweening;
 using System;
 using Cinemachine;
+
 public class MenuManager : MonoBehaviour
 {
     private static MenuManager instance;
@@ -26,6 +27,10 @@ public class MenuManager : MonoBehaviour
     Button button2Continue;
     [SerializeField] RectTransform LastCheckPointButton;
     Button button2LastCheckpoint;
+    [Header("Volume Sliders")]
+    [SerializeField] Slider gameplayVolumeSlider;
+    [SerializeField] Slider uiVolumeSlider;
+
 
     [Header("Start Transition Components")]
     [SerializeField] Text placeholderText;
@@ -230,6 +235,16 @@ public class MenuManager : MonoBehaviour
     {
         GameManager.Instance.MainScreen();
     }
+
+    public void ChangeGameMixerVolume()
+    {
+        AudioManager.Instance.SetMixerVolume(MixerChannel.Gameplay, gameplayVolumeSlider.value);
+    }
+    public void ChangeUIMixerVolume()
+    {
+        AudioManager.Instance.SetMixerVolume(MixerChannel.UI, uiVolumeSlider.value);
+    }
+
     private void OnDestroy()
     {
         InputController.Instance.Pause-= Pause;

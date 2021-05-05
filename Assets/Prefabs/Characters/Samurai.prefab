@@ -475,11 +475,11 @@ MonoBehaviour:
   throwAbility: {fileID: 21300000, guid: 2af9c738899956c4abaa66377e7a1458, type: 3}
   ultAbility: {fileID: 21300000, guid: 00f3a7c3d612e65469649a6c63e5b55f, type: 3}
   defenseAbility: {fileID: 21300000, guid: dfb999ec096c43d428380b9cf8ab8134, type: 3}
-  regenerationFrequency: 1
+  regenerationFrequency: 2
   currentLife: 0
   MaxLife: 2
-  cdDefense: 2
-  cdUltimate: 6
+  cdDefense: 1
+  cdUltimate: 10
   cdThrow: 4
   currentAttack: 0
   ultimateAnim: {fileID: 7931771221869996087}

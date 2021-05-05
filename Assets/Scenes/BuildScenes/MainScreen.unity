@@ -939,7 +939,7 @@ PrefabInstance:
     - target: {fileID: 6036265189149427116, guid: 97c7e36cf34e78643b9dbfbc7bea6241,
         type: 3}
       propertyPath: SaveInfoEDITOR.slot
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6036265189149427116, guid: 97c7e36cf34e78643b9dbfbc7bea6241,
         type: 3}
@@ -954,12 +954,12 @@ PrefabInstance:
     - target: {fileID: 6036265189149427116, guid: 97c7e36cf34e78643b9dbfbc7bea6241,
         type: 3}
       propertyPath: SaveInfoEDITOR.character
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6036265189149427116, guid: 97c7e36cf34e78643b9dbfbc7bea6241,
         type: 3}
       propertyPath: SaveInfoEDITOR.currentScene
-      value: 9
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6036265189149427116, guid: 97c7e36cf34e78643b9dbfbc7bea6241,
         type: 3}
