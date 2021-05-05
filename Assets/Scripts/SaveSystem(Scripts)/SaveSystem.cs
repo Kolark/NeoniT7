@@ -17,7 +17,7 @@ public class SaveSystem
     public static readonly int SavesNumber = 4;
     private static readonly string SaveName = "SaveSlot";
     private static readonly string fileFormat = "save";
-    public static readonly string version = "1";
+    public static readonly string version = "2";
     /// <summary>
     /// Checks if the saveFolder exists others it will procede to create one
     /// </summary>
