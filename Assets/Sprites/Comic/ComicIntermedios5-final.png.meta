@@ -110,7 +110,7 @@ TextureImporter:
         width: 3214
         height: 1574
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -118,6 +118,48 @@ TextureImporter:
       bones: []
       spriteID: 758b17e5857032b60800000000000000
       internalID: 7720022262366189655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Comic_Final_1
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 1616
+        width: 3210
+        height: 1640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e04943bdee28f85c0800000000000000
+      internalID: -4211003164176641010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Comic_Final_2
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 150
+        width: 3232
+        height: 1402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a1425c98a3821fe0800000000000000
+      internalID: -1219767788863602269
       vertices: []
       indices: 
       edges: []

@@ -5,24 +5,34 @@ using UnityEngine.UI;
 using DG.Tweening;
 public class Credits : MonoBehaviour
 {
+
+    
+
+    [Header("Credits Info")]
     [SerializeField] float MovementX;
     [SerializeField] float Duration;
-    RectTransform rectTransform;
+    [SerializeField] RectTransform rectTransform;
 
-    private void Awake()
-    {
-        rectTransform = GetComponent<RectTransform>();
-    }
 
     
 
     private void Start()
     {
+        if(Comic.Instance != null)
+        {
+            Comic.Instance.SetOnComicEnd(()=> { startCredits(); });
+        }
+        
+    }
+
+    public void startCredits()
+    {
+        Comic.Instance.gameObject.SetActive(false);
+
         InputController.Instance.SpecialAbility += onCreditsCompleted;
 
         rectTransform.DOAnchorPosY(MovementX, Duration).SetEase(Ease.Linear).OnComplete(onCreditsCompleted);
     }
-
 
     void onCreditsCompleted()
     {
