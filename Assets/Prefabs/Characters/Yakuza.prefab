@@ -438,17 +438,17 @@ MonoBehaviour:
   canMove: 1
   canFlip: 1
   canReceiveDamage: 1
-  throwAbility: {fileID: 0}
-  ultAbility: {fileID: 0}
-  defenseAbility: {fileID: 0}
-  regenerationFrequency: 0
+  throwAbility: {fileID: 21300000, guid: dd8893c0de2beca4dad46f7cdb141907, type: 3}
+  ultAbility: {fileID: 21300000, guid: d00d4a41f97c9e544a00cb9c099531a3, type: 3}
+  defenseAbility: {fileID: 21300000, guid: b69158c554b8cb14db7ef697fff92bf9, type: 3}
+  regenerationFrequency: 1
   currentLife: 2
   MaxLife: 2
   cdDefense: 5
-  cdUltimate: 5
+  cdUltimate: 15
   cdThrow: 5
   currentAttack: 3
-  projectil: {fileID: 399827546245339802, guid: 259064eff7da2fc43b5a94b22aee977e,
+  projectile: {fileID: 399827546245339802, guid: 259064eff7da2fc43b5a94b22aee977e,
     type: 3}
   specialAttack:
     pos: {fileID: 5176548923623687710}
