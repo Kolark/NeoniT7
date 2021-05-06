@@ -27,6 +27,7 @@ public class EffectsModule : MonoBehaviour
                 if(jump == null)
                 {
                     jump = Instantiate(particles[i], jumpPos.position, jumpPos.rotation);
+                    jump.Play(true);
                 }
                 else
                 {
