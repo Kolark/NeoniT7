@@ -231,6 +231,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7936958724494024922}
     m_Modifications:
+    - target: {fileID: 1385754621526122392, guid: 1e1d2de6a56afcd489878e0662defd26,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1385754621526122392, guid: 1e1d2de6a56afcd489878e0662defd26,
+        type: 3}
+      propertyPath: scalingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1385754621526122392, guid: 1e1d2de6a56afcd489878e0662defd26,
+        type: 3}
+      propertyPath: moveWithTransform
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5448668062276560644, guid: 1e1d2de6a56afcd489878e0662defd26,
         type: 3}
       propertyPath: m_Name
