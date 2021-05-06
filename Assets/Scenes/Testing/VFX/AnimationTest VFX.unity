@@ -5508,6 +5508,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CoolDown_Trap1
       objectReference: {fileID: 0}
+    - target: {fileID: 8007167525715383307, guid: 715c12e9b3f2e6946b7e8dd9ffd57b59,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 715c12e9b3f2e6946b7e8dd9ffd57b59, type: 3}
 --- !u!1 &1026198126
@@ -6219,25 +6224,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1828775031103006963, guid: c5959baf21ada0e48b6c223097c11da4,
-        type: 3}
-      propertyPath: playOnAwake
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1828775031103006963, guid: c5959baf21ada0e48b6c223097c11da4,
-        type: 3}
-      propertyPath: scalingMode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1828775031103006963, guid: c5959baf21ada0e48b6c223097c11da4,
-        type: 3}
-      propertyPath: moveWithTransform
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7936958723674722266, guid: c5959baf21ada0e48b6c223097c11da4,
         type: 3}
       propertyPath: m_Name
       value: T (B)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7936958723674722266, guid: c5959baf21ada0e48b6c223097c11da4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7936958723674722267, guid: c5959baf21ada0e48b6c223097c11da4,
         type: 3}
