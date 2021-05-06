@@ -442,8 +442,8 @@ MonoBehaviour:
   ultAbility: {fileID: 0}
   defenseAbility: {fileID: 0}
   regenerationFrequency: 0
-  currentLife: 0
-  MaxLife: 0
+  currentLife: 2
+  MaxLife: 2
   cdDefense: 5
   cdUltimate: 5
   cdThrow: 5

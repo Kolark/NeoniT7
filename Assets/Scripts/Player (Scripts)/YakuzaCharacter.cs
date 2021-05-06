@@ -6,7 +6,7 @@ using DG.Tweening;
 public class YakuzaCharacter : BasicCharacter
 {
     bool canTankDamage = false;
-    [SerializeField] GameObject projectil;
+    [SerializeField] GameObject projectile;
     [SerializeField] AttackInfo specialAttack;
     [SerializeField] AttackInfo explosiveinfo;
     [SerializeField] float UltimateWalkDistance;
@@ -55,7 +55,7 @@ public class YakuzaCharacter : BasicCharacter
         base.Throwable();
         DOVirtual.DelayedCall(throwableTime, null, true).OnComplete(() =>
         {
-            GameObject gameObject = Instantiate(projectil, firstAttack.pos.position, Quaternion.identity);
+            GameObject gameObject = Instantiate(projectile, firstAttack.pos.position, Quaternion.identity);
             Proyectil proyectil = gameObject.GetComponent<Proyectil>();
             proyectil.push(Vector2.right * transform.localScale.x);
         });
