@@ -469,6 +469,8 @@ MonoBehaviour:
   suspensionUltiTime: 0.32
   fallUltiTime: 0.29
   throwableTime: 0.6
+  MagnitudJump: 45
+  MagnitudFall: 45
 --- !u!1 &5176548923494640327
 GameObject:
   m_ObjectHideFlags: 0

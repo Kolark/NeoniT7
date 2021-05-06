@@ -14,6 +14,12 @@ public class YakuzaCharacter : BasicCharacter
     [SerializeField] float walkUltiTime, jumpUltiTime, suspensionUltiTime, fallUltiTime;
     [SerializeField] float throwableTime;
 
+
+    [Header("Ulti Attributes")]
+    [SerializeField] float MagnitudJump;
+    [SerializeField] float MagnitudFall;
+
+
     public override void Defense()
     {
         if (!isAlive) return;
@@ -65,37 +71,35 @@ public class YakuzaCharacter : BasicCharacter
         Vector2 vec2 = new Vector2(dir.x * transform.localScale.x, -dir.y);
 
         ///Aca va la ultimate
+        ///
         DOTween.Sequence()
-            .Append(transform.DOLocalMoveX(transform.position.x + (UltimateWalkDistance * transform.localScale.x), walkUltiTime).SetEase(Ease.InOutSine))
-            .Append(transform.DOLocalMove((Vector2)transform.position + vec, jumpUltiTime).SetEase(Ease.OutSine))
-            .AppendCallback(() => 
+            .Append(DOVirtual.DelayedCall(0.5f, null).OnUpdate(() => 
             {
-
-            Vector2 pos = transform.position;
-
-            DOVirtual.DelayedCall(suspensionUltiTime, null, true).OnUpdate(() =>
+                character.Rb.velocity = (Vector2.right*transform.localScale.x + Vector2.up).normalized * MagnitudJump;
+            }))
+            .Append(DOVirtual.DelayedCall(0.4f,null).OnUpdate(()=> 
             {
-                transform.position = pos;
-
-            }).OnComplete(() => 
+                character.Rb.velocity = (Vector2.right * transform.localScale.x + Vector2.down).normalized * MagnitudFall;
+            }))
+            .AppendCallback(() =>
             {
-                
-                transform.DOLocalMove((Vector2)transform.position + vec2, fallUltiTime).SetEase(Ease.OutSine).OnComplete(() =>
-                {
+                character.Rb.velocity = Vector2.zero;
                 Collider2D[] Hit = Physics2D.OverlapCircleAll(specialAttack.pos.position, specialAttack.radius, specialAttack.layer);
                 for (int i = 0; i < Hit.Length; i++)
                 {
                     IEnemyHurtBox enemy = Hit[i]?.GetComponent<IEnemyHurtBox>();
                     if (enemy != null)
                     {
-                        enemy.OnReceiveDamage();
-                        ScoreManager.Instance?.AddScore(enemy.getPos().position, 150);
+                        for (int y = 0; y < 3; y++)
+                        {
+                            enemy.OnReceiveDamage();
+                            ScoreManager.Instance?.AddScore(enemy.getPos().position, 150);
+                        }
+                        
                     }
-                    }
-                });
-            });
-            //Se mantiene en el aire
-            });
+                }
+            })
+            ;
     }
     public override void Damage()
     {
