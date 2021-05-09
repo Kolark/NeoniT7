@@ -41,6 +41,7 @@ public class YakuzaCharacter : BasicCharacter
     {
         canReceiveDamage = false;
         canTankDamage = true;
+        effectsModule.PlayEffect((int)effectsYakuza.Shield);
     }
     public override void EndParry()
     {
@@ -66,7 +67,10 @@ public class YakuzaCharacter : BasicCharacter
         if (!canUseSpecial) return;
         if (!character.Grounded) return;
         base.Ultimate();
-        DOVirtual.DelayedCall(cdUltimate, () => { canUseSpecial = true; }, true);
+        DOVirtual.DelayedCall(cdUltimate, () => { effectsModule.PlayEffect((int)effectsYakuza.UltReady); 
+            canUseSpecial = true; }, true);
+        effectsModule.PlayEffect((int)effectsYakuza.Ulti);
+        effectsModule.StopEffect((int)effectsYakuza.UltReady);
         Vector2 vec = new Vector2(dir.x * transform.localScale.x, dir.y);
         Vector2 vec2 = new Vector2(dir.x * transform.localScale.x, -dir.y);
 
@@ -108,6 +112,7 @@ public class YakuzaCharacter : BasicCharacter
         {
             currentLife--;
             Debug.Log("Attack step 6");
+            effectsModule.PlayEffect((int)effectsYakuza.PlayerHitA);
             bool isDead = currentLife <= 0;
             if (isDead)
             {
@@ -131,4 +136,8 @@ public class YakuzaCharacter : BasicCharacter
         DOVirtual.DelayedCall(0.8f, () => { SceneController.Instance.GoToLastCheckpoint(); });
     }
 
+    public enum effectsYakuza
+    {
+        Shield, Ulti, jumpParticle, UltReady, PlayerHitA, PlayerHitC
+    }
 }
