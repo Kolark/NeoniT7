@@ -57,13 +57,15 @@ public class ChamberManager : MonoBehaviour
             Transform spawnTriggerParent = transform.GetChild(1).GetChild(i);
             chambers[i].setIndex(i,spawnTriggerParent);
         }
-
+        chambers[unlockedChambers].TriggerLocks();
+        
     }
 
 
     private void Start()
     {
         ChangeCurrentChamber(-1);
+        if (unlockedChambers != 0) { unlockedChambers++; }
     }
     //Called when a chamber was cleared and ontriggerExit was detected
     public void ChangeCurrentChamber(int i)

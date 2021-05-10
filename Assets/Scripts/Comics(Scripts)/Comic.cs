@@ -10,7 +10,7 @@ public class Comic : MonoBehaviour
 
     [SerializeField] Hoja hoja;
     Action onComicCompletion;
-
+    [SerializeField] bool EndActionSetExternally = false;
 
     private void Awake()
     {
@@ -29,10 +29,16 @@ public class Comic : MonoBehaviour
     {
         InputController.Instance.Jump += Step;
         InputController.Instance.SpecialAbility += Skip;
-        onComicCompletion += onComicEnd;
+        if (!EndActionSetExternally)
+        {
+            onComicCompletion += onComicEnd;
+        }
         hoja.onCompleted += onCompleted;
     }
-
+    public void SetOnComicEnd(Action onComicEnd)
+    {
+        onComicCompletion += onComicEnd;
+    }
 
     public void Skip()
     {
