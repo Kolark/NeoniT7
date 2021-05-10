@@ -128,9 +128,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 110
+  m_SortingLayerID: 1729387287
+  m_SortingLayer: 1
+  m_SortingOrder: 5
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.6509804}
   m_FlipX: 0
@@ -490,7 +490,7 @@ MonoBehaviour:
   UltiTransform: {fileID: 602289809040667658}
   specialAttack:
     pos: {fileID: 6748483436222164043}
-    radius: 5
+    radius: 10.9
     layer:
       serializedVersion: 2
       m_Bits: 512
