@@ -10,10 +10,12 @@ public class TrampC : MonoBehaviour
     [SerializeField] GameObject col;
     [SerializeField] bool active = false, objectActive;
     [SerializeField] Animator animator;
+    [SerializeField] ParticleSystem effect;
     float time = 0;
 
     private void Start()
     {
+        effect = GetComponentInChildren<ParticleSystem>();
         active = objectActive;
         animator = animator.GetComponent<Animator>();
     }
@@ -27,6 +29,10 @@ public class TrampC : MonoBehaviour
         }
         else
         {
+            if (effect.isPlaying == false)
+            {
+                effect.Play();
+            }
             DesactiveTramp();
         }
 

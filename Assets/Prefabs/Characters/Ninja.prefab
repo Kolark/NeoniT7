@@ -14851,7 +14851,7 @@ Transform:
   m_GameObject: {fileID: 3066088837791298577}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.615732, y: 3.5667577, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children:
   - {fileID: 3902894785216445880}
   - {fileID: 3155801375461515107}
@@ -15156,7 +15156,7 @@ MonoBehaviour:
       serializedVersion: 2
       m_Bits: 512
   DashForce: 27
-  UltimateJumpDistance: 25
+  UltimateJumpDistance: 20
   throwableTime: 0.35
 --- !u!114 &3029515994133670543
 MonoBehaviour:

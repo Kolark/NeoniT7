@@ -114,6 +114,14 @@ public class Chamber : MonoBehaviour
         }
     }
 
+    public void TriggerLocks()
+    {
+        for (int i = 0; i < spawnTriggers.Length; i++)
+        {
+            spawnTriggers[i].TriggerLock();
+        }
+    }
+
 
     #region triggers
     /// <summary>
