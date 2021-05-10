@@ -57,7 +57,7 @@ public class SceneController : MonoBehaviour
         }
         #endregion   
     }
-
+    
     public void Start()
     {
         GameManager.Instance.Unpause();
