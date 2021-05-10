@@ -30,6 +30,11 @@ public class ChamberSpawnTrigger : MonoBehaviour
         hasActivated = false;        
     }
 
+    public void TriggerLock()
+    {
+        hasActivated = true;        
+    }
+
     private void OnDrawGizmos()
     {
         BoxCollider2D boxCollider2D = GetComponent<BoxCollider2D>();
