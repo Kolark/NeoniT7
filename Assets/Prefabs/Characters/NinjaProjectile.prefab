@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4665868280846643152}
   - component: {fileID: 5097041138665491115}
   m_Layer: 13
-  m_Name: sonicBoom_3
+  m_Name: NinjaProjectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -132,6 +132,6 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.6, y: 0}
+  m_Offset: {x: 0.05, y: 0}
   serializedVersion: 2
   m_Radius: 1.17

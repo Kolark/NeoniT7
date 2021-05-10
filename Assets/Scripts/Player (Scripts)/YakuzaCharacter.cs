@@ -6,13 +6,20 @@ using DG.Tweening;
 public class YakuzaCharacter : BasicCharacter
 {
     bool canTankDamage = false;
-    [SerializeField] GameObject projectil;
+    [SerializeField] GameObject projectile;
     [SerializeField] AttackInfo specialAttack;
     [SerializeField] AttackInfo explosiveinfo;
     [SerializeField] float UltimateWalkDistance;
     [SerializeField] Vector2 dir;
     [SerializeField] float walkUltiTime, jumpUltiTime, suspensionUltiTime, fallUltiTime;
-    
+    [SerializeField] float throwableTime;
+
+
+    [Header("Ulti Attributes")]
+    [SerializeField] float MagnitudJump;
+    [SerializeField] float MagnitudFall;
+
+
     public override void Defense()
     {
         if (!isAlive) return;
@@ -34,6 +41,7 @@ public class YakuzaCharacter : BasicCharacter
     {
         canReceiveDamage = false;
         canTankDamage = true;
+        effectsModule.PlayEffect((int)effectsYakuza.Shield);
     }
     public override void EndParry()
     {
@@ -46,9 +54,12 @@ public class YakuzaCharacter : BasicCharacter
         if (!canUseThrowable) return;
         if (!character.Grounded) return;
         base.Throwable();
-        GameObject gameObject = Instantiate(projectil, firstAttack.pos.position, Quaternion.identity);
-        Proyectil proyectil = gameObject.GetComponent<Proyectil>();
-        proyectil.push(Vector2.right * transform.localScale.x);
+        DOVirtual.DelayedCall(throwableTime, null, true).OnComplete(() =>
+        {
+            GameObject gameObject = Instantiate(projectile, firstAttack.pos.position, Quaternion.identity);
+            Proyectil proyectil = gameObject.GetComponent<Proyectil>();
+            proyectil.push(Vector2.right * transform.localScale.x);
+        });
     }
     public override void Ultimate()
     {
@@ -56,42 +67,43 @@ public class YakuzaCharacter : BasicCharacter
         if (!canUseSpecial) return;
         if (!character.Grounded) return;
         base.Ultimate();
-        DOVirtual.DelayedCall(cdUltimate, () => { canUseSpecial = true; }, true);
+        DOVirtual.DelayedCall(cdUltimate, () => { effectsModule.PlayEffect((int)effectsYakuza.UltReady); 
+            canUseSpecial = true; }, true);
+        effectsModule.PlayEffect((int)effectsYakuza.Ulti);
+        effectsModule.StopEffect((int)effectsYakuza.UltReady);
         Vector2 vec = new Vector2(dir.x * transform.localScale.x, dir.y);
         Vector2 vec2 = new Vector2(dir.x * transform.localScale.x, -dir.y);
 
         ///Aca va la ultimate
+        ///
         DOTween.Sequence()
-            .Append(transform.DOLocalMoveX(transform.position.x + (UltimateWalkDistance * transform.localScale.x), walkUltiTime).SetEase(Ease.InOutSine))
-            .Append(transform.DOLocalMove((Vector2)transform.position + vec, jumpUltiTime).SetEase(Ease.OutSine))
-            .AppendCallback(() => 
+            .Append(DOVirtual.DelayedCall(0.5f, null).OnUpdate(() => 
             {
-
-            Vector2 pos = transform.position;
-
-            DOVirtual.DelayedCall(suspensionUltiTime, null, true).OnUpdate(() =>
+                character.Rb.velocity = (Vector2.right*transform.localScale.x + Vector2.up).normalized * MagnitudJump;
+            }))
+            .Append(DOVirtual.DelayedCall(0.4f,null).OnUpdate(()=> 
             {
-                transform.position = pos;
-
-            }).OnComplete(() => 
+                character.Rb.velocity = (Vector2.right * transform.localScale.x + Vector2.down).normalized * MagnitudFall;
+            }))
+            .AppendCallback(() =>
             {
-                
-                transform.DOLocalMove((Vector2)transform.position + vec2, fallUltiTime).SetEase(Ease.OutSine).OnComplete(() =>
-                {
+                character.Rb.velocity = Vector2.zero;
                 Collider2D[] Hit = Physics2D.OverlapCircleAll(specialAttack.pos.position, specialAttack.radius, specialAttack.layer);
                 for (int i = 0; i < Hit.Length; i++)
                 {
                     IEnemyHurtBox enemy = Hit[i]?.GetComponent<IEnemyHurtBox>();
                     if (enemy != null)
                     {
-                        enemy.OnReceiveDamage();
-                        ScoreManager.Instance?.AddScore(enemy.getPos().position, 150);
+                        for (int y = 0; y < 3; y++)
+                        {
+                            enemy.OnReceiveDamage();
+                            ScoreManager.Instance?.AddScore(enemy.getPos().position, 150);
+                        }
+                        
                     }
-                    }
-                });
-            });
-            //Se mantiene en el aire
-            });
+                }
+            })
+            ;
     }
     public override void Damage()
     {
@@ -100,6 +112,7 @@ public class YakuzaCharacter : BasicCharacter
         {
             currentLife--;
             Debug.Log("Attack step 6");
+            effectsModule.PlayEffect((int)effectsYakuza.PlayerHitA);
             bool isDead = currentLife <= 0;
             if (isDead)
             {
@@ -123,4 +136,8 @@ public class YakuzaCharacter : BasicCharacter
         DOVirtual.DelayedCall(0.8f, () => { SceneController.Instance.GoToLastCheckpoint(); });
     }
 
+    public enum effectsYakuza
+    {
+        Shield, Ulti, jumpParticle, UltReady, PlayerHitA, PlayerHitC
+    }
 }
