@@ -161,7 +161,12 @@ public class Chamber : MonoBehaviour
         }
     }
     #endregion
-
+    public bool HasPreSpawn
+    {
+        get { return preSpawn.baseEnemies.Length > 0
+                || preSpawn.wallEnemies.Length > 0
+                || preSpawn.distanceEnemies.Length > 0; }
+    }
 
 #if UNITY_EDITOR
     private void OnDrawGizmos()
