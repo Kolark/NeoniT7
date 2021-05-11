@@ -67,6 +67,7 @@ public class YakuzaCharacter : BasicCharacter
         if (!canUseSpecial) return;
         if (!character.Grounded) return;
         base.Ultimate();
+        onUltAbility?.Invoke(cdUltimate);
         DOVirtual.DelayedCall(cdUltimate, () => { effectsModule.PlayEffect((int)effectsYakuza.UltReady); 
             canUseSpecial = true; }, true);
         effectsModule.PlayEffect((int)effectsYakuza.Ulti);
