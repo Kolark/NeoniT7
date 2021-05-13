@@ -1476,7 +1476,7 @@ PrefabInstance:
     - target: {fileID: 3410842229772944189, guid: 4917d8ccb3848b2418fdcb5386dccfba,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.8422108
+      value: 0.54
       objectReference: {fileID: 0}
     - target: {fileID: 3410842229772944189, guid: 4917d8ccb3848b2418fdcb5386dccfba,
         type: 3}
@@ -65234,7 +65234,7 @@ PrefabInstance:
     - target: {fileID: 3410842229772944189, guid: 4917d8ccb3848b2418fdcb5386dccfba,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.8422108
+      value: 0.52
       objectReference: {fileID: 0}
     - target: {fileID: 3410842229772944189, guid: 4917d8ccb3848b2418fdcb5386dccfba,
         type: 3}
@@ -68744,7 +68744,7 @@ PrefabInstance:
     - target: {fileID: 3410842229772944189, guid: 4917d8ccb3848b2418fdcb5386dccfba,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.8422108
+      value: 0.45
       objectReference: {fileID: 0}
     - target: {fileID: 3410842229772944189, guid: 4917d8ccb3848b2418fdcb5386dccfba,
         type: 3}
@@ -68981,7 +68981,7 @@ MonoBehaviour:
   - {fileID: 198283950}
   - {fileID: 356300185}
   - {fileID: 1005835248}
-  normalLevelLifes: 0
+  normalLevelLifes: 3
   DeathAnimation: {fileID: 1786444174}
   images:
   - {fileID: 1786444176}
