@@ -29163,7 +29163,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1650814531}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.19921355
+  m_Size: 0.19921356
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -59173,7 +59173,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1875793174}
   m_Direction: 0
   m_Value: 0
-  m_Size: 0.99999994
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -65960,6 +65960,155 @@ Transform:
   m_Father: {fileID: 1915953692}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1786444173
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2767511544344246465, guid: de4a6063a511f69439b003b0a6c3ad34,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2767511544344246465, guid: de4a6063a511f69439b003b0a6c3ad34,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2767511544344246465, guid: de4a6063a511f69439b003b0a6c3ad34,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2767511544344246465, guid: de4a6063a511f69439b003b0a6c3ad34,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2767511544344246465, guid: de4a6063a511f69439b003b0a6c3ad34,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2767511544344246465, guid: de4a6063a511f69439b003b0a6c3ad34,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2767511544344246465, guid: de4a6063a511f69439b003b0a6c3ad34,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2767511544344246465, guid: de4a6063a511f69439b003b0a6c3ad34,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2767511544344246465, guid: de4a6063a511f69439b003b0a6c3ad34,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2767511544344246465, guid: de4a6063a511f69439b003b0a6c3ad34,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2767511544344246465, guid: de4a6063a511f69439b003b0a6c3ad34,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2767511544344246465, guid: de4a6063a511f69439b003b0a6c3ad34,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2767511544344246465, guid: de4a6063a511f69439b003b0a6c3ad34,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2767511544344246465, guid: de4a6063a511f69439b003b0a6c3ad34,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2767511544344246465, guid: de4a6063a511f69439b003b0a6c3ad34,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2767511544344246465, guid: de4a6063a511f69439b003b0a6c3ad34,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2767511544344246465, guid: de4a6063a511f69439b003b0a6c3ad34,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2767511544344246465, guid: de4a6063a511f69439b003b0a6c3ad34,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2767511544344246465, guid: de4a6063a511f69439b003b0a6c3ad34,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2767511544344246465, guid: de4a6063a511f69439b003b0a6c3ad34,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2767511544344246465, guid: de4a6063a511f69439b003b0a6c3ad34,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2767511544344246469, guid: de4a6063a511f69439b003b0a6c3ad34,
+        type: 3}
+      propertyPath: m_Name
+      value: DojoDeathAnim
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: de4a6063a511f69439b003b0a6c3ad34, type: 3}
+--- !u!1 &1786444174 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2767511544344246469, guid: de4a6063a511f69439b003b0a6c3ad34,
+    type: 3}
+  m_PrefabInstance: {fileID: 1786444173}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1786444175 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2767511545500460804, guid: de4a6063a511f69439b003b0a6c3ad34,
+    type: 3}
+  m_PrefabInstance: {fileID: 1786444173}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1786444176 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2767511544849647684, guid: de4a6063a511f69439b003b0a6c3ad34,
+    type: 3}
+  m_PrefabInstance: {fileID: 1786444173}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1797258176
 GameObject:
   m_ObjectHideFlags: 0
@@ -68832,6 +68981,11 @@ MonoBehaviour:
   - {fileID: 198283950}
   - {fileID: 356300185}
   - {fileID: 1005835248}
+  normalLevelLifes: 0
+  DeathAnimation: {fileID: 1786444174}
+  images:
+  - {fileID: 1786444176}
+  - {fileID: 1786444175}
 --- !u!4 &2011614443858117406
 Transform:
   m_ObjectHideFlags: 0

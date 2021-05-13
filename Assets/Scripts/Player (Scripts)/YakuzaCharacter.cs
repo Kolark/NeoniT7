@@ -131,6 +131,7 @@ public class YakuzaCharacter : BasicCharacter
     public override void Death()
     {
         isAlive = false;
+        OnCharacterDeath?.Invoke();
         canReceiveDamage = false;
         character.Anim.SetTrigger("Death");
         DOVirtual.DelayedCall(0.8f, () => { SceneController.Instance.GoToLastCheckpoint(); });
