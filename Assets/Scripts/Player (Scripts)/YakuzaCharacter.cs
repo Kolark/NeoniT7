@@ -52,6 +52,7 @@ public class YakuzaCharacter : BasicCharacter
     {
         canTankDamage = false;
         canReceiveDamage = true;
+        effectsModule.StopEffect((int)effectsYakuza.Shield);
     }
 
     public override void Throwable()
