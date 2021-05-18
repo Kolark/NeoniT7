@@ -12,6 +12,8 @@ public class HUDManager : MonoBehaviour
     [SerializeField]Image[] lifes;
     [SerializeField] Sprite unlockedChamberSprite;
     [SerializeField] RectTransform enemyChamberIMG;
+    [SerializeField] RectTransform currentChamberIndicator;
+    [SerializeField] RectTransform GoObject;
     [SerializeField] TextMeshProUGUI lifesText;
     bool hasPerformedStart = false;
     Image[] chambers;
@@ -34,9 +36,6 @@ public class HUDManager : MonoBehaviour
     {
         yield return new WaitUntil(() => BasicCharacter.Instance != null);
 
-        
-
-
         cooldownAbilityUlti.INIT(BasicCharacter.Instance.UltAbility);
         cooldownAbilityThrow.INIT(BasicCharacter.Instance.ThrowAbility);
         cooldownAbilityDefense.INIT(BasicCharacter.Instance.DefenseAbility);
@@ -45,13 +44,23 @@ public class HUDManager : MonoBehaviour
         BasicCharacter.Instance.onUltAbility += cooldownAbilityUlti.CoolDownAnimation;
         BasicCharacter.Instance.onLifeChange += SetLifes;
         ChamberManager.Instance.onChamberUpdate += onChamberIncrease;
+        ChamberManager.Instance.onChamberUnlocked += OnLevelUnlocked;
+        ChamberManager.Instance.OnCurrentChamberChange += OnChamberChange;
         InstatiateRooms();
         SetChambers();
+        OnLevelUnlocked();
+        DOVirtual.DelayedCall(0.25f, () => { OnChamberChange(ChamberManager.Instance.CurrentChamber); });
+        
         hasPerformedStart = transform;
         SceneController.Instance.OnLifeLost += OnLifeLost;
         OnLifeLost();
     }
 
+    void OnChamberChange(int current)
+    {
+        Debug.Log("Current: " + current);
+        currentChamberIndicator.anchoredPosition = chambers[current].rectTransform.anchoredPosition;
+    }
     public void OnLifeLost()
     {
         lifesText.text = "x" + SceneController.Instance.LevelLifes.ToString();
@@ -67,10 +76,14 @@ public class HUDManager : MonoBehaviour
         }
         chambers = parent.GetComponentsInChildren<Image>();
     }
-
+    void OnLevelUnlocked()
+    {
+        GoObject.gameObject.SetActive(true);
+    }
     void onChamberIncrease(int current)
     {
         chambers[current].sprite = unlockedChamberSprite;
+        GoObject.gameObject.SetActive(false);
     }
     void SetChambers()
     {
@@ -91,6 +104,8 @@ public class HUDManager : MonoBehaviour
             lifes[i].enabled = true;
         }
     }
+
+    
 
     private void OnEnable()
     {

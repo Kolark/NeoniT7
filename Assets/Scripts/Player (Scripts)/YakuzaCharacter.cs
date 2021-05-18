@@ -12,7 +12,7 @@ public class YakuzaCharacter : BasicCharacter
     [SerializeField] float UltimateWalkDistance;
     [SerializeField] Vector2 dir;
     [SerializeField] float walkUltiTime, jumpUltiTime, suspensionUltiTime, fallUltiTime;
-    [SerializeField] float throwableTime;
+    [SerializeField] float throwableTime, shieldTime;
 
 
     [Header("Ulti Attributes")]
@@ -45,9 +45,16 @@ public class YakuzaCharacter : BasicCharacter
     }
     public override void EndParry()
     {
+        Invoke("EndShield", shieldTime);
+    }
+
+    void EndShield()
+    {
         canTankDamage = false;
         canReceiveDamage = true;
+        effectsModule.StopEffect((int)effectsYakuza.Shield);
     }
+
     public override void Throwable()
     {
         if (!isAlive) return;
@@ -67,6 +74,7 @@ public class YakuzaCharacter : BasicCharacter
         if (!canUseSpecial) return;
         if (!character.Grounded) return;
         base.Ultimate();
+        onUltAbility?.Invoke(cdUltimate);
         DOVirtual.DelayedCall(cdUltimate, () => { effectsModule.PlayEffect((int)effectsYakuza.UltReady); 
             canUseSpecial = true; }, true);
         effectsModule.PlayEffect((int)effectsYakuza.Ulti);
