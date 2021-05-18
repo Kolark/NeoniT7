@@ -24578,7 +24578,7 @@ MonoBehaviour:
   regenerationFrequency: 1
   currentLife: 2
   MaxLife: 2
-  cdDefense: 5
+  cdDefense: 7
   cdUltimate: 15
   cdThrow: 5
   currentAttack: 3
@@ -48943,6 +48943,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4587012493312742806, guid: 92b4f342ccef0464fbb8bc31578ec8b1,
         type: 3}
+      propertyPath: lengthInSec
+      value: 4.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4587012493312742806, guid: 92b4f342ccef0464fbb8bc31578ec8b1,
+        type: 3}
       propertyPath: scalingMode
       value: 1
       objectReference: {fileID: 0}
@@ -48956,6 +48961,11 @@ PrefabInstance:
       propertyPath: VelocityModule.radial.scalar
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 4587012493312742806, guid: 92b4f342ccef0464fbb8bc31578ec8b1,
+        type: 3}
+      propertyPath: EmissionModule.m_Bursts.Array.data[0].time
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6035008553337945090, guid: 92b4f342ccef0464fbb8bc31578ec8b1,
         type: 3}
       propertyPath: scalingMode
@@ -48965,6 +48975,11 @@ PrefabInstance:
         type: 3}
       propertyPath: InitialModule.startSize.scalar
       value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 6035008553337945090, guid: 92b4f342ccef0464fbb8bc31578ec8b1,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: 6035008553337945090, guid: 92b4f342ccef0464fbb8bc31578ec8b1,
         type: 3}
