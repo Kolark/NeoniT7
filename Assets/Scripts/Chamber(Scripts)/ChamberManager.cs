@@ -14,9 +14,10 @@ public class ChamberManager : MonoBehaviour
     public int UnlockedChambers { get => unlockedChambers;}
     Chamber[] chambers;
     CompositeCollider2D[] compositeCollider2Ds;
-
+    public int CurrentChamber;
     public Action<int> onChamberUpdate;
-
+    public Action onChamberUnlocked;
+    public Action<int> OnCurrentChamberChange;
     //Represents whether or not the player is able to go to the next Chamber. 
     //When he just wiped a chamber or the checkpoint got him there.
     public bool CanChamberTriggerExit = true;
@@ -40,6 +41,8 @@ public class ChamberManager : MonoBehaviour
         if(GameManager.Instance != null)
         {
             unlockedChambers = GameManager.Instance.Current.chamber;
+            CurrentChamber = unlockedChambers;
+            OnCurrentChamberChange?.Invoke(CurrentChamber);
         }
 
         chambers = GetComponentsInChildren<Chamber>();
@@ -65,7 +68,10 @@ public class ChamberManager : MonoBehaviour
     private void Start()
     {
         ChangeCurrentChamber(-1);
-        if (unlockedChambers != 0) { unlockedChambers++; }
+        if (unlockedChambers != 0)
+        {
+            unlockedChambers++;
+        }
     }
     //Called when a chamber was cleared and ontriggerExit was detected
     public void ChangeCurrentChamber(int i)
@@ -76,12 +82,15 @@ public class ChamberManager : MonoBehaviour
             GameManager.Instance.Save();
             onChamberUpdate?.Invoke(unlockedChambers);
             unlockedChambers++;
-            if(chambers[unlockedChambers].wavesSize == 0 && i != (ChamberLength - 2))
+            
+            if(chambers[unlockedChambers].wavesSize == 0 && !chambers[unlockedChambers].HasPreSpawn && i != (ChamberLength - 2))
             {
                 UnlockNextChamber();
             }
         }
-        if(i == (ChamberLength - 2))
+        CurrentChamber++;
+        OnCurrentChamberChange?.Invoke(CurrentChamber);
+        if (i == (ChamberLength - 2))
         {
             SceneController.Instance.NextLevel();
         }
@@ -92,6 +101,7 @@ public class ChamberManager : MonoBehaviour
     {
         compositeCollider2Ds[unlockedChambers+1].isTrigger = true;
         chambers[unlockedChambers+1].chamberPreSpawn();
+        onChamberUnlocked?.Invoke();
     }
 
     public void UnlockPreviousChamber()
@@ -100,6 +110,11 @@ public class ChamberManager : MonoBehaviour
         CanChamberTriggerExit = false;//False so that when a triggerexit is detected, it doesn't unlock a chamber
         chambers[unlockedChambers].ResetChamber();//Reset the chamber in which the player died.
         chambers[unlockedChambers].chamberPreSpawn();
+        if(CurrentChamber > unlockedChambers)
+        {
+            CurrentChamber--;
+            OnCurrentChamberChange?.Invoke(CurrentChamber);
+        }
         CameraController.Instance.ChangeConfiner(chambers[unlockedChambers-1].CompositeCollider2D);//Changescameraconfiner
     }
     //Called with delay, it enables to go to the next Chamber
