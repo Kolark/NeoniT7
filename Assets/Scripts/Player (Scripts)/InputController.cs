@@ -66,6 +66,9 @@ public class InputController : MonoBehaviour
     public void OnSpecialAbility()
     {
         SpecialAbility?.Invoke();
+        //FolderUtils.ShowDelegateMethods(Jump);
+        //FolderUtils.ShowDelegateMethods(SpecialAbility);
+        //FolderUtils.ShowDelegateMethods(Throw);
     }
     //Defensive Ability event
     public void OnDefensiveAbility()

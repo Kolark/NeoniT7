@@ -39,32 +39,33 @@ public class EnemyMovement : MonoBehaviour
 
     Animator animator;
     Rigidbody2D rb;
+    CharacterMovement charMovement;
+    int jumpCount = 0;
 
     private bool isGrounded = false;
     private int currentWaypoint = 0;
     private Vector2 velocity;
     private Vector2 direction;
 
-
     [SerializeField] bool CanJump;
 
     bool groundInfoDown = true;
     bool groundInfoFwd = false;
 
-    public bool IsGrounded { get => isGrounded;}
+    public bool IsGrounded { get => isGrounded; set => isGrounded = value; }
 
     private void Awake()
     {
         animator = GetComponentInChildren<Animator>();
         rb = GetComponent<Rigidbody2D>();
         seeker = GetComponent<Seeker>();
-
     }
 
     IEnumerator Start()
     {
         yield return new WaitUntil(() => BasicCharacter.Instance != null);
         target = BasicCharacter.Instance.transform;
+        charMovement = target.GetComponent<CharacterMovement>();
         UpdatePath();
     }
 
@@ -80,7 +81,10 @@ public class EnemyMovement : MonoBehaviour
         {
             jump();
         }
+    }
 
+    private void Update() {
+        CheckGround();
     }
 
 
@@ -99,6 +103,7 @@ public class EnemyMovement : MonoBehaviour
         Vector2 force = (direction * (speed * 20) * acceleration * Time.deltaTime);
 
         force.y = 0;
+
         if (!CanJump)
         {
             if (groundInfoDown == false || groundInfoFwd == true)
@@ -148,22 +153,24 @@ public class EnemyMovement : MonoBehaviour
         {
             if (jumpEnabled && isGrounded)
             {
-                jumpEnabled = false;
-                if (groundInfoDown == false)
+                if (groundInfoDown == false && jumpCount == 0)
                 {
                     rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);//JUMPS HOLE
                     animator.SetTrigger("Jump");
+                    jumpCount++;
                 }
                 else if (direction.y > jumpNodeHeightRequirement)//JUMPS WALL
                 {
                     rb.AddForce(Vector2.up * jumpForce * 2, ForceMode2D.Impulse);
                     animator.SetTrigger("Jump");
                 }
+                jumpEnabled = false;
             }
         }
         else if (groundInfoDown == true)
         {
             jumpEnabled = true;
+            jumpCount = 0;
         }
     }
 
@@ -172,12 +179,13 @@ public class EnemyMovement : MonoBehaviour
     {
         Vector3 startOffset = transform.position -  new Vector3 (0, groundOffset, 0); //new Vector3(0f, GetComponent<Collider2D>().bounds.extents.y + jumpCheckOffset);
         Debug.DrawRay(startOffset, Vector3.down, Color.red, 0.05f);
-        isGrounded = Physics2D.Raycast(startOffset, Vector3.down, 0.05f);
+        //isGrounded = Physics2D.Raycast(startOffset, Vector3.down, 0.05f); // Aqui está el bug
+        //if (transform.position.y > 5f) rb.gravityScale *= 3;
         animator.SetBool("isGround", isGrounded);
     }
     public void CheckJumpStatus()
     {
-        RaycastHit2D groundInfoDownRayCast = Physics2D.Raycast(groundDetection.position, Vector2.down, 20f, groundLayer);//HOLE
+        RaycastHit2D groundInfoDownRayCast = Physics2D.Raycast(groundDetection.position, Vector2.down, 2f, groundLayer);//HOLE
         RaycastHit2D groundInfoFwdRayCast = Physics2D.Raycast(groundDetection.position, Vector2.right*transform.localScale.x, 2f, groundLayer);//WALL
         groundInfoDown = groundInfoDownRayCast.collider;
         groundInfoFwd = groundInfoFwdRayCast.collider;
@@ -191,7 +199,7 @@ public class EnemyMovement : MonoBehaviour
     /// </summary>
     public void UpdatePath()
     {
-        if (seeker.IsDone())
+        if (seeker.IsDone() && charMovement.Grounded)
         {
             seeker.StartPath(rb.position + new Vector2(0, pathfindOffset), target.position, OnPathComplete);
         }
@@ -217,7 +225,7 @@ public class EnemyMovement : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawLine(groundDetection.position, (Vector2)groundDetection.position + Vector2.down * 20);
+        Gizmos.DrawLine(groundDetection.position, (Vector2)groundDetection.position + Vector2.down * 5);
         Gizmos.color = Color.cyan;
         Gizmos.DrawLine(groundDetection.position, (Vector2)groundDetection.position + Vector2.right * transform.localScale.x * 2f);
     }

@@ -24603,6 +24603,7 @@ MonoBehaviour:
   suspensionUltiTime: 0.32
   fallUltiTime: 0.29
   throwableTime: 0.6
+  shieldTime: 5
   MagnitudJump: 45
   MagnitudFall: 45
 --- !u!114 &8414578656726750051
