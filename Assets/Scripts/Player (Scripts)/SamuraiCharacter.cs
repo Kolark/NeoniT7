@@ -124,6 +124,7 @@ public class SamuraiCharacter : BasicCharacter
     public override void Death()
     {
         isAlive = false;
+        OnCharacterDeath?.Invoke();
         soundModule.Play((int)SamuraiSounds.Death);
         canReceiveDamage = false;
         character.Anim.SetTrigger("Death");
