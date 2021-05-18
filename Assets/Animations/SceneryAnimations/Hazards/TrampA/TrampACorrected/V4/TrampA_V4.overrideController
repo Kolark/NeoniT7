@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TrampA_V4
+  m_Controller: {fileID: 9100000, guid: f482837692f4f594198bea73c632a61d, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: d44c9702e6805a74fa6189fc9659b99a, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 48b70eea13860144797be336f7af949f, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: f88ad13a6a8c8c547b40fdd25fb2d5a0, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 1a1f643d9d5f39448ab2753fb900a68b, type: 2}
