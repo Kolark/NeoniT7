@@ -88,6 +88,14 @@ public class MenuManager : MonoBehaviour
         endingAnimationCamera = SceneController.Instance.EndingAnimationVirtualCam;
         trainSprite = SceneController.Instance.Train;
         spritesPersonajes = SceneController.Instance.SpritePersonajes;
+        float gameplayValue;
+        float uiValue;
+        AudioManager.Instance.mixers[(int)MixerChannel.Gameplay].audioMixer.GetFloat("mixerVol",out gameplayValue);
+        AudioManager.Instance.mixers[(int)MixerChannel.UI].audioMixer.GetFloat("mixerVol",out uiValue);
+        gameplayVolumeSlider.value = gameplayValue;
+        uiVolumeSlider.value = uiValue;
+
+
         InputController.Instance.Pause += Pause;
     }
     public void Pause()

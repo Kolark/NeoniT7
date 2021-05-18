@@ -62,6 +62,7 @@ public class BasicCharacter : MonoBehaviour
     public Action<float> onUltAbility;
     public Action<float> onDefenseAbility;
     public Action<int> onLifeChange;
+    public Action OnCharacterDeath;
     #endregion
 
 
@@ -307,6 +308,7 @@ public class BasicCharacter : MonoBehaviour
     public virtual void Death()
     {
         isAlive = false;
+        OnCharacterDeath?.Invoke();
         soundModule.Play((int)CharacterSounds.Death);
         canReceiveDamage = false;
         character.CanJump = false;

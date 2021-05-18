@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using Cinemachine;
+using System;
+using UnityEngine.UI;
 /// <summary>
 /// This class will refer to individual things that have need to be setup in each scene, therefore
 /// this class will not be in the DontDestroyOnLoad Method and lastly it will not be a prefab.
@@ -43,6 +45,16 @@ public class SceneController : MonoBehaviour
     public CinemachineVirtualCamera EndingAnimationVirtualCam { get => endingAnimationVirtualCam;}
     public Transform[] SpritePersonajes { get => spritePersonajes;}
 
+    [SerializeField] int normalLevelLifes;
+
+    private int levelLifes;
+    public int LevelLifes { get => levelLifes;}
+
+
+    public Action OnLifeLost;
+    [Header("DeathAnimation")]
+    [SerializeField] GameObject DeathAnimation;
+    [SerializeField] Image[] images;
     private void Awake()
     {
         #region singleton
@@ -82,7 +94,9 @@ public class SceneController : MonoBehaviour
             GameObject character = Instantiate(GameManager.Instance.Characters[(int)GameManager.Instance.Current.character],
                 CheckPoints[indexToSpawn].position, Quaternion.identity);
             GameManager.Instance.SetLevel(currentLevel);
+            
             //MenuManager.Instance.StartLevelTransition(levelName);
+            BasicCharacter.Instance.OnCharacterDeath += OnPlayersDeath;
 
         }
         GameManager.Instance.ChangeCurrentSceneType(levelType);
@@ -92,8 +106,59 @@ public class SceneController : MonoBehaviour
             AudioManager.Instance.ReceiveExternal(externalSounds);
             AudioManager.Instance.Play(ScreenAudio);
         }
-    }
 
+        if(levelType == SceneType.Level)
+        {
+            Debug.Log("gamemmanagerlifes : " + GameManager.Instance.Current.lifes);
+            Debug.Log("level : " + levelLifes);
+            if (GameManager.Instance.Current.lifes > normalLevelLifes)
+            {
+                if (GameManager.Instance.Current.difficulty == Difficulty.Hardcore)
+                {
+                    levelLifes = 1;
+                }
+                else
+                {
+                    levelLifes = normalLevelLifes;
+                }
+            }
+            else
+            {
+                levelLifes = GameManager.Instance.Current.lifes;
+            }
+        }
+    }
+    void OnPlayersDeath()
+    {
+        levelLifes--;
+        GameManager.Instance.SetLifes(levelLifes);
+        GameManager.Instance.Save();
+        bool hasLost = levelLifes <= 0;
+        if (hasLost)
+        {
+            DeathAnimation.SetActive(true);
+            //for (int i = 0; i < images.Length; i++)
+            //{
+            //    images[i].color = Color.clear;
+            //    images[i].DOColor(Color.white, 5f);
+            //}
+            //images[0].color = Color.clear;
+            //images[0].DOColor(Color.black, 5f);
+            images[1].color = Color.clear;
+            images[1].DOColor(Color.white, 5f);
+            BasicCharacter.Instance.Deactivate();
+            DOVirtual.DelayedCall(8f, () => 
+            {
+                DeathAnimation.SetActive(false);
+                BasicCharacter.Instance.Activate();
+                levelLifes = normalLevelLifes;
+                OnLifeLost?.Invoke();
+                GameManager.Instance.SetLifes(levelLifes);
+                GameManager.Instance.Restart();
+            });
+        }
+        OnLifeLost?.Invoke();
+    }
     public void NextLevel()
     {
         GameManager.Instance.SetLevel(nextLevel);

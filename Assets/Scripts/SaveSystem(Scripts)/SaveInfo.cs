@@ -10,8 +10,8 @@ public struct SaveInfo
     public Difficulty difficulty;
     public int currentScore;
     public float timeSpentInLevel;
-
-    public SaveInfo(GameScene scene, int chamber, int slot, DateTime date,CharacterType character,Difficulty difficulty,int currentScore,float timeSpent)
+    public int lifes;
+    public SaveInfo(GameScene scene, int chamber, int slot, DateTime date,CharacterType character,Difficulty difficulty,int currentScore,float timeSpent,int lifes)
     {
         this.currentScene = scene;
         this.chamber = chamber;
@@ -21,5 +21,6 @@ public struct SaveInfo
         this.difficulty = difficulty;
         this.currentScore = currentScore;
         this.timeSpentInLevel = timeSpent;
+        this.lifes = lifes;
     }
 }
