@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
-
+using TMPro;
 public class HUDManager : MonoBehaviour
 {
     [SerializeField] CooldownAbility cooldownAbilityUlti;
@@ -14,6 +14,7 @@ public class HUDManager : MonoBehaviour
     [SerializeField] RectTransform enemyChamberIMG;
     [SerializeField] RectTransform currentChamberIndicator;
     [SerializeField] RectTransform GoObject;
+    [SerializeField] TextMeshProUGUI lifesText;
     bool hasPerformedStart = false;
     Image[] chambers;
 
@@ -51,6 +52,8 @@ public class HUDManager : MonoBehaviour
         DOVirtual.DelayedCall(0.25f, () => { OnChamberChange(ChamberManager.Instance.CurrentChamber); });
         
         hasPerformedStart = transform;
+        SceneController.Instance.OnLifeLost += OnLifeLost;
+        OnLifeLost();
     }
 
     void OnChamberChange(int current)
@@ -58,6 +61,11 @@ public class HUDManager : MonoBehaviour
         Debug.Log("Current: " + current);
         currentChamberIndicator.anchoredPosition = chambers[current].rectTransform.anchoredPosition;
     }
+    public void OnLifeLost()
+    {
+        lifesText.text = "x" + SceneController.Instance.LevelLifes.ToString();
+    }
+
     void InstatiateRooms()
     {
         int nRooms = ChamberManager.Instance.ChamberLength;
