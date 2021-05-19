@@ -59,7 +59,7 @@ public class HUDManager : MonoBehaviour
     void OnChamberChange(int current)
     {
         Debug.Log("Current: " + current);
-        currentChamberIndicator.anchoredPosition = chambers[current].rectTransform.anchoredPosition;
+        currentChamberIndicator.anchoredPosition = chambers[current-1].rectTransform.anchoredPosition;
     }
     public void OnLifeLost()
     {
