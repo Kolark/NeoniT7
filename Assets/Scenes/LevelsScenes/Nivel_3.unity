@@ -29163,7 +29163,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1650814531}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.19921355
+  m_Size: 0.19921356
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -66804,8 +66804,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemies:
-  - {fileID: 507823204554322958, guid: edad55e1905b1a044a591af192af00be, type: 3}
-  - {fileID: 3393202427257698724, guid: a2825c688e5acec4184e9af223e5d4d6, type: 3}
+  - {fileID: 1709019403215552517, guid: 410a89967a3cb1a409234b66b5824f80, type: 3}
+  - {fileID: 5310264088954597806, guid: 036483780d2dd6e46a7e5c04444d0271, type: 3}
   - {fileID: 4784759856445036217, guid: e070f77852b05a44f9fe2019b54dd0ff, type: 3}
 --- !u!4 &1885088456
 Transform:
@@ -69500,6 +69500,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   test: 2.69
+  CurrentChamber: 0
   CanChamberTriggerExit: 1
 --- !u!1 &8729625508770381924
 GameObject:
