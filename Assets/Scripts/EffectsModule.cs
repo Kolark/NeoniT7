@@ -41,7 +41,15 @@ public class EffectsModule : MonoBehaviour
 
     public void StopEffect(int i)
     {
-        particles[i].gameObject.SetActive(false);
+        if (particles[i].main.loop)
+        {
+            particles[i].gameObject.SetActive(false);
+        }
+        else
+        {
+            particles[i].Stop();
+        }
+        
     }
 
 
