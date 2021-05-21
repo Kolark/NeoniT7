@@ -7,7 +7,7 @@ public class TrampA : MonoBehaviour
     [SerializeField] Transform pos;
     [SerializeField] Vector3 size;
     [SerializeField] LayerMask layer;
-    [SerializeField] float releseTime;
+    [SerializeField] float damageTime, releseTime;
     Animator animator;
 
     private void Awake()
@@ -20,16 +20,21 @@ public class TrampA : MonoBehaviour
         
         if (collision.gameObject.tag == "Player")
         {
-            Invoke("ActiveTramp", releseTime);
+            ActiveTramp();
         }
     }
 
     public void ActiveTramp()
     {
+        animator.SetTrigger("Activate");
+        Invoke("Damage", damageTime);
+    }
+
+    void Damage()
+    {
         Collider2D Hit = Physics2D.OverlapBox(pos.position, size, 0f, layer);
         PlayerDamageHandler player = Hit?.GetComponent<PlayerDamageHandler>();
         player?.Death();
-        animator.SetTrigger("Activate");
         Invoke("Release", releseTime);
     }
 

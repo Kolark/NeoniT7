@@ -73,7 +73,7 @@ public class EnemyMovement : MonoBehaviour
     {
         CheckGround();
         CheckJumpStatus();
-        if (currentWaypoint < path.vectorPath.Count) {
+        if (path != null && currentWaypoint < path.vectorPath.Count) {
             HorizontalMovement();
         }
         
