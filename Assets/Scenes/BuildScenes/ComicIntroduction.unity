@@ -177,7 +177,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ahora frente a la nueva amenaza nuevs guerreros se alzaran para salvar
+  m_text: Ahora frente a la nueva amenaza nuevos guerreros se alzaran para salvar
     a la humanidad
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8204bbdb1586f1a4a8ecd0113cb7a284, type: 2}
@@ -3091,7 +3091,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 959425808}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.19921355
+  m_Size: 0.19921356
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
