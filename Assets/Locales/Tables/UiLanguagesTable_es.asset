@@ -122,6 +122,104 @@ MonoBehaviour:
       del Repositorio se encuentran sus cuentas)\r\n\n\n\r\nFIN\r\nNe-Oni"
     m_Metadata:
       m_Items: []
+  - m_Id: 33633117418651648
+    m_Localized: En tiempos antiguos, la paz abundaba en el reino de los humanos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33633229641449472
+    m_Localized: "Esta Paz termino cuando un antiguo mal despert\xF3..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33633268128382976
+    m_Localized: Este mal era conocido como...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33633317071716352
+    m_Localized: El clan....
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33633370255491072
+    m_Localized: Para detenerlos se unieron tres grandes clanes, cada uno representado
+      por un guerrero...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33633388987252736
+    m_Localized: Gracias al esfuerzo de estos valientes guerreros el clan Oni fue
+      sellado y volvio la paz
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33633408817922048
+    m_Localized: Pero...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33633425486086144
+    m_Localized: "Cientos de a\xF1os mas tarde..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33635303443759104
+    m_Localized: Un antiguo mal desperto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33635314852265984
+    m_Localized: Ahora frente a la nueva amenaza nuevos guerreros se alzaran para
+      salvar a la humanidad
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33635317368848384
+    m_Localized: Se reportan ataques por toda la ciudad de entidades malvadas...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33635319440834560
+    m_Localized: Despierten a MechaKaito....
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33636509562011648
+    m_Localized: Jefe a donde va....
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33636512602882048
+    m_Localized: Los Guerreros avanzan hacia la ciudad
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33637313421344768
+    m_Localized: 'Los guerreros toman un descanso antes de seguir
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33638088075739136
+    m_Localized: Conociendo la ubicacion de la base enemiga, los guerreros avanzan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33638635700846592
+    m_Localized: 'Los guerreros estan por enfrentarse al combate final contra el
+      mal
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33643291713830912
+    m_Localized: Al final de una ardua batalla los guerreros lograron volver a sellar
+      al clan oni
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33643324232269824
+    m_Localized: "Despu\xE9s de eso los guerreros continuaron con sus vidas disfrutando
+      de la paz que lograron conseguir"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33644176099606528
+    m_Localized: Musica
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33644223935643648
+    m_Localized: Volumen del Juego
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33648461260619776
+    m_Localized: Lenguaje
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
     00000000:

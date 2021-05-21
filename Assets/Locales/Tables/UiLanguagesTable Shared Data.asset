@@ -95,6 +95,104 @@ MonoBehaviour:
     m_Key: Credits Text
     m_Metadata:
       m_Items: []
+  - m_Id: 33633117418651648
+    m_Key: 'ComicIntroduction_Vignete1
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33633229641449472
+    m_Key: ComicIntroduction_Vignete2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33633268128382976
+    m_Key: ComicIntroduction_Vignete3_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33633317071716352
+    m_Key: 'ComicIntroduction_Vignete3_1
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33633370255491072
+    m_Key: ComicIntroduction_Vignete4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33633388987252736
+    m_Key: ComicIntroduction_Vignete5_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33633408817922048
+    m_Key: ComicIntroduction_Vignete5_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33633425486086144
+    m_Key: 'ComicIntroduction_Vignete6
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33635303443759104
+    m_Key: 'ComicIntroduction_Vignete7
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33635314852265984
+    m_Key: 'ComicIntroduction_Vignete8
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33635317368848384
+    m_Key: ComicNivel1_Vignete1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33635319440834560
+    m_Key: ComicNivel1_Vignete2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33636509562011648
+    m_Key: ComicNivel1_Vignete3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33636512602882048
+    m_Key: ComicNivel2_Vignete1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33637313421344768
+    m_Key: ComicNivel3_Vignete1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33638088075739136
+    m_Key: ComicNivel4_Vignete1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33638635700846592
+    m_Key: ComicNivel5_Vignete1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33643291713830912
+    m_Key: Credits_Vignete1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33643324232269824
+    m_Key: Credits_Vignete2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33644176099606528
+    m_Key: Music
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33644223935643648
+    m_Key: Game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33648461260619776
+    m_Key: Language
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

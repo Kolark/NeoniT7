@@ -4557,9 +4557,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Game
-
-    Volume'
+  m_text: Volumen del juego
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8204bbdb1586f1a4a8ecd0113cb7a284, type: 2}
   m_sharedMaterial: {fileID: -6446754944780145841, guid: 8204bbdb1586f1a4a8ecd0113cb7a284,
@@ -4587,8 +4585,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28
-  m_fontSizeBase: 28
+  m_fontSize: 22
+  m_fontSizeBase: 22
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4645,7 +4643,7 @@ MonoBehaviour:
     m_TableReference:
       m_TableCollectionName: GUID:67a4ed85b768d6b4e8a82d0082e8d07b
     m_TableEntryReference:
-      m_KeyId: 7698511133450240
+      m_KeyId: 33644223935643648
       m_Key: 
     m_FallbackState: 0
   m_FormatArguments: []
@@ -5514,9 +5512,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'effect
-
-    Volume'
+  m_text: Music
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8204bbdb1586f1a4a8ecd0113cb7a284, type: 2}
   m_sharedMaterial: {fileID: -6446754944780145841, guid: 8204bbdb1586f1a4a8ecd0113cb7a284,
@@ -5544,8 +5540,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28
-  m_fontSizeBase: 28
+  m_fontSize: 22
+  m_fontSizeBase: 22
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -5602,7 +5598,7 @@ MonoBehaviour:
     m_TableReference:
       m_TableCollectionName: GUID:67a4ed85b768d6b4e8a82d0082e8d07b
     m_TableEntryReference:
-      m_KeyId: 7698511133450240
+      m_KeyId: 33644176099606528
       m_Key: 
     m_FallbackState: 0
   m_FormatArguments: []
@@ -5807,7 +5803,7 @@ MonoBehaviour:
     m_TableReference:
       m_TableCollectionName: GUID:67a4ed85b768d6b4e8a82d0082e8d07b
     m_TableEntryReference:
-      m_KeyId: 7698511133450240
+      m_KeyId: 33648461260619776
       m_Key: 
     m_FallbackState: 0
   m_FormatArguments: []

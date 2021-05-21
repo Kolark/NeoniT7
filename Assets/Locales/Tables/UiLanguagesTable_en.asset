@@ -121,6 +121,106 @@ MonoBehaviour:
       END\r\nNe-Oni"
     m_Metadata:
       m_Items: []
+  - m_Id: 33633117418651648
+    m_Localized: During ancient times, peace thrived in the human realm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33633229641449472
+    m_Localized: This peace ended when an ancient evil invaded our realm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33633268128382976
+    m_Localized: "This evil was known as\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33633317071716352
+    m_Localized: The clan of
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33633370255491072
+    m_Localized: Three great clans united to stop them, each clan was represented
+      by a powerful warrior
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33633388987252736
+    m_Localized: 'Thanks to the efforts of those brave heroes the oni clan was defeated
+      and peace thrived once more
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33633408817922048
+    m_Localized: "But\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33633425486086144
+    m_Localized: "Hundreds of years later\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33635303443759104
+    m_Localized: An ancient evil awakened
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33635314852265984
+    m_Localized: 'Now, new heroes will rise to face this threat and save humanity
+      once again
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33635317368848384
+    m_Localized: "We are getting reports of attacks from unknown entities from all
+      over the city\u2026\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33635319440834560
+    m_Localized: "Wake Mechakaito up\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33636509562011648
+    m_Localized: Boss! Where are you going?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33636512602882048
+    m_Localized: "Our warriors reach the city of Osaka\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33637313421344768
+    m_Localized: Our heroes take a break before the next battle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33638088075739136
+    m_Localized: Knowing the location of the enemy base, the three mighty warriors
+      keep going
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33638635700846592
+    m_Localized: Our warriors are about to face evil, this battle will define the
+      future of Osaka
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33643291713830912
+    m_Localized: After a long battle, the three warriors managed to expel the onis
+      once again.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33643324232269824
+    m_Localized: Now, the warriors can continue their lives and enjoy the peace they
+      fought to achieve.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33644176099606528
+    m_Localized: Music
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33644223935643648
+    m_Localized: Game Volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33648461260619776
+    m_Localized: Language
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
     00000000:
