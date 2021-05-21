@@ -91,6 +91,10 @@ MonoBehaviour:
     m_Key: Skip
     m_Metadata:
       m_Items: []
+  - m_Id: 33408307975520256
+    m_Key: Credits Text
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

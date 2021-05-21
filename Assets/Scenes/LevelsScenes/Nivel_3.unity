@@ -2181,7 +2181,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 25
   m_TargetDisplay: 0
 --- !u!1 &356300184
 GameObject:
@@ -29163,7 +29163,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1650814531}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.19921356
+  m_Size: 0.19921355
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -59173,7 +59173,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1875793175}
   m_HandleRect: {fileID: 1875793174}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:

@@ -384,7 +384,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 25
   m_TargetDisplay: 0
 --- !u!1001 &15441198
 PrefabInstance:
@@ -21373,7 +21373,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 468321329}
   m_HandleRect: {fileID: 468321328}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -53153,7 +53153,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 615416945}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.19921356
+  m_Size: 0.19921355
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
