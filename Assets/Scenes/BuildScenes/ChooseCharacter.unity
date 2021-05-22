@@ -251,7 +251,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+  m_text: 'Air slash: you can use to deal damage ifrom a distance'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8204bbdb1586f1a4a8ecd0113cb7a284, type: 2}
   m_sharedMaterial: {fileID: -6446754944780145841, guid: 8204bbdb1586f1a4a8ecd0113cb7a284,
@@ -363,8 +363,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1920, y: 1080}
+  m_AnchoredPosition: {x: -0.0016937, y: 0}
+  m_SizeDelta: {x: 2682.6704, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &39077070
 MonoBehaviour:
@@ -459,7 +459,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Description:'
+  m_text: 'Description:
+
+    A slow and strong character. ideal for experiment players'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8204bbdb1586f1a4a8ecd0113cb7a284, type: 2}
   m_sharedMaterial: {fileID: -6446754944780145841, guid: 8204bbdb1586f1a4a8ecd0113cb7a284,
@@ -2285,7 +2287,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+  m_text: 'Susanoo: you Summon a mighty ancient warior to make a nice and strong
+    area Damage'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8204bbdb1586f1a4a8ecd0113cb7a284, type: 2}
   m_sharedMaterial: {fileID: -6446754944780145841, guid: 8204bbdb1586f1a4a8ecd0113cb7a284,
@@ -2823,7 +2826,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+  m_text: Shield; you can use this skill to mitigate  damage for a few seconds
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8204bbdb1586f1a4a8ecd0113cb7a284, type: 2}
   m_sharedMaterial: {fileID: -6446754944780145841, guid: 8204bbdb1586f1a4a8ecd0113cb7a284,
@@ -3219,7 +3222,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+  m_text: 'boss is coming: You slam the ground with strong impact deal tons of damage
+    in area'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8204bbdb1586f1a4a8ecd0113cb7a284, type: 2}
   m_sharedMaterial: {fileID: -6446754944780145841, guid: 8204bbdb1586f1a4a8ecd0113cb7a284,
@@ -3755,7 +3759,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Description:'
+  m_text: 'Description:
+
+    A quick and hig speed character, this character is ideal
+    for mid skill players'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8204bbdb1586f1a4a8ecd0113cb7a284, type: 2}
   m_sharedMaterial: {fileID: -6446754944780145841, guid: 8204bbdb1586f1a4a8ecd0113cb7a284,
@@ -3889,7 +3896,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+  m_text: 'Sucker punch: you can use  this ability to deal damage from a distance'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8204bbdb1586f1a4a8ecd0113cb7a284, type: 2}
   m_sharedMaterial: {fileID: -6446754944780145841, guid: 8204bbdb1586f1a4a8ecd0113cb7a284,
@@ -4023,7 +4030,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+  m_text: 'Shuriken: you can use  this ability to deal damage from a distance'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8204bbdb1586f1a4a8ecd0113cb7a284, type: 2}
   m_sharedMaterial: {fileID: -6446754944780145841, guid: 8204bbdb1586f1a4a8ecd0113cb7a284,
@@ -4194,7 +4201,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+  m_text: 'Roll Up: you can use this skill to dodge enemies attacks'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8204bbdb1586f1a4a8ecd0113cb7a284, type: 2}
   m_sharedMaterial: {fileID: -6446754944780145841, guid: 8204bbdb1586f1a4a8ecd0113cb7a284,
@@ -4656,7 +4663,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+  m_text: 'Ninjutsu: you can invoke a many weapons to deal damage in area'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8204bbdb1586f1a4a8ecd0113cb7a284, type: 2}
   m_sharedMaterial: {fileID: -6446754944780145841, guid: 8204bbdb1586f1a4a8ecd0113cb7a284,
@@ -4790,7 +4797,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Description:'
+  m_text: 'Description:
+
+    A mid range Warior, this is the basic character for
+    a new player.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8204bbdb1586f1a4a8ecd0113cb7a284, type: 2}
   m_sharedMaterial: {fileID: -6446754944780145841, guid: 8204bbdb1586f1a4a8ecd0113cb7a284,
@@ -5313,7 +5323,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+  m_text: 'Parry: you can use this ability to deflect enemy attack and make a tons
+    of damage'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8204bbdb1586f1a4a8ecd0113cb7a284, type: 2}
   m_sharedMaterial: {fileID: -6446754944780145841, guid: 8204bbdb1586f1a4a8ecd0113cb7a284,
