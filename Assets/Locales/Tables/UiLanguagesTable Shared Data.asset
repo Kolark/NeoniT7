@@ -193,6 +193,78 @@ MonoBehaviour:
     m_Key: Language
     m_Metadata:
       m_Items: []
+  - m_Id: 33677356714262528
+    m_Key: SamuraiDescription
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33677378805661696
+    m_Key: SamuraiInfoThrow
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33677448108146688
+    m_Key: SamuraiInfoDefensive
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33677489543675904
+    m_Key: SamuraiInfoEspecial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33677554500861952
+    m_Key: NinjaInfoDescription
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33677556140834816
+    m_Key: NinjaInfoThrow
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33677557982134272
+    m_Key: NinjaInfoDefensive
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33677559756324864
+    m_Key: NinjaInfoUlti
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33677561530515456
+    m_Key: YakuzaInfoDescription
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33677563308900352
+    m_Key: YakuzaInfoThrow
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33677565192142848
+    m_Key: YakuzaInfoDefensive
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33677567096356864
+    m_Key: YakuzaInfoEspecial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33680984481038336
+    m_Key: ChooseCharacter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33688763455340544
+    m_Key: Your Skills
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33688885358592000
+    m_Key: Your Health
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33688936105476096
+    m_Key: Your score
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33689026849243136
+    m_Key: Your Lifes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33689041369923584
+    m_Key: Progress
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

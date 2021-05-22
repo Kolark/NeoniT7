@@ -122,6 +122,7 @@ public class YakuzaCharacter : BasicCharacter
         if (canReceiveDamage)
         {
             currentLife--;
+            onLifeChange?.Invoke(currentLife);
             soundModule.Play((int)YakuzaSounds.getHit);
             Debug.Log("Attack step 6");
             effectsModule.PlayEffect((int)effectsYakuza.PlayerHitA);

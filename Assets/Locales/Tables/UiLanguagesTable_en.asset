@@ -88,7 +88,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 22765858739552256
-    m_Localized: 'Points Accumulated: {getScore}'
+    m_Localized: ' Accumulated Points: {getScore}'
     m_Metadata:
       m_Items:
       - id: 0
@@ -219,6 +219,86 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 33648461260619776
     m_Localized: Language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33677356714262528
+    m_Localized: Mid-range warrior
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33680984481038336
+    m_Localized: Choose Character
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33677554500861952
+    m_Localized: Fast and agile
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33677556140834816
+    m_Localized: 'Shuriken: Throw it to deal damage at a distance'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33677557982134272
+    m_Localized: 'Dash: Dodge incoming enemy attacks'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33677559756324864
+    m_Localized: 'Ninjutsu: Summon a series of weapons, dealing damage to the enemies
+      under you
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33677561530515456
+    m_Localized: A slow and strong character ideal for experienced players.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33677565192142848
+    m_Localized: Deploy a bubble shield that mitigates incoming damage for a few
+      seconds.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33677563308900352
+    m_Localized: 'Sucker punch: You throw a punch that flies forward, dealing damage
+      to enemies it hits'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33677567096356864
+    m_Localized: 'Boss is Coming: Slam the ground with a strong impact, dealing tons
+      of area damage. '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33677378805661696
+    m_Localized: 'Air Slash: Launch a projectile that deals ranged damage'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33677448108146688
+    m_Localized: 'Parry: When you activate it you get a momentary shield, when you
+      receive an attack during this shield you block the damage and return the attack'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33677489543675904
+    m_Localized: 'Susanoo: You summon the powerful Susanoo war spirit that fires
+      a projectile forward, dealing a large amount of damage.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33688763455340544
+    m_Localized: Your Skills
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33688885358592000
+    m_Localized: Your Health
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33688936105476096
+    m_Localized: Your score
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33689026849243136
+    m_Localized: Your Lifes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33689041369923584
+    m_Localized: Your progress indicator bar
     m_Metadata:
       m_Items: []
   references:

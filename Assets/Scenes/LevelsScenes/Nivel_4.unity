@@ -53168,7 +53168,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 615416945}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.19921355
+  m_Size: 0.19921356
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -85962,7 +85962,7 @@ MonoBehaviour:
   currentLevel: 8
   nextLevel: 9
   ScreenAudio: Nivel4
-  levelName: New Dontobori
+  levelName: New Dotonbori
   train: {fileID: 1242618668}
   endingAnimationVirtualCam: {fileID: 1740693912}
   spritePersonajes:

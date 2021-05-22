@@ -220,6 +220,83 @@ MonoBehaviour:
     m_Localized: Lenguaje
     m_Metadata:
       m_Items: []
+  - m_Id: 33680984481038336
+    m_Localized: Seleccion de personaje
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33677554500861952
+    m_Localized: "Un personaje r\xE1pido y \xE1gil."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33677556140834816
+    m_Localized: "Shuriken: Inflige da\xF1o a distancia"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33677557982134272
+    m_Localized: 'Dash: Esquiva ataques enemigos'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33677559756324864
+    m_Localized: "Ninjutsu: Invoca una oleada de cuchillas que hacen da\xF1o de \xE1rea"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33677356714262528
+    m_Localized: Guerrero de rango medio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33677378805661696
+    m_Localized: "Air Slash: Lanzas un proyectil que inflige da\xF1o a distancia"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33677448108146688
+    m_Localized: "Parry: Cuando lo activas obtienes un escudo moment\xE1neo, cuando
+      recibas un ataque durante este escudo bloqueas el da\xF1o y devuelves el ataque"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33677561530515456
+    m_Localized: Un personaje lento y fuerte, ideal para jugadores experimentados.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33677563308900352
+    m_Localized: "Sucker punch: Lanzas un pu\xF1o que vuela hacia adelante, haciendo
+      da\xF1o a los enemigos que golpea."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33677565192142848
+    m_Localized: "Escudo: Despliega un escudo burbuja que mitiga el da\xF1o por unos
+      segundos."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33677567096356864
+    m_Localized: "Boss is Coming: Golpea el suelo con un fuerte impacto, causando
+      toneladas de da\xF1o en \xE1rea."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33677489543675904
+    m_Localized: "Susanoo: Invocas al poderoso esp\xEDritu de la guerra susano que
+      dispara un proyectil hacia adelante infligiendo una gran cantidad de da\xF1o"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33688763455340544
+    m_Localized: Tus habilidades
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33688885358592000
+    m_Localized: tu salud
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33688936105476096
+    m_Localized: tu puntuacion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33689026849243136
+    m_Localized: Tus vidas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 33689041369923584
+    m_Localized: La barra que indica el progreso
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
     00000000:
