@@ -24520,6 +24520,30 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: 066bf2d04c0a829428d0eba0b68082ef, type: 3}
+    mixerChannel: 1
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: 6e3cd640172309e4f9738369205609d0, type: 3}
+    mixerChannel: 1
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: c5827c19325bd33488c3c0eae515e2a3, type: 3}
+    mixerChannel: 1
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: aa4dbe200c0911d48947ac29bf2ad529, type: 3}
+    mixerChannel: 1
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
 --- !u!114 &5176548922549968139
 MonoBehaviour:
   m_ObjectHideFlags: 0

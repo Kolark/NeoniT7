@@ -69,6 +69,7 @@ public class SamuraiCharacter : BasicCharacter
         });
         DOVirtual.DelayedCall(delayProjectil, () => {
             GameObject gameObject = Instantiate(projectilUlti, UltiTransform.position, Quaternion.identity);
+            soundModule.Play((int)SamuraiSounds.Ultimate);
             Proyectil proyectil = gameObject.GetComponent<Proyectil>();
             proyectil.push(Vector2.right * transform.localScale.x);
 
