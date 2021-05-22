@@ -11,6 +11,8 @@ public class SaveSystem
 {
 #if UNITY_EDITOR
     public static readonly string SAVE_FOLDER = Application.dataPath + "/Saves/";
+#elif UNITY_WEBGL
+    public static readonly string SAVE_FOLDER = Application.dataPath + "/Saves/";
 #elif UNITY_STANDALONE
     public static readonly string SAVE_FOLDER = Application.persistentDataPath + "/Saves/";
 #endif
