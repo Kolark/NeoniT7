@@ -14,7 +14,7 @@ public class YakuzaCharacter : BasicCharacter
     [SerializeField] float walkUltiTime, jumpUltiTime, suspensionUltiTime, fallUltiTime;
     [SerializeField] float throwableTime, shieldTime;
 
-
+    
     [Header("Ulti Attributes")]
     [SerializeField] float MagnitudJump;
     [SerializeField] float MagnitudFall;
@@ -28,7 +28,7 @@ public class YakuzaCharacter : BasicCharacter
         Collider2D[] Hit = Physics2D.OverlapCircleAll(specialAttack.pos.position, specialAttack.radius, specialAttack.layer);
         for (int i = 0; i < Hit.Length; i++)
         {
-
+            
             //Aca va
             Rigidbody2D rb2d = Hit[i].GetComponent<Rigidbody2D>();
             rb2d.AddForce((rb2d.transform.position - transform.position).normalized * 4, ForceMode2D.Impulse);
@@ -42,6 +42,7 @@ public class YakuzaCharacter : BasicCharacter
         canReceiveDamage = false;
         canTankDamage = true;
         effectsModule.PlayEffect((int)effectsYakuza.Shield);
+        soundModule.Play((int)YakuzaSounds.Parry);
     }
     public override void EndParry()
     {
@@ -75,7 +76,8 @@ public class YakuzaCharacter : BasicCharacter
         if (!character.Grounded) return;
         base.Ultimate();
         onUltAbility?.Invoke(cdUltimate);
-        DOVirtual.DelayedCall(cdUltimate, () => { effectsModule.PlayEffect((int)effectsYakuza.UltReady); 
+        DOVirtual.DelayedCall(cdUltimate, () => { effectsModule.PlayEffect((int)effectsYakuza.UltReady);
+            soundModule.Play((int)YakuzaSounds.UltimateCharged);
             canUseSpecial = true; }, true);
         effectsModule.PlayEffect((int)effectsYakuza.Ulti);
         effectsModule.StopEffect((int)effectsYakuza.UltReady);
@@ -110,6 +112,7 @@ public class YakuzaCharacter : BasicCharacter
                         
                     }
                 }
+                soundModule.Play((int)YakuzaSounds.Ultimate);
             })
             ;
     }
@@ -119,6 +122,7 @@ public class YakuzaCharacter : BasicCharacter
         if (canReceiveDamage)
         {
             currentLife--;
+            soundModule.Play((int)YakuzaSounds.getHit);
             Debug.Log("Attack step 6");
             effectsModule.PlayEffect((int)effectsYakuza.PlayerHitA);
             bool isDead = currentLife <= 0;
@@ -141,6 +145,7 @@ public class YakuzaCharacter : BasicCharacter
         isAlive = false;
         OnCharacterDeath?.Invoke();
         canReceiveDamage = false;
+        soundModule.Play((int)YakuzaSounds.Death);
         character.Anim.SetTrigger("Death");
         DOVirtual.DelayedCall(0.8f, () => { SceneController.Instance.GoToLastCheckpoint(); });
     }
@@ -148,5 +153,9 @@ public class YakuzaCharacter : BasicCharacter
     public enum effectsYakuza
     {
         Shield, Ulti, jumpParticle, UltReady, PlayerHitA, PlayerHitC
+    }
+    public enum YakuzaSounds
+    {
+        combo1, combo2, combo3, getHit, Jump, Death, Ultimate, UltimateCharged, Parry
     }
 }
